@@ -38,6 +38,7 @@ public class SolicitudSeguimientoController : Controller
             })
             .ToListAsync(cancellationToken);
 
+        solicitudes.ForEach(solicitud => solicitud.ParseDatosLaboratorio());
         return View(solicitudes);
     }
 
@@ -67,6 +68,7 @@ public class SolicitudSeguimientoController : Controller
             return NotFound();
         }
 
+        solicitud.ParseDatosLaboratorio();
         return View(solicitud);
     }
 
