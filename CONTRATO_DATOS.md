@@ -46,3 +46,17 @@ Este contrato es la referencia compartida del Sprint 1. Los nombres de campos y 
 ## Implementación
 
 Las entidades base están en `Data/Entities` y el contexto en `Data/ApplicationDbContext.cs`. La migración inicial se encuentra en `Data/Migrations`. Las entidades no contienen lógica de negocio; cada módulo puede crear sus ViewModels y servicios dentro de su propia carpeta.
+
+## Autenticación (CU05)
+
+El módulo `auth/` usa cookies de autenticación ASP.NET Core. La contraseña se almacena como hash mediante `PasswordHasher<Usuario>` y nunca se compara ni persiste en texto plano. El rol se emite como claim `ClaimTypes.Role` con los valores del contrato en minúsculas.
+
+En entorno `Development` se crean cuentas demo únicamente cuando la base está vacía. Todas usan la contraseña temporal `Demo123!` y deben reemplazarse antes de cualquier despliegue:
+
+| Rol | Correo demo |
+|---|---|
+| propietario | `propietario@si-lab.local` |
+| coordinador | `coordinador@si-lab.local` |
+| supervisor | `supervisor@si-lab.local` |
+| gerente | `gerente@si-lab.local` |
+| administrador | `administrador@si-lab.local` |

@@ -1,0 +1,50 @@
+@model SEDESLABORATORIO.Auth.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Iniciar sesión";
+    var returnUrl = ViewData["ReturnUrl"] as string;
+}
+
+<div class="auth-page">
+    <div class="auth-card">
+        <div class="auth-brand">
+            <span class="auth-brand-mark">SL</span>
+            <div>
+                <span class="auth-brand-name">SI_Lab</span>
+                <span class="auth-brand-caption">SEDES</span>
+            </div>
+        </div>
+
+        <div class="auth-heading">
+            <h1>Bienvenido</h1>
+            <p>Ingresa a la plataforma de gestión de laboratorios.</p>
+        </div>
+
+        <form asp-action="Login" method="post" class="auth-form">
+            <input type="hidden" name="returnUrl" value="@returnUrl" />
+            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label"></label>
+                <input asp-for="Email" class="form-control form-control-lg" autocomplete="username" autofocus />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label"></label>
+                <input asp-for="Password" class="form-control form-control-lg" autocomplete="current-password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-check mb-4">
+                <input asp-for="RememberMe" class="form-check-input" />
+                <label asp-for="RememberMe" class="form-check-label"></label>
+            </div>
+
+            <button type="submit" class="btn auth-submit w-100">Ingresar</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
