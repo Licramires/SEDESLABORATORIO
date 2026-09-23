@@ -1,0 +1,67 @@
+@model SEDESLABORATORIO.Modules.SolicitudRegistro.Models.NuevaSolicitudViewModel
+
+@{
+    ViewData["Title"] = "Nueva Solicitud de Apertura";
+}
+
+<style>
+    /* Estilos personalizados basados en el diseño de SI_Lab del Figma */
+    .card-custom { border-radius: 12px; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+    .bg-silab { background-color: #0d47a1; color: white; border-radius: 12px 12px 0 0; } /* Azul oscuro del header */
+    .btn-silab { background-color: #0dcaf0; color: white; font-weight: bold; border: none; } /* Botón cian */
+    .btn-silab:hover { background-color: #0bacce; color: white; }
+    .seccion-titulo { color: #0d47a1; border-bottom: 2px solid #e9ecef; padding-bottom: 8px; margin-bottom: 20px; font-weight: 600; }
+</style>
+
+<div class="container mt-4 mb-5">
+    <div class="card card-custom">
+        <div class="card-header bg-silab p-4">
+            <h4 class="mb-0">Nueva Solicitud de Apertura</h4>
+            <small>Complete los datos del establecimiento y adjunte los requisitos</small>
+        </div>
+        <div class="card-body p-5">
+            <form asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva" method="post" enctype="multipart/form-data">
+                
+                <h5 class="seccion-titulo">Datos del Establecimiento</h5>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <label asp-for="NombreLaboratorio" class="form-label fw-bold">Nombre del Laboratorio</label>
+                        <input asp-for="NombreLaboratorio" class="form-control form-control-lg" placeholder="Ej. Laboratorio Central BioTest" />
+                        <span asp-validation-for="NombreLaboratorio" class="text-danger small"></span>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <label asp-for="TipoLaboratorio" class="form-label fw-bold">Tipo de Laboratorio</label>
+                        <input asp-for="TipoLaboratorio" class="form-control form-control-lg" placeholder="Ej. Clínico, Bacteriológico" />
+                        <span asp-validation-for="TipoLaboratorio" class="text-danger small"></span>
+                    </div>
+                </div>
+
+                <h5 class="seccion-titulo mt-3">Ubicación del Establecimiento</h5>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <label asp-for="Latitud" class="form-label fw-bold">Latitud</label>
+                        <input asp-for="Latitud" type="number" step="any" class="form-control form-control-lg" placeholder="-17.3935" />
+                        <span asp-validation-for="Latitud" class="text-danger small"></span>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <label asp-for="Longitud" class="form-label fw-bold">Longitud</label>
+                        <input asp-for="Longitud" type="number" step="any" class="form-control form-control-lg" placeholder="-66.1570" />
+                        <span asp-validation-for="Longitud" class="text-danger small"></span>
+                    </div>
+                </div>
+
+                <h5 class="seccion-titulo mt-3">Documentación Requerida</h5>
+                <div class="mb-5 bg-light p-4 rounded border">
+                    <label asp-for="DocumentosPdf" class="form-label fw-bold">Subir Requisitos (Formatos PDF)</label>
+                    <input asp-for="DocumentosPdf" type="file" multiple accept=".pdf" class="form-control form-control-lg" />
+                    <span class="form-text text-muted mt-2 d-block">Adjunte todos los documentos necesarios: Licencia Municipal, Plano Arquitectónico, Certificado Sanitario, etc. Puede seleccionar múltiples archivos.</span>
+                    <span asp-validation-for="DocumentosPdf" class="text-danger small"></span>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-silab btn-lg px-5">Enviar Solicitud</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
