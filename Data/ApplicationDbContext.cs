@@ -17,6 +17,7 @@ public class ApplicationDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Usuario>().HasIndex(usuario => usuario.Email).IsUnique();
         modelBuilder.Entity<Usuario>().Property(usuario => usuario.Rol)
             .HasConversion(rol => rol.ToString().ToLowerInvariant(), valor => Enum.Parse<RolUsuario>(valor, true));
         modelBuilder.Entity<Laboratorio>().Property(laboratorio => laboratorio.Estado)

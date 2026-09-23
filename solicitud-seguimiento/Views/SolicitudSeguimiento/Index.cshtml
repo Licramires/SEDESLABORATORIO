@@ -1,6 +1,60 @@
+@model IEnumerable<SEDESLABORATORIO.SolicitudSeguimiento.Models.SolicitudSeguimientoItemViewModel>
+
 @{
     ViewData["Title"] = "Seguimiento de solicitud";
 }
 
-<h1>Seguimiento de solicitud</h1>
-<p>Base para CU08-CU09 - Enviar y ver estado de trámite.</p>
+<div class="container silab-page">
+    <div class="silab-panel">
+        <div class="silab-panel-header">
+            <div>
+                <span class="text-muted small">PORTAL DE TRÁMITES · PROPIETARIO</span>
+                <h1>Mis solicitudes</h1>
+            </div>
+            <a asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva" class="btn btn-primary">Nueva solicitud</a>
+        </div>
+
+        @if (TempData["Success"] is string successMessage)
+        {
+            <div class="alert alert-success m-3" role="alert">@successMessage</div>
+        }
+
+        @if (TempData["Error"] is string errorMessage)
+        {
+            <div class="alert alert-danger m-3" role="alert">@errorMessage</div>
+        }
+
+        @if (!Model.Any())
+        {
+            <div class="p-5 text-center text-muted">No tienes solicitudes registradas.</div>
+        }
+        else
+        {
+            <div class="table-responsive">
+                <table class="table silab-table align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th>Solicitud</th>
+                            <th>Estado</th>
+                            <th>Fecha de creación</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var solicitud in Model)
+                    {
+                        <tr>
+                            <td class="fw-semibold">#@solicitud.Id</td>
+                            <td><span class="silab-status">@solicitud.Estado</span></td>
+                            <td>@solicitud.FechaCreacion.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td class="text-end">
+                                <a asp-action="Details" asp-route-id="@solicitud.Id" class="btn btn-outline-primary btn-sm">Ver detalle</a>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+</div>
