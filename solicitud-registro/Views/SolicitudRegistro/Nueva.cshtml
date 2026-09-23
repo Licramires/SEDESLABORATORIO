@@ -1,65 +1,114 @@
 @model SEDESLABORATORIO.Modules.SolicitudRegistro.Models.NuevaSolicitudViewModel
 
 @{
-    ViewData["Title"] = "Nueva Solicitud de Apertura";
+    ViewData["Title"] = "Nueva Solicitud";
 }
 
 <style>
-    /* Estilos personalizados basados en el diseño de SI_Lab del Figma */
-    .card-custom { border-radius: 12px; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-    .bg-silab { background-color: #0d47a1; color: white; border-radius: 12px 12px 0 0; } /* Azul oscuro del header */
-    .btn-silab { background-color: #0dcaf0; color: white; font-weight: bold; border: none; } /* Botón cian */
-    .btn-silab:hover { background-color: #0bacce; color: white; }
-    .seccion-titulo { color: #0d47a1; border-bottom: 2px solid #e9ecef; padding-bottom: 8px; margin-bottom: 20px; font-weight: 600; }
+    /* Estilos extraídos exactamente de la paleta y estructura del Figma SI_Lab */
+    body { background-color: #f4f7f9; }
+    .silab-card { border-radius: 10px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); background: #ffffff; }
+    .silab-header { padding: 1.5rem 2rem; border-bottom: 1px solid #edf2f7; display: flex; align-items: center; gap: 15px; }
+    .silab-icon-box { background-color: #1e3a8a; color: white; width: 45px; height: 45px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .silab-body { padding: 2.5rem 2rem; }
+    
+    .silab-section-title { font-size: 1.1rem; font-weight: 700; color: #2d3748; margin-top: 2rem; margin-bottom: 1.2rem; padding-bottom: 0.5rem; border-bottom: 2px solid #edf2f7; }
+    .silab-label { font-weight: 600; color: #4a5568; font-size: 0.9rem; margin-bottom: 0.4rem; }
+    .silab-input { border-radius: 6px; border: 1px solid #cbd5e0; padding: 0.65rem 1rem; font-size: 0.95rem; background-color: #fbfbfc; }
+    .silab-input:focus { border-color: #3182ce; box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15); background-color: #ffffff; }
+    
+    .silab-btn-primary { background-color: #1e3a8a; border: none; color: white; border-radius: 6px; font-weight: 600; padding: 0.7rem 2rem; transition: all 0.2s; }
+    .silab-btn-primary:hover { background-color: #152c6b; color: white; transform: translateY(-1px); }
+    .silab-btn-outline { background-color: white; border: 1px solid #cbd5e0; color: #4a5568; border-radius: 6px; font-weight: 600; padding: 0.7rem 2rem; transition: all 0.2s; }
+    .silab-btn-outline:hover { background-color: #f7fafc; }
+    
+    .document-upload-zone { border: 2px dashed #cbd5e0; border-radius: 8px; padding: 2rem; text-align: center; background-color: #f8fafc; margin-bottom: 1.5rem; transition: border-color 0.2s; }
+    .document-upload-zone:hover { border-color: #3182ce; }
 </style>
 
-<div class="container mt-4 mb-5">
-    <div class="card card-custom">
-        <div class="card-header bg-silab p-4">
-            <h4 class="mb-0">Nueva Solicitud de Apertura</h4>
-            <small>Complete los datos del establecimiento y adjunte los requisitos</small>
+<div class="container-fluid py-4">
+    <!-- Encabezado superior tipo Breadcrumb -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="h4 mb-0 text-dark fw-bold">Nueva Solicitud</h2>
+        <span class="text-muted small">Portal de Trámites SEDES > Mi Establecimiento > Nueva Solicitud</span>
+    </div>
+
+    <!-- Contenedor Principal (Tarjeta) -->
+    <div class="silab-card mb-5">
+        <div class="silab-header">
+            <div class="silab-icon-box">
+                <!-- Usamos un ícono SVG genérico de edificio -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/><path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/></svg>
+            </div>
+            <div>
+                <h5 class="mb-0 fw-bold">Datos del Establecimiento</h5>
+                <small class="text-muted">Ingrese la información general y ubicación de su laboratorio</small>
+            </div>
         </div>
-        <div class="card-body p-5">
+
+        <div class="silab-body">
             <form asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva" method="post" enctype="multipart/form-data">
                 
-                <h5 class="seccion-titulo">Datos del Establecimiento</h5>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <label asp-for="NombreLaboratorio" class="form-label fw-bold">Nombre del Laboratorio</label>
-                        <input asp-for="NombreLaboratorio" class="form-control form-control-lg" placeholder="Ej. Laboratorio Central BioTest" />
-                        <span asp-validation-for="NombreLaboratorio" class="text-danger small"></span>
+                <!-- Sección 1: Datos -->
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <label asp-for="NombreLaboratorio" class="form-label silab-label">Nombre del Laboratorio</label>
+                        <input asp-for="NombreLaboratorio" class="form-control silab-input" placeholder="Ej. Laboratorio Central BioTest" />
+                        <span asp-validation-for="NombreLaboratorio" class="text-danger small mt-1 d-block"></span>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <label asp-for="TipoLaboratorio" class="form-label fw-bold">Tipo de Laboratorio</label>
-                        <input asp-for="TipoLaboratorio" class="form-control form-control-lg" placeholder="Ej. Clínico, Bacteriológico" />
-                        <span asp-validation-for="TipoLaboratorio" class="text-danger small"></span>
-                    </div>
-                </div>
-
-                <h5 class="seccion-titulo mt-3">Ubicación del Establecimiento</h5>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <label asp-for="Latitud" class="form-label fw-bold">Latitud</label>
-                        <input asp-for="Latitud" type="number" step="any" class="form-control form-control-lg" placeholder="-17.3935" />
-                        <span asp-validation-for="Latitud" class="text-danger small"></span>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <label asp-for="Longitud" class="form-label fw-bold">Longitud</label>
-                        <input asp-for="Longitud" type="number" step="any" class="form-control form-control-lg" placeholder="-66.1570" />
-                        <span asp-validation-for="Longitud" class="text-danger small"></span>
+                    <div class="col-md-6">
+                        <label asp-for="TipoLaboratorio" class="form-label silab-label">Tipo de Laboratorio</label>
+                        <input asp-for="TipoLaboratorio" class="form-control silab-input" placeholder="Ej. Clínico, Bacteriológico, Genética" />
+                        <span asp-validation-for="TipoLaboratorio" class="text-danger small mt-1 d-block"></span>
                     </div>
                 </div>
 
-                <h5 class="seccion-titulo mt-3">Documentación Requerida</h5>
-                <div class="mb-5 bg-light p-4 rounded border">
-                    <label asp-for="DocumentosPdf" class="form-label fw-bold">Subir Requisitos (Formatos PDF)</label>
-                    <input asp-for="DocumentosPdf" type="file" multiple accept=".pdf" class="form-control form-control-lg" />
-                    <span class="form-text text-muted mt-2 d-block">Adjunte todos los documentos necesarios: Licencia Municipal, Plano Arquitectónico, Certificado Sanitario, etc. Puede seleccionar múltiples archivos.</span>
-                    <span asp-validation-for="DocumentosPdf" class="text-danger small"></span>
+                <!-- Sección 2: Ubicación -->
+                <h4 class="silab-section-title">Ubicación del Establecimiento</h4>
+                <div class="row g-4 mb-4">
+                    <div class="col-md-6">
+                        <label asp-for="Latitud" class="form-label silab-label">Latitud</label>
+                        <input asp-for="Latitud" type="number" step="any" class="form-control silab-input" placeholder="-17.3935" />
+                        <span asp-validation-for="Latitud" class="text-danger small mt-1 d-block"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="Longitud" class="form-label silab-label">Longitud</label>
+                        <input asp-for="Longitud" type="number" step="any" class="form-control silab-input" placeholder="-66.1570" />
+                        <span asp-validation-for="Longitud" class="text-danger small mt-1 d-block"></span>
+                    </div>
+                    
+                    <!-- Previsualización del Mapa (Figma) -->
+                    <div class="col-12 mt-3">
+                        <div class="rounded d-flex flex-column align-items-center justify-content-center text-muted" style="height: 180px; background-color: #e2e8f0; border: 1px solid #cbd5e0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="mb-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"/></svg>
+                            <span>Vista previa del mapa georreferenciado</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-silab btn-lg px-5">Enviar Solicitud</button>
+                <!-- Sección 3: Requisitos -->
+                <h4 class="silab-section-title">Requisitos para Habilitación, Apertura y Funcionamiento</h4>
+                
+                <div class="document-upload-zone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#3182ce" class="mb-3" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+                    </svg>
+                    <h6 class="fw-bold text-dark mb-1">Subir Documentación Legal y Administrativa (PDF)</h6>
+                    <p class="text-muted small mb-3">Adjunte Licencia Municipal, Plano Arquitectónico, Certificado Sanitario y demás requisitos según el formulario oficial.</p>
+                    
+                    <div class="d-flex justify-content-center">
+                        <div style="max-width: 400px; width: 100%;">
+                            <input asp-for="DocumentosPdf" type="file" multiple accept=".pdf" class="form-control silab-input bg-white" />
+                        </div>
+                    </div>
+                    <span asp-validation-for="DocumentosPdf" class="text-danger small mt-2 d-block"></span>
+                </div>
+
+                <!-- Botones de Acción -->
+                <div class="d-flex justify-content-end gap-3 mt-4 pt-3">
+                    <a asp-action="Nueva" class="btn silab-btn-outline">Cancelar</a>
+                    <button type="submit" class="btn silab-btn-primary">Enviar Solicitud</button>
                 </div>
             </form>
         </div>
