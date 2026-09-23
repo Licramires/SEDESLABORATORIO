@@ -22,10 +22,24 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                        @if (User.Identity?.IsAuthenticated == true && User.IsInRole("propietario"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva">Nueva solicitud</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="solicitud-seguimiento" asp-controller="SolicitudSeguimiento" asp-action="Index">Mis trámites</a>
+                            </li>
+                        }
                     </ul>
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <a class="btn btn-sm btn-outline-primary" asp-area="auth" asp-controller="Auth" asp-action="Dashboard">Mi cuenta</a>
+                    }
+                    else
+                    {
+                        <a class="btn btn-sm btn-primary" asp-area="auth" asp-controller="Auth" asp-action="Login">Ingresar</a>
+                    }
                 </div>
             </div>
         </nav>
