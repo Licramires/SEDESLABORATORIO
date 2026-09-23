@@ -1,6 +1,48 @@
+@model IEnumerable<SEDESLABORATORIO.SolicitudSeguimiento.Models.SolicitudSeguimientoItemViewModel>
+
 @{
     ViewData["Title"] = "Seguimiento de solicitud";
 }
 
 <h1>Seguimiento de solicitud</h1>
-<p>Base para CU08-CU09 - Enviar y ver estado de trámite.</p>
+
+@if (TempData["Success"] is string successMessage)
+{
+    <div class="alert alert-success" role="alert">@successMessage</div>
+}
+
+@if (TempData["Error"] is string errorMessage)
+{
+    <div class="alert alert-danger" role="alert">@errorMessage</div>
+}
+
+@if (!Model.Any())
+{
+    <p>No tienes solicitudes registradas.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Solicitud</th>
+                <th>Estado</th>
+                <th>Fecha de creación</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var solicitud in Model)
+        {
+            <tr>
+                <td>#@solicitud.Id</td>
+                <td>@solicitud.Estado</td>
+                <td>@solicitud.FechaCreacion.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@solicitud.Id" class="btn btn-outline-primary btn-sm">Ver detalle</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
