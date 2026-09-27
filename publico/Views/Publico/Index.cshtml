@@ -1,6 +1,111 @@
+@model SEDESLABORATORIO.Publico.Models.PublicoViewModel
+@using System.Text.Json
+
 @{
-    ViewData["Title"] = "Público";
+    ViewData["Title"] = "Laboratorios habilitados";
+    var mapData = JsonSerializer.Serialize(Model.Laboratorios);
 }
 
-<h1>Módulo público</h1>
-<p>Base para CU01-CU04 - Landing, mapa, detalle y ruta.</p>
+<div class="public-page">
+    <section class="public-hero">
+        <div class="container public-hero-content">
+            <span class="public-eyebrow">SEDES · PORTAL CIUDADANO</span>
+            <h1>Encuentra un laboratorio<br /><span>cerca de ti</span></h1>
+            <p>Consulta laboratorios habilitados, sus servicios y el estado de atención.</p>
+            <a href="#laboratorios" class="btn public-btn-light">Explorar laboratorios</a>
+        </div>
+        <div class="public-hero-orb"></div>
+    </section>
+
+    <section id="laboratorios" class="container public-content">
+        <div class="public-section-heading">
+            <div>
+                <span class="public-eyebrow public-eyebrow-dark">DIRECTORIO PÚBLICO</span>
+                <h2>Laboratorios registrados</h2>
+            </div>
+            <span class="public-count">@Model.Laboratorios.Count resultados</span>
+        </div>
+
+        <form method="get" asp-area="publico" asp-controller="Publico" asp-action="Index" class="public-filters">
+            <div class="public-search">
+                <span aria-hidden="true">⌕</span>
+                <input type="search" name="search" value="@Model.Search" placeholder="Buscar por nombre, tipo o servicio..." aria-label="Buscar laboratorio" />
+            </div>
+            <select name="tipo" class="form-select">
+                <option value="">Todos los tipos</option>
+                @foreach (var tipo in Model.TiposDisponibles)
+                {
+                    <option value="@tipo" selected="@(Model.Tipo == tipo)">@tipo</option>
+                }
+            </select>
+            <select name="estado" class="form-select">
+                <option value="">Cualquier estado</option>
+                <option value="Abierto" selected="@(Model.Estado == SEDESLABORATORIO.Data.Entities.EstadoLaboratorio.Abierto)">Abiertos</option>
+                <option value="Cerrado" selected="@(Model.Estado == SEDESLABORATORIO.Data.Entities.EstadoLaboratorio.Cerrado)">Cerrados</option>
+            </select>
+            <button type="submit" class="btn public-btn-primary">Buscar</button>
+        </form>
+
+        <div class="public-layout">
+            <div class="public-results">
+                @if (Model.Laboratorios.Count == 0)
+                {
+                    <div class="public-empty">No encontramos laboratorios con esos filtros.</div>
+                }
+                else
+                {
+                    @foreach (var laboratorio in Model.Laboratorios)
+                    {
+                        <article class="public-lab-card">
+                            <div class="public-lab-icon">✚</div>
+                            <div class="public-lab-main">
+                                <div class="public-lab-topline">
+                                    <span class="public-lab-type">@laboratorio.Tipo</span>
+                                    <span class="public-state @(laboratorio.EstaAbierto ? "public-state-open" : "public-state-closed")">
+                                        <i></i>@(laboratorio.EstaAbierto ? "Abierto" : "Cerrado")
+                                    </span>
+                                </div>
+                                <h3>@laboratorio.Nombre</h3>
+                                <p>@laboratorio.Servicios</p>
+                                <div class="public-lab-actions">
+                                    <a asp-action="Detalle" asp-route-id="@laboratorio.Id">Ver detalle</a>
+                                    <a asp-action="Ruta" asp-route-laboratorioId="@laboratorio.Id">Cómo llegar</a>
+                                </div>
+                            </div>
+                        </article>
+                    }
+                }
+            </div>
+            <div id="public-map" class="public-map" data-laboratories="@mapData" aria-label="Mapa de laboratorios"></div>
+        </div>
+    </section>
+</div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        (() => {
+            const mapElement = document.getElementById("public-map");
+            if (!mapElement || typeof L === "undefined") return;
+            const laboratories = JSON.parse(mapElement.dataset.laboratories || "[]");
+            const map = L.map(mapElement).setView([-17.3935, -66.1570], 13);
+            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                attribution: "&copy; OpenStreetMap contributors"
+            }).addTo(map);
+            const bounds = [];
+            laboratories.forEach(lab => {
+                const marker = L.circleMarker([lab.Lat, lab.Lng], {
+                    radius: 9,
+                    color: lab.EstaAbierto ? "#16835b" : "#c2413b",
+                    fillColor: lab.EstaAbierto ? "#35c98b" : "#ef8178",
+                    fillOpacity: .9,
+                    weight: 3
+                }).addTo(map);
+                marker.bindPopup(`<strong>${lab.Nombre}</strong><br>${lab.Tipo}<br><a href="/publico/Publico/Detalle/${lab.Id}">Ver detalle</a>`);
+                bounds.push([lab.Lat, lab.Lng]);
+            });
+            if (bounds.length) map.fitBounds(bounds, { padding: [25, 25] });
+        })();
+    </script>
+}
