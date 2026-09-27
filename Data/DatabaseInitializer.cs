@@ -18,28 +18,63 @@ public static class DatabaseInitializer
         await context.Database.MigrateAsync();
 
         if (!environment.IsDevelopment()
-            || !configuration.GetValue<bool>("Auth:SeedDemoUsers")
-            || await context.Usuarios.AnyAsync())
+            || !configuration.GetValue<bool>("Auth:SeedDemoUsers"))
         {
             return;
         }
 
-        var passwordHasher = new PasswordHasher<Usuario>();
-        var demoUsers = new[]
+        if (!await context.Usuarios.AnyAsync())
         {
-            CreateUser("Propietario Demo", "propietario@si-lab.local", RolUsuario.Propietario),
-            CreateUser("Coordinador Demo", "coordinador@si-lab.local", RolUsuario.Coordinador),
-            CreateUser("Supervisor Demo", "supervisor@si-lab.local", RolUsuario.Supervisor),
-            CreateUser("Gerente Demo", "gerente@si-lab.local", RolUsuario.Gerente),
-            CreateUser("Administrador Demo", "administrador@si-lab.local", RolUsuario.Administrador)
-        };
+            var passwordHasher = new PasswordHasher<Usuario>();
+            var demoUsers = new[]
+            {
+                CreateUser("Propietario Demo", "propietario@si-lab.local", RolUsuario.Propietario),
+                CreateUser("Coordinador Demo", "coordinador@si-lab.local", RolUsuario.Coordinador),
+                CreateUser("Supervisor Demo", "supervisor@si-lab.local", RolUsuario.Supervisor),
+                CreateUser("Gerente Demo", "gerente@si-lab.local", RolUsuario.Gerente),
+                CreateUser("Administrador Demo", "administrador@si-lab.local", RolUsuario.Administrador)
+            };
 
-        foreach (var user in demoUsers)
-        {
-            user.Password = passwordHasher.HashPassword(user, "Demo123!");
+            foreach (var user in demoUsers)
+            {
+                user.Password = passwordHasher.HashPassword(user, "Demo123!");
+            }
+
+            await context.Usuarios.AddRangeAsync(demoUsers);
         }
 
-        await context.Usuarios.AddRangeAsync(demoUsers);
+        if (!await context.Laboratorios.AnyAsync())
+        {
+            await context.Laboratorios.AddRangeAsync(
+                new Laboratorio
+                {
+                    Nombre = "Laboratorio Central SEDES",
+                    Tipo = "Clínico",
+                    Lat = -17.3935m,
+                    Lng = -66.1570m,
+                    Estado = EstadoLaboratorio.Abierto,
+                    Servicios = "Hematología, Química clínica, Microbiología"
+                },
+                new Laboratorio
+                {
+                    Nombre = "Laboratorio Nova",
+                    Tipo = "Bacteriológico",
+                    Lat = -17.3892m,
+                    Lng = -66.1634m,
+                    Estado = EstadoLaboratorio.Cerrado,
+                    Servicios = "Cultivos, Análisis bacteriológico"
+                },
+                new Laboratorio
+                {
+                    Nombre = "Laboratorio Clínica Azul",
+                    Tipo = "Especializado",
+                    Lat = -17.4011m,
+                    Lng = -66.1512m,
+                    Estado = EstadoLaboratorio.Abierto,
+                    Servicios = "Genética, Inmunología, Biología molecular"
+                });
+        }
+
         await context.SaveChangesAsync();
     }
 

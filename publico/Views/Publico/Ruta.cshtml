@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Cómo llegar";
+}
+
+<div class="container public-detail-page">
+    <a asp-action="Index" class="public-back">← Volver al directorio</a>
+    <div class="public-route-card">
+        <span class="public-eyebrow public-eyebrow-dark">RUTA DE NAVEGACIÓN</span>
+        <h1>Cómo llegar al laboratorio</h1>
+        <p>Permite al navegador usar tu ubicación actual para abrir una ruta hacia el establecimiento seleccionado.</p>
+        <div class="public-route-actions">
+            <a id="route-link" class="btn public-btn-primary" target="_blank" rel="noopener">Usar mi ubicación</a>
+            <a asp-action="Index" class="btn public-btn-outline">Elegir otro laboratorio</a>
+        </div>
+        <div id="route-message" class="public-route-message" role="status"></div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        (() => {
+            const link = document.getElementById("route-link");
+            const message = document.getElementById("route-message");
+            const destination = "@ViewData["Destination"]";
+            link.addEventListener("click", event => {
+                event.preventDefault();
+                if (!navigator.geolocation) {
+                    message.textContent = "Tu navegador no permite obtener la ubicación.";
+                    return;
+                }
+                message.textContent = "Obteniendo tu ubicación...";
+                navigator.geolocation.getCurrentPosition(position => {
+                    const origin = `${position.coords.latitude},${position.coords.longitude}`;
+                    link.href = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${encodeURIComponent(destination)}`;
+                    link.click();
+                }, () => {
+                    message.textContent = "No pudimos obtener tu ubicación. Revisa los permisos del navegador.";
+                });
+            });
+        })();
+    </script>
+}

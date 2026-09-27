@@ -13,6 +13,16 @@ public static class RouteConfig
 
         // Rutas del módulo auth van aquí.
         // Rutas del módulo publico van aquí.
+        endpoints.MapControllerRoute(
+            name: "publico-home",
+            pattern: "",
+            defaults: new { area = "publico", controller = "Publico", action = "Index" });
+
+        endpoints.MapControllerRoute(
+            name: "publico",
+            pattern: "laboratorios/{action=Index}/{id?}",
+            defaults: new { area = "publico", controller = "Publico" });
+
         // Rutas del módulo solicitud-registro van aquí.
         // Rutas del módulo solicitud-seguimiento van aquí.
 

@@ -1,0 +1,35 @@
+@model SEDESLABORATORIO.Publico.Models.LaboratorioDetalleViewModel
+
+@{
+    ViewData["Title"] = Model.Nombre;
+}
+
+<div class="container public-detail-page">
+    <a asp-action="Index" class="public-back">← Volver al directorio</a>
+    <div class="public-detail-card">
+        <div class="public-detail-header">
+            <div class="public-detail-icon">✚</div>
+            <div>
+                <span class="public-lab-type">@Model.Tipo</span>
+                <h1>@Model.Nombre</h1>
+                <span class="public-state @(Model.EstaAbierto ? "public-state-open" : "public-state-closed")"><i></i>@(Model.EstaAbierto ? "Actualmente abierto" : "Actualmente cerrado")</span>
+            </div>
+        </div>
+        <div class="public-detail-grid">
+            <section>
+                <h2>Servicios disponibles</h2>
+                <ul class="public-services">
+                    @foreach (var servicio in Model.ServiciosLista)
+                    {
+                        <li>@servicio</li>
+                    }
+                </ul>
+            </section>
+            <section>
+                <h2>Ubicación</h2>
+                <p class="text-muted">Coordenadas: @Model.Lat.ToString("0.####"), @Model.Lng.ToString("0.####")</p>
+                <a asp-action="Ruta" asp-route-laboratorioId="@Model.Id" class="btn public-btn-primary">Cómo llegar</a>
+            </section>
+        </div>
+    </div>
+</div>
