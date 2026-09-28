@@ -366,6 +366,76 @@ Asignación actual documentada en `TAREAS_SPRINT1.md`:
 
 Si cambia la asignación del equipo, actualizar `TAREAS_SPRINT1.md` y este documento juntos.
 
+## 8.1 Planificación completa de casos de uso
+
+La planificación original entregada formalmente al proyecto cubría el Sprint 1. Después de contrastarla con el video y la transcripción de la reunión, se documenta aquí el alcance previsto de los sprints siguientes. Los casos CU30, CU31, CU32 y CU-P4 se agregan para cubrir comportamientos mencionados explícitamente en la reunión.
+
+### Sprint 1 — Implementado
+
+```text
+CU01: Ver la landing page pública con los tipos de laboratorio
+CU02: Buscar y filtrar laboratorios en el mapa (tipo y estado)
+CU03: Ver el detalle de un laboratorio
+CU04: Trazar ruta hacia el laboratorio más cercano
+CU05: Iniciar sesión según el rol
+CU06: Registrar nueva solicitud de apertura
+CU07: Cargar documentación en PDF según los requisitos
+CU08: Enviar la solicitud (queda "en revisión")
+CU09: Consultar el estado de los trámites propios
+```
+
+Estado: integrado en `develop`. Los módulos actuales cubren CU01-CU09.
+
+### Sprint 2 — Flujo operativo de revisión e inspección
+
+```text
+CU10: Revisar solicitud y documentación, aprobar o rechazar (Coordinador)
+CU11: Asignar supervisor a un establecimiento (Coordinador)
+CU12: Consultar historial de asignaciones (Coordinador)
+CU13: Organizar agenda de inspecciones (Supervisor)
+CU14: Generar ruta ordenada de inspección (Supervisor)
+CU15: Registrar acta de inspección (Supervisor)
+CU16: Descargar el formulario de acta y subirlo firmado en PDF (Supervisor)
+CU17: Definir resultado: aprobado, con observaciones o rechazado (Supervisor)
+CU18: Registrar citación por incumplimiento (Supervisor)
+CU19: Revisar el acta, aprobar o rechazar y reasignar si corresponde (Coordinador)
+CU20: Marcar vigencia de la habilitación en 1 año (Sistema)
+CU21: Notificar al propietario en cada hito (Sistema)
+CU30: Reprogramar una inspección rechazada o pendiente (Coordinador)
+CU31: Registrar plazo de subsanación para observaciones (Supervisor)
+CU32: Registrar solicitud de renovación de habilitación (Propietario)
+```
+
+CU30 se deriva de la indicación de que una inspección rechazada debe volver a programarse y puede asignarse al mismo u otro supervisor. CU31 representa los plazos de subsanación, por ejemplo 15 días hábiles, mencionados para corregir incumplimientos. CU32 se agrega porque la reunión distingue trámites de apertura y renovación; debe confirmarse con el equipo si la renovación entra en el alcance de este proyecto o queda para una etapa posterior.
+
+### Sprint 3 — Administración, métricas y cierre
+
+```text
+CU22: Gestionar usuarios (Administrador)
+CU23: Gestionar roles y permisos (Administrador)
+CU24: Configurar requisitos: crear, editar, eliminar, obligatorio/opcional (Administrador)
+CU25: Ver panel de métricas por municipio (Gerente)
+CU26: Descargar informe de métricas por fechas (Gerente)
+CU27: Consultar "Mis establecimientos" y editar datos visuales permitidos (Propietario)
+CU28: Recibir alertas de vencimiento de licencia (Propietario)
+CU29: Generar informe final de cierre del trámite (Coordinador)
+```
+
+En CU27, el propietario no debe poder modificar datos oficiales ya aprobados, como el estado de habilitación, la vigencia, el resultado de inspección o los documentos validados. Esos datos deben modificarse únicamente mediante los flujos autorizados.
+
+### Casos pendientes del abogado
+
+La reunión agregó posteriormente el rol de abogado. Estos casos siguen pendientes de asignación formal a un sprint:
+
+```text
+CU-P1: Revisar legalmente el establecimiento (licencia y plano)
+CU-P2: Firmar la aprobación legal final y notificar al Coordinador
+CU-P3: Notificar al propietario la aprobación final
+CU-P4: Cerrar y marcar el trámite como habilitado después de la aprobación legal
+```
+
+CU-P4 se agrega para representar explícitamente el cierre del flujo: después de la aprobación legal, el establecimiento queda habilitado y el propietario recibe la confirmación final. Puede fusionarse con CU-P2 o CU-P3 si el equipo decide no mantenerlo como caso independiente.
+
 ## 9. Cómo ejecutar el proyecto
 
 Desde la raíz del repositorio:
@@ -491,7 +561,9 @@ El Sprint 1 integrado está funcional, pero todavía hay trabajo recomendable an
 9. Añadir pruebas automatizadas de integración y pruebas de autorización.
 10. Revisar antiforgery, cookies seguras, HTTPS y secretos antes de desplegar.
 11. Confirmar si el botón `Enviar` debe cambiar el estado a un estado adicional distinto de `en_revision`; el contrato actual representa una solicitud enviada como `en_revision`.
-12. Evitar cambios directos al contrato compartido sin coordinación del equipo.
+12. Confirmar con el cliente el alcance de renovación (CU32) y la ubicación definitiva de los casos del abogado.
+13. Definir estados adicionales de `Solicitud` para inspección, observaciones, subsanación, aprobación legal, habilitación y renovación.
+14. Evitar cambios directos al contrato compartido sin coordinación del equipo.
 
 ## 14. Procedimiento para una nueva sesión o agente
 

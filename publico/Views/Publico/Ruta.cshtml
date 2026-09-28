@@ -32,9 +32,14 @@
                 navigator.geolocation.getCurrentPosition(position => {
                     const origin = `${position.coords.latitude},${position.coords.longitude}`;
                     link.href = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${encodeURIComponent(destination)}`;
-                    link.click();
+                    message.textContent = "Ruta lista. Abriendo Google Maps...";
+                    window.location.assign(link.href);
                 }, () => {
                     message.textContent = "No pudimos obtener tu ubicación. Revisa los permisos del navegador.";
+                }, {
+                    enableHighAccuracy: true,
+                    timeout: 10000,
+                    maximumAge: 300000
                 });
             });
         })();
