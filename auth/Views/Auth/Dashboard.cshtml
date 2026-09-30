@@ -3,19 +3,41 @@
     var role = User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value ?? "sin rol";
 }
 
-<div class="container py-4">
-    <div class="d-flex justify-content-between align-items-center mb-4">
+<div class="container silab-page">
+    <div class="silab-page-heading">
         <div>
-            <span class="text-muted small">CU05 · AUTENTICACIÓN</span>
-            <h1 class="mb-1">Hola, @User.Identity?.Name</h1>
-            <p class="text-muted mb-0">Sesión iniciada como <strong>@role</strong>.</p>
+            <span class="silab-eyebrow">CU05 · AUTENTICACIÓN</span>
+            <h1>Hola, @User.Identity?.Name</h1>
+            <p>Panel de acceso y estado de tu sesión.</p>
         </div>
         <form asp-action="Logout" method="post">
-            <button type="submit" class="btn btn-outline-secondary">Cerrar sesión</button>
+            <button type="submit" class="btn silab-btn-outline">Cerrar sesión</button>
         </form>
     </div>
 
-    <div class="alert alert-success" role="status">
-        Tu identidad fue validada correctamente. El resto de módulos podrá usar este rol para autorizar sus operaciones.
+    <div class="silab-dashboard-grid">
+        <section class="silab-panel silab-role-card">
+            <span class="silab-card-icon">SL</span>
+            <div>
+                <span class="silab-eyebrow">ROL ACTIVO</span>
+                <h2>@role</h2>
+                <p>Tu identidad fue validada correctamente.</p>
+            </div>
+        </section>
+        <section class="silab-panel silab-quick-card">
+            <span class="silab-eyebrow">ACCESOS RÁPIDOS</span>
+            <h2>Continúa tu gestión</h2>
+            @if (User.IsInRole("propietario"))
+            {
+                <div class="silab-quick-actions">
+                    <a asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva" class="btn silab-btn-primary">Nueva solicitud</a>
+                    <a asp-area="solicitud-seguimiento" asp-controller="SolicitudSeguimiento" asp-action="Index" class="btn silab-btn-outline">Ver mis trámites</a>
+                </div>
+            }
+            else
+            {
+                <p class="mb-0">Los accesos operativos de tu rol se habilitarán en los siguientes sprints.</p>
+            }
+        </section>
     </div>
 </div>

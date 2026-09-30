@@ -20,23 +20,371 @@ html {
 body {
   margin-bottom: 60px;
   background: #f4f7f9;
+  color: #1e293b;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.silab-shell {
+  min-height: 100vh;
+}
+
+.silab-authenticated {
+  padding-left: 280px;
+}
+
+.silab-sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 20;
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+  padding: 2rem 1.5rem 1.5rem;
+  color: #fff;
+  background: linear-gradient(180deg, #0785c5 0%, #0878b5 100%);
+}
+
+.silab-sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  margin: 0 .4rem 3rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.silab-sidebar-brand .silab-brand-mark {
+  color: #0785c5;
+  background: #fff;
+}
+
+.silab-sidebar-brand strong,
+.silab-sidebar-brand small {
+  display: block;
+}
+
+.silab-sidebar-brand strong {
+  font-size: 1.25rem;
+}
+
+.silab-sidebar-brand small {
+  font-size: .65rem;
+  letter-spacing: .18em;
+  opacity: .75;
+}
+
+.silab-sidebar-nav {
+  display: grid;
+  gap: .4rem;
+}
+
+.silab-sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .85rem 1rem;
+  border-radius: 9px;
+  color: rgba(255, 255, 255, .86);
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.silab-sidebar-link span {
+  width: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.silab-sidebar-link:hover,
+.silab-sidebar-link:focus {
+  color: #fff;
+  background: rgba(0, 91, 153, .55);
+}
+
+.silab-sidebar-footer {
+  display: grid;
+  gap: .3rem;
+  margin-top: auto;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, .25);
+  color: rgba(255, 255, 255, .9);
+  font-size: .72rem;
+}
+
+.silab-sidebar-footer span {
+  opacity: .75;
+}
+
+.silab-auth-header {
+  min-height: 72px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #fff;
+}
+
+.silab-auth-header .container-fluid {
+  display: flex;
+  min-height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+}
+
+.silab-header-crumb {
+  color: #64748b;
+  font-size: .85rem;
+}
+
+.silab-header-user {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  color: #1e293b;
+  font-size: .82rem;
+  text-align: right;
+}
+
+.silab-header-user-link {
+  padding: .35rem .5rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.silab-header-user-link:hover,
+.silab-header-user-link:focus {
+  color: #1e3a8a;
+  background: #f1f5f9;
+}
+
+.silab-header-user strong,
+.silab-header-user small {
+  display: block;
+}
+
+.silab-header-user small {
+  color: #64748b;
+}
+
+.silab-header-bell {
+  color: #1e3a8a;
+  font-size: 1.35rem;
+}
+
+.silab-avatar {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #1e3a8a;
+  font-weight: 800;
+}
+
+.silab-navbar {
+  min-height: 76px;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, .04);
+}
+
+.silab-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .7rem;
+  color: #1e3a8a;
+  text-decoration: none;
+}
+
+.silab-brand:hover {
+  color: #152c6b;
+}
+
+.silab-brand-mark,
+.silab-card-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  color: #fff;
+  background: #1e3a8a;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+}
+
+.silab-brand strong {
+  display: block;
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.silab-brand small {
+  display: block;
+  margin-top: .2rem;
+  color: #64748b;
+  font-size: .58rem;
+  letter-spacing: .15em;
+}
+
+.silab-nav .nav-link {
+  margin-left: .35rem;
+  padding: .65rem .9rem !important;
+  border-radius: 8px;
+  color: #475569;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.silab-nav .nav-link:hover {
+  color: #1e3a8a;
+  background: #eff6ff;
+}
+
+.silab-nav-account,
+.silab-nav-login {
+  border-radius: 8px;
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+.silab-nav-account {
+  color: #1e3a8a;
+  border: 1px solid #b7c4d8;
+  background: #fff;
+}
+
+.silab-nav-login,
+.silab-btn-primary {
+  color: #fff;
+  border: 1px solid #1e3a8a;
+  background: #1e3a8a;
+}
+
+.silab-nav-login:hover,
+.silab-btn-primary:hover {
+  color: #fff;
+  border-color: #152c6b;
+  background: #152c6b;
+}
+
+.silab-main {
+  min-height: calc(100vh - 150px);
+}
+
+.silab-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem max(1rem, calc((100% - 1200px) / 2));
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  background: #fff;
+  font-size: .82rem;
+}
+
+.silab-footer a {
+  color: #1e3a8a;
+  text-decoration: none;
 }
 
 .auth-page {
-  min-height: calc(100vh - 190px);
+  min-height: calc(100vh - 76px);
   display: grid;
-  place-items: center;
-  padding: 3rem 1rem;
-  background: radial-gradient(circle at top right, #dbeafe, transparent 35%);
+  grid-template-columns: 1fr 1fr;
+  margin: -1rem -12px 0;
+  background: #f4f6f8;
 }
 
 .auth-card {
-  width: min(100%, 460px);
-  padding: 2.5rem;
+  align-self: center;
+  width: min(480px, calc(100% - 3rem));
+  margin: 3rem auto;
+  padding: 3rem;
   background: #fff;
   border: 1px solid #e2e8f0;
   border-radius: 16px;
-  box-shadow: 0 18px 45px rgba(30, 58, 138, .12);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, .08);
+}
+
+.auth-showcase {
+  position: relative;
+  display: flex;
+  min-height: 640px;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 4rem 4.5rem;
+  color: #fff;
+  background: #0785c5;
+}
+
+.auth-showcase::after {
+  position: absolute;
+  right: -18%;
+  bottom: 10%;
+  width: 125%;
+  height: 180px;
+  border-top: 22px solid rgba(255, 255, 255, .08);
+  border-radius: 50%;
+  content: "";
+  transform: rotate(25deg);
+}
+
+.auth-showcase-brand {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.auth-showcase-brand .silab-brand-mark {
+  color: #0785c5;
+  background: #fff;
+}
+
+.auth-showcase-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+}
+
+.auth-showcase-eyebrow {
+  color: rgba(255, 255, 255, .65);
+  font-size: .72rem;
+  letter-spacing: .08em;
+}
+
+.auth-showcase h1 {
+  margin: 1.5rem 0;
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.auth-showcase p {
+  max-width: 520px;
+  color: rgba(255, 255, 255, .86);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.auth-showcase-footer {
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 255, 255, .65);
+  font-size: .7rem;
+  letter-spacing: .08em;
+}
+
+.auth-showcase-footer strong {
+  color: #fff;
+  font-size: .85rem;
+  letter-spacing: 0;
 }
 
 .auth-brand {
@@ -107,6 +455,162 @@ body {
   border-radius: 14px;
   background: #fff;
   box-shadow: 0 8px 24px rgba(15, 23, 42, .06);
+}
+
+.silab-page-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.silab-page-heading h1 {
+  margin: .35rem 0 .4rem;
+  color: #1e293b;
+  font-size: clamp(1.6rem, 3vw, 2.15rem);
+  font-weight: 800;
+}
+
+.silab-page-heading p {
+  margin: 0;
+  color: #64748b;
+}
+
+.silab-eyebrow {
+  color: #1e3a8a;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
+.silab-btn-outline {
+  color: #1e3a8a;
+  border: 1px solid #b7c4d8;
+  border-radius: 8px;
+  background: #fff;
+  font-weight: 700;
+}
+
+.silab-btn-outline:hover {
+  color: #1e3a8a;
+  border-color: #8fa4c2;
+  background: #f8fafc;
+}
+
+.silab-dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, .8fr) minmax(320px, 1.2fr);
+  gap: 1rem;
+}
+
+.silab-role-card,
+.silab-quick-card,
+.silab-info-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.silab-card-icon-success {
+  background: #16835b;
+}
+
+.silab-card-icon-danger {
+  background: #c2413b;
+}
+
+.silab-role-card h2,
+.silab-quick-card h2,
+.silab-info-banner h2 {
+  margin: .25rem 0 .4rem;
+  color: #1e293b;
+  font-size: 1.15rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.silab-role-card p,
+.silab-quick-card p,
+.silab-info-banner p {
+  margin: 0;
+  color: #64748b;
+}
+
+.silab-quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin-top: 1rem;
+}
+
+.silab-empty-state {
+  display: grid;
+  justify-items: center;
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 4rem 2rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, .06);
+  text-align: center;
+}
+
+.silab-empty-state h1 {
+  margin: .7rem 0 .5rem;
+  color: #1e293b;
+  font-weight: 800;
+}
+
+.silab-empty-state p {
+  color: #64748b;
+}
+
+.silab-reference {
+  color: #64748b;
+}
+
+.silab-success-state {
+  border-top: 4px solid #35c98b;
+}
+
+.silab-status {
+  color: #92400e;
+  background: #fef3c7;
+  text-transform: capitalize;
+}
+
+.silab-status-aprobado {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.silab-status-rechazado {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.silab-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.silab-detail-block {
+  display: grid;
+  gap: .35rem;
+  padding: 1.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.silab-detail-value {
+  color: #1e293b;
+  font-size: 1.1rem;
 }
 
 .silab-panel-header {
@@ -466,6 +970,41 @@ body {
 }
 
 @media (max-width: 900px) {
+  .silab-authenticated {
+    padding-left: 0;
+  }
+
+  .silab-sidebar {
+    position: static;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .silab-sidebar-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .silab-sidebar-footer {
+    display: none;
+  }
+
+  .silab-auth-header .container-fluid {
+    padding: 0 1rem;
+  }
+
+  .auth-page {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-showcase {
+    min-height: 360px;
+    padding: 2rem;
+  }
+
+  .auth-showcase-copy {
+    margin-top: 3rem;
+  }
+
   .public-filters,
   .public-layout {
     grid-template-columns: 1fr;
@@ -473,5 +1012,26 @@ body {
 
   .public-map {
     min-height: 380px;
+  }
+
+  .silab-dashboard-grid,
+  .silab-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .silab-page-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .silab-page-heading .btn {
+    width: 100%;
+  }
+
+  .silab-footer {
+    align-items: center;
+    flex-direction: column;
   }
 }

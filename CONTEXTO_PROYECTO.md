@@ -542,6 +542,7 @@ El proceso de prueba HTTP pudo finalizar con código distinto de cero al detener
 - `Infrastructure/Routing/RouteConfig.cs`: rutas por área, raíz pública y rutas convencionales.
 - `Views/Shared/_Layout.cshtml`: layout y navegación global.
 - `wwwroot/css/site.css`: estilos de autenticación, público, registro y seguimiento.
+- `ESTILO_VISUAL.md`: guía visual oficial basada en la demostración de Figma.
 - `CONTRATO_DATOS.md`: contrato formal de entidades.
 - `TAREAS_SPRINT1.md`: asignación del sprint.
 - `README.md`: resumen de arquitectura, ramas y convivencia.

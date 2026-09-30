@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,51 +8,101 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SEDESLABORATORIO.styles.css" asp-append-version="true" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+<body class="silab-shell @(User.Identity?.IsAuthenticated == true ? "silab-authenticated" : "silab-public")">
+    @if (User.Identity?.IsAuthenticated == true)
+    {
+        <aside class="silab-sidebar">
+            <a class="silab-sidebar-brand" asp-area="publico" asp-controller="Publico" asp-action="Index">
+                <span class="silab-brand-mark">SL</span>
+                <span><strong>SI_Lab</strong><small>SEDES</small></span>
+            </a>
+            <nav class="silab-sidebar-nav" aria-label="Navegación principal">
+                <a asp-area="solicitud-seguimiento" asp-controller="SolicitudSeguimiento" asp-action="Index" class="silab-sidebar-link">
+                    <span>▣</span> Trámites
+                </a>
+                <a asp-area="auth" asp-controller="Auth" asp-action="Dashboard" class="silab-sidebar-link">
+                    <span>◉</span> Mi cuenta
+                </a>
+                @if (User.IsInRole("propietario"))
+                {
+                    <a asp-area="solicitud-seguimiento" asp-controller="SolicitudSeguimiento" asp-action="Index" class="silab-sidebar-link">
+                        <span>▦</span> Mis establecimientos
+                    </a>
+                    <a asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva" class="silab-sidebar-link">
+                        <span>⊕</span> Nueva solicitud
+                    </a>
+                }
+                <a asp-area="publico" asp-controller="Publico" asp-action="Index" class="silab-sidebar-link">
+                    <span>⌕</span> Laboratorios públicos
+                </a>
+            </nav>
+            <div class="silab-sidebar-footer">
+                <strong>SEDES Cochabamba</strong>
+                <span>Portal de trámites y requisitos</span>
+            </div>
+        </aside>
+        <header class="silab-auth-header">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="publico" asp-controller="Publico" asp-action="Index">SI_Lab</a>
+                <span class="silab-header-crumb">Portal de Trámites SEDES</span>
+                <a class="silab-header-user silab-header-user-link" asp-area="auth" asp-controller="Auth" asp-action="Dashboard" aria-label="Ir a mi cuenta">
+                    <span class="silab-header-bell">♧</span>
+                    <span><strong>@User.Identity?.Name</strong><small>@(User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value ?? "Usuario")</small></span>
+                    <span class="silab-avatar">@(User.Identity?.Name?.FirstOrDefault() ?? 'U')</span>
+                </a>
+            </div>
+        </header>
+    }
+    else
+    {
+        <header>
+            <nav class="navbar navbar-expand-lg silab-navbar">
+            <div class="container">
+                <a class="navbar-brand silab-brand" asp-area="publico" asp-controller="Publico" asp-action="Index">
+                    <span class="silab-brand-mark">SL</span>
+                    <span><strong>SI_Lab</strong><small>SEDES · TRÁMITES</small></span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav flex-grow-1 silab-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="publico" asp-controller="Publico" asp-action="Index">Laboratorios</a>
+                            <a class="nav-link" asp-area="publico" asp-controller="Publico" asp-action="Index">Laboratorios</a>
                         </li>
                         @if (User.Identity?.IsAuthenticated == true && User.IsInRole("propietario"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva">Nueva solicitud</a>
+                                <a class="nav-link" asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva">Nueva solicitud</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="solicitud-seguimiento" asp-controller="SolicitudSeguimiento" asp-action="Index">Mis trámites</a>
+                                <a class="nav-link" asp-area="solicitud-seguimiento" asp-controller="SolicitudSeguimiento" asp-action="Index">Mis trámites</a>
                             </li>
                         }
                     </ul>
                     @if (User.Identity?.IsAuthenticated == true)
                     {
-                        <a class="btn btn-sm btn-outline-primary" asp-area="auth" asp-controller="Auth" asp-action="Dashboard">Mi cuenta</a>
+                        <a class="btn silab-nav-account" asp-area="auth" asp-controller="Auth" asp-action="Dashboard">Mi cuenta</a>
                     }
                     else
                     {
-                        <a class="btn btn-sm btn-primary" asp-area="auth" asp-controller="Auth" asp-action="Login">Ingresar</a>
+                        <a class="btn silab-nav-login" asp-area="auth" asp-controller="Auth" asp-action="Login">Ingresar</a>
                     }
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
+            </nav>
+        </header>
+    }
+    <div class="silab-main">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="silab-footer">
         <div class="container">
-            &copy; 2026 - SEDESLABORATORIO - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <span>© 2026 SI_Lab · SEDES</span>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -8,10 +8,10 @@
     <div class="silab-panel">
         <div class="silab-panel-header">
             <div>
-                <span class="text-muted small">PORTAL DE TRÁMITES · PROPIETARIO</span>
+                <span class="silab-eyebrow">PORTAL DE TRÁMITES · PROPIETARIO</span>
                 <h1>Mis solicitudes</h1>
             </div>
-            <a asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva" class="btn btn-primary">Nueva solicitud</a>
+            <a asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva" class="btn silab-btn-primary">Nueva solicitud</a>
         </div>
 
         @if (TempData["Success"] is string successMessage)
@@ -52,10 +52,10 @@
                                     @solicitud.TipoLaboratorio · Coordenadas: @solicitud.Coordenadas
                                 </div>
                             </td>
-                            <td><span class="silab-status">@solicitud.Estado</span></td>
+                            <td><span class="silab-status silab-status-@solicitud.Estado">@solicitud.Estado.Replace("_", " ")</span></td>
                             <td>@solicitud.FechaCreacion.ToString("dd/MM/yyyy HH:mm")</td>
                             <td class="text-end">
-                                <a asp-action="Details" asp-route-id="@solicitud.Id" class="btn btn-outline-primary btn-sm">Ver detalle</a>
+                                <a asp-action="Details" asp-route-id="@solicitud.Id" class="btn silab-btn-outline btn-sm">Ver detalle</a>
                             </td>
                         </tr>
                     }

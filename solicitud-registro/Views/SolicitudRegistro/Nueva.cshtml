@@ -24,6 +24,8 @@
     
     .document-upload-zone { border: 2px dashed #cbd5e0; border-radius: 8px; padding: 2rem; text-align: center; background-color: #f8fafc; margin-bottom: 1.5rem; transition: border-color 0.2s; }
     .document-upload-zone:hover { border-color: #3182ce; }
+    .solicitud-map { height: 300px; border: 1px solid #cbd5e0; border-radius: 8px; overflow: hidden; }
+    .solicitud-map-help { font-size: 0.8rem; color: #718096; margin-top: 0.5rem; }
 </style>
 
 <div class="container-fluid py-4">
@@ -79,7 +81,11 @@
                     
                     <!-- Previsualización del Mapa (Figma) -->
                     <div class="col-12 mt-3">
-                        <div class="rounded d-flex flex-column align-items-center justify-content-center text-muted" style="height: 180px; background-color: #e2e8f0; border: 1px solid #cbd5e0;">
+                        <div id="solicitud-map" class="solicitud-map" aria-label="Previsualización de la ubicación del laboratorio"></div>
+                        <p class="solicitud-map-help mb-0">
+                            Escribe las coordenadas o arrastra el marcador para ajustar la ubicación.
+                        </p>
+                        <div class="d-none">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="mb-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"/></svg>
                             <span>Vista previa del mapa georreferenciado</span>
                         </div>
@@ -114,3 +120,62 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        (() => {
+            const mapElement = document.getElementById("solicitud-map");
+            const latitudeInput = document.getElementById("Latitud");
+            const longitudeInput = document.getElementById("Longitud");
+
+            if (!mapElement || !latitudeInput || !longitudeInput || typeof L === "undefined") {
+                return;
+            }
+
+            const defaultLocation = [-17.3935, -66.1570];
+            const parseCoordinate = (value, fallback) => {
+                const coordinate = Number.parseFloat(value.replace(",", "."));
+                return Number.isFinite(coordinate) ? coordinate : fallback;
+            };
+            const isValidLocation = (latitude, longitude) =>
+                latitude >= -90 && latitude <= 90 && longitude >= -180 && longitude <= 180;
+
+            const map = L.map(mapElement).setView(defaultLocation, 13);
+            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                attribution: "&copy; OpenStreetMap contributors"
+            }).addTo(map);
+
+            const marker = L.marker(defaultLocation, { draggable: true }).addTo(map);
+
+            const updateMarkerFromInputs = () => {
+                const latitude = parseCoordinate(latitudeInput.value, defaultLocation[0]);
+                const longitude = parseCoordinate(longitudeInput.value, defaultLocation[1]);
+
+                if (!isValidLocation(latitude, longitude)) {
+                    return;
+                }
+
+                const location = [latitude, longitude];
+                marker.setLatLng(location);
+                map.setView(location, Math.max(map.getZoom(), 13));
+            };
+
+            marker.on("dragend", () => {
+                const location = marker.getLatLng();
+                latitudeInput.value = location.lat.toFixed(6);
+                longitudeInput.value = location.lng.toFixed(6);
+            });
+
+            latitudeInput.addEventListener("input", updateMarkerFromInputs);
+            longitudeInput.addEventListener("input", updateMarkerFromInputs);
+
+            if (latitudeInput.value && longitudeInput.value) {
+                updateMarkerFromInputs();
+            }
+
+            setTimeout(() => map.invalidateSize(), 100);
+        })();
+    </script>
+}
