@@ -1,0 +1,36 @@
+Browser tab: 1, Title: "Laboratorio con ubicación por corregir - SEDESLABORATORIO", URL: "http://localhost:5287/publico/Publico/Detalle/6".
+1 AXWebArea Laboratorio con ubicación por corregir - SEDESLABORATORIO, URL: localhost:5287/publico/Publico/Detalle/6
+	2 link Description: Saltar al contenido, Value: localhost:5287/publico/Publico/Detalle/6#main-content
+	3 container
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5287/publico/Publico
+		5 container public-navigation
+			6 content list
+				7 link Description: Laboratorios, Value: localhost:5287/publico/Publico
+				8 link Description: Requerimientos, Value: localhost:5287/publico/Publico/Requerimientos
+			9 link Description: Iniciar sesión, Value: localhost:5287/auth/Auth/Login
+	10 container main-content
+		11 link Description: ← Volver al directorio, Value: localhost:5287/publico/Publico
+		12 text ✚
+		13 text Clínico
+		14 heading Laboratorio con ubicación por corregir, Value: 1
+			15 text Laboratorio con ubicación por corregir
+		16 text Actualmente abierto
+		17 container
+			18 heading Servicios disponibles, Value: 2
+				19 text Servicios disponibles
+			20 content list
+				21 container
+					22 AXListMarker • 
+					23 text Hematología
+				24 container
+					25 AXListMarker • 
+					26 text Química clínica
+		27 container
+			28 heading Ubicación, Value: 2
+				29 text Ubicación
+			30 text Cochabamba · DEMO: Av. de pruebas 123 Código: QA-UBICACION-INVALIDA Teléfono: 00000000 La ubicación está pendiente de corrección. Consulta la dirección de referencia del establecimiento.
+	31 container
+		32 text © 2026 SI_Lab · SEDES Cochabamba
+		33 link Description: Privacidad, Value: localhost:5287/Home/Privacy
+
+The focused UI element is 1 AXWebArea Laboratorio con ubicación por corregir - SEDESLABORATORIO, URL: localhost:5287/publico/Publico/Detalle/6

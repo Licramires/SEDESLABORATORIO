@@ -1,0 +1,97 @@
+Browser tab: 5, Title: "Solicitud #16 - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Detalle/16".
+1 AXWebArea Solicitud #16 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/16
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Detalle/16#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Solicitud #16
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 text Documento guardado.
+		19 link Description: ← Volver a trámites, Value: localhost:5281/Gestion
+		20 container
+			21 text Solicitud #16 · Apertura
+			22 heading Laboratorio campaña UI 183, Value: 1
+				23 text Laboratorio campaña UI 183
+			24 text Clínico · Cochabamba · -17.39, -66.16 Propietario: Propietario Demo Borrador
+			25 link Description: Corregir datos del borrador, Value: localhost:5281/Gestion/EditarDatos/16
+			26 heading Documentación, Value: 2
+				27 text Documentación
+			28 text Agregue PDF uno por uno; cada archivo guardado se incorpora a la documentación de este expediente. Puede continuar después y quitar los pendientes u observados antes de enviar. No hay un límite de cinco archivos; cada PDF admite hasta 10 MB.
+			29 link Description: Consultar requerimientos para registrar un laboratorio, Value: localhost:5281/publico/Publico/Requerimientos
+			30 text 2 PDF en la lista de envío.
+			31 text  Los archivos retirados o reemplazados permanecen en el historial.
+			32 heading Requisitos generales, Value: 3
+				33 text Requisitos generales
+			34 heading Licencia municipal Obligatorio · requisito v1, Value: 3
+				35 text Licencia municipal
+				36 text Obligatorio · requisito v1
+			37 text Versión 1: pendiente
+			38 text archivo-1.pdf
+			39 link Description: Licencia municipal · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/40
+			40 text Pendiente de revisión
+			41 button Quitar PDF de la lista de envío
+			42 container
+				43 text PDF para Licencia municipal
+				44 button PDF para Licencia municipal
+				45 button Guardar nueva versión
+			46 heading Plano arquitectónico Obligatorio · requisito v1, Value: 3
+				47 text Plano arquitectónico
+				48 text Obligatorio · requisito v1
+			49 text Versión 1: pendiente
+			50 text archivo-2.pdf
+			51 link Description: Plano arquitectónico · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/41
+			52 text Pendiente de revisión
+			53 button Quitar PDF de la lista de envío
+			54 container
+				55 text PDF para Plano arquitectónico
+				56 button PDF para Plano arquitectónico
+				57 button Guardar nueva versión
+			58 heading Certificado sanitario Obligatorio · requisito v1, Value: 3
+				59 text Certificado sanitario
+				60 text Obligatorio · requisito v1
+			61 text Pendiente de carga
+			62 container
+				63 text PDF para Certificado sanitario
+				64 button PDF para Certificado sanitario
+				65 button Guardar nueva versión
+			66 container
+				67 text Agregar otro PDF complementario
+				68 button Agregar otro PDF complementario
+			69 button Guardar complemento
+		70 container
+			71 heading Enviar a revisión, Value: 2
+				72 text Enviar a revisión
+			73 text Complete los requisitos y reemplace los PDF observados. Los documentos aprobados se conservan.
+			74 button Enviar solicitud
+		75 container
+			76 heading Inspecciones e historial de asignaciones, Value: 2
+				77 text Inspecciones e historial de asignaciones
+			78 text No hay inspecciones asignadas.
+		79 heading Citaciones y evidencia, Value: 2
+			80 text Citaciones y evidencia
+		81 container
+			82 heading Historial del trámite, Value: 2
+				83 text Historial del trámite
+			84 text Fechas en UTC.
+			85 content list
+				86 container
+					87 AXListMarker 1. 
+					88 text 23/10/2026 05:20 · Propietario Demo Documento Plano arquitectónico, versión 1, cargado para revisión.
+				89 container
+					90 AXListMarker 2. 
+					91 text 23/10/2026 05:20 · Propietario Demo Documento Licencia municipal, versión 1, cargado para revisión.
+	92 container
+		93 text © 2026 SI_Lab · SEDES Cochabamba
+		94 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Solicitud #16 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/16

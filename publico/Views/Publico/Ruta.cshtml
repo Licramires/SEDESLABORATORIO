@@ -7,12 +7,18 @@
     <div class="public-route-card">
         <span class="public-eyebrow public-eyebrow-dark">RUTA DE NAVEGACIÓN</span>
         <h1>Cómo llegar al laboratorio</h1>
+        @if (ViewData["Destination"] is string) {
         <p>Permite al navegador usar tu ubicación actual para abrir una ruta hacia el establecimiento seleccionado.</p>
         <div class="public-route-actions">
-            <a id="route-link" class="btn public-btn-primary" target="_blank" rel="noopener">Usar mi ubicación</a>
+            <button type="button" id="route-link" class="btn public-btn-primary">Usar mi ubicación</button>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=@ViewData["Destination"]" class="btn public-btn-outline" target="_blank" rel="noopener">Elegir origen en Google Maps</a>
             <a asp-action="Index" class="btn public-btn-outline">Elegir otro laboratorio</a>
         </div>
         <div id="route-message" class="public-route-message" role="status"></div>
+        } else {
+            <p role="status">La ubicación de este laboratorio está pendiente de corrección. No se puede generar una ruta con sus coordenadas actuales.</p>
+            <a asp-action="Index" class="btn public-btn-outline">Elegir otro laboratorio</a>
+        }
     </div>
 </div>
 
@@ -22,6 +28,7 @@
             const link = document.getElementById("route-link");
             const message = document.getElementById("route-message");
             const destination = "@ViewData["Destination"]";
+            if (!link) return;
             link.addEventListener("click", event => {
                 event.preventDefault();
                 if (!navigator.geolocation) {
@@ -31,9 +38,9 @@
                 message.textContent = "Obteniendo tu ubicación...";
                 navigator.geolocation.getCurrentPosition(position => {
                     const origin = `${position.coords.latitude},${position.coords.longitude}`;
-                    link.href = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${encodeURIComponent(destination)}`;
+                    const route = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${encodeURIComponent(destination)}`;
                     message.textContent = "Ruta lista. Abriendo Google Maps...";
-                    window.location.assign(link.href);
+                    window.location.assign(route);
                 }, () => {
                     message.textContent = "No pudimos obtener tu ubicación. Revisa los permisos del navegador.";
                 }, {

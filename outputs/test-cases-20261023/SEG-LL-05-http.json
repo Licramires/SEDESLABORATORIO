@@ -1,0 +1,47 @@
+[
+  {
+    "state": "borrador",
+    "role": "propietario",
+    "label": "Borrador"
+  },
+  {
+    "state": "en_revision",
+    "role": "coordinador",
+    "label": "Revisión documental"
+  },
+  {
+    "state": "aprobado",
+    "role": "coordinador",
+    "label": "Por asignar inspección"
+  },
+  {
+    "state": "inspeccion",
+    "role": "coordinador",
+    "label": "Inspección"
+  },
+  {
+    "state": "revision_acta",
+    "role": "coordinador",
+    "label": "Revisión de acta"
+  },
+  {
+    "state": "observado",
+    "role": "coordinador",
+    "label": "Por subsanar"
+  },
+  {
+    "state": "rechazado",
+    "role": "coordinador",
+    "label": "Rechazado"
+  },
+  {
+    "state": "revision_legal",
+    "role": "coordinador",
+    "label": "Revisión legal"
+  },
+  {
+    "state": "habilitado",
+    "role": "coordinador",
+    "label": "Habilitado"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "originales_revisados": 36,
+  "casos_nuevos": 147,
+  "total": 183,
+  "estado_de_todos": "No ejecutado",
+  "ids_unicos": 183,
+  "filas_comparadas_con_contenido": 183,
+  "hojas": 1,
+  "autofiltro": "A2:I185",
+  "validacion_estados": "G3:G185",
+  "encabezados_congelados": 2,
+  "sin_formulas": true,
+  "fuente_sha256": "a86f0547f82300baf0953c744e2b840d580aadee22d4a6c3bcacba72ec2564ce",
+  "salida_sha256": "7b18b2119176d6569868bf2f6ef414c31c546a0afe5c741cb3ca46d86e228755"
+}

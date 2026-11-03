@@ -1,0 +1,30 @@
+Browser tab: 6, Title: "Cómo llegar - SEDESLABORATORIO", URL: "http://localhost:5281/publico/Publico/Ruta?laboratorioId=6".
+1 AXWebArea Cómo llegar - SEDESLABORATORIO, URL: localhost:5281/publico/Publico/Ruta?laboratorioId=6
+	2 link Description: Saltar al contenido, Value: localhost:5281/publico/Publico/Ruta?laboratorioId=6#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			8 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			9 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		10 text SEDES Cochabamba
+		11 text Servicio Departamental de Salud Portal de trámites y requisitos
+	12 container
+		13 text Consola del coordinador  Cómo llegar
+		14 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		15 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	16 container main-content
+		17 link Description: ← Volver al directorio, Value: localhost:5281/publico/Publico
+		18 text RUTA DE NAVEGACIÓN
+		19 heading Cómo llegar al laboratorio, Value: 1
+			20 text Cómo llegar al laboratorio
+		21 text Permite al navegador usar tu ubicación actual para abrir una ruta hacia el establecimiento seleccionado.
+		22 button Usar mi ubicación, ID: route-link
+		23 link Description: Elegir origen en Google Maps, Value: google.com/maps/dir/?api=1&destination=999,999
+		24 link Description: Elegir otro laboratorio, Value: localhost:5281/publico/Publico
+	25 container
+		26 text © 2026 SI_Lab · SEDES Cochabamba
+		27 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Cómo llegar - SEDESLABORATORIO, URL: localhost:5281/publico/Publico/Ruta?laboratorioId=6

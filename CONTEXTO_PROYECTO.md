@@ -1,583 +1,116 @@
-# Contexto completo del proyecto SI_Lab
-
-Este archivo sirve como punto de continuidad para integrantes del equipo, nuevas sesiones de Copilot y otros agentes. Describe el estado conocido del proyecto, su arquitectura, las reglas que deben respetarse, lo que ya está implementado y los siguientes pasos recomendados.
-
-**Última actualización:** 2026-09-28  
-**Repositorio:** `Licramires/SEDESLABORATORIO`  
-**Ruta local habitual:** `C:\Users\Usuario\OneDrive\Documentos\GitHub\SEDESLABORATORIO`  
-**Rama integrada:** `develop`  
-**Commit integrado actual:** `4a4a85c merge: integrar modulo publico en develop`  
-**Estado conocido al generar este documento:** `develop` estaba sincronizada con `origin/develop`; no se debe publicar este archivo sin autorización explícita del usuario.
-
-## 1. Objetivo del sistema
-
-SI_Lab es un sistema para la gestión de habilitación de laboratorios del SEDES. El Sprint 1 se organiza por módulos verticales, de modo que cada integrante trabaja en un módulo completo con sus controladores, modelos/ViewModels y vistas.
-
-Casos de uso incluidos en el alcance actual:
-
-- **CU01-CU04:** landing pública, directorio/mapa de laboratorios, detalle y cómo llegar.
-- **CU05:** inicio de sesión por rol.
-- **CU06-CU07:** creación de una solicitud de habilitación y carga de documentos PDF.
-- **CU08-CU09:** consulta, detalle y envío de solicitudes para revisión.
-
-## 2. Stack y convenciones técnicas
-
-- ASP.NET Core MVC sobre .NET 8.
-- Entity Framework Core 8.0.20.
-- SQLite con la base local `si_lab.db`.
-- Proyecto web: `SEDESLABORATORIO.csproj`.
-- Nullable reference types e implicit usings habilitados.
-- Bootstrap y CSS propio en `wwwroot/css/site.css`.
-- Leaflet 1.9.4 y OpenStreetMap para el mapa público.
-- Google Maps se usa para generar la navegación desde la ubicación del usuario.
-- Organización vertical por módulo:
-
-```text
-auth/
-  Controllers/
-  Models/
-  Services/
-  Views/
-publico/
-  Controllers/
-  Models/
-  Views/
-solicitud-registro/
-  Controllers/
-  Models/
-  Views/
-solicitud-seguimiento/
-  Controllers/
-  Models/
-  Views/
-```
-
-Las entidades compartidas están en `Data/Entities`. El contexto de Entity Framework está en `Data/ApplicationDbContext.cs`. Las rutas están centralizadas en `Infrastructure/Routing/RouteConfig.cs`.
-
-## 3. Estado funcional actual
-
-### 3.1 Módulo `publico/`
-
-Implementa CU01-CU04 y no requiere autenticación.
-
-- Landing/directorio público.
-- Listado ordenado por nombre.
-- Búsqueda por nombre, tipo o servicios.
-- Filtro por tipo.
-- Filtro por estado: abierto o cerrado.
-- Tarjetas con información resumida.
-- Mapa Leaflet con marcadores.
-- Marcadores verdes para laboratorios abiertos y rojos para cerrados.
-- Vista de detalle.
-- Vista de ruta usando geolocalización del navegador.
-- Respuesta `404` para laboratorios inexistentes.
-- Laboratorios demo creados en Development cuando no hay registros.
-
-Archivos principales:
-
-- `publico/Controllers/PublicoController.cs`
-- `publico/Models/PublicoViewModel.cs`
-- `publico/Models/LaboratorioDetalleViewModel.cs`
-- `publico/Views/Publico/Index.cshtml`
-- `publico/Views/Publico/Detalle.cshtml`
-- `publico/Views/Publico/Ruta.cshtml`
-
-### 3.2 Módulo `auth/`
-
-Implementa CU05.
-
-- Login por correo y contraseña.
-- Verificación con `PasswordHasher<Usuario>` usando hash PBKDF2.
-- Cookie de autenticación `si-lab-auth`.
-- Esquema de autenticación `SiLabCookie`.
-- Claims de identificador, nombre, correo y rol.
-- Dashboard posterior al login.
-- Logout.
-- Vista de acceso denegado.
-- Protección de acciones con `[Authorize]` y `[Authorize(Roles = "...")]`.
-- Usuarios demo en Development.
-
-Archivos principales:
-
-- `auth/Controllers/AuthController.cs`
-- `auth/Services/AuthService.cs`
-- `auth/Services/IAuthService.cs`
-- `auth/Models/AuthViewModel.cs`
-- `auth/Models/AuthResult.cs`
-- `auth/REFERENCIA_CU05.md`
-
-### 3.3 Módulo `solicitud-registro/`
-
-Implementa CU06-CU07 y está restringido al rol `propietario`.
-
-- Formulario para crear una nueva solicitud.
-- Validación de nombre, tipo y coordenadas.
-- Creación de `Solicitud` asociada al usuario autenticado.
-- Estado inicial `en_revision`.
-- Fecha de creación en UTC.
-- Serialización de los datos del laboratorio propuesto en JSON.
-- Carga de documentos PDF.
-- Límite de 10 MB por archivo.
-- Validación de extensión `.pdf`.
-- Almacenamiento bajo `wwwroot/uploads/solicitudes/{id}`.
-- Persistencia de documentos dentro de una transacción.
-- Pantalla de confirmación después de crear la solicitud.
-
-Archivos principales:
-
-- `solicitud-registro/Controllers/SolicitudRegistroController.cs`
-- `solicitud-registro/Models/NuevaSolicitudViewModel.cs`
-- `solicitud-registro/Models/SolicitudRegistroViewModel.cs`
-- `solicitud-registro/Views/SolicitudRegistro/Nueva.cshtml`
-- `solicitud-registro/Views/SolicitudRegistro/Exito.cshtml`
-
-### 3.4 Módulo `solicitud-seguimiento/`
-
-Implementa CU08-CU09 para propietarios autenticados.
-
-- Lista únicamente las solicitudes del propietario actual.
-- Muestra estado y fecha de creación.
-- Muestra detalle de una solicitud.
-- Permite enviar una solicitud que está en `en_revision`.
-- Protege el acceso verificando el rol y el `NameIdentifier`.
-- Convierte el JSON de `DatosLaboratorioPropuesto` a información legible:
-  - nombre,
-  - tipo,
-  - latitud,
-  - longitud.
-- No debe volver a mostrar el JSON crudo al usuario.
-- Las solicitudes que no pertenecen al propietario actual responden `404`.
+## Estado vigente — cierre de los tres bugs del 26/10/2026
 
-Archivos principales:
+BUG-01 resuelto mediante `RecuperacionOperacionFilter`: las navegaciones HTML de formularios reciben una vista con menú y enlace GET seguro al recibir 400/409. Los clientes HTTP y métricas conservan sus formatos. BUG-02: aprobar de nuevo el mismo PDF ya conforme es idempotente y el botón desaparece; observar sigue permitido. BUG-03: se validan coordenadas persistidas antes de publicar marcadores, calcular el más cercano o generar rutas; las fichas inválidas conservan dirección y aviso sin inventar datos.
 
-- `solicitud-seguimiento/Controllers/SolicitudSeguimientoController.cs`
-- `solicitud-seguimiento/Models/SolicitudSeguimientoViewModel.cs`
-- `solicitud-seguimiento/Views/SolicitudSeguimiento/Index.cshtml`
-- `solicitud-seguimiento/Views/SolicitudSeguimiento/Details.cshtml`
+389 pruebas .NET y 28 JavaScript aprobadas. Navegador real sobre una copia desechable: validación vacía, conflicto de dos pestañas, regreso al expediente, aprobación documental y ruta inválida verificados. Base original y sus 54 archivos privados idénticos al punto previo `App_Data/checkpoints/20261026-144304-antes-bugs-pendientes/`; sin migración ni producción. Ver `docs/CIERRE_BUGS_2026-10-26.md` y `outputs/bugs-20261026/verificacion.json`.
 
-## 4. Contrato de datos
+Los tres bugs están cerrados; los nueve casos manuales/parciales no se certifican por estas correcciones. Los Excel del 23/10 conservan sus resultados históricos. PUB-EXT-09 supera la reejecución dirigida; los errores de E2E-EXT-04 están corregidos, pero no se declara completado todo su inventario de controles.
 
-La referencia formal está en `CONTRATO_DATOS.md`. No cambiar nombres de campos ni valores enumerados sin avisar al equipo.
+## Refactorización SOLID del 26/10/2026 — estado anterior
 
-### Usuario
+Las decisiones se ejecutan mediante `IDecisionesTramite` e implementaciones de `IAccionTramite`, con registro extensible y permisos declarados por manejador. Contratos de datos y archivos en `Application/Abstractions`; todas las interfaces de datos de una petición comparten la misma unidad de trabajo EF. Calendario, historial, avisos, alertas, reservas, agenda, consulta de métricas y exportación CSV están separados. Autenticación y administración reciben `IPasswordHasher<Usuario>`. No añadir nuevas decisiones al controlador ni duplicar su selección en el filtro de permisos.
 
-- `Id`
-- `Nombre`
-- `Email`
-- `Password`
-- `Rol`
+377 pruebas .NET aprobadas: las 366 anteriores y 11 nuevas de extensión, sustitución, permisos de precondición, reloj, hash, transacción y formularios incompletos. Compilación Release con cero advertencias/errores. Base original y 54 archivos privados preservados; cero vistas/estilos/scripts modificados y ninguna migración. Punto previo: `App_Data/checkpoints/20261026-135109-antes-solid/`. Ver `docs/ARQUITECTURA_SOLID.md` y `outputs/solid-20261026/verificacion.json`.
 
-Roles válidos:
+Los Excel de la campaña del 23/10 son registros históricos: 172 exitosos, 2 fallidos, 9 bloqueados y 3 bugs. La refactorización SOLID no ha corregido ni cerrado esos bugs ni completa los pendientes manuales. Producción sigue excluida.
 
-```text
-propietario
-coordinador
-supervisor
-gerente
-administrador
-```
+## Pruebas locales del 23/10/2026 — estado anterior
 
-### Laboratorio
+366 pruebas .NET y 28 JavaScript aprobadas. Restauración reconstruida desde el respaldo y arrancada, con sus 360 pruebas originales aprobadas. Ensayos reales locales de concurrencia, cortes de carga, reinicio inesperado, almacenamiento no disponible, caída entre archivo y confirmación y bloqueo de SQLite. Correcciones de recuperación privada de archivos, exclusión de instancia, respuestas 503/409 y espera limitada de actualización JSON. Sin migración ni cambios en la base original o sus 47 archivos privados.
 
-- `Id`
-- `Nombre`
-- `Tipo`
-- `Lat`
-- `Lng`
-- `Estado`
-- `Servicios`
+Producción excluida por indicación del usuario. La ampliación de interfaz quedó detenida al no poder verificar la URL desde el control de Windows; GPS físico, otros dispositivos y contenido institucional pendiente no están certificados. Informe vigente: [Pendientes locales](docs/CIERRE_PENDIENTES_LOCALES_2026-10-23.md). Punto previo: `App_Data/checkpoints/20261022-234400-antes-cierre-pendientes/`. Los apartados siguientes conservan las revisiones anteriores.
 
-Estados válidos:
+## Auditoría ampliada — 22/10/2026 (revisión anterior)
 
-```text
-abierto
-cerrado
-```
+360 pruebas .NET y 6 JavaScript aprobadas. Inventario de 69 acciones: 301 consultas por perfil, 603 enlaces, 318 comprobaciones de seguridad POST, 685 transiciones prohibidas, 17 permitidas y sus reenvíos, 228 casos de campos inválidos y los 11 permisos configurables. Navegación real con los seis perfiles y el portal público; correcciones de formularios, calendario, concurrencia de servicios y consistencia de renovaciones. Base original idéntica al respaldo y 47 archivos privados conservados, sin nueva migración. Siguen pendientes propietario/vigencia de tres laboratorios heredados y los contenidos institucionales definitivos.
 
-### Solicitud
+Informe y evidencia: [Auditoría ampliada](docs/AUDITORIA_EXHAUSTIVA_2026-10-22.md). Punto previo: `App_Data/checkpoints/20261022-223121-antes-auditoria-exhaustiva/`. Las verificaciones siguientes describen etapas anteriores.
 
-- `Id`
-- `PropietarioId`, FK a `Usuario.Id`
-- `Propietario`
-- `DatosLaboratorioPropuesto`, actualmente JSON almacenado como texto
-- `Estado`
-- `FechaCreacion`
-- colección `Documentos`
+Estado actual del 22/10/2026: auditoría transversal de flujos terminada con 91 pruebas de servidor y 4 de interfaz. Agenda bloquea intervalos solapados incluso si ya hay acta; acta React deriva su resumen sin duplicar hallazgos; revisión legal selecciona documentos; propietario corrige datos antes del primer envío; usuario administrativo usa versión. Navegación centrada en tareas, avanzadas agrupadas. Misma base y mismas reglas para datos iniciales y los demás registros, sin clasificación demo/oficial. Rótulos iniciales y renovaciones corregidos; cuatro horarios históricos distribuidos con autorización y anotación en historial. Novena migración. Ver `docs/AUDITORIA_FLUJOS_2026-10-22.md` y `VERIFICACION.md`. Respaldo: `App_Data/checkpoints/20261021-233744-antes-auditoria-flujos`. Los párrafos fechados posteriores describen etapas anteriores.
 
-Estados actualmente implementados:
+Actualización supervisor/gerencia del 21/10/2026: React local en agenda/rutas y gráficos de métricas, manteniendo .NET MVC, cookies, versiones y decisiones en servidor. Supervisor usa vista `Inspeccion` con recorrido programación → contenido del acta → PDF firmado → revisión; actas y citaciones se listan por supervisor. Métricas visuales se calculan con los registros guardados y los mismos filtros del CSV. `GET /Metricas/Datos` entrega solo agregados autorizados, sin entidades de usuarios. Sin nuevas migraciones. Ver README para compilar React y `docs/supervisor-react-20261021/` para evidencia. Punto previo: `App_Data/checkpoints/20261021-150038-antes-supervisor-react-metricas`.
 
-```text
-en_revision
-aprobado
-rechazado
-```
+Actualización administrativa del 21/10/2026: editor por rol, matriz de funciones y registro de cambios; secciones y gestión completa de requisitos con orden, obligatoriedad, estado y eliminación lógica distinta de desactivación. La consulta pública, el registro y los borradores comparten el catálogo publicado; el expediente enviado conserva su copia con sección y descripción. Ocho migraciones y 53 pruebas. Respaldo previo: `App_Data/checkpoints/20261021-143538-antes-admin-secciones`. Se conserva el diseño oscuro de DESIGN.md. Catálogos y validación de datos conservan su ubicación actual; no se retiraron por la consulta del usuario.
 
-### Documento
+# Contexto actual de SI Lab
 
-- `Id`
-- `SolicitudId`, FK a `Solicitud.Id`
-- `Solicitud`
-- `RequisitoId`
-- `ArchivoPdf`
+Actualización del 21/10/2026: el usuario estableció DESIGN.md como autoridad visual principal. El layout carga `design-theme.css` en lugar del tema Figma anterior. Se aplican fondo casi negro, superficies carbón, acento lavanda, jerarquía tipográfica y controles accesibles sin cambiar los flujos ni la base. Punto previo recuperable: `App_Data/checkpoints/20261021-135546-antes-impeccable`. Las referencias visuales del 18/10 que siguen describen la versión anterior.
 
-Las entidades base no deben contener lógica de negocio. La lógica de cada caso de uso debe permanecer en su módulo, mediante controladores, ViewModels y servicios propios cuando sea necesario.
+Actualizado el 18 de octubre de 2026. El usuario aprobó el plan de `docs/AUDITORIA_Y_PLAN_2026-10-18.md` y se aplicaron las correcciones locales. No se realizó commit, push ni despliegue. El resultado de verificación y los pendientes externos están en `VERIFICACION.md` y `docs/CIERRE_CORRECCIONES_2026-10-18.md`.
 
-## 5. Base de datos y migraciones
+## Alcance
 
-Configuración principal:
+La presentación se ajustó a las exportaciones de `Agent-resources/FigmaSedes`: tema común en `wwwroot/css/figma-theme.css`, iconos SVG locales, navegación activa, menú móvil, formulario por tarjetas y resúmenes derivados de los datos disponibles. El punto de control anterior está en `App_Data/checkpoints/20261018-194800-antes-estilo-figma`. No se modificaron los flujos ni los datos locales durante esta actualización visual; se conservaron las 46 pruebas aprobadas. La guía y las capturas están en `ESTILO_VISUAL.md` y `docs/estilo-figma/`.
 
-- `appsettings.json` activa `Auth:SeedDemoUsers`.
-- `appsettings.Development.json` contiene `DefaultConnection`:
+ASP.NET Core MVC .NET 8, EF Core 8.0.20 y SQLite. Se conservan los módulos originales `auth/`, `publico/`, `solicitud-registro/` y `solicitud-seguimiento/`. La operación integrada usa los controladores de `Controllers/`, vistas compartidas y servicios de `Infrastructure/`.
 
-```text
-Data Source=si_lab.db
-```
+Hay seis perfiles: propietario, coordinador, supervisor, abogado, gerente y administrador. Las restricciones por rol, pertenencia/asignación y permisos se aplican en el servidor. No existen roles arbitrarios que puedan ampliar atribuciones legales.
 
-El arranque ejecuta `DatabaseInitializer.InitializeAsync`, que:
+La correspondencia individual de CU01–CU32 y CU-P1–CU-P4 se conserva en `docs/CASOS_DE_USO.md`. No confundir implementación técnica con validación institucional: todavía deben cargarse los catálogos, formularios y fuentes oficiales.
 
-1. Aplica migraciones pendientes.
-2. En Development y con `Auth:SeedDemoUsers=true`, crea usuarios demo si no existen.
-3. En Development crea laboratorios demo si no existen.
+## Circuito del trámite
 
-Migraciones existentes:
+1. El propietario guarda un borrador con los datos del establecimiento y adjunta PDF. Los archivos iniciales pueden asociarse a requisitos sin volver a subirlos.
+2. Al primer envío se guarda una copia de los requisitos y sus versiones. Esa referencia se conserva durante la subsanación; los cambios posteriores del catálogo se aplican a trámites nuevos.
+3. El coordinador revisa cada documento actual. Puede aprobarlo u observarlo con fundamento. Solo cierra la documentación como aprobada cuando todos los documentos actuales están aprobados y existen los archivos obligatorios.
+4. Una devolución documental permite corregir documentos observados. El rechazo definitivo es una acción diferente y obliga a iniciar otro trámite.
+5. El coordinador asigna al supervisor y puede indicar un intervalo o dejar la programación al supervisor. Este organiza inicio/fin de la visita y el propietario recibe aviso. Se comprueban solapamientos contra otras visitas y se conserva cada asignación anterior.
+6. A partir del inicio programado, el supervisor prepara el contenido estructurado del acta, descarga el formulario/resumen y adjunta la versión firmada. Los puntos de verificación y la plantilla se conservan por inspección. Producción requiere configuración institucional; desarrollo permite ensayos sin ella y lo indica.
+7. El coordinador acepta el resultado o devuelve el acta para otra inspección. Un incumplimiento de campo puede reprogramarse, pero una observación documental o legal no puede saltar su revisión.
+8. El abogado aprueba con PDF firmado, devuelve con observaciones o rechaza definitivamente. Una observación legal vuelve a revisión documental y después a legal sin repetir una visita conforme, salvo que el abogado marque que hace falta otra inspección.
+9. Solo la aprobación legal habilita el laboratorio. Se validan datos oficiales, documentación e inspección; se guarda la vigencia otorgada y un PDF inmutable del cierre.
+10. La renovación utiliza el mismo circuito y conserva el establecimiento. Si la vigencia sigue activa, el año se suma desde su fin; si venció, desde la aprobación. Los duplicados activos se bloquean. La ventana anticipada es configurable y, por defecto, no añade una restricción nueva.
 
-- `Data/Migrations/20260922225808_InitialCreate`
-- `Data/Migrations/20260923042352_AddUniqueEmail`
+Estados: `borrador`, `en_revision`, `aprobado`, `inspeccion`, `revision_acta`, `observado`, `rechazado`, `revision_legal`, `habilitado`. `aprobado` representa documentación conforme, no habilitación. El origen de observación y el motivo de rechazo distinguen los retornos permitidos.
 
-La base local y sus archivos auxiliares están ignorados por Git:
+## Documentos e historial
 
-```text
-si_lab.db
-si_lab.db-shm
-si_lab.db-wal
-```
+- Los PDF y las imágenes de citación se almacenan de forma privada, con claves aleatorias, y se descargan previa autorización. `/uploads` permanece bloqueado.
+- Cada reemplazo conserva el registro y el archivo anteriores, su decisión, motivo, revisor y fecha. Los aprobados requieren una observación antes de reemplazarse.
+- El propietario puede retirar un complemento pendiente u observado de la presentación actual sin borrar su historial. No puede retirar requisitos obligatorios mediante esa acción.
+- Las plantillas públicas son archivos del catálogo, distintos de los documentos privados del expediente. Desactivar un requisito impide su publicación actual sin cambiar la copia de los expedientes recibidos.
+- Los datos de presentación tolerantes a JSON dañado nunca se usan para autorizar una habilitación.
+- Los informes nuevos se guardan al cerrar. Los cierres heredados sin vigencia histórica conservan esa ausencia y se identifican como reconstruidos; no toman la vigencia actual del laboratorio como si fuera la del cierre original.
 
-No se debe usar una base local como fuente para transportar datos entre integrantes. Los cambios de esquema deben hacerse mediante migraciones.
+## Citaciones, plazos y avisos
 
-## 6. Rutas conocidas
+Las citaciones tienen número interno, inspección, supervisor, emisión, motivo, vencimiento, anticipación, evidencia PDF/JPG/PNG y fecha de atención. Los avisos de plazo próximo/vencido llegan al propietario y supervisor sin duplicarse. Una inspección conforme validada atiende las citaciones anteriores.
 
-Las rutas se configuran en `Infrastructure/Routing/RouteConfig.cs`.
+El proceso horario comprueba vigencias, subsanaciones y citaciones. Los plazos de subsanación cuentan lunes a viernes y excluyen los feriados configurados por el administrador; no se inventa un calendario oficial. Un vencimiento de plazo no aplica multas ni rechazos automáticos.
 
-### Públicas
+Configuración opcional:
 
-```text
-GET /
-GET /laboratorios
-GET /laboratorios/Detalle/{id}
-GET /laboratorios/Ruta?laboratorioId={id}
-```
+- `Alertas:LicenciaDias`: anticipación del aviso de licencia; predeterminado 30, rango efectivo 0–365.
+- `Alertas:SubsanacionDias`: anticipación de subsanación; predeterminado 5, rango efectivo 0–30.
+- Cada citación fija su propia anticipación de 0–30 días naturales.
+- `Tramites:RenovacionDiasAnticipacion`: si se establece, limita la ventana previa de renovación a 0–365 días. Sin valor se conserva la renovación anticipada del contrato original.
 
-También funciona la ruta por área:
+La agenda y las fechas de citación usan hora civil de Bolivia. Los plazos de día completo vencen al terminar ese día. Registro, primer envío, cierre y métricas usan UTC y las pantallas lo indican.
 
-```text
-/publico/Publico/Index
-```
+## Administración y consulta pública
 
-### Autenticación
+El administrador gestiona usuarios, permisos, requisitos con plantillas, tipos, municipios, puntos de inspección, feriados y formularios de acta/citación. Las bajas son lógicas, y requisitos/catálogos usan control de versión. La edición de usuarios revoca sesiones y no permite desactivar un supervisor con visitas pendientes.
 
-```text
-/auth/Auth/Index
-/auth/Auth/Login
-/auth/Auth/Dashboard
-/auth/Auth/AccessDenied
-```
+En producción los catálogos de tipo/municipio y los requisitos deben configurarse antes de recibir nuevas aperturas. Una instalación nueva no crea requisitos de demostración. En desarrollo se admite captura libre mientras esos catálogos estén vacíos, para no inventar sus ocho tipos oficiales.
 
-El logout es `POST` y usa antiforgery token.
+La landing publica requisitos y sus formularios. Las fichas tienen mapa, dirección, contacto, código y servicios cuando se dispone de esos datos. La ruta ofrece origen manual en Maps si se deniega geolocalización. Leaflet y Maps requieren conexión; no se utiliza la ubicación personal del usuario en las pruebas.
 
-### Solicitud de registro
+Los establecimientos sin datos validados no se publican en producción ni renuevan automáticamente. Los datos faltantes se señalan como pendientes de validación, sin clasificación por origen. La pantalla de validación de datos enumera inconsistencias; no asigna propietarios ni vigencias por suposición. Los registros heredados deben contrastarse con la institución.
 
-```text
-/solicitud-registro/SolicitudRegistro/Index
-/solicitud-registro/SolicitudRegistro/Nueva
-/solicitud-registro/SolicitudRegistro/Exito
-```
+El propietario consulta sus expedientes y versiones desde cada establecimiento. Solo puede editar servicios; los datos oficiales siguen el circuito autorizado.
 
-El acceso requiere el rol `propietario`.
+## Métricas
 
-### Seguimiento
+El período y municipio seleccionan trámites por primer envío, con referencia a fecha de envío/creación únicamente para registros heredados sin ese dato. Los borradores se cuentan aparte por creación. El estado mostrado es el actual, no una reconstrucción del estado al final del período.
 
-```text
-/solicitud-seguimiento/SolicitudSeguimiento/Index
-/solicitud-seguimiento/SolicitudSeguimiento/Details/{id}
-```
+Se muestran aperturas/renovaciones, habilitados, rechazos definitivos, pendientes, promedio de días hasta cierre, tasa de aprobación, rendimiento por supervisor y últimos 50 movimientos. La tasa usa habilitados / (habilitados + rechazos definitivos); los rechazos de campo reprogramables continúan pendientes. Los cierres heredados sin fecha no participan del promedio. El CSV contiene el mismo conjunto y protege sus textos contra fórmulas.
 
-El envío de una solicitud se realiza mediante `POST` a la acción `Enviar`.
+## Datos, migraciones y continuidad
 
-## 7. Usuarios demo para Development
+Hay siete migraciones: las cuatro anteriores, `AuditCorrections`, `InspectionFormSnapshot` y `DocumentOriginalName`. Agregan información sin borrar registros; distinguen aprobaciones globales heredadas de revisiones individuales y no inventan fechas. La última conserva el nombre visible de los PDF nuevos sin cambiar las claves privadas ni inventar nombres anteriores.
 
-Las cuentas se crean únicamente si la base de usuarios está vacía y la configuración de seed está activa.
+La base local se respaldó antes de actualizar el esquema. Usuarios, laboratorios, requisitos y borrador existentes se conservaron. Los ejemplos de la auditoría usados en navegador estaban en una copia separada. Posteriormente, por solicitud del usuario, se agregó una carga inicial de desarrollo con 13 expedientes DEMO, 39 documentos de ejemplo (con los tres requisitos actuales), dos laboratorios nuevos del propietario, inspecciones, citación, historial y avisos para los seis perfiles. Los tres laboratorios heredados siguen sin propietario/vigencia y pendientes de fuente institucional.
 
-Contraseña temporal para todas:
+La carga se activa solo en Development con `Auth:SeedDemoUsers=true` y `Auth:SeedDemoData=true`. Completa cuentas faltantes sin restablecer las existentes; conserva catálogos configurados y solo agrega ejemplos en clases vacías. El marcador persistente `demo:expedientes:v1` evita repetir escenarios o reiniciar avances. Las fechas se fijan al primer arranque; los PDF y formularios se identifican sin validez oficial. La base local se respaldó de nuevo en `App_Data/backups/20261018-191657-antes-demo` antes de cargar los escenarios. En instalaciones nuevas, esta carga sustituye los tres laboratorios incompletos del inicializador anterior por dos laboratorios vinculados al propietario y con vigencia de prueba.
 
-```text
-Demo123!
-```
-
-| Rol | Correo |
-|---|---|
-| propietario | `propietario@si-lab.local` |
-| coordinador | `coordinador@si-lab.local` |
-| supervisor | `supervisor@si-lab.local` |
-| gerente | `gerente@si-lab.local` |
-| administrador | `administrador@si-lab.local` |
-
-Estas credenciales son solo para desarrollo. Deben reemplazarse antes de cualquier despliegue real.
-
-## 8. Flujo de ramas y convivencia
-
-Rama base:
-
-```text
-develop
-```
-
-Ramas de trabajo:
-
-```text
-feature/auth
-feature/publico
-feature/solicitud-registro
-feature/solicitud-seguimiento
-```
-
-Reglas:
-
-1. Cada rama de funcionalidad debe partir de `develop`.
-2. La integración normal se realiza mediante Pull Request hacia `develop`.
-3. Nadie cambia nombres o valores del contrato de datos sin avisar al grupo.
-4. Solo el Integrante 1 modifica archivos compartidos sensibles:
-   - `Views/Shared/_Layout.cshtml`
-   - `Infrastructure/Routing/RouteConfig.cs`
-   - `appsettings.json`
-   - `Data/ApplicationDbContext.cs`
-5. Los demás integrantes agregan código dentro de su propia carpeta y leen los archivos compartidos.
-6. Se debe hacer una integración conjunta a mitad del sprint para detectar conflictos temprano.
-7. No ejecutar `git push` salvo que el usuario lo solicite explícitamente.
-8. No incluir en commits `bin/`, `obj/`, `.vs/`, archivos `.user`, la base SQLite ni sus archivos auxiliares.
-
-Asignación actual documentada en `TAREAS_SPRINT1.md`:
-
-| Integrante | Módulo | Casos de uso | Dependencia |
-|---|---|---|---|
-| Werner | `auth/` | CU05 - Login por rol | — |
-| Leo | `publico/` | CU01-CU04 - Landing, mapa, detalle, ruta | — |
-| Alejandro | `solicitud-registro/` | CU06-CU07 - Nueva solicitud y documentos | Modelo Usuario |
-| Lucas | `solicitud-seguimiento/` | CU08-CU09 - Enviar y ver estado de trámite | Modelo Solicitud |
-
-Si cambia la asignación del equipo, actualizar `TAREAS_SPRINT1.md` y este documento juntos.
-
-## 8.1 Planificación completa de casos de uso
-
-La planificación original entregada formalmente al proyecto cubría el Sprint 1. Después de contrastarla con el video y la transcripción de la reunión, se documenta aquí el alcance previsto de los sprints siguientes. Los casos CU30, CU31, CU32 y CU-P4 se agregan para cubrir comportamientos mencionados explícitamente en la reunión.
-
-### Sprint 1 — Implementado
-
-```text
-CU01: Ver la landing page pública con los tipos de laboratorio
-CU02: Buscar y filtrar laboratorios en el mapa (tipo y estado)
-CU03: Ver el detalle de un laboratorio
-CU04: Trazar ruta hacia el laboratorio más cercano
-CU05: Iniciar sesión según el rol
-CU06: Registrar nueva solicitud de apertura
-CU07: Cargar documentación en PDF según los requisitos
-CU08: Enviar la solicitud (queda "en revisión")
-CU09: Consultar el estado de los trámites propios
-```
-
-Estado: integrado en `develop`. Los módulos actuales cubren CU01-CU09.
-
-### Sprint 2 — Flujo operativo de revisión e inspección
-
-```text
-CU10: Revisar solicitud y documentación, aprobar o rechazar (Coordinador)
-CU11: Asignar supervisor a un establecimiento (Coordinador)
-CU12: Consultar historial de asignaciones (Coordinador)
-CU13: Organizar agenda de inspecciones (Supervisor)
-CU14: Generar ruta ordenada de inspección (Supervisor)
-CU15: Registrar acta de inspección (Supervisor)
-CU16: Descargar el formulario de acta y subirlo firmado en PDF (Supervisor)
-CU17: Definir resultado: aprobado, con observaciones o rechazado (Supervisor)
-CU18: Registrar citación por incumplimiento (Supervisor)
-CU19: Revisar el acta, aprobar o rechazar y reasignar si corresponde (Coordinador)
-CU20: Marcar vigencia de la habilitación en 1 año (Sistema)
-CU21: Notificar al propietario en cada hito (Sistema)
-CU30: Reprogramar una inspección rechazada o pendiente (Coordinador)
-CU31: Registrar plazo de subsanación para observaciones (Supervisor)
-CU32: Registrar solicitud de renovación de habilitación (Propietario)
-```
-
-CU30 se deriva de la indicación de que una inspección rechazada debe volver a programarse y puede asignarse al mismo u otro supervisor. CU31 representa los plazos de subsanación, por ejemplo 15 días hábiles, mencionados para corregir incumplimientos. CU32 se agrega porque la reunión distingue trámites de apertura y renovación; debe confirmarse con el equipo si la renovación entra en el alcance de este proyecto o queda para una etapa posterior.
-
-### Sprint 3 — Administración, métricas y cierre
-
-```text
-CU22: Gestionar usuarios (Administrador)
-CU23: Gestionar roles y permisos (Administrador)
-CU24: Configurar requisitos: crear, editar, eliminar, obligatorio/opcional (Administrador)
-CU25: Ver panel de métricas por municipio (Gerente)
-CU26: Descargar informe de métricas por fechas (Gerente)
-CU27: Consultar "Mis establecimientos" y editar datos visuales permitidos (Propietario)
-CU28: Recibir alertas de vencimiento de licencia (Propietario)
-CU29: Generar informe final de cierre del trámite (Coordinador)
-```
-
-En CU27, el propietario no debe poder modificar datos oficiales ya aprobados, como el estado de habilitación, la vigencia, el resultado de inspección o los documentos validados. Esos datos deben modificarse únicamente mediante los flujos autorizados.
-
-### Casos pendientes del abogado
-
-La reunión agregó posteriormente el rol de abogado. Estos casos siguen pendientes de asignación formal a un sprint:
-
-```text
-CU-P1: Revisar legalmente el establecimiento (licencia y plano)
-CU-P2: Firmar la aprobación legal final y notificar al Coordinador
-CU-P3: Notificar al propietario la aprobación final
-CU-P4: Cerrar y marcar el trámite como habilitado después de la aprobación legal
-```
-
-CU-P4 se agrega para representar explícitamente el cierre del flujo: después de la aprobación legal, el establecimiento queda habilitado y el propietario recibe la confirmación final. Puede fusionarse con CU-P2 o CU-P3 si el equipo decide no mantenerlo como caso independiente.
-
-## 9. Cómo ejecutar el proyecto
-
-Desde la raíz del repositorio:
-
-```powershell
-dotnet restore
-dotnet build
-dotnet run
-```
-
-La aplicación puede iniciar en un puerto HTTP/HTTPS indicado por el perfil de ejecución. Usar la URL que muestre la consola, normalmente una de estas:
-
-```text
-http://localhost:5095
-http://localhost:5250
-```
-
-Si solo se usa HTTP y aparece una advertencia de `HttpsRedirectionMiddleware`, no significa necesariamente que la aplicación haya fallado. Para pruebas locales conviene abrir la URL HTTP que informe la consola o configurar explícitamente el perfil HTTPS.
-
-Para detener una ejecución iniciada desde la terminal:
-
-```text
-Ctrl+C
-```
-
-## 10. Pruebas funcionales mínimas
-
-### Compilación
-
-```powershell
-dotnet build --no-restore
-```
-
-Resultado esperado: 0 errores y 0 advertencias.
-
-### Público
-
-1. Abrir `/`.
-2. Confirmar que aparecen los laboratorios demo.
-3. Buscar por nombre, tipo o servicio.
-4. Filtrar por tipo.
-5. Filtrar por estado abierto/cerrado.
-6. Abrir `Ver detalle`.
-7. Abrir `Cómo llegar`.
-8. Confirmar que el mapa carga con conexión a Internet.
-9. Probar un ID inexistente y confirmar `404`.
-
-### Autenticación
-
-1. Abrir `/auth/Auth/Login`.
-2. Probar una cuenta demo válida.
-3. Confirmar redirección al dashboard.
-4. Confirmar que el rol aparece en la sesión.
-5. Probar una contraseña inválida y confirmar mensaje de error.
-6. Ejecutar logout.
-
-### Registro de solicitud
-
-1. Iniciar sesión como `propietario`.
-2. Abrir `/solicitud-registro/SolicitudRegistro/Nueva`.
-3. Completar nombre, tipo y coordenadas.
-4. Adjuntar uno o más PDF válidos.
-5. Probar un archivo no PDF o mayor de 10 MB.
-6. Confirmar que la solicitud queda en `en_revision`.
-7. Confirmar que los documentos se guardan bajo `wwwroot/uploads/solicitudes`.
-
-### Seguimiento
-
-1. Mantener sesión como `propietario`.
-2. Abrir `/solicitud-seguimiento/SolicitudSeguimiento/Index`.
-3. Confirmar que solo se muestran solicitudes del usuario actual.
-4. Abrir el detalle.
-5. Confirmar que el laboratorio propuesto aparece formateado y no como JSON crudo.
-6. Enviar la solicitud.
-
-## 11. Validaciones ya realizadas
-
-La integración del módulo público se probó antes de fusionarla:
-
-```text
-PASS public landing
-PASS directory route
-PASS search filter
-PASS detail view
-PASS route view
-PASS missing laboratory returns 404
-RESULT failures=0
-```
-
-La compilación integrada más reciente pasó con:
-
-```text
-0 errores
-0 advertencias
-```
-
-El proceso de prueba HTTP pudo finalizar con código distinto de cero al detener la aplicación, aunque las solicitudes ya habían terminado correctamente. Distinguir siempre entre un fallo de una ruta y la finalización intencional del proceso web.
-
-## 12. Archivos compartidos importantes
-
-- `Program.cs`: registra MVC, Razor, EF Core, cookies, autorización y el pipeline HTTP.
-- `Data/ApplicationDbContext.cs`: DbSets, conversiones de enums, índices y relaciones.
-- `Data/DatabaseInitializer.cs`: migraciones y datos demo.
-- `Infrastructure/Routing/RouteConfig.cs`: rutas por área, raíz pública y rutas convencionales.
-- `Views/Shared/_Layout.cshtml`: layout y navegación global.
-- `wwwroot/css/site.css`: estilos de autenticación, público, registro y seguimiento.
-- `ESTILO_VISUAL.md`: guía visual oficial basada en la demostración de Figma.
-- `CONTRATO_DATOS.md`: contrato formal de entidades.
-- `TAREAS_SPRINT1.md`: asignación del sprint.
-- `README.md`: resumen de arquitectura, ramas y convivencia.
-
-## 13. Pendientes y evolución recomendada
-
-El Sprint 1 integrado está funcional, pero todavía hay trabajo recomendable antes de considerarlo listo para producción:
-
-1. Revisar visualmente todas las pantallas en navegador y ajustar responsive.
-2. Confirmar con el cliente si el proveedor definitivo del mapa será OpenStreetMap/Leaflet, Google Maps u otro.
-3. Reemplazar credenciales demo y desactivar el seed en producción.
-4. Definir los flujos para coordinador, supervisor, gerente y administrador; por ahora sus roles existen para autenticación, pero sus módulos funcionales no están implementados.
-5. Definir estados adicionales de `Solicitud` si el negocio los requiere.
-6. Definir `RequisitoId` real y su catálogo; actualmente los documentos creados desde el formulario usan `0`.
-7. Añadir validaciones de contenido PDF, nombres seguros, límites globales y estrategia de almacenamiento para producción.
-8. Considerar un servicio de almacenamiento separado para documentos en lugar del filesystem local.
-9. Añadir pruebas automatizadas de integración y pruebas de autorización.
-10. Revisar antiforgery, cookies seguras, HTTPS y secretos antes de desplegar.
-11. Confirmar si el botón `Enviar` debe cambiar el estado a un estado adicional distinto de `en_revision`; el contrato actual representa una solicitud enviada como `en_revision`.
-12. Confirmar con el cliente el alcance de renovación (CU32) y la ubicación definitiva de los casos del abogado.
-13. Definir estados adicionales de `Solicitud` para inspección, observaciones, subsanación, aprobación legal, habilitación y renovación.
-14. Evitar cambios directos al contrato compartido sin coordinación del equipo.
-
-## 14. Procedimiento para una nueva sesión o agente
-
-Un agente nuevo debe seguir este orden:
-
-1. Leer `CONTEXTO_PROYECTO.md`.
-2. Leer `README.md`, `CONTRATO_DATOS.md` y `TAREAS_SPRINT1.md`.
-3. Ejecutar `git status`, `git branch -vv` y `git log --oneline --decorate -10`.
-4. Identificar el módulo asignado y trabajar dentro de su carpeta.
-5. Leer los archivos compartidos antes de modificar rutas, layout, contexto o configuración.
-6. Ejecutar `dotnet build --no-restore` después de cambios de código.
-7. Ejecutar pruebas funcionales relacionadas con el módulo.
-8. No hacer `git push` sin autorización explícita.
-9. Informar cualquier cambio de contrato, migración o conflicto antes de continuar.
-
-Este documento debe actualizarse cuando se agregue un módulo, cambie una ruta, se modifique el contrato, se complete un caso de uso o se altere el flujo de ramas.
+Antes de cualquier actualización real, respaldar conjuntamente base y almacenamiento privado. SQLite y el proceso de avisos están previstos para una instancia. No incluir bases, archivos cargados, copias de seguridad, herramientas, bin ni obj en Git. No realizar push ni publicar sin autorización explícita.

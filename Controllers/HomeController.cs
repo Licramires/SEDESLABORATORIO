@@ -15,7 +15,7 @@ namespace SEDESLABORATORIO.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Publico", new { area = "publico" });
         }
 
         public IActionResult Privacy()

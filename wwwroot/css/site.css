@@ -1,3 +1,8 @@
+.workflow-form { display: grid; gap: 1rem; max-width: 760px; }
+.workflow-requirement { border-top: 1px solid #e2e8f0; padding: 1rem 0; display: grid; gap: .6rem; }
+.workflow-requirement h3 { font-size: 1.1rem; }
+.silab-panel h2 { font-size: 1.4rem; }
+.silab-sidebar-link:focus-visible { outline: 2px solid white; }
 html {
   font-size: 14px;
 }
@@ -447,7 +452,7 @@ body {
 
 .silab-page {
   min-height: calc(100vh - 190px);
-  padding: 2rem 0 4rem;
+  padding: 2rem 1rem 4rem;
 }
 
 .silab-panel {

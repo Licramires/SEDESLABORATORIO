@@ -1,0 +1,331 @@
+Browser tab: 5, Title: "Trámites - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion?estado=EnRevision".
+1 AXWebArea Trámites - SEDESLABORATORIO, URL: localhost:5281/Gestion?estado=EnRevision
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion?estado=EnRevision#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			8 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			9 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		10 text SEDES Cochabamba
+		11 text Servicio Departamental de Salud Portal de trámites y requisitos
+	12 container
+		13 text Consola del coordinador  Trámites
+		14 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		15 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	16 container main-content
+		17 heading Trámites, Value: 1
+			18 text Trámites
+		19 text 3 solicitudes disponibles para tu rol.
+		20 container Bandejas de trabajo
+			21 link Description: Revisar documentos, Value: localhost:5281/Gestion?estado=EnRevision
+			22 link Description: Asignar inspección, Value: localhost:5281/Gestion?estado=Aprobado
+			23 link Description: Validar actas, Value: localhost:5281/Gestion?estado=RevisionActa
+		24 text Abra un expediente para realizar el siguiente paso. Los filtros permiten consultar también las inspecciones y el seguimiento.
+		25 container
+			26 text Estado
+			27 pop up button (collapsed, settable) Estado, Value: Revisión documental, Secondary Actions: Expand
+				28 menu
+					29 Todos
+					30 (selected) Revisión documental
+					31 Por asignar inspección
+					32 Rechazado
+					33 Borrador
+					34 Inspección
+					35 Por subsanar
+					36 Revisión de acta
+					37 Revisión legal
+					38 Habilitado
+			39 text Municipio
+			40 text field (settable) Municipio
+			41 button Filtrar
+		42 table
+			43 row
+				44 cell
+					45 text Solicitud
+				46 cell
+					47 text Establecimiento
+				48 cell
+					49 text Municipio
+				50 cell
+					51 text Estado
+				52 cell
+					53 text Fecha (UTC)
+				54 cell
+					55 text Siguiente paso
+			56 row
+				57 cell
+					58 text #16 Apertura
+				59 cell
+					60 text Laboratorio campaña UI 183
+					61 text Propietario Demo
+				62 cell
+					63 text Cochabamba
+				64 cell
+					65 text Revisión documental
+				66 cell
+					67 text 23/10/2026
+				68 cell
+					69 link Description: Revisar documentos, Value: localhost:5281/Gestion/Detalle/16
+			70 row
+				71 cell
+					72 text #3 Apertura
+				73 cell
+					74 text Laboratorio San Rafael
+					75 text Propietario Demo
+				76 cell
+					77 text Cochabamba
+				78 cell
+					79 text Revisión documental
+				80 cell
+					81 text 28/09/2026
+				82 cell
+					83 link Description: Revisar documentos, Value: localhost:5281/Gestion/Detalle/3
+			84 row
+				85 cell
+					86 text #14 Renovación
+				87 cell
+					88 text Laboratorio del Valle
+					89 text Propietario Demo
+				90 cell
+					91 text Cochabamba
+				92 cell
+					93 text Revisión documental
+				94 cell
+					95 text 28/09/2026
+				96 cell
+					97 link Description: Revisar documentos, Value: localhost:5281/Gestion/Detalle/14
+	98 container
+		99 text © 2026 SI_Lab · SEDES Cochabamba
+		100 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Trámites - SEDESLABORATORIO, URL: localhost:5281/Gestion?estado=EnRevision
+
+Browser tab: 5, Title: "Trámites - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion?estado=Aprobado".
+1 AXWebArea Trámites - SEDESLABORATORIO, URL: localhost:5281/Gestion?estado=Aprobado
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion?estado=Aprobado#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			8 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			9 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		10 text SEDES Cochabamba
+		11 text Servicio Departamental de Salud Portal de trámites y requisitos
+	12 container
+		13 text Consola del coordinador  Trámites
+		14 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		15 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	16 container main-content
+		17 heading Trámites, Value: 1
+			18 text Trámites
+		19 text 1 solicitudes disponibles para tu rol.
+		20 container Bandejas de trabajo
+			21 link Description: Revisar documentos, Value: localhost:5281/Gestion?estado=EnRevision
+			22 link Description: Asignar inspección, Value: localhost:5281/Gestion?estado=Aprobado
+			23 link Description: Validar actas, Value: localhost:5281/Gestion?estado=RevisionActa
+		24 text Abra un expediente para realizar el siguiente paso. Los filtros permiten consultar también las inspecciones y el seguimiento.
+		25 container
+			26 text Estado
+			27 pop up button (collapsed, settable) Estado, Value: Por asignar inspección, Secondary Actions: Expand
+				28 menu
+					29 Todos
+					30 Revisión documental
+					31 (selected) Por asignar inspección
+					32 Rechazado
+					33 Borrador
+					34 Inspección
+					35 Por subsanar
+					36 Revisión de acta
+					37 Revisión legal
+					38 Habilitado
+			39 text Municipio
+			40 text field (settable) Municipio
+			41 button Filtrar
+		42 table
+			43 row
+				44 cell
+					45 text Solicitud
+				46 cell
+					47 text Establecimiento
+				48 cell
+					49 text Municipio
+				50 cell
+					51 text Estado
+				52 cell
+					53 text Fecha (UTC)
+				54 cell
+					55 text Siguiente paso
+			56 row
+				57 cell
+					58 text #4 Apertura
+				59 cell
+					60 text Laboratorio Amanecer
+					61 text Propietario Demo
+				62 cell
+					63 text Cochabamba
+				64 cell
+					65 text Por asignar inspección
+				66 cell
+					67 text 28/09/2026
+				68 cell
+					69 link Description: Asignar supervisor, Value: localhost:5281/Gestion/Detalle/4
+	70 container
+		71 text © 2026 SI_Lab · SEDES Cochabamba
+		72 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Trámites - SEDESLABORATORIO, URL: localhost:5281/Gestion?estado=Aprobado
+
+Browser tab: 5, Title: "Trámites - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion?estado=RevisionActa".
+1 AXWebArea Trámites - SEDESLABORATORIO, URL: localhost:5281/Gestion?estado=RevisionActa
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion?estado=RevisionActa#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			8 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			9 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		10 text SEDES Cochabamba
+		11 text Servicio Departamental de Salud Portal de trámites y requisitos
+	12 container
+		13 text Consola del coordinador  Trámites
+		14 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		15 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	16 container main-content
+		17 heading Trámites, Value: 1
+			18 text Trámites
+		19 text 1 solicitudes disponibles para tu rol.
+		20 container Bandejas de trabajo
+			21 link Description: Revisar documentos, Value: localhost:5281/Gestion?estado=EnRevision
+			22 link Description: Asignar inspección, Value: localhost:5281/Gestion?estado=Aprobado
+			23 link Description: Validar actas, Value: localhost:5281/Gestion?estado=RevisionActa
+		24 text Abra un expediente para realizar el siguiente paso. Los filtros permiten consultar también las inspecciones y el seguimiento.
+		25 container
+			26 text Estado
+			27 pop up button (collapsed, settable) Estado, Value: Revisión de acta, Secondary Actions: Expand
+				28 menu
+					29 Todos
+					30 Revisión documental
+					31 Por asignar inspección
+					32 Rechazado
+					33 Borrador
+					34 Inspección
+					35 Por subsanar
+					36 (selected) Revisión de acta
+					37 Revisión legal
+					38 Habilitado
+			39 text Municipio
+			40 text field (settable) Municipio
+			41 button Filtrar
+		42 table
+			43 row
+				44 cell
+					45 text Solicitud
+				46 cell
+					47 text Establecimiento
+				48 cell
+					49 text Municipio
+				50 cell
+					51 text Estado
+				52 cell
+					53 text Fecha (UTC)
+				54 cell
+					55 text Siguiente paso
+			56 row
+				57 cell
+					58 text #8 Apertura
+				59 cell
+					60 text Laboratorio San Gabriel
+					61 text Propietario Demo
+				62 cell
+					63 text Cochabamba
+				64 cell
+					65 text Revisión de acta
+				66 cell
+					67 text 28/09/2026
+				68 cell
+					69 link Description: Validar acta, Value: localhost:5281/Gestion/Detalle/8
+	70 container
+		71 text © 2026 SI_Lab · SEDES Cochabamba
+		72 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Trámites - SEDESLABORATORIO, URL: localhost:5281/Gestion?estado=RevisionActa
+
+Browser tab: 5, Title: "Trámites - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion?estado=RevisionActa".
+1 AXWebArea Trámites - SEDESLABORATORIO, URL: localhost:5281/Gestion?estado=RevisionActa
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion?estado=RevisionActa#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			8 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			9 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		10 text SEDES Cochabamba
+		11 text Servicio Departamental de Salud Portal de trámites y requisitos
+	12 container
+		13 text Consola del coordinador  Trámites
+		14 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		15 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	16 container main-content
+		17 heading Trámites, Value: 1
+			18 text Trámites
+		19 text 1 solicitudes disponibles para tu rol.
+		20 container Bandejas de trabajo
+			21 link Description: Revisar documentos, Value: localhost:5281/Gestion?estado=EnRevision
+			22 link Description: Asignar inspección, Value: localhost:5281/Gestion?estado=Aprobado
+			23 link Description: Validar actas, Value: localhost:5281/Gestion?estado=RevisionActa
+		24 text Abra un expediente para realizar el siguiente paso. Los filtros permiten consultar también las inspecciones y el seguimiento.
+		25 container
+			26 text Estado
+			27 pop up button (collapsed, settable) Estado, Value: Revisión de acta, Secondary Actions: Expand
+				28 menu
+					29 Todos
+					30 Revisión documental
+					31 Por asignar inspección
+					32 Rechazado
+					33 Borrador
+					34 Inspección
+					35 Por subsanar
+					36 (selected) Revisión de acta
+					37 Revisión legal
+					38 Habilitado
+			39 text Municipio
+			40 text field (settable) Municipio, Value: Cochabamba
+			41 button Filtrar
+		42 table
+			43 row
+				44 cell
+					45 text Solicitud
+				46 cell
+					47 text Establecimiento
+				48 cell
+					49 text Municipio
+				50 cell
+					51 text Estado
+				52 cell
+					53 text Fecha (UTC)
+				54 cell
+					55 text Siguiente paso
+			56 row
+				57 cell
+					58 text #8 Apertura
+				59 cell
+					60 text Laboratorio San Gabriel
+					61 text Propietario Demo
+				62 cell
+					63 text Cochabamba
+				64 cell
+					65 text Revisión de acta
+				66 cell
+					67 text 28/09/2026
+				68 cell
+					69 link Description: Validar acta, Value: localhost:5281/Gestion/Detalle/8
+	70 container
+		71 text © 2026 SI_Lab · SEDES Cochabamba
+		72 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 41 button Filtrar

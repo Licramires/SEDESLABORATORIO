@@ -1,0 +1,52 @@
+Browser tab: 5, Title: "Configurar catálogo - SEDESLABORATORIO", URL: "http://localhost:5281/Administracion/Catalogo".
+1 AXWebArea Configurar catálogo - SEDESLABORATORIO, URL: localhost:5281/Administracion/Catalogo
+	2 link Description: Saltar al contenido, Value: localhost:5281/Administracion/Catalogo#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Usuarios, Value: localhost:5281/Administracion/Usuarios
+			7 link Description: Roles y permisos, Value: localhost:5281/Administracion/Roles
+			8 link Description: Requisitos, Value: localhost:5281/Administracion/Requisitos
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+			11 container
+				12 button (expanded) Configuración avanzada, Secondary Actions: Collapse
+					13 text Configuración avanzada
+				14 link Description: Catálogos y formularios, Value: localhost:5281/Administracion/Catalogos
+				15 link Description: Validación de datos, Value: localhost:5281/Administracion/CalidadDatos
+		16 text SEDES Cochabamba
+		17 text Servicio Departamental de Salud Portal de trámites y requisitos
+	18 container
+		19 text Administración  Configurar catálogo
+		20 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		21 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	22 container
+		23 heading Configurar catálogo, Value: 1
+			24 text Configurar catálogo
+		25 container
+			26 text Clase
+			27 pop up button (collapsed, settable) Clase, Value: Tipo de laboratorio, Secondary Actions: Expand
+				28 menu
+					29 (selected) Tipo de laboratorio
+					30 Municipio
+					31 Punto de verificación de inspección
+					32 Feriado
+					33 Plantilla de acta
+					34 Plantilla de citación
+		35 container
+			36 text Nombre (para feriados: yyyy-MM-dd)
+			37 text field (settable) Nombre (para feriados: yyyy-MM-dd), ID: Nombre
+		38 container
+			39 text Referencia institucional o artículo
+			40 text entry area (settable) Referencia institucional o artículo, ID: Referencia
+		41 checkbox (settable, integer) Description: Activo, Value: 1
+		42 container
+			43 text Plantilla PDF (obligatoria para formularios, hasta 10 MB)
+			44 button Plantilla PDF (obligatoria para formularios, hasta 10 MB), ID: Plantilla
+		45 button Guardar
+		46 link Description: Volver a catálogos, Value: localhost:5281/Administracion/Catalogos
+	47 container
+		48 text © 2026 SI_Lab · SEDES Cochabamba
+		49 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Configurar catálogo - SEDESLABORATORIO, URL: localhost:5281/Administracion/Catalogo

@@ -1,0 +1,49 @@
+Browser tab: 5, Title: "Validación institucional de datos - SEDESLABORATORIO", URL: "http://localhost:5281/Administracion/CalidadDatos".
+1 AXWebArea Validación institucional de datos - SEDESLABORATORIO, URL: localhost:5281/Administracion/CalidadDatos
+	2 link Description: Saltar al contenido, Value: localhost:5281/Administracion/CalidadDatos#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Usuarios, Value: localhost:5281/Administracion/Usuarios
+			7 link Description: Roles y permisos, Value: localhost:5281/Administracion/Roles
+			8 link Description: Requisitos, Value: localhost:5281/Administracion/Requisitos
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+			11 container
+				12 button (expanded) Configuración avanzada, Secondary Actions: Collapse
+					13 text Configuración avanzada
+				14 link Description: Catálogos y formularios, Value: localhost:5281/Administracion/Catalogos
+				15 link Description: Validación de datos, Value: localhost:5281/Administracion/CalidadDatos
+		16 text SEDES Cochabamba
+		17 text Servicio Departamental de Salud Portal de trámites y requisitos
+	18 container
+		19 text Administración  Validación institucional de datos
+		20 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		21 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	22 container main-content
+		23 heading Validación institucional de datos, Value: 1
+			24 text Validación institucional de datos
+		25 text Estos registros requieren contrastarse con la fuente del SEDES. No se asignan propietarios ni vigencias por suposición. Los registros sin validar no se publican en producción.
+		26 container
+			27 heading Establecimientos pendientes, Value: 2
+				28 text Establecimientos pendientes
+			29 content list
+				30 container
+					31 AXListMarker • 
+					32 text #1 · Laboratorio Central SEDES · Cochabamba · propietario: Sin registrar · vigencia: Sin registrar
+				33 container
+					34 AXListMarker • 
+					35 text #2 · Laboratorio Nova · Cochabamba · propietario: Sin registrar · vigencia: Sin registrar
+				36 container
+					37 AXListMarker • 
+					38 text #3 · Laboratorio Clínica Azul · Cochabamba · propietario: Sin registrar · vigencia: Sin registrar
+		39 container
+			40 heading Comprobaciones del expediente, Value: 2
+				41 text Comprobaciones del expediente
+			42 text Solicitudes con datos incompletos o dañados: Solicitudes con copias históricas ilegibles: Documentos cuyo PDF no está disponible: Elementos activos de tipos y municipios: 2
+			43 link Description: Configurar catálogos institucionales, Value: localhost:5281/Administracion/Catalogos
+	44 container
+		45 text © 2026 SI_Lab · SEDES Cochabamba
+		46 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Validación institucional de datos - SEDESLABORATORIO, URL: localhost:5281/Administracion/CalidadDatos

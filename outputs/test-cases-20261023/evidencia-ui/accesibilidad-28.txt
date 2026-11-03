@@ -1,0 +1,98 @@
+Browser tab: 5, Title: "Trámites - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion".
+1 AXWebArea Trámites - SEDESLABORATORIO, URL: localhost:5281/Gestion
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			8 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		9 text SEDES Cochabamba
+		10 text Servicio Departamental de Salud Portal de trámites y requisitos
+	11 container
+		12 text Consola legal  Trámites
+		13 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		14 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	15 container main-content
+		16 heading Trámites, Value: 1
+			17 text Trámites
+		18 text 3 solicitudes disponibles para tu rol.
+		19 text Resuelva los expedientes en revisión legal. Los habilitados quedan disponibles para consulta.
+		20 container
+			21 text Estado
+			22 pop up button (collapsed, settable) Estado, Value: Todos, Secondary Actions: Expand
+				23 menu
+					24 (selected) Todos
+					25 Revisión documental
+					26 Por asignar inspección
+					27 Rechazado
+					28 Borrador
+					29 Inspección
+					30 Por subsanar
+					31 Revisión de acta
+					32 Revisión legal
+					33 Habilitado
+			34 text Municipio
+			35 text field (settable) Municipio
+			36 button Filtrar
+		37 table
+			38 row
+				39 cell
+					40 text Solicitud
+				41 cell
+					42 text Establecimiento
+				43 cell
+					44 text Municipio
+				45 cell
+					46 text Estado
+				47 cell
+					48 text Fecha (UTC)
+				49 cell
+					50 text Siguiente paso
+			51 row
+				52 cell
+					53 text #8 Apertura
+				54 cell
+					55 text Laboratorio San Gabriel
+					56 text Propietario Demo
+				57 cell
+					58 text Cochabamba
+				59 cell
+					60 text Revisión legal
+				61 cell
+					62 text 28/09/2026
+				63 cell
+					64 link Description: Resolver revisión legal, Value: localhost:5281/Gestion/Detalle/8
+			65 row
+				66 cell
+					67 text #9 Apertura
+				68 cell
+					69 text Laboratorio Alameda
+					70 text Propietario Demo
+				71 cell
+					72 text Cochabamba
+				73 cell
+					74 text Revisión legal
+				75 cell
+					76 text 28/09/2026
+				77 cell
+					78 link Description: Resolver revisión legal, Value: localhost:5281/Gestion/Detalle/9
+			79 row
+				80 cell
+					81 text #13 Apertura
+				82 cell
+					83 text Laboratorio Central
+					84 text Propietario Demo
+				85 cell
+					86 text Cochabamba
+				87 cell
+					88 text Habilitado
+				89 cell
+					90 text 28/09/2026
+				91 cell
+					92 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/13
+	93 container
+		94 text © 2026 SI_Lab · SEDES Cochabamba
+		95 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Trámites - SEDESLABORATORIO, URL: localhost:5281/Gestion

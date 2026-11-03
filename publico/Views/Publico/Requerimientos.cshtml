@@ -1,0 +1,16 @@
+@model List<SEDESLABORATORIO.Data.Entities.Requisito>
+@{ ViewData["Title"] = "Requerimientos"; }
+<div class="container silab-page">
+    <section class="silab-panel p-4">
+        <h1>Requerimientos para registrar un laboratorio</h1>
+        <p>Prepare los documentos de este listado para solicitar la habilitación, apertura y funcionamiento de un nuevo laboratorio.</p>
+        <partial name="_RequisitosRegistro" model="Model" />
+        <p>Adjunte archivos PDF de hasta 10 MB cada uno. Puede guardarlos uno por uno en su borrador y completar los requisitos antes de enviar la solicitud a revisión.</p>
+        <p>Este listado corresponde a los requisitos publicados actualmente. Los trámites ya enviados conservan el listado que les correspondía al enviarse.</p>
+        @if (User.IsInRole("propietario")) {
+            <a asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva" class="btn silab-btn-primary">Registrar nuevo laboratorio</a>
+        } else if (User.Identity?.IsAuthenticated != true) {
+            <a asp-area="auth" asp-controller="Auth" asp-action="Login" class="btn silab-btn-primary">Ingresar para registrar un laboratorio</a>
+        }
+    </section>
+</div>

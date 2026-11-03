@@ -1,0 +1,22 @@
+{
+  "cases": 183,
+  "statuses": {
+    "Exitoso": 172,
+    "Bloqueado": 9,
+    "Fallido": 2
+  },
+  "bugs": 3,
+  "template_sheets_merges_labels_preserved": true,
+  "case_ids_and_definitions_verified": true,
+  "all_evidence_paths_exist": true,
+  "outputs": [
+    {
+      "file": "TEST_CASES_PROYECTO_EJECUTADOS.xlsx",
+      "sha256": "8eac24bdb5eeb3ee3e578b8537dcbabe57c988940598e5175f7c865647decc27"
+    },
+    {
+      "file": "REPORTE_DE_BUGS_PROYECTO.xlsx",
+      "sha256": "c008b6d58cf84c66b29cd3be787d24931bdcda65ea91ad101157a4c8239fff58"
+    }
+  ]
+}

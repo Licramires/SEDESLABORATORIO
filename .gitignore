@@ -5,3 +5,11 @@ obj/
 *.db
 *.db-shm
 *.db-wal
+*.db.instance.lock
+App_Data/
+wwwroot/uploads/
+TestResults/
+.tools/
+node_modules/
+__pycache__/
+*.pyc

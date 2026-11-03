@@ -1,0 +1,121 @@
+[
+  {
+    "Action": "enviar",
+    "Role": "propietario",
+    "From": "Borrador",
+    "To": "EnRevision",
+    "Executed": true
+  },
+  {
+    "Action": "enviar",
+    "Role": "propietario",
+    "From": "Observado",
+    "To": "EnRevision",
+    "Executed": true
+  },
+  {
+    "Action": "aprobar_documentos",
+    "Role": "coordinador",
+    "From": "EnRevision",
+    "To": "Aprobado",
+    "Executed": true
+  },
+  {
+    "Action": "observar_documentos",
+    "Role": "coordinador",
+    "From": "EnRevision",
+    "To": "Observado",
+    "Executed": true
+  },
+  {
+    "Action": "rechazar_documentos",
+    "Role": "coordinador",
+    "From": "EnRevision",
+    "To": "Rechazado",
+    "Executed": true
+  },
+  {
+    "Action": "asignar",
+    "Role": "coordinador",
+    "From": "Aprobado",
+    "To": "Inspeccion",
+    "Executed": true
+  },
+  {
+    "Action": "asignar",
+    "Role": "coordinador",
+    "From": "Inspeccion",
+    "To": "Inspeccion",
+    "Executed": true
+  },
+  {
+    "Action": "asignar",
+    "Role": "coordinador",
+    "From": "Observado",
+    "To": "Inspeccion",
+    "Executed": true
+  },
+  {
+    "Action": "asignar",
+    "Role": "coordinador",
+    "From": "Rechazado",
+    "To": "Inspeccion",
+    "Executed": true
+  },
+  {
+    "Action": "programar",
+    "Role": "supervisor",
+    "From": "Inspeccion",
+    "To": "Inspeccion",
+    "Executed": true
+  },
+  {
+    "Action": "preparar_acta",
+    "Role": "supervisor",
+    "From": "Inspeccion",
+    "To": "Inspeccion",
+    "Executed": true
+  },
+  {
+    "Action": "acta",
+    "Role": "supervisor",
+    "From": "Inspeccion",
+    "To": "RevisionActa",
+    "Executed": true
+  },
+  {
+    "Action": "aprobar_acta",
+    "Role": "coordinador",
+    "From": "RevisionActa",
+    "To": "RevisionLegal",
+    "Executed": true
+  },
+  {
+    "Action": "rechazar_acta",
+    "Role": "coordinador",
+    "From": "RevisionActa",
+    "To": "Aprobado",
+    "Executed": true
+  },
+  {
+    "Action": "aprobar_legal",
+    "Role": "abogado",
+    "From": "RevisionLegal",
+    "To": "Habilitado",
+    "Executed": true
+  },
+  {
+    "Action": "observar_legal",
+    "Role": "abogado",
+    "From": "RevisionLegal",
+    "To": "Observado",
+    "Executed": true
+  },
+  {
+    "Action": "rechazar_legal",
+    "Role": "abogado",
+    "From": "RevisionLegal",
+    "To": "Rechazado",
+    "Executed": true
+  }
+]

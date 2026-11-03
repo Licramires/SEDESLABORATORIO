@@ -1,0 +1,60 @@
+{
+  "integridad": "ok",
+  "referencias_rotas": [],
+  "migraciones": [
+    "20260922225808_InitialCreate",
+    "20260923042352_AddUniqueEmail",
+    "20261012173331_OperationalWorkflow",
+    "20261012174533_RolePermissions",
+    "20261018223542_AuditCorrections",
+    "20261018224201_InspectionFormSnapshot"
+  ],
+  "conservacion": {
+    "Documentos": {
+      "cantidad_antes": 0,
+      "cantidad_despues": 0,
+      "campos_originales_conservados": true
+    },
+    "HistorialTramites": {
+      "cantidad_antes": 0,
+      "cantidad_despues": 0,
+      "campos_originales_conservados": true
+    },
+    "Inspecciones": {
+      "cantidad_antes": 0,
+      "cantidad_despues": 0,
+      "campos_originales_conservados": true
+    },
+    "Notificaciones": {
+      "cantidad_antes": 0,
+      "cantidad_despues": 0,
+      "campos_originales_conservados": true
+    },
+    "Requisitos": {
+      "cantidad_antes": 3,
+      "cantidad_despues": 3,
+      "campos_originales_conservados": true
+    },
+    "Usuarios": {
+      "cantidad_antes": 6,
+      "cantidad_despues": 6,
+      "campos_originales_conservados": true
+    },
+    "Laboratorios": {
+      "cantidad_antes": 3,
+      "cantidad_despues": 3,
+      "campos_originales_conservados": true
+    },
+    "Solicitudes": {
+      "cantidad_antes": 1,
+      "cantidad_despues": 1,
+      "campos_originales_conservados": true
+    },
+    "PermisosRol": {
+      "cantidad_antes": 0,
+      "cantidad_despues": 0,
+      "campos_originales_conservados": true
+    }
+  },
+  "registros_sin_validar": 3
+}

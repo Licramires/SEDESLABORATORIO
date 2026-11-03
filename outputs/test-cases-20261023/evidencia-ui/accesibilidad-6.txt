@@ -1,0 +1,41 @@
+Browser tab: 5, Title: "Permisos de Propietario - SEDESLABORATORIO", URL: "http://localhost:5281/Administracion/EditarPermisos?rol=Propietario".
+1 AXWebArea Permisos de Propietario - SEDESLABORATORIO, URL: localhost:5281/Administracion/EditarPermisos?rol=Propietario
+	2 link Description: Saltar al contenido, Value: localhost:5281/Administracion/EditarPermisos?rol=Propietario#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Usuarios, Value: localhost:5281/Administracion/Usuarios
+			7 link Description: Roles y permisos, Value: localhost:5281/Administracion/Roles
+			8 link Description: Requisitos, Value: localhost:5281/Administracion/Requisitos
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+			11 button (collapsed) Configuración avanzada, Secondary Actions: Expand
+				12 text Configuración avanzada
+		13 text SEDES Cochabamba
+		14 text Servicio Departamental de Salud Portal de trámites y requisitos
+	15 container
+		16 text Administración  Permisos de Propietario
+		17 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		18 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	19 container main-content
+		20 link Description: Volver a roles y permisos, Value: localhost:5281/Administracion/Roles
+		21 container
+			22 heading Permisos de Propietario, Value: 1
+				23 text Permisos de Propietario
+			24 text Marque las funciones que podrá usar este perfil. Los cambios se aplican a todos sus usuarios, incluso si tienen una sesión abierta.
+			25 container Funciones del perfil
+				26 text Funciones del perfil
+				27 container
+					28 checkbox (settable, integer) Description: Crear solicitudes, adjuntar documentos y enviarlos, Value: 1, ID: Permisos_0__Habilitado
+					29 text Crear solicitudes, adjuntar documentos y enviarlos
+				30 container
+					31 checkbox (settable, integer) Description: Editar servicios y solicitar renovaciones, Value: 1, ID: Permisos_1__Habilitado
+					32 text Editar servicios y solicitar renovaciones
+			33 text El alcance de cada función conserva las responsabilidades de este perfil. La administración de roles siempre está disponible para recuperar permisos.
+			34 button Guardar permisos
+			35 link Description: Cancelar, Value: localhost:5281/Administracion/Roles
+	36 container
+		37 text © 2026 SI_Lab · SEDES Cochabamba
+		38 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Permisos de Propietario - SEDESLABORATORIO, URL: localhost:5281/Administracion/EditarPermisos?rol=Propietario

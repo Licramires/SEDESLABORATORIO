@@ -1,0 +1,2923 @@
+{
+  "date": "23/10/2026 (Bolivia)",
+  "counts": {
+    "Exitoso": 172,
+    "Bloqueado": 9,
+    "Fallido": 2
+  },
+  "cases": [
+    {
+      "id": "AUTH-LL-01",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Mi cuenta identifica Propietario Demo; recarga y navegación conservan su sesión y menú propio."
+      ],
+      "evidence": [
+        "evidencia-ui/AUTH-LL-01-HL-02.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "AUTH-LL-02",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Mensaje genérico de credenciales inválidas; la vista protegida redirige al login sin sesión."
+      ],
+      "evidence": [
+        "evidencia-ui/AUTH-LL-02.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "AUTH-LL-03",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Se recorrieron Mi cuenta, Trámites, Mis establecimientos, ficha y Nueva solicitud. Formulario permite borrador sin adjuntos y muestra requisitos y mapa."
+      ],
+      "evidence": [
+        "evidencia-ui/REG-LL-01.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "AUTH-LL-04",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Owner_isolation_and_protected_downloads, Public_pages_login_errors_and_csrf"
+      ],
+      "evidence": [
+        "por-caso\\AUTH-LL-04.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "AUTH-LL-05",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Cerrar sesión devuelve al login y pedir Dashboard vuelve a exigir autenticación; antes se verificó retorno a /Gestion/Index tras login."
+      ],
+      "evidence": [
+        "evidencia-ui/AUTH-LL-05.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "AUTH-HL-01",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Cerrar sesión devuelve al login y pedir Dashboard vuelve a exigir autenticación; antes se verificó retorno a /Gestion/Index tras login."
+      ],
+      "evidence": [
+        "evidencia-ui/AUTH-LL-05.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "AUTH-HL-02",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Mi cuenta identifica Propietario Demo; recarga y navegación conservan su sesión y menú propio."
+      ],
+      "evidence": [
+        "evidencia-ui/AUTH-LL-01-HL-02.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "AUTH-HL-03",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Owner_isolation_and_protected_downloads"
+      ],
+      "evidence": [
+        "por-caso\\AUTH-HL-03.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "PUB-LL-01",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Portal sin sesión con 5 resultados, filtros, mapa y Requerimientos."
+      ],
+      "evidence": [
+        "evidencia-ui/PUB-LL-01.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "PUB-LL-02",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Buscar Nova devuelve solo Laboratorio Nova; el mapa se reajusta al resultado."
+      ],
+      "evidence": [
+        "evidencia-ui/PUB-LL-02.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "PUB-LL-03",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Especializado muestra Clínica Azul y Bacteriológico muestra Nova."
+      ],
+      "evidence": [
+        "evidencia-ui/PUB-LL-03.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "PUB-LL-04",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Abiertos devuelve cuatro, Cerrados devuelve Nova y cualquier estado devuelve cinco."
+      ],
+      "evidence": [
+        "evidencia-ui/PUB-LL-04.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "PUB-LL-05",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Intersección Nova/Bacteriológico/Cerrados: 1; texto inexistente: vacío; limpiar: 5."
+      ],
+      "evidence": [
+        "evidencia-ui/PUB-LL-05.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "PUB-LL-06",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Ficha de Central muestra servicios, dirección, teléfono, código, coordenadas y mapa, sin archivos privados."
+      ],
+      "evidence": [
+        "evidencia-ui/PUB-LL-06.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "PUB-LL-07",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Nova cerrado tiene marcador rojo; Clínica Azul abierta tiene marcador verde. Ambos abren ventanas con el nombre y vínculo de detalle correctos."
+      ],
+      "evidence": [
+        "evidencia-ui/PUB-LL-07-abierto.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "PUB-LL-08",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Cómo llegar conserva destino -17.3935,-66.157 correspondiente a Central."
+      ],
+      "evidence": [
+        "evidencia-ui/PUB-LL-08.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "PUB-HL-01",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Recorrido de búsqueda, detalle Central, destino de ruta y regreso completado sin sesión."
+      ],
+      "evidence": [
+        "evidencia-ui/PUB-HL-01.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "PUB-HL-02",
+      "status": "Bloqueado",
+      "method": [
+        "Comprobación parcial; pendiente manual indicado"
+      ],
+      "actual": [
+        "No se dispone de una posición física verificable ni de la interacción manual del permiso del sistema. La URL y el cálculo con GPS sintético sí se probaron."
+      ],
+      "evidence": [
+        "PUB-EXT-06.tap"
+      ],
+      "note": [
+        "No marcar ejecutado completamente hasta cerrar el paso pendiente."
+      ]
+    },
+    {
+      "id": "REG-LL-01",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Se recorrieron Mi cuenta, Trámites, Mis establecimientos, ficha y Nueva solicitud. Formulario permite borrador sin adjuntos y muestra requisitos y mapa."
+      ],
+      "evidence": [
+        "evidencia-ui/REG-LL-01.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "REG-LL-02",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "228 comprobaciones aprobadas: Every_form_field_rejects_invalid_values_without_changing_any_table, test\"), 000001\"), 56\")"
+      ],
+      "evidence": [
+        "por-caso\\REG-LL-02.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "REG-LL-03",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Cambiar coordenadas manuales actualiza mosaicos del mapa y conserva valores. También se verificó arrastre inverso REG-LL-04."
+      ],
+      "evidence": [
+        "evidencia-ui/REG-LL-03.json"
+      ],
+      "note": []
+    },
+    {
+      "id": "REG-LL-04",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Borrador #17 conserva seis PDF seleccionados uno por uno y la ubicación -17.396675,-66.149706 obtenida arrastrando el marcador."
+      ],
+      "evidence": [
+        "evidencia-ui/REG-EXT-04.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "REG-LL-05",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Borrador #17 conserva seis PDF seleccionados uno por uno y la ubicación -17.396675,-66.149706 obtenida arrastrando el marcador."
+      ],
+      "evidence": [
+        "evidencia-ui/REG-EXT-04.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "REG-LL-06",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "5 comprobaciones aprobadas: All_file_forms_reject_empty_wrong_extension_signature_and_truncated_pdf"
+      ],
+      "evidence": [
+        "por-caso\\REG-LL-06.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "REG-LL-07",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Tras validación del formulario vacío se corrigieron datos y se creó solo el borrador #16 sin archivos, con coordenadas -17.39,-66.16 y tres obligatorios pendientes."
+      ],
+      "evidence": [
+        "evidencia-ui/REG-LL-07.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "REG-HL-01",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Inspection_checklist_and_template_are_frozen_and_can_be_prepared_before_signing, Complete_opening_renewal_and_role_workflow"
+      ],
+      "evidence": [
+        "por-caso\\REG-HL-01.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "REG-HL-02",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Tras validación del formulario vacío se corrigieron datos y se creó solo el borrador #16 sin archivos, con coordenadas -17.39,-66.16 y tres obligatorios pendientes."
+      ],
+      "evidence": [
+        "evidencia-ui/REG-LL-07.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "REG-HL-03",
+      "status": "Bloqueado",
+      "method": [
+        "Comprobación parcial; pendiente manual indicado"
+      ],
+      "actual": [
+        "Se intentó tamaño 390×844, pero el navegador mantuvo 1280 px: no se pudo validar realmente el formulario móvil."
+      ],
+      "evidence": [
+        "evidencia-ui/REG-EXT-05.txt"
+      ],
+      "note": [
+        "No marcar ejecutado completamente hasta cerrar el paso pendiente."
+      ]
+    },
+    {
+      "id": "SEG-LL-01",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Listado propio de 15 trámites con apertura, renovación y estados diferenciados."
+      ],
+      "evidence": [
+        "evidencia-ui/SEG-LL-01.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "SEG-LL-02",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Expediente propio #13 muestra datos, tres versiones actuales, acta e historial por actor/fecha, sin decisiones ajenas."
+      ],
+      "evidence": [
+        "evidencia-ui/SEG-LL-02.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "SEG-LL-03",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Con los tres PDF actuales el borrador #16 pasa a revisión documental y desaparecen los formularios de edición."
+      ],
+      "evidence": [
+        "evidencia-ui/SEG-LL-03.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "SEG-LL-04",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Every_declared_valid_transition_executes_its_expected_effect",
+        "La pestaña antigua devuelve conflicto y no repite el envío. Observación UX BUG-01: la respuesta aislada pide recargar el POST y carece de enlace para recuperar el expediente."
+      ],
+      "evidence": [
+        "por-caso\\SEG-LL-04.trx",
+        "evidencia-ui/SEG-LL-04.txt"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz.",
+        "BUG-01 observado; el bloqueo de datos esperado sí funciona."
+      ]
+    },
+    {
+      "id": "SEG-LL-05",
+      "status": "Exitoso",
+      "method": [
+        "HTTP real en copia local; preparación sintética de casos límite"
+      ],
+      "actual": [
+        "Detalle del estado borrador accesible por su rol; Etiqueta textual de estado borrador; Detalle del estado en_revision accesible por su rol; Etiqueta textual de estado en_revision; Detalle del estado aprobado accesible por su rol; Etiqueta textual de estado aprobado; Detalle del estado inspeccion accesible por su rol; Etiqueta textual de estado inspeccion; Detalle del estado revision_acta accesible por su rol; Etiqueta textual de estado revision_acta; Detalle del estado observado accesible por su rol; Etiqueta textual de estado observado; Detalle del estado rechazado accesible por su rol; Etiqueta textual de estado rechazado; Detalle del estado revision_legal accesible por su rol; Etiqueta textual de estado revision_legal; Detalle del estado habilitado accesible por su rol; Etiqueta textual de estado habilitado"
+      ],
+      "evidence": [
+        "resultados-cierre.json # SEG-LL-05"
+      ],
+      "note": []
+    },
+    {
+      "id": "SEG-HL-01",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Ambas pestañas actualizadas muestran #16 en revisión documental, con el mismo identificador."
+      ],
+      "evidence": [
+        "evidencia-ui/SEG-HL-01.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "SEG-HL-02",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Nueva sesión verificada: #16 sigue en revisión documental, con los tres PDF y su historial."
+      ],
+      "evidence": [
+        "evidencia-ui/SEG-HL-02.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "SEG-HL-03",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Se recorrieron Mi cuenta, Trámites, Mis establecimientos, ficha y Nueva solicitud. Formulario permite borrador sin adjuntos y muestra requisitos y mapa."
+      ],
+      "evidence": [
+        "evidencia-ui/REG-LL-01.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "AUTH-EXT-01",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Vacíos: errores de ambos campos; correo inválido: error de formato sin sesión."
+      ],
+      "evidence": [
+        "evidencia-ui/AUTH-EXT-01.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "AUTH-EXT-02",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "Alta de fixture usuario campana-1@example.test; Login inválido no redirige al panel; La identidad no se autentica; Login inválido no redirige al panel; La identidad no se autentica"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # AUTH-EXT-02"
+      ],
+      "note": []
+    },
+    {
+      "id": "AUTH-EXT-03",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Login_rate_limit_still_blocks_repeated_attempts_from_same_client"
+      ],
+      "evidence": [
+        "por-caso\\AUTH-EXT-03.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "AUTH-EXT-04",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "Redirección únicamente local: /auth/Auth/Dashboard"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # AUTH-EXT-04"
+      ],
+      "note": []
+    },
+    {
+      "id": "AUTH-EXT-05",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Changed_role_invalidates_cookie_and_missing_fields_do_not_crash"
+      ],
+      "evidence": [
+        "por-caso\\AUTH-EXT-05.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "AUTH-EXT-06",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Every_declared_page_download_and_role_is_exercised_and_rendered_links_and_forms_are_checked, Every_post_endpoint_rejects_missing_csrf_and_unauthorized_roles_without_any_persistent_effect"
+      ],
+      "evidence": [
+        "por-caso\\AUTH-EXT-06.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "PUB-EXT-01",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Especializado y Genética encuentran Clínica Azul por tipo y servicio."
+      ],
+      "evidence": [
+        "evidencia-ui/PUB-EXT-01.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "PUB-EXT-02",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "Sección creada; Alta requisito con plantilla true; Alta requisito con plantilla false; Agrupación y descripción públicas; Orden de requisitos respetado; Obligatoriedad pública explícita; Plantilla pública PDF correcta"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # PUB-EXT-02"
+      ],
+      "note": []
+    },
+    {
+      "id": "PUB-EXT-03",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "Catálogo sin publicados no inventa lista; Informa que no hay catálogo configurado/publicado"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # PUB-EXT-03"
+      ],
+      "note": []
+    },
+    {
+      "id": "PUB-EXT-04",
+      "status": "Bloqueado",
+      "method": [
+        "Comprobación parcial; pendiente manual indicado"
+      ],
+      "actual": [
+        "La denegación simulada funciona; queda pendiente rechazar el permiso real del navegador/sistema. No se certifica con una simulación."
+      ],
+      "evidence": [
+        "PUB-EXT-05.tap"
+      ],
+      "note": [
+        "No marcar ejecutado completamente hasta cerrar el paso pendiente."
+      ]
+    },
+    {
+      "id": "PUB-EXT-05",
+      "status": "Exitoso",
+      "method": [
+        "JavaScript publicado; proveedor GPS simulado"
+      ],
+      "actual": [
+        "Ocho variantes sintéticas: sin soporte, denegado/no disponible/timeout en mapa y ruta; ninguna navega indebidamente."
+      ],
+      "evidence": [
+        "PUB-EXT-05.tap"
+      ],
+      "note": [
+        "No usa ubicación física ni comprueba el permiso del sistema."
+      ]
+    },
+    {
+      "id": "PUB-EXT-06",
+      "status": "Exitoso",
+      "method": [
+        "JavaScript publicado; proveedor GPS simulado"
+      ],
+      "actual": [
+        "Con coordenadas sintéticas se elige el abierto más cercano, excluyendo el cerrado y conservando origen/destino."
+      ],
+      "evidence": [
+        "PUB-EXT-06.tap"
+      ],
+      "note": [
+        "No usa ubicación física ni comprueba el permiso del sistema."
+      ]
+    },
+    {
+      "id": "PUB-EXT-07",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "El botón informa que no hay abiertos y permanece en la página."
+      ],
+      "evidence": [
+        "evidencia-ui/PUB-EXT-07.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "PUB-EXT-08",
+      "status": "Bloqueado",
+      "method": [
+        "Comprobación parcial; pendiente manual indicado"
+      ],
+      "actual": [
+        "El JavaScript real, ejecutado sin Leaflet, informa mapa no disponible en directorio y ficha. Falta reproducir el bloqueo externo dentro del navegador para confirmar el recorrido completo."
+      ],
+      "evidence": [
+        "PUB-EXT-08-fallback.json"
+      ],
+      "note": [
+        "No marcar ejecutado completamente hasta cerrar el paso pendiente."
+      ]
+    },
+    {
+      "id": "PUB-EXT-09",
+      "status": "Fallido",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos",
+        "Interacción de navegador integrado en copia local",
+        "HTTP y navegador con coordenadas sintéticas inválidas persistidas"
+      ],
+      "actual": [
+        "Ficha inexistente no sustituye otro laboratorio | Falló: No generar ruta a coordenadas 999,999",
+        "BUG-03: con el registro de prueba Lat=999/Lng=999 la ficha crea marcador y la ruta publica destino Google Maps 999,999 en vez de bloquear una ubicación inválida. ID inexistente sí devuelve 404.",
+        "La ficha muestra 999,999 y la ruta pública genera Google Maps destination=999,999; el ID inexistente sí devuelve 404. El registro ordinario bloquea esas coordenadas."
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # PUB-EXT-09",
+        "evidencia-ui/PUB-EXT-09.txt",
+        "evidencia-ui/PUB-EXT-09.txt; evidencia-ui/bug-03-ruta-invalida.png"
+      ],
+      "note": [
+        "BUG-03"
+      ]
+    },
+    {
+      "id": "PUB-EXT-10",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "Directorio excluye vigencia vencida; Ficha vencida se presenta cerrada; Datos incompletos no se inventan al consultar"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # PUB-EXT-10"
+      ],
+      "note": []
+    },
+    {
+      "id": "REG-EXT-01",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "228 comprobaciones aprobadas: Every_form_field_rejects_invalid_values_without_changing_any_table, test\"), 000001\"), 56\")",
+        "Límite inclusivo aceptado Latitud=-90; Límite inclusivo aceptado Latitud=90; Límite inclusivo aceptado Longitud=-180; Límite inclusivo aceptado Longitud=180; Valor de coordenada inválido rechazado; Sin persistencia de coordenada inválida; Valor de coordenada inválido rechazado; Sin persistencia de coordenada inválida; Valor de coordenada inválido rechazado; Sin persistencia de coordenada inválida; Valor de coordenada inválido rechazado; Sin persistencia de coordenada inválida; Valor de coordenada inválido rechazado; Sin persistencia de coordenada inválida; Valor de coordenada inválido rechazado; Sin persistencia de coordenada inválida; Valor de coordenada inválido rechazado; Sin persistencia de coordenada inválida; Valor de coordenada inválido rechazado; Sin persistencia de coordenada inválida"
+      ],
+      "evidence": [
+        "por-caso\\REG-EXT-01.trx",
+        "resultados-suplementarios.json # REG-EXT-01"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "REG-EXT-02",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP real en copia local; preparación sintética de casos límite"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Public_templates_are_separate_from_private_documents_and_catalogues_validate_values",
+        "Valor inactivo bloqueado TipoLaboratorio; Sin solicitud parcial; Catálogo activo de 100 caracteres aceptado TipoLaboratorio; Catálogo de 101 caracteres bloqueado TipoLaboratorio; Sin persistir exceso; Valor inactivo bloqueado Municipio; Sin solicitud parcial; Catálogo activo de 100 caracteres aceptado Municipio; Catálogo de 101 caracteres bloqueado Municipio; Sin persistir exceso"
+      ],
+      "evidence": [
+        "por-caso\\REG-EXT-02.trx",
+        "resultados-cierre.json # REG-EXT-02"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "REG-EXT-03",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "228 comprobaciones aprobadas: Every_form_field_rejects_invalid_values_without_changing_any_table, 000001\"), test\"), 56\")",
+        "Máximo textual válido NombreLaboratorio; Exceso de longitud rechazado NombreLaboratorio; Sin registro parcial NombreLaboratorio; Máximo textual válido Direccion; Exceso de longitud rechazado Direccion; Sin registro parcial Direccion; Máximo textual válido Codigo; Exceso de longitud rechazado Codigo; Sin registro parcial Codigo; Máximo textual válido Telefono; Exceso de longitud rechazado Telefono; Sin registro parcial Telefono"
+      ],
+      "evidence": [
+        "por-caso\\REG-EXT-03.trx",
+        "resultados-suplementarios.json # REG-EXT-03",
+        "resultados-cierre.json # REG-EXT-02 (tipo/municipio de 100 y 101 caracteres)"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "REG-EXT-04",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Borrador #17 conserva seis PDF seleccionados uno por uno y la ubicación -17.396675,-66.149706 obtenida arrastrando el marcador."
+      ],
+      "evidence": [
+        "evidencia-ui/REG-EXT-04.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "REG-EXT-05",
+      "status": "Bloqueado",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Quitar archivo 2, agregar archivo 4 y guardar conserva exactamente PDF 1,3,4 sin duplicados. Falta cancelar el diálogo nativo: la API ofrece selección pero no cierre equivalente verificable."
+      ],
+      "evidence": [
+        "evidencia-ui/REG-EXT-05.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "REG-EXT-06",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "5 comprobaciones aprobadas: All_file_forms_reject_empty_wrong_extension_signature_and_truncated_pdf"
+      ],
+      "evidence": [
+        "por-caso\\REG-EXT-06.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "REG-EXT-07",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Validation_upload_limits_and_stale_changes",
+        "PDF de tamaño exacto 10 MB; PDF válido de 10 MB aceptado; PDF de 10 MB + 1 byte rechazado; Exceso individual sin persistencia parcial; Carga inicial de 50 MB aceptada; Total superior a 50 MB rechazado; Exceso total sin persistencia parcial"
+      ],
+      "evidence": [
+        "por-caso\\REG-EXT-07.trx",
+        "resultados-suplementarios.json # REG-EXT-07"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "REG-EXT-08",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Oversize_content_length_is_rejected_before_binding"
+      ],
+      "evidence": [
+        "por-caso\\REG-EXT-08.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "REG-EXT-09",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Owner_can_repair_draft_preserving_files_but_cannot_overwrite_stale_or_submitted_data"
+      ],
+      "evidence": [
+        "por-caso\\REG-EXT-09.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEG-EXT-01",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Se guardaron Licencia y Plano en cargas individuales separadas, conservando el primer archivo y sin enviar la solicitud."
+      ],
+      "evidence": [
+        "evidencia-ui/SEG-EXT-01.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "SEG-EXT-02",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Initial_upload_can_be_associated_without_reuploading",
+        "archivo-1.pdf se asocia a Licencia municipal sin reabrir el selector. Se conserva el registro original y la historia de asociación."
+      ],
+      "evidence": [
+        "por-caso\\SEG-EXT-02.trx",
+        "evidencia-ui/SEG-EXT-02.txt"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEG-EXT-03",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Document_versions_preserve_original_and_requirement_snapshot"
+      ],
+      "evidence": [
+        "por-caso\\SEG-EXT-03.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEG-EXT-04",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Document_versions_preserve_original_and_requirement_snapshot"
+      ],
+      "evidence": [
+        "por-caso\\SEG-EXT-04.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEG-EXT-05",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Observed_complement_can_be_retired_without_deleting_history_or_mandatory_documents, More_than_five_PDFs_can_be_added_then_removed_individually_before_submitting"
+      ],
+      "evidence": [
+        "por-caso\\SEG-EXT-05.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEG-EXT-06",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Legal_observation_cannot_skip_review_and_does_not_repeat_field_visit_unnecessarily, Complete_opening_renewal_and_role_workflow"
+      ],
+      "evidence": [
+        "por-caso\\SEG-EXT-06.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEG-EXT-07",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Document_versions_preserve_original_and_requirement_snapshot"
+      ],
+      "evidence": [
+        "por-caso\\SEG-EXT-07.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEG-EXT-08",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Optional_catalogue_can_finish_document_review_without_pdf"
+      ],
+      "evidence": [
+        "por-caso\\SEG-EXT-08.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEG-EXT-09",
+      "status": "Exitoso",
+      "method": [
+        "HTTP real en copia local; preparación sintética de casos límite"
+      ],
+      "actual": [
+        "Ficha propia accesible; Apertura y renovación vinculadas al mismo laboratorio; Vínculo de expediente 13; Expediente propio accesible; PDF privado propio descargable 34; PDF privado propio descargable 35; PDF privado propio descargable 36; Vínculo de expediente 15; Expediente propio accesible"
+      ],
+      "evidence": [
+        "resultados-cierre.json # SEG-EXT-09"
+      ],
+      "note": []
+    },
+    {
+      "id": "SEG-EXT-10",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Services_reject_an_old_tab_instead_of_overwriting_the_last_saved_text"
+      ],
+      "evidence": [
+        "por-caso\\SEG-EXT-10.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEG-EXT-11",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Complete_opening_renewal_and_role_workflow"
+      ],
+      "evidence": [
+        "por-caso\\SEG-EXT-11.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEG-EXT-12",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Complete_opening_renewal_and_role_workflow, Field_rejection_still_blocks_duplicate_renewal_until_existing_case_is_resolved"
+      ],
+      "evidence": [
+        "por-caso\\SEG-EXT-12.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEG-EXT-13",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "Respuesta controlada de renovación días 31; Renovación solo en ventana permitida para 31 días; Mensaje explica la ventana configurada; Respuesta controlada de renovación días 30; Renovación solo en ventana permitida para 30 días; Respuesta controlada de renovación días 0; Renovación solo en ventana permitida para 0 días; Respuesta controlada de renovación días -1; Renovación solo en ventana permitida para -1 días"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # SEG-EXT-13"
+      ],
+      "note": []
+    },
+    {
+      "id": "SEG-EXT-14",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "228 comprobaciones aprobadas: Every_form_field_rejects_invalid_values_without_changing_any_table, 56\"), 000001\"), test\")",
+        "Límite de servicios 0; Contenido de servicios conservado; Límite de servicios 2000; Contenido de servicios conservado; Límite de servicios 2001; Contenido de servicios conservado"
+      ],
+      "evidence": [
+        "por-caso\\SEG-EXT-14.trx",
+        "resultados-suplementarios.json # SEG-EXT-14"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "COO-EXT-01",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Se recorrieron Revisar documentos, Asignar inspección y Validar actas; filtro Cochabamba y regreso al listado funcionan."
+      ],
+      "evidence": [
+        "evidencia-ui/COO-EXT-01.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "COO-EXT-02",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Document_approval_accepts_no_repeated_reason_but_observation_requires_correction_text",
+        "Aprobación sin motivo de corrección asigna revisor y fecha a Licencia municipal. Se registró por separado BUG-02 al repetir la aprobación."
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-02.trx",
+        "evidencia-ui/COO-EXT-02.txt"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz.",
+        "BUG-02: aprobación repetida del mismo PDF añade historial redundante."
+      ]
+    },
+    {
+      "id": "COO-EXT-03",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Document_approval_accepts_no_repeated_reason_but_observation_requires_correction_text",
+        "Vacío se rechaza sin observar; con motivo se observa solo Plano. BUG-01 documenta que el mensaje de validación no ofrece regreso al formulario."
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-03.trx",
+        "evidencia-ui/COO-EXT-03.txt"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz.",
+        "BUG-01 observado; el bloqueo de datos esperado sí funciona."
+      ]
+    },
+    {
+      "id": "COO-EXT-04",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Complete_opening_renewal_and_role_workflow"
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-04.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "COO-EXT-05",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Document_return_reuses_individual_correction_notes_without_requiring_them_twice"
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-05.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "COO-EXT-06",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Every_role_state_action_combination_denies_forbidden_transition_without_side_effects, Rejections_reassignments_and_agenda_conflicts_preserve_workflow"
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-06.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "COO-EXT-07",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "229 comprobaciones aprobadas: test\"), Every_form_field_rejects_invalid_values_without_changing_any_table, 000001\"), 56\"), Every_declared_valid_transition_executes_its_expected_effect"
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-07.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "COO-EXT-08",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Rejections_reassignments_and_agenda_conflicts_preserve_workflow, Every_declared_valid_transition_executes_its_expected_effect"
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-08.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "COO-EXT-09",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Every_declared_valid_transition_executes_its_expected_effect, Rejections_reassignments_and_agenda_conflicts_preserve_workflow"
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-09.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "COO-EXT-10",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Every_role_state_action_combination_denies_forbidden_transition_without_side_effects"
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-10.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "COO-EXT-11",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Complete_opening_renewal_and_role_workflow",
+        "Acta conforme de #8 aceptada: inspección validada y trámite en revisión legal, sin habilitación anticipada."
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-11.trx",
+        "evidencia-ui/COO-EXT-11.txt"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "COO-EXT-12",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Complete_opening_renewal_and_role_workflow"
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-12.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "COO-EXT-13",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Rejections_reassignments_and_agenda_conflicts_preserve_workflow"
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-13.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "COO-EXT-14",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Reprogramming_replaces_only_pending_booking_preserves_history_and_checks_own_completed_visits"
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-14.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "COO-EXT-15",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Every_declared_valid_transition_executes_its_expected_effect, Field_rejection_still_blocks_duplicate_renewal_until_existing_case_is_resolved"
+      ],
+      "evidence": [
+        "por-caso\\COO-EXT-15.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-01",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Supervisor_views_only_own_visits_and_gets_a_focused_detail",
+        "Semana siguiente cruza a noviembre. Buscar Horizonte reduce a una visita; Actualizar conserva fecha 06/11/2026 y q=Horizonte. El aislamiento se verificó también por integración."
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-01.trx",
+        "evidencia-ui/SUP-EXT-01.txt"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-02",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Supervisor_can_program_intervals_without_colliding_with_own_reservation"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-02.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-03",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Scheduling_extreme_date_does_not_crash_and_acta_cannot_precede_visit, Supervisor_can_program_intervals_without_colliding_with_own_reservation"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-03.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-04",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "7 comprobaciones aprobadas: Agenda_blocks_identical_partial_enclosing_and_already_reported_intervals"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-04.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-05",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Agenda_allows_adjacent_visits_and_replaced_reservations"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-05.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-06",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Concurrent_decisions_apply_once_and_conflicting_assignments_do_not_overlap"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-06.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-07",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Agenda_and_routes_accept_civil_calendar_boundaries_without_server_overflow"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-07.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-08",
+      "status": "Bloqueado",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "Comprobación parcial; pendiente manual indicado"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Supervisor_views_only_own_visits_and_gets_a_focused_detail",
+        "Aislamiento de supervisor y datos del recorrido verificados en servidor. Falta comprobar en navegador el orden diario y los enlaces de cada visita: la navegación quedó bloqueada por la herramienta al mostrar una respuesta de acceso denegado."
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-08.trx",
+        "por-caso/SUP-EXT-08.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz.",
+        "No marcar ejecutado completamente hasta cerrar el paso pendiente."
+      ]
+    },
+    {
+      "id": "SUP-EXT-09",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Inspection_checklist_and_template_are_frozen_and_can_be_prepared_before_signing, Dedicated_prepare_action_chooses_its_own_operation_and_legacy_send_only_redirects",
+        "Hallazgo vacío impide guardar; al completarlo se conserva en inspección pendiente con resultado observado y notas vacías. Verificación adicional de persistencia: ui-db-evidence.json."
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-09.trx",
+        "evidencia-ui/SUP-EXT-09-10.txt"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-10",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "6 comprobaciones aprobadas: Acta_rejects_inconsistent_incomplete_or_unsigned_submission_without_mutation, Acta_derives_summary_once_and_clears_notes_from_compliant_items, Acta_does_not_require_duplicate_general_observations_for_compliant_checklist",
+        "Hallazgo vacío impide guardar; al completarlo se conserva en inspección pendiente con resultado observado y notas vacías. Verificación adicional de persistencia: ui-db-evidence.json."
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-10.trx",
+        "evidencia-ui/SUP-EXT-09-10.txt"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-11",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "6 comprobaciones aprobadas: Acta_rejects_inconsistent_incomplete_or_unsigned_submission_without_mutation, Acta_derives_summary_once_and_clears_notes_from_compliant_items, Acta_does_not_require_duplicate_general_observations_for_compliant_checklist"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-11.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-12",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "6 comprobaciones aprobadas: Acta_derives_summary_once_and_clears_notes_from_compliant_items, Acta_does_not_require_duplicate_general_observations_for_compliant_checklist, Acta_rejects_inconsistent_incomplete_or_unsigned_submission_without_mutation"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-12.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-13",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Inspection_checklist_and_template_are_frozen_and_can_be_prepared_before_signing",
+        "Acta #3 de solicitud #7 registrada como observada con PDF; queda en revisión del coordinador, sin permitir editar la programación."
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-13.trx",
+        "evidencia-ui/SUP-EXT-13.txt"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-14",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "10 comprobaciones aprobadas: Acta_rejects_inconsistent_incomplete_or_unsigned_submission_without_mutation, All_file_forms_reject_empty_wrong_extension_signature_and_truncated_pdf, Scheduling_extreme_date_does_not_crash_and_acta_cannot_precede_visit"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-14.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-15",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Acts_citations_and_form_snapshot_belong_to_the_current_supervisor"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-15.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-16",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Inspection_checklist_and_template_are_frozen_and_can_be_prepared_before_signing"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-16.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-17",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP real en copia local; preparación sintética de casos límite"
+      ],
+      "actual": [
+        "229 comprobaciones aprobadas: Every_form_field_rejects_invalid_values_without_changing_any_table, 000001\"), Business_calendar_uses_only_configured_holidays, 56\"), test\")",
+        "Plazo inclusivo aceptado 1; Plazo válido persistido; Plazo inclusivo aceptado 90; Plazo válido persistido"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-17.trx",
+        "resultados-cierre.json # SUP-EXT-17"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-18",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "4 comprobaciones aprobadas: Citations_require_evidence_and_notify_both_roles_once_per_phase, jpg\"), png\")"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-18.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-19",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "4 comprobaciones aprobadas: jpg\"), Citations_require_evidence_and_notify_both_roles_once_per_phase, png\")",
+        "Citación con JPEG válido; JPEG privado se descarga con tipo correcto; Segunda citación pendiente bloqueada; Nueva visita por observación de campo; Acta nueva conforme registrada; Coordinador valida acta conforme; Citación anterior queda atendida"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-19.trx",
+        "resultados-suplementarios.json # SUP-EXT-19"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-20",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "235 comprobaciones aprobadas: Every_form_field_rejects_invalid_values_without_changing_any_table, All_file_forms_reject_empty_wrong_extension_signature_and_truncated_pdf, 000001\"), test\"), jpg\"), 56\"), png\")"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-20.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-21",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Citations_require_evidence_and_notify_both_roles_once_per_phase"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-21.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-22",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP real en copia local; preparación sintética de casos límite"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Citations_require_evidence_and_notify_both_roles_once_per_phase",
+        "Citación con JPEG válido; JPEG privado se descarga con tipo correcto; Segunda citación pendiente bloqueada; Nueva visita por observación de campo; Acta nueva conforme registrada; Coordinador valida acta conforme; Citación anterior queda atendida"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-22.trx",
+        "resultados-cierre.json # SUP-EXT-22"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SUP-EXT-23",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Acts_citations_and_form_snapshot_belong_to_the_current_supervisor"
+      ],
+      "evidence": [
+        "por-caso\\SUP-EXT-23.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "LEG-EXT-01",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Every_declared_page_download_and_role_is_exercised_and_rendered_links_and_forms_are_checked, Legal_observation_targets_only_selected_documents_and_keeps_decision_visible"
+      ],
+      "evidence": [
+        "por-caso\\LEG-EXT-01.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "LEG-EXT-02",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Complete_opening_renewal_and_role_workflow"
+      ],
+      "evidence": [
+        "por-caso\\LEG-EXT-02.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "LEG-EXT-03",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "9 comprobaciones aprobadas: All_file_forms_reject_empty_wrong_extension_signature_and_truncated_pdf, Legal_approval_rejects_damaged_official_data_without_side_effects, Complete_opening_renewal_and_role_workflow"
+      ],
+      "evidence": [
+        "por-caso\\LEG-EXT-03.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "LEG-EXT-04",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Legal_observation_cannot_skip_review_and_does_not_repeat_field_visit_unnecessarily, Legal_observation_targets_only_selected_documents_and_keeps_decision_visible"
+      ],
+      "evidence": [
+        "por-caso\\LEG-EXT-04.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "LEG-EXT-05",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP real en copia local; preparación sintética de casos límite"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Legal_observation_targets_only_selected_documents_and_keeps_decision_visible",
+        "Selección legal inválida devuelve al detalle: [] motivo=Corregir; Sin cambios de tabla por selección legal inválida; Mensaje de corrección visible; Selección legal inválida devuelve al detalle: [129, 129] motivo=Corregir; Sin cambios de tabla por selección legal inválida; Mensaje de corrección visible; Selección legal inválida devuelve al detalle: [132] motivo=Corregir; Sin cambios de tabla por selección legal inválida; Mensaje de corrección visible; Selección legal inválida devuelve al detalle: [1] motivo=Corregir; Sin cambios de tabla por selección legal inválida; Mensaje de corrección visible; Selección legal inválida devuelve al detalle: [129] motivo=; Sin cambios de tabla por selección legal inválida; Mensaje de corrección visible"
+      ],
+      "evidence": [
+        "por-caso\\LEG-EXT-05.trx",
+        "resultados-cierre.json # LEG-EXT-05"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "LEG-EXT-06",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Legal_observation_cannot_skip_review_and_does_not_repeat_field_visit_unnecessarily"
+      ],
+      "evidence": [
+        "por-caso\\LEG-EXT-06.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "LEG-EXT-07",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Rejections_reassignments_and_agenda_conflicts_preserve_workflow, Every_role_state_action_combination_denies_forbidden_transition_without_side_effects"
+      ],
+      "evidence": [
+        "por-caso\\LEG-EXT-07.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "LEG-EXT-08",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Complete_opening_renewal_and_role_workflow",
+        "Aprobación legal de renovación 15; Año desde vigencia activa o desde aprobación al estar vencida; Mismo laboratorio y cierre independiente; Aprobación legal de renovación -15; Año desde vigencia activa o desde aprobación al estar vencida; Mismo laboratorio y cierre independiente"
+      ],
+      "evidence": [
+        "por-caso\\LEG-EXT-08.trx",
+        "resultados-suplementarios.json # LEG-EXT-08"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "LEG-EXT-09",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "3 comprobaciones aprobadas: Legal_approval_blocks_inconsistent_renewal_links_and_impossible_extension_without_mutating_any_table"
+      ],
+      "evidence": [
+        "por-caso\\LEG-EXT-09.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "LEG-EXT-10",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Historical_closure_pdf_stays_identical_after_laboratory_changes"
+      ],
+      "evidence": [
+        "por-caso\\LEG-EXT-10.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-01",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos",
+        "HTTP real en copia local; preparación sintética de casos límite"
+      ],
+      "actual": [
+        "Alta de fixture usuario campana-2@example.test; Acceso de cuenta nueva Propietario; Identidad nueva correcta Propietario; Contraseña cifrada mediante hash Propietario; Alta de fixture usuario campana-3@example.test; Acceso de cuenta nueva Coordinador; Identidad nueva correcta Coordinador; Contraseña cifrada mediante hash Coordinador; Alta de fixture usuario campana-4@example.test; Acceso de cuenta nueva Supervisor; Identidad nueva correcta Supervisor; Contraseña cifrada mediante hash Supervisor; Alta de fixture usuario campana-5@example.test; Acceso de cuenta nueva Abogado; Identidad nueva correcta Abogado; Contraseña cifrada mediante hash Abogado; Alta de fixture usuario campana-6@example.test; Acceso de cuenta nueva Gerente; Identidad nueva correcta Gerente; Contraseña cifrada mediante hash Gerente; Alta de fixture usuario campana-7@example.test; Acceso de cuenta nueva Administrador; Identidad nueva correcta Administrador; Contraseña cifrada mediante hash Administrador",
+        "Alta de fixture usuario campana-6cc47d09c5a54d9ea8c1715bfed54fc8@example.test; Acceso de cuenta nueva Propietario; Identidad nueva correcta Propietario; Rol guardado y acceso principal correcto Propietario; Contraseña cifrada mediante hash Propietario; Alta de fixture usuario campana-dcec4da7d2ff4a58adad86d45e423e44@example.test; Acceso de cuenta nueva Coordinador; Identidad nueva correcta Coordinador; Rol guardado y acceso principal correcto Coordinador; Contraseña cifrada mediante hash Coordinador; Alta de fixture usuario campana-87c34088eb364973b3b650042a6d9af5@example.test; Acceso de cuenta nueva Supervisor; Identidad nueva correcta Supervisor; Rol guardado y acceso principal correcto Supervisor; Contraseña cifrada mediante hash Supervisor; Alta de fixture usuario campana-3f9ba29a2c1c452a80aa1a4be0b44ff4@example.test; Acceso de cuenta nueva Abogado; Identidad nueva correcta Abogado; Rol guardado y acceso principal correcto Abogado; Contraseña cifrada mediante hash Abogado; Alta de fixture usuario campana-45bb8c5b3e0c486dadb4379010efa2ce@example.test; Acceso de cuenta nueva Gerente; Identidad nueva correcta Gerente; Rol guardado y acceso principal correcto Gerente; Contraseña cifrada mediante hash Gerente; Alta de fixture usuario campana-dcd03e7eaa8a4646be92bf0a80b202a8@example.test; Acceso de cuenta nueva Administrador; Identidad nueva correcta Administrador; Rol guardado y acceso principal correcto Administrador; Contraseña cifrada mediante hash Administrador"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # ADM-EXT-01",
+        "resultados-cierre.json # ADM-EXT-01"
+      ],
+      "note": []
+    },
+    {
+      "id": "ADM-EXT-02",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "228 comprobaciones aprobadas: Every_form_field_rejects_invalid_values_without_changing_any_table, 000001\"), test\"), 56\")"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-02.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-03",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Admin_users_requirements_metrics_and_logout"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-03.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-04",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Changed_role_invalidates_cookie_and_missing_fields_do_not_crash",
+        "Alta de fixture usuario campana-8@example.test; Edición sin contraseña guardada; Sesión revocada; Contraseña anterior se conserva"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-04.trx",
+        "resultados-suplementarios.json # ADM-EXT-04"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-05",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "Alta de fixture usuario campana-9@example.test; Sesión previa de la cuenta; Cambio de credencial guardado; Sesión anterior revocada; Contraseña anterior rechazada; Contraseña nueva aceptada"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # ADM-EXT-05"
+      ],
+      "note": []
+    },
+    {
+      "id": "ADM-EXT-06",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "Alta de fixture usuario campana-10@example.test; Suspensión guardada; Sesión suspendida revocada; Suspendido no inicia sesión; Reactivación guardada; Reactivado inicia sesión"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # ADM-EXT-06"
+      ],
+      "note": []
+    },
+    {
+      "id": "ADM-EXT-07",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Changed_role_invalidates_cookie_and_missing_fields_do_not_crash",
+        "Autobloqueo rechazado; El administrador conserva su acceso; Autobloqueo rechazado; El administrador conserva su acceso; Alta de fixture usuario campana-11@example.test; Cambio de rol guardado; Cookie anterior revocada; Nueva sesión de gerente autorizada; Nuevo rol sin atribuciones anteriores"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-07.trx",
+        "resultados-suplementarios.json # ADM-EXT-07"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-08",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "Alta de fixture usuario campana-12@example.test; Se bloquea dejar una visita pendiente sin supervisor; Se bloquea dejar una visita pendiente sin supervisor; Reasignación legítima de la visita; Sin visita pendiente se permite suspender"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # ADM-EXT-08"
+      ],
+      "note": []
+    },
+    {
+      "id": "ADM-EXT-09",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Admin_rejects_stale_user_edits_and_manager_can_recover_from_invalid_dates"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-09.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-10",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Bulk_permissions_apply_to_open_sessions_and_reject_stale_edits_atomically, Every_configurable_capability_is_enforced_on_the_existing_session"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-10.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-11",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "5 comprobaciones aprobadas: Partial_permission_rows_cannot_silently_disable_a_capability, Permission_editor_rejects_missing_duplicate_and_foreign_capabilities, Bulk_permissions_apply_to_open_sessions_and_reject_stale_edits_atomically"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-11.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-12",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Edits_reorder_move_validate_sections_and_detect_stale_catalog_changes"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-12.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-13",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Section_and_requirement_activation_control_public_page_registration_and_drafts"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-13.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-14",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Deleting_requirements_and_empty_sections_preserves_submitted_snapshots"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-14.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-15",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Public_templates_are_separate_from_private_documents_and_catalogues_validate_values, Edits_reorder_move_validate_sections_and_detect_stale_catalog_changes"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-15.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-16",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Deleting_requirements_and_empty_sections_preserves_submitted_snapshots"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-16.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-17",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "229 comprobaciones aprobadas: Every_form_field_rejects_invalid_values_without_changing_any_table, test\"), Edits_reorder_move_validate_sections_and_detect_stale_catalog_changes, 000001\"), 56\")"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-17.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-18",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP real en copia local; preparación sintética de casos límite"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Business_calendar_uses_only_configured_holidays, Public_templates_are_separate_from_private_documents_and_catalogues_validate_values",
+        "Alta catálogo tipo; Duplicado de catálogo bloqueado; Sin duplicación; Edición y desactivación tipo; Edición persistida; Edición obsoleta bloqueada; No sobreescribe catálogo vigente; Clase existente inmutable; Límites de catálogo rechazados tipo; Sin efecto parcial; Límites de catálogo rechazados tipo; Sin efecto parcial; Alta catálogo municipio; Duplicado de catálogo bloqueado; Sin duplicación; Edición y desactivación municipio; Edición persistida; Edición obsoleta bloqueada; No sobreescribe catálogo vigente; Clase existente inmutable; Límites de catálogo rechazados municipio; Sin efecto parcial; Límites de catálogo rechazados municipio; Sin efecto parcial; Alta catálogo inspeccion; Duplicado de catálogo bloqueado; Sin duplicación; Edición y desactivación inspeccion; Edición persistida; Edición obsoleta bloqueada; No sobreescribe catálogo vigente; Clase existente inmutable; Límites de catálogo rechazados inspeccion; Sin efecto parcial; Límites de catálogo rechazados inspeccion; Sin efecto parcial; Alta catálogo feriado; Duplicado de catálogo bloqueado; Sin duplicación; Edición y desactivación feriado; Edición persistida; Edición obsoleta bloqueada; No sobreescribe catálogo vigente; Clase existente inmutable; Límites de catálogo rechazados feriado; Sin efecto parcial; Límites de catálogo rechazados feriado; Sin efecto parcial; Feriado inválido rechazado 2040-02-30; Sin feriado inválido; Feriado inválido rechazado 03/02/2040; Sin feriado inválido; Feriado inválido rechazado 2040-02-03T09:00; Sin feriado inválido"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-18.trx",
+        "resultados-cierre.json # ADM-EXT-18"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-19",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP real en copia local; preparación sintética de casos límite"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Public_templates_are_separate_from_private_documents_and_catalogues_validate_values, Business_calendar_uses_only_configured_holidays",
+        "Plantilla activa formulario_acta; Segunda plantilla activa bloqueada; Sin segunda plantilla ni registro parcial; Solo una activa por clase; Contenido de la plantilla guardada exacto; Plantilla activa formulario_citacion; Segunda plantilla activa bloqueada; Sin segunda plantilla ni registro parcial; Solo una activa por clase; Contenido de la plantilla guardada exacto"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-19.trx",
+        "resultados-cierre.json # ADM-EXT-19"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "ADM-EXT-20",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "Pantalla de validación disponible; Consulta sin reparar ni inventar datos; Registro incompleto señalado: Laboratorio Central SEDES; Registro incompleto señalado: Laboratorio Nova; Registro incompleto señalado: Laboratorio Clínica Azul"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # ADM-EXT-20"
+      ],
+      "note": []
+    },
+    {
+      "id": "ADM-EXT-21",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP real en copia local; preparación sintética de casos límite"
+      ],
+      "actual": [
+        "229 comprobaciones aprobadas: Every_form_field_rejects_invalid_values_without_changing_any_table, 000001\"), test\"), 56\"), Edits_reorder_move_validate_sections_and_detect_stale_catalog_changes",
+        "Alta catálogo tipo; Duplicado de catálogo bloqueado; Sin duplicación; Edición y desactivación tipo; Edición persistida; Edición obsoleta bloqueada; No sobreescribe catálogo vigente; Clase existente inmutable; Límites de catálogo rechazados tipo; Sin efecto parcial; Límites de catálogo rechazados tipo; Sin efecto parcial; Alta catálogo municipio; Duplicado de catálogo bloqueado; Sin duplicación; Edición y desactivación municipio; Edición persistida; Edición obsoleta bloqueada; No sobreescribe catálogo vigente; Clase existente inmutable; Límites de catálogo rechazados municipio; Sin efecto parcial; Límites de catálogo rechazados municipio; Sin efecto parcial; Alta catálogo inspeccion; Duplicado de catálogo bloqueado; Sin duplicación; Edición y desactivación inspeccion; Edición persistida; Edición obsoleta bloqueada; No sobreescribe catálogo vigente; Clase existente inmutable; Límites de catálogo rechazados inspeccion; Sin efecto parcial; Límites de catálogo rechazados inspeccion; Sin efecto parcial; Alta catálogo feriado; Duplicado de catálogo bloqueado; Sin duplicación; Edición y desactivación feriado; Edición persistida; Edición obsoleta bloqueada; No sobreescribe catálogo vigente; Clase existente inmutable; Límites de catálogo rechazados feriado; Sin efecto parcial; Límites de catálogo rechazados feriado; Sin efecto parcial; Feriado inválido rechazado 2040-02-30; Sin feriado inválido; Feriado inválido rechazado 03/02/2040; Sin feriado inválido; Feriado inválido rechazado 2040-02-03T09:00; Sin feriado inválido"
+      ],
+      "evidence": [
+        "por-caso\\ADM-EXT-21.trx",
+        "resultados-cierre.json # ADM-EXT-21"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "MET-EXT-01",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "total: 6 = 6; habilitadas: 2 = 2; rechazadas: 1 = 1; pendientes: 3 = 3; borradores: 2 = 2; Tasa 2/3 sin contar rechazo de campo como definitivo"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # MET-EXT-01"
+      ],
+      "note": []
+    },
+    {
+      "id": "MET-EXT-02",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Charts_use_saved_cohort_zero_fill_months_and_weight_closures_correctly, Manager_excludes_drafts_and_export_uses_same_scope"
+      ],
+      "evidence": [
+        "por-caso\\MET-EXT-02.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "MET-EXT-03",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Charts_use_saved_cohort_zero_fill_months_and_weight_closures_correctly, Empty_charts_have_no_fake_rates_or_durations_and_do_not_serialize_user_secrets",
+        "Promedio de cierres válidos 2 y 4 = 3 días; Se excluyen cierre ausente y negativo; Sin denominador se informa ausencia, no cero"
+      ],
+      "evidence": [
+        "por-caso\\MET-EXT-03.trx",
+        "resultados-suplementarios.json # MET-EXT-03"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "MET-EXT-04",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Charts_use_saved_cohort_zero_fill_months_and_weight_closures_correctly, Empty_charts_have_no_fake_rates_or_durations_and_do_not_serialize_user_secrets"
+      ],
+      "evidence": [
+        "por-caso\\MET-EXT-04.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "MET-EXT-05",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "13 comprobaciones aprobadas: Invalid_query_fields_are_rejected_without_opening_an_unfiltered_or_creation_screen, Admin_rejects_stale_user_edits_and_manager_can_recover_from_invalid_dates"
+      ],
+      "evidence": [
+        "por-caso\\MET-EXT-05.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "MET-EXT-06",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "CSV descargado; CSV conserva/neutraliza '=1+1'; CSV conserva/neutraliza '+cmd'; CSV conserva/neutraliza '-formula'; CSV conserva/neutraliza '@suma'; CSV conserva/neutraliza '  =oculto'; CSV conserva/neutraliza 'Municipio, con coma'; CSV conserva/neutraliza 'Texto \"entrecomillado\"'; CSV conserva/neutraliza 'Texto\\ncon salto'"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # MET-EXT-06"
+      ],
+      "note": []
+    },
+    {
+      "id": "MET-EXT-07",
+      "status": "Exitoso",
+      "method": [
+        "Interacción de navegador integrado en copia local"
+      ],
+      "actual": [
+        "Servidor detenido: aviso, datos conservados y botón reutilizable. Tras reiniciar, el reintento recupera los gráficos. Los códigos de error, HTML/JSON inválido y timeout de 15 s se ejecutaron además en pruebas JS."
+      ],
+      "evidence": [
+        "evidencia-ui/MET-EXT-07-recuperado.txt"
+      ],
+      "note": []
+    },
+    {
+      "id": "MET-EXT-08",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "6 comprobaciones aprobadas: Interactive_surfaces_keep_role_authorization, Every_declared_page_download_and_role_is_exercised_and_rendered_links_and_forms_are_checked, Empty_charts_have_no_fake_rates_or_durations_and_do_not_serialize_user_secrets"
+      ],
+      "evidence": [
+        "por-caso\\MET-EXT-08.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "MET-EXT-09",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "Pantalla conserva últimos movimientos; CSV contiene los 50 movimientos más recientes; Orden reciente por fecha/ID; El estado es actual para la cohorte histórica seleccionada"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # MET-EXT-09"
+      ],
+      "note": []
+    },
+    {
+      "id": "MET-EXT-10",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "Rango de 3660 días; Rango de 3661 días; Fecha final no extensible rechazada sin 500"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # MET-EXT-10"
+      ],
+      "note": []
+    },
+    {
+      "id": "NOT-EXT-01",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Every_role_can_mark_its_own_notification_and_cannot_mark_someone_elses"
+      ],
+      "evidence": [
+        "por-caso\\NOT-EXT-01.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "NOT-EXT-02",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Complete_opening_renewal_and_role_workflow, Demo_has_consistent_private_documents_tasks_for_all_roles_and_no_duplicates_on_restart"
+      ],
+      "evidence": [
+        "por-caso\\NOT-EXT-02.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "NOT-EXT-03",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Expiry_alerts_are_idempotent_and_close_laboratory"
+      ],
+      "evidence": [
+        "por-caso\\NOT-EXT-03.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "NOT-EXT-04",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "3 comprobaciones aprobadas: Citations_require_evidence_and_notify_both_roles_once_per_phase, Business_calendar_uses_only_configured_holidays"
+      ],
+      "evidence": [
+        "por-caso\\NOT-EXT-04.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEC-EXT-01",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Every_post_endpoint_rejects_missing_csrf_and_unauthorized_roles_without_any_persistent_effect"
+      ],
+      "evidence": [
+        "por-caso\\SEC-EXT-01.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEC-EXT-02",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Every_configurable_capability_is_enforced_on_the_existing_session, Every_post_endpoint_rejects_missing_csrf_and_unauthorized_roles_without_any_persistent_effect"
+      ],
+      "evidence": [
+        "por-caso\\SEC-EXT-02.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEC-EXT-03",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Owner_isolation_and_protected_downloads, Every_declared_page_download_and_role_is_exercised_and_rendered_links_and_forms_are_checked"
+      ],
+      "evidence": [
+        "por-caso\\SEC-EXT-03.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEC-EXT-04",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "246 comprobaciones aprobadas: Invalid_query_fields_are_rejected_without_opening_an_unfiltered_or_creation_screen, test\"), Every_form_field_rejects_invalid_values_without_changing_any_table, Malformed_boolean_cannot_silently_change_a_setting, Partial_permission_rows_cannot_silently_disable_a_capability, 56\"), 000001\")"
+      ],
+      "evidence": [
+        "por-caso\\SEC-EXT-04.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEC-EXT-05",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Every_role_state_action_combination_denies_forbidden_transition_without_side_effects, Every_declared_valid_transition_executes_its_expected_effect"
+      ],
+      "evidence": [
+        "por-caso\\SEC-EXT-05.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEC-EXT-06",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "6 comprobaciones aprobadas: Unreadable_historical_checklists_block_progress_with_recoverable_message, Structurally_damaged_snapshots_are_not_treated_as_valid_data"
+      ],
+      "evidence": [
+        "por-caso\\SEC-EXT-06.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "SEC-EXT-07",
+      "status": "Exitoso",
+      "method": [
+        "HTTP contra proceso local real y fixtures SQLite sintéticos"
+      ],
+      "actual": [
+        "Texto sintético guardado para comprobar escape; Texto escapado, sin script ejecutable; Archivo válido con nombre externo normalizado; Nombre visible sin rutas; Clave privada aleatoria independiente del nombre"
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # SEC-EXT-07"
+      ],
+      "note": []
+    },
+    {
+      "id": "SEC-EXT-08",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Every_declared_valid_transition_executes_its_expected_effect"
+      ],
+      "evidence": [
+        "por-caso\\SEC-EXT-08.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "OPS-EXT-01",
+      "status": "Exitoso",
+      "method": [
+        "Procesos locales reales; fallos controlados en copia desechable"
+      ],
+      "actual": [
+        "Respaldo extraído: 351 archivos; hashes, SQLite y 47 archivos privados íntegros. Dependencias reconstruidas, interfaz y compilación correctas; 360 pruebas del código restaurado aprobadas. Arranque, seis roles y descarga privada comprobados."
+      ],
+      "evidence": [
+        "restauracion-verificada.json; restauracion-arranque.json; evidencia-restauracion/restauracion-actual-360.trx"
+      ],
+      "note": []
+    },
+    {
+      "id": "OPS-EXT-02",
+      "status": "Exitoso",
+      "method": [
+        "Procesos locales reales; fallos controlados en copia desechable"
+      ],
+      "actual": [
+        "Corte del cliente durante carga: base y archivos sin cambios parciales."
+      ],
+      "evidence": [
+        "operaciones-ejecutadas.json"
+      ],
+      "note": []
+    },
+    {
+      "id": "OPS-EXT-03",
+      "status": "Exitoso",
+      "method": [
+        "Procesos locales reales; fallos controlados en copia desechable"
+      ],
+      "actual": [
+        "Proceso detenido durante carga y reiniciado: integridad correcta, sin registros parciales, sesión recuperada."
+      ],
+      "evidence": [
+        "operaciones-ejecutadas.json"
+      ],
+      "note": []
+    },
+    {
+      "id": "OPS-EXT-04",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "Procesos locales reales; fallos controlados en copia desechable"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Unavailable_storage_returns_recoverable_503_without_persisting_a_new_request",
+        "Almacenamiento inaccesible: respuesta 503 sin alterar base ni archivos."
+      ],
+      "evidence": [
+        "por-caso\\OPS-EXT-04.trx",
+        "operaciones-ejecutadas.json"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "OPS-EXT-05",
+      "status": "Exitoso",
+      "method": [
+        "Procesos locales reales; fallos controlados en copia desechable"
+      ],
+      "actual": [
+        "Escritura con SQLite ocupada: respuesta 409 sin efectos parciales; concurrencia conserva solo un cambio."
+      ],
+      "evidence": [
+        "operaciones-ejecutadas.json"
+      ],
+      "note": []
+    },
+    {
+      "id": "OPS-EXT-06",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente",
+        "Procesos locales reales; fallos controlados en copia desechable"
+      ],
+      "actual": [
+        "3 comprobaciones aprobadas: jpg\"), pdf\"), png\")",
+        "Caída después del archivo y antes del commit: archivo huérfano conservado privadamente para recuperación; tablas confirmadas y archivos registrados preservados."
+      ],
+      "evidence": [
+        "por-caso\\OPS-EXT-06.trx",
+        "operaciones-ejecutadas.json"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "OPS-EXT-07",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: An_unreadable_snapshot_prevents_moving_any_potential_historical_evidence"
+      ],
+      "evidence": [
+        "por-caso\\OPS-EXT-07.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "OPS-EXT-08",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "1 comprobaciones aprobadas: Another_process_cannot_start_recovery_against_a_database_in_use_and_the_lease_releases_on_disposal"
+      ],
+      "evidence": [
+        "por-caso\\OPS-EXT-08.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "OPS-EXT-09",
+      "status": "Exitoso",
+      "method": [
+        "Procesos locales reales; fallos controlados en copia desechable"
+      ],
+      "actual": [
+        "60 lecturas con 12 simultáneas: todas 200, p95 0,079 s. 16 escrituras con 8 simultáneas: una guardada y 15 conflictos rechazados."
+      ],
+      "evidence": [
+        "operaciones-ejecutadas.json"
+      ],
+      "note": []
+    },
+    {
+      "id": "OPS-EXT-10",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Demo_has_consistent_private_documents_tasks_for_all_roles_and_no_duplicates_on_restart, Existing_data_catalogs_and_credentials_are_preserved_while_missing_demo_users_are_created"
+      ],
+      "evidence": [
+        "por-caso\\OPS-EXT-10.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "E2E-EXT-01",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Historical_closure_pdf_stays_identical_after_laboratory_changes, Complete_opening_renewal_and_role_workflow"
+      ],
+      "evidence": [
+        "por-caso\\E2E-EXT-01.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "E2E-EXT-02",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "3 comprobaciones aprobadas: Legal_observation_cannot_skip_review_and_does_not_repeat_field_visit_unnecessarily, Document_return_reuses_individual_correction_notes_without_requiring_them_twice, Complete_opening_renewal_and_role_workflow"
+      ],
+      "evidence": [
+        "por-caso\\E2E-EXT-02.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "E2E-EXT-03",
+      "status": "Exitoso",
+      "method": [
+        "Integración .NET, base temporal independiente"
+      ],
+      "actual": [
+        "2 comprobaciones aprobadas: Historical_closure_pdf_stays_identical_after_laboratory_changes, Complete_opening_renewal_and_role_workflow"
+      ],
+      "evidence": [
+        "por-caso\\E2E-EXT-03.trx"
+      ],
+      "note": [
+        "Ejecución de servidor; no acredita clics de interfaz."
+      ]
+    },
+    {
+      "id": "E2E-EXT-04",
+      "status": "Fallido",
+      "method": [
+        "Interacción de navegador integrado en copia local",
+        "Recorrido real en navegador"
+      ],
+      "actual": [
+        "BUG-01: conflicto aislado sin regreso. BUG-02: aprobar nuevamente #40 crea otra decisión idéntica en historial; se incumple la ausencia de decisiones redundantes. Otros controles siguen en revisión.",
+        "Un conflicto deja una respuesta aislada sin regreso al expediente. Aprobar otra vez el mismo PDF desde un formulario reciente añade otra decisión idéntica al historial."
+      ],
+      "evidence": [
+        "evidencia-ui/BUG-02-aprobacion-repetida.txt",
+        "evidencia-ui/bug-409-sin-regreso.png; evidencia-ui/BUG-02-aprobacion-repetida.txt"
+      ],
+      "note": [
+        "BUG-01 y BUG-02"
+      ]
+    },
+    {
+      "id": "E2E-EXT-05",
+      "status": "Bloqueado",
+      "method": [
+        "Comprobación parcial; pendiente manual indicado"
+      ],
+      "actual": [
+        "Revisión parcial de etiquetas y foco en pantallas de seis roles guardada. Falta el recorrido completo con Tab/Shift+Tab, ampliación de texto y medición de contraste. La herramienta no permitió enfocar un control de fecha. No se declara accesibilidad aprobada."
+      ],
+      "evidence": [
+        "evidencia-ui/accesibilidad.json"
+      ],
+      "note": [
+        "No marcar ejecutado completamente hasta cerrar el paso pendiente."
+      ]
+    },
+    {
+      "id": "E2E-EXT-06",
+      "status": "Bloqueado",
+      "method": [
+        "Comprobación parcial; pendiente manual indicado"
+      ],
+      "actual": [
+        "Solo se pudo usar el navegador integrado de escritorio. El cambio de tamaño solicitado no tuvo efecto; faltan otros navegadores y dispositivos."
+      ],
+      "evidence": [
+        "evidencia-ui/resultados-ui.json"
+      ],
+      "note": [
+        "No marcar ejecutado completamente hasta cerrar el paso pendiente."
+      ]
+    },
+    {
+      "id": "E2E-EXT-07",
+      "status": "Bloqueado",
+      "method": [
+        "Comprobación parcial; pendiente manual indicado"
+      ],
+      "actual": [
+        "Faltan formularios y catálogo institucionales definitivos y propietario/vigencia de tres laboratorios históricos; no se inventaron esos datos. La vista de carencias sí se verificó."
+      ],
+      "evidence": [
+        "resultados-suplementarios.json # ADM-EXT-20"
+      ],
+      "note": [
+        "No marcar ejecutado completamente hasta cerrar el paso pendiente."
+      ]
+    }
+  ]
+}

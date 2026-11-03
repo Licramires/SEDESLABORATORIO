@@ -1,4 +1,20 @@
+## Flujos revisados — 22/10/2026
+
+Se conserva DESIGN.md. Acta con campos condicionales y dictamen derivado; acciones documentales/legales diferenciadas; paneles centrados en tareas y configuración avanzada agrupada. Enlaces de expedientes y opciones legales con altura mínima de 44 px. Cuenta y avisos disponibles desde cabecera. Evidencia de escritorio/móvil y contraste: `docs/auditoria-flujos-20261021/`. Estos ajustes refinan la implementación existente, sin sustituir el sistema visual.
+
+## Supervisor y gerencia — 21/10/2026
+
+Se conservan colores, tipografía y superficies de DESIGN.md; Figma guía la organización funcional. `operations.css` amplía los componentes operativos con las variables existentes. Agenda React: asignaciones sin horario, semana completa con desplazamiento interior y día seleccionado en móvil, acceso a la ruta del día. Vista del supervisor: una tarea siguiente clara, anclas a programación/acta/seguimiento, documentos e historial plegables. Gerencia: resumen, evolución SVG con selector de serie/mes, anillo de estados, barras con cantidades y porcentajes, actas y puntos de atención. Los gráficos usan datos guardados, sin valores decorativos. Tablas y enlaces de respaldo siguen disponibles; errores de actualización conservan los últimos datos visibles y dan una indicación de recuperación.
+
 # Estilo visual oficial de SI_Lab
+
+Desde el 21/10/2026, por instrucción del usuario, `DESIGN.md` es la especificación visual principal. Sus tokens oscuros, tipografía, espaciado y componentes prevalecen sobre las referencias Figma de las secciones históricas que siguen. El tema activo es `wwwroot/css/design-theme.css`; `figma-theme.css` se conserva como referencia anterior y no se carga en el layout.
+
+La adaptación conserva ASP.NET Core MVC, las rutas, los permisos, los formularios, las cargas de archivos y los cálculos. Usa las fuentes alternativas documentadas en DESIGN.md, sin descargar las tipografías propietarias de Linear. Los mapas mantienen su cartografía clara dentro de un marco oscuro para conservar su legibilidad. No se agregan pantallas o contenido comercial de Linear al portal de laboratorios.
+
+Los estados operativos de error y observación usan tokens semánticos propios, porque DESIGN.md declara esa parte como no especificada. El hover del botón lavanda usa texto inverso oscuro: el blanco sobre `#828fff` da 2,87:1; el texto oscuro supera 7:1. Se conserva el color de fondo especificado y se mejora la lectura del control.
+
+Antes del cambio se creó y verificó `App_Data/checkpoints/20261021-135546-antes-impeccable`, con ZIP, base SQLite consistente, manifiesto SHA-256 e instrucciones. DESIGN.md se conserva sin cambios. Evidencia de la revisión en `docs/diseno-20261021/`.
 
 Este documento define el lenguaje visual que deben seguir las vistas de SI_Lab. La referencia principal es la demostración funcional y visual entregada en el video de la reunión:
 
@@ -341,3 +357,25 @@ La base visual ya aplicada incluye:
 - seguimiento con estados y presentación legible.
 
 La siguiente etapa visual debe centrarse en uniformar las pantallas pendientes de los roles de Sprint 2 y Sprint 3, reutilizando esta guía en lugar de crear estilos independientes.
+
+## 14. Ampliación implementada — 12/10/2026
+
+Los paneles de propietario, coordinador, supervisor, abogado, gerente y administrador ya comparten el layout institucional y componentes `.silab-panel`, `.silab-table`, `.workflow-form` y `.workflow-requirement`. La navegación se limita a los perfiles correspondientes. Hay bandeja de notificaciones, permisos operativos, agenda, requisitos por documento y detalle con historial legible.
+
+Se comprobó en navegador la creación de borradores y el bloqueo por requisitos incompletos, con escritorio y viewport móvil de 390 × 844. La evidencia visual está en `docs/validacion-tramite.jpg`; el registro de pruebas está en `VERIFICACION.md`.
+
+## Correcciones del 18 de octubre de 2026
+
+La documentación muestra versiones y revisión individual; las acciones distinguen devolución y rechazo definitivo. El supervisor organiza la visita antes de registrar acta. Los catálogos/formularios y la validación de datos tienen entradas administrativas. La landing publica requisitos y la ficha incorpora mapa y datos de contacto disponibles.
+
+Las métricas incluyen sus definiciones y los borradores aparte; las tablas anchas conservan desplazamiento dentro de su contenedor. El detalle y las métricas se comprobaron a 390 × 844 y en escritorio sin desbordamiento horizontal del documento. Las capturas de cierre están en `docs/auditoria-2026-10-18/`; no representan una reproducción exacta de cada pantalla de Figma.
+
+## Ajuste a las exportaciones FigmaSedes — 18/10/2026
+
+Referencia visual: `Agent-resources/FigmaSedes/`, en especial las pantallas de login, nueva solicitud, propietario, coordinador, agenda, administración y landing. La adaptación conserva los flujos disponibles y utiliza datos reales del modelo; no incorpora métricas, contactos, logotipos institucionales, botones ni funciones ficticias de las imágenes.
+
+La capa compartida está en `wwwroot/css/figma-theme.css`, cargada después de `site.css`. Se unifican azul institucional, títulos azul oscuro, fondo gris claro, bordes suaves, sombras discretas, campos, tablas, botones y etiquetas de estado. El layout usa iconos SVG locales mediante `_Icon`, identifica la página activa y ofrece acceso directo a notificaciones. A menos de 1000 px el menú lateral se abre con un botón; mantiene navegación por teclado y enlace para saltar al contenido.
+
+La nueva solicitud usa tarjetas separadas para datos, ubicación y requisitos, con mapa y coordenadas en dos columnas en escritorio. Conserva la lista acumulada de PDF. El login ocupa la pantalla con panel azul y tarjeta blanca como la referencia; el directorio tiene barra azul, acceso destacado a requisitos y mapa a la izquierda de los resultados. Usuarios, trámites y métricas muestran resúmenes derivados de los registros disponibles. Los datos de los resúmenes de trámites corresponden explícitamente a sus filtros.
+
+Antes de cualquier edición se creó `App_Data/checkpoints/20261018-194800-antes-estilo-figma`: ZIP de 243 archivos, documentos privados locales, base SQLite consistente, manifiesto con SHA-256 e instrucciones de restauración. Excluye Git, compilaciones, herramientas y respaldos previos. La comprobación visual se realiza en una copia temporal de la base.

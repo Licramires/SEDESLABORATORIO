@@ -1,0 +1,33 @@
+{
+  "requests": [
+    {
+      "Id": 7,
+      "Estado": "inspeccion",
+      "Version": 3,
+      "DatosLaboratorioPropuesto": "{\"nombre\":\"Laboratorio Horizonte\",\"tipo\":\"Cl\\u00EDnico\",\"coordenadas\":{\"lat\":-17.3935,\"lng\":-66.1570}}"
+    },
+    {
+      "Id": 16,
+      "Estado": "observado",
+      "Version": 8,
+      "DatosLaboratorioPropuesto": "{\"nombre\":\"Laboratorio campa\\u00F1a UI 183\",\"tipo\":\"Cl\\u00EDnico\",\"coordenadas\":{\"lat\":-17.39,\"lng\":-66.16}}"
+    },
+    {
+      "Id": 17,
+      "Estado": "borrador",
+      "Version": 1,
+      "DatosLaboratorioPropuesto": "{\"nombre\":\"Laboratorio acumulaci\\u00F3n UI 183\",\"tipo\":\"Cl\\u00EDnico\",\"coordenadas\":{\"lat\":-17.396675,\"lng\":-66.149706}}"
+    }
+  ],
+  "inspection7": [
+    {
+      "Id": 3,
+      "Estado": "pendiente",
+      "Acta": "DEMO: condiciones de limpieza del área de trabajo: Corregir la limpieza del área de trabajo antes de la nueva visita.",
+      "Resultado": "observado",
+      "NotasAdicionales": "",
+      "ListaVerificacionJson": "[{\"Id\":3,\"Nombre\":\"DEMO: condiciones de limpieza del \\u00E1rea de trabajo\",\"Referencia\":\"Punto ficticio; sin art\\u00EDculo normativo\",\"Version\":1,\"Resultado\":\"observado\",\"Observacion\":\"Corregir la limpieza del \\u00E1rea de trabajo antes de la nueva visita.\"}]"
+    }
+  ],
+  "send16": 1
+}

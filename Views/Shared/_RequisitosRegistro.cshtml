@@ -1,0 +1,21 @@
+@model IEnumerable<SEDESLABORATORIO.Data.Entities.Requisito>
+@if (!Model.Any()) {
+    <p class="alert alert-info">El SEDES todavía no publicó los requerimientos para registrar un laboratorio.</p>
+} else {
+    @foreach (var grupo in Model.GroupBy(r => r.SeccionId)) {
+    var seccion = grupo.First().Seccion;
+    <section class="public-requirement-section"><h3>@(seccion?.Nombre ?? "Requisitos generales")</h3>
+    @if(seccion is not null && !string.IsNullOrWhiteSpace(seccion.Descripcion)) { <p>@seccion.Descripcion</p> }
+    <ol class="list-group list-group-numbered mb-3">
+    @foreach (var requisito in grupo) {
+        <li class="list-group-item d-flex flex-wrap gap-2 align-items-start">
+            <div class="flex-grow-1"><strong>@requisito.Nombre</strong><span class="d-block text-muted">@(requisito.Obligatorio ? "Obligatorio para enviar la solicitud" : "Opcional")</span></div>
+            @if (!string.IsNullOrWhiteSpace(requisito.PlantillaPdf)) {
+                <a asp-area="publico" asp-controller="Publico" asp-action="Plantilla" asp-route-id="@requisito.Id">Descargar formulario PDF</a>
+            }
+        </li>
+    }
+    </ol>
+    </section>
+    }
+}

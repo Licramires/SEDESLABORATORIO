@@ -1,0 +1,403 @@
+{
+  "AUTH-LL-04": [
+    "Owner_isolation_and_protected_downloads",
+    "Public_pages_login_errors_and_csrf"
+  ],
+  "AUTH-HL-03": [
+    "Owner_isolation_and_protected_downloads"
+  ],
+  "AUTH-EXT-03": [
+    "Login_rate_limit_still_blocks_repeated_attempts_from_same_client"
+  ],
+  "AUTH-EXT-05": [
+    "Changed_role_invalidates_cookie_and_missing_fields_do_not_crash"
+  ],
+  "AUTH-EXT-06": [
+    "Every_declared_page_download_and_role_is_exercised_and_rendered_links_and_forms_are_checked",
+    "Every_post_endpoint_rejects_missing_csrf_and_unauthorized_roles_without_any_persistent_effect"
+  ],
+  "REG-LL-02": [
+    "Every_form_field_rejects_invalid_values_without_changing_any_table"
+  ],
+  "REG-EXT-01": [
+    "Every_form_field_rejects_invalid_values_without_changing_any_table"
+  ],
+  "REG-EXT-03": [
+    "Every_form_field_rejects_invalid_values_without_changing_any_table"
+  ],
+  "REG-LL-06": [
+    "All_file_forms_reject_empty_wrong_extension_signature_and_truncated_pdf"
+  ],
+  "REG-EXT-06": [
+    "All_file_forms_reject_empty_wrong_extension_signature_and_truncated_pdf"
+  ],
+  "REG-EXT-02": [
+    "Public_templates_are_separate_from_private_documents_and_catalogues_validate_values"
+  ],
+  "REG-EXT-07": [
+    "Validation_upload_limits_and_stale_changes"
+  ],
+  "REG-EXT-08": [
+    "Oversize_content_length_is_rejected_before_binding"
+  ],
+  "REG-EXT-09": [
+    "Owner_can_repair_draft_preserving_files_but_cannot_overwrite_stale_or_submitted_data"
+  ],
+  "REG-HL-01": [
+    "Complete_opening_renewal_and_role_workflow",
+    "Inspection_checklist_and_template_are_frozen_and_can_be_prepared_before_signing"
+  ],
+  "SEG-LL-04": [
+    "Every_declared_valid_transition_executes_its_expected_effect"
+  ],
+  "SEG-EXT-02": [
+    "Initial_upload_can_be_associated_without_reuploading"
+  ],
+  "SEG-EXT-03": [
+    "Document_versions_preserve_original_and_requirement_snapshot"
+  ],
+  "SEG-EXT-04": [
+    "Document_versions_preserve_original_and_requirement_snapshot"
+  ],
+  "SEG-EXT-07": [
+    "Document_versions_preserve_original_and_requirement_snapshot"
+  ],
+  "SEG-EXT-05": [
+    "More_than_five_PDFs_can_be_added_then_removed_individually_before_submitting",
+    "Observed_complement_can_be_retired_without_deleting_history_or_mandatory_documents"
+  ],
+  "SEG-EXT-06": [
+    "Complete_opening_renewal_and_role_workflow",
+    "Legal_observation_cannot_skip_review_and_does_not_repeat_field_visit_unnecessarily"
+  ],
+  "SEG-EXT-08": [
+    "Optional_catalogue_can_finish_document_review_without_pdf"
+  ],
+  "SEG-EXT-10": [
+    "Services_reject_an_old_tab_instead_of_overwriting_the_last_saved_text"
+  ],
+  "SEG-EXT-11": [
+    "Complete_opening_renewal_and_role_workflow"
+  ],
+  "SEG-EXT-12": [
+    "Field_rejection_still_blocks_duplicate_renewal_until_existing_case_is_resolved",
+    "Complete_opening_renewal_and_role_workflow"
+  ],
+  "SEG-EXT-14": [
+    "Every_form_field_rejects_invalid_values_without_changing_any_table"
+  ],
+  "COO-EXT-02": [
+    "Document_approval_accepts_no_repeated_reason_but_observation_requires_correction_text"
+  ],
+  "COO-EXT-03": [
+    "Document_approval_accepts_no_repeated_reason_but_observation_requires_correction_text"
+  ],
+  "COO-EXT-04": [
+    "Complete_opening_renewal_and_role_workflow"
+  ],
+  "COO-EXT-05": [
+    "Document_return_reuses_individual_correction_notes_without_requiring_them_twice"
+  ],
+  "COO-EXT-06": [
+    "Rejections_reassignments_and_agenda_conflicts_preserve_workflow",
+    "Every_role_state_action_combination_denies_forbidden_transition_without_side_effects"
+  ],
+  "COO-EXT-07": [
+    "Every_form_field_rejects_invalid_values_without_changing_any_table",
+    "Every_declared_valid_transition_executes_its_expected_effect"
+  ],
+  "COO-EXT-08": [
+    "Rejections_reassignments_and_agenda_conflicts_preserve_workflow",
+    "Every_declared_valid_transition_executes_its_expected_effect"
+  ],
+  "COO-EXT-09": [
+    "Rejections_reassignments_and_agenda_conflicts_preserve_workflow",
+    "Every_declared_valid_transition_executes_its_expected_effect"
+  ],
+  "COO-EXT-10": [
+    "Every_role_state_action_combination_denies_forbidden_transition_without_side_effects"
+  ],
+  "COO-EXT-11": [
+    "Complete_opening_renewal_and_role_workflow"
+  ],
+  "COO-EXT-12": [
+    "Complete_opening_renewal_and_role_workflow"
+  ],
+  "COO-EXT-13": [
+    "Rejections_reassignments_and_agenda_conflicts_preserve_workflow"
+  ],
+  "COO-EXT-14": [
+    "Reprogramming_replaces_only_pending_booking_preserves_history_and_checks_own_completed_visits"
+  ],
+  "COO-EXT-15": [
+    "Every_declared_valid_transition_executes_its_expected_effect",
+    "Field_rejection_still_blocks_duplicate_renewal_until_existing_case_is_resolved"
+  ],
+  "SUP-EXT-01": [
+    "Supervisor_views_only_own_visits_and_gets_a_focused_detail"
+  ],
+  "SUP-EXT-02": [
+    "Supervisor_can_program_intervals_without_colliding_with_own_reservation"
+  ],
+  "SUP-EXT-03": [
+    "Scheduling_extreme_date_does_not_crash_and_acta_cannot_precede_visit",
+    "Supervisor_can_program_intervals_without_colliding_with_own_reservation"
+  ],
+  "SUP-EXT-04": [
+    "Agenda_blocks_identical_partial_enclosing_and_already_reported_intervals"
+  ],
+  "SUP-EXT-05": [
+    "Agenda_allows_adjacent_visits_and_replaced_reservations"
+  ],
+  "SUP-EXT-06": [
+    "Concurrent_decisions_apply_once_and_conflicting_assignments_do_not_overlap"
+  ],
+  "SUP-EXT-07": [
+    "Agenda_and_routes_accept_civil_calendar_boundaries_without_server_overflow"
+  ],
+  "SUP-EXT-08": [
+    "Supervisor_views_only_own_visits_and_gets_a_focused_detail"
+  ],
+  "SUP-EXT-09": [
+    "Dedicated_prepare_action_chooses_its_own_operation_and_legacy_send_only_redirects",
+    "Inspection_checklist_and_template_are_frozen_and_can_be_prepared_before_signing"
+  ],
+  "SUP-EXT-10": [
+    "Acta_rejects_inconsistent_incomplete_or_unsigned_submission_without_mutation",
+    "Acta_derives_summary_once_and_clears_notes_from_compliant_items",
+    "Acta_does_not_require_duplicate_general_observations_for_compliant_checklist"
+  ],
+  "SUP-EXT-11": [
+    "Acta_rejects_inconsistent_incomplete_or_unsigned_submission_without_mutation",
+    "Acta_derives_summary_once_and_clears_notes_from_compliant_items",
+    "Acta_does_not_require_duplicate_general_observations_for_compliant_checklist"
+  ],
+  "SUP-EXT-12": [
+    "Acta_rejects_inconsistent_incomplete_or_unsigned_submission_without_mutation",
+    "Acta_derives_summary_once_and_clears_notes_from_compliant_items",
+    "Acta_does_not_require_duplicate_general_observations_for_compliant_checklist"
+  ],
+  "SUP-EXT-13": [
+    "Inspection_checklist_and_template_are_frozen_and_can_be_prepared_before_signing"
+  ],
+  "SUP-EXT-14": [
+    "Acta_rejects_inconsistent_incomplete_or_unsigned_submission_without_mutation",
+    "Scheduling_extreme_date_does_not_crash_and_acta_cannot_precede_visit",
+    "All_file_forms_reject_empty_wrong_extension_signature_and_truncated_pdf"
+  ],
+  "SUP-EXT-15": [
+    "Acts_citations_and_form_snapshot_belong_to_the_current_supervisor"
+  ],
+  "SUP-EXT-23": [
+    "Acts_citations_and_form_snapshot_belong_to_the_current_supervisor"
+  ],
+  "SUP-EXT-16": [
+    "Inspection_checklist_and_template_are_frozen_and_can_be_prepared_before_signing"
+  ],
+  "SUP-EXT-17": [
+    "Business_calendar_uses_only_configured_holidays",
+    "Every_form_field_rejects_invalid_values_without_changing_any_table"
+  ],
+  "SUP-EXT-18": [
+    "Citations_require_evidence_and_notify_both_roles_once_per_phase",
+    "Citation_images_reject_invalid_contents"
+  ],
+  "SUP-EXT-19": [
+    "Citations_require_evidence_and_notify_both_roles_once_per_phase",
+    "Citation_images_reject_invalid_contents"
+  ],
+  "SUP-EXT-20": [
+    "Every_form_field_rejects_invalid_values_without_changing_any_table",
+    "All_file_forms_reject_empty_wrong_extension_signature_and_truncated_pdf",
+    "Citation_images_reject_invalid_contents"
+  ],
+  "SUP-EXT-21": [
+    "Citations_require_evidence_and_notify_both_roles_once_per_phase"
+  ],
+  "SUP-EXT-22": [
+    "Citations_require_evidence_and_notify_both_roles_once_per_phase"
+  ],
+  "LEG-EXT-01": [
+    "Legal_observation_targets_only_selected_documents_and_keeps_decision_visible",
+    "Every_declared_page_download_and_role_is_exercised_and_rendered_links_and_forms_are_checked"
+  ],
+  "LEG-EXT-02": [
+    "Complete_opening_renewal_and_role_workflow"
+  ],
+  "LEG-EXT-03": [
+    "Legal_approval_rejects_damaged_official_data_without_side_effects",
+    "Complete_opening_renewal_and_role_workflow",
+    "All_file_forms_reject_empty_wrong_extension_signature_and_truncated_pdf"
+  ],
+  "LEG-EXT-04": [
+    "Legal_observation_targets_only_selected_documents_and_keeps_decision_visible",
+    "Legal_observation_cannot_skip_review_and_does_not_repeat_field_visit_unnecessarily"
+  ],
+  "LEG-EXT-05": [
+    "Legal_observation_targets_only_selected_documents_and_keeps_decision_visible"
+  ],
+  "LEG-EXT-06": [
+    "Legal_observation_cannot_skip_review_and_does_not_repeat_field_visit_unnecessarily"
+  ],
+  "LEG-EXT-07": [
+    "Rejections_reassignments_and_agenda_conflicts_preserve_workflow",
+    "Every_role_state_action_combination_denies_forbidden_transition_without_side_effects"
+  ],
+  "LEG-EXT-08": [
+    "Complete_opening_renewal_and_role_workflow"
+  ],
+  "LEG-EXT-09": [
+    "Legal_approval_blocks_inconsistent_renewal_links_and_impossible_extension_without_mutating_any_table"
+  ],
+  "LEG-EXT-10": [
+    "Historical_closure_pdf_stays_identical_after_laboratory_changes"
+  ],
+  "ADM-EXT-02": [
+    "Every_form_field_rejects_invalid_values_without_changing_any_table"
+  ],
+  "ADM-EXT-03": [
+    "Admin_users_requirements_metrics_and_logout"
+  ],
+  "ADM-EXT-04": [
+    "Changed_role_invalidates_cookie_and_missing_fields_do_not_crash"
+  ],
+  "ADM-EXT-07": [
+    "Changed_role_invalidates_cookie_and_missing_fields_do_not_crash"
+  ],
+  "ADM-EXT-09": [
+    "Admin_rejects_stale_user_edits_and_manager_can_recover_from_invalid_dates"
+  ],
+  "ADM-EXT-10": [
+    "Bulk_permissions_apply_to_open_sessions_and_reject_stale_edits_atomically",
+    "Every_configurable_capability_is_enforced_on_the_existing_session"
+  ],
+  "ADM-EXT-11": [
+    "Permission_editor_rejects_missing_duplicate_and_foreign_capabilities",
+    "Partial_permission_rows_cannot_silently_disable_a_capability",
+    "Bulk_permissions_apply_to_open_sessions_and_reject_stale_edits_atomically"
+  ],
+  "ADM-EXT-12": [
+    "Edits_reorder_move_validate_sections_and_detect_stale_catalog_changes"
+  ],
+  "ADM-EXT-13": [
+    "Section_and_requirement_activation_control_public_page_registration_and_drafts"
+  ],
+  "ADM-EXT-14": [
+    "Deleting_requirements_and_empty_sections_preserves_submitted_snapshots"
+  ],
+  "ADM-EXT-16": [
+    "Deleting_requirements_and_empty_sections_preserves_submitted_snapshots"
+  ],
+  "ADM-EXT-15": [
+    "Public_templates_are_separate_from_private_documents_and_catalogues_validate_values",
+    "Edits_reorder_move_validate_sections_and_detect_stale_catalog_changes"
+  ],
+  "ADM-EXT-17": [
+    "Every_form_field_rejects_invalid_values_without_changing_any_table",
+    "Edits_reorder_move_validate_sections_and_detect_stale_catalog_changes"
+  ],
+  "ADM-EXT-21": [
+    "Every_form_field_rejects_invalid_values_without_changing_any_table",
+    "Edits_reorder_move_validate_sections_and_detect_stale_catalog_changes"
+  ],
+  "ADM-EXT-18": [
+    "Public_templates_are_separate_from_private_documents_and_catalogues_validate_values",
+    "Business_calendar_uses_only_configured_holidays"
+  ],
+  "ADM-EXT-19": [
+    "Public_templates_are_separate_from_private_documents_and_catalogues_validate_values",
+    "Business_calendar_uses_only_configured_holidays"
+  ],
+  "MET-EXT-02": [
+    "Charts_use_saved_cohort_zero_fill_months_and_weight_closures_correctly",
+    "Manager_excludes_drafts_and_export_uses_same_scope"
+  ],
+  "MET-EXT-03": [
+    "Charts_use_saved_cohort_zero_fill_months_and_weight_closures_correctly",
+    "Empty_charts_have_no_fake_rates_or_durations_and_do_not_serialize_user_secrets"
+  ],
+  "MET-EXT-04": [
+    "Charts_use_saved_cohort_zero_fill_months_and_weight_closures_correctly",
+    "Empty_charts_have_no_fake_rates_or_durations_and_do_not_serialize_user_secrets"
+  ],
+  "MET-EXT-05": [
+    "Admin_rejects_stale_user_edits_and_manager_can_recover_from_invalid_dates",
+    "Invalid_query_fields_are_rejected_without_opening_an_unfiltered_or_creation_screen"
+  ],
+  "MET-EXT-08": [
+    "Interactive_surfaces_keep_role_authorization",
+    "Empty_charts_have_no_fake_rates_or_durations_and_do_not_serialize_user_secrets",
+    "Every_declared_page_download_and_role_is_exercised_and_rendered_links_and_forms_are_checked"
+  ],
+  "NOT-EXT-01": [
+    "Every_role_can_mark_its_own_notification_and_cannot_mark_someone_elses"
+  ],
+  "NOT-EXT-02": [
+    "Complete_opening_renewal_and_role_workflow",
+    "Demo_has_consistent_private_documents_tasks_for_all_roles_and_no_duplicates_on_restart"
+  ],
+  "NOT-EXT-03": [
+    "Expiry_alerts_are_idempotent_and_close_laboratory"
+  ],
+  "NOT-EXT-04": [
+    "Citations_require_evidence_and_notify_both_roles_once_per_phase",
+    "Business_calendar_uses_only_configured_holidays"
+  ],
+  "SEC-EXT-01": [
+    "Every_post_endpoint_rejects_missing_csrf_and_unauthorized_roles_without_any_persistent_effect"
+  ],
+  "SEC-EXT-02": [
+    "Every_configurable_capability_is_enforced_on_the_existing_session",
+    "Every_post_endpoint_rejects_missing_csrf_and_unauthorized_roles_without_any_persistent_effect"
+  ],
+  "SEC-EXT-03": [
+    "Every_declared_page_download_and_role_is_exercised_and_rendered_links_and_forms_are_checked",
+    "Owner_isolation_and_protected_downloads"
+  ],
+  "SEC-EXT-04": [
+    "Every_form_field_rejects_invalid_values_without_changing_any_table",
+    "Invalid_query_fields_are_rejected_without_opening_an_unfiltered_or_creation_screen",
+    "Malformed_boolean_cannot_silently_change_a_setting",
+    "Partial_permission_rows_cannot_silently_disable_a_capability"
+  ],
+  "SEC-EXT-05": [
+    "Every_role_state_action_combination_denies_forbidden_transition_without_side_effects",
+    "Every_declared_valid_transition_executes_its_expected_effect"
+  ],
+  "SEC-EXT-06": [
+    "Structurally_damaged_snapshots_are_not_treated_as_valid_data",
+    "Unreadable_historical_checklists_block_progress_with_recoverable_message"
+  ],
+  "SEC-EXT-08": [
+    "Every_declared_valid_transition_executes_its_expected_effect"
+  ],
+  "OPS-EXT-04": [
+    "Unavailable_storage_returns_recoverable_503_without_persisting_a_new_request"
+  ],
+  "OPS-EXT-06": [
+    "Uncommitted_generated_files_are_preserved_privately_and_registered_and_frozen_files_are_untouched"
+  ],
+  "OPS-EXT-07": [
+    "An_unreadable_snapshot_prevents_moving_any_potential_historical_evidence"
+  ],
+  "OPS-EXT-08": [
+    "Another_process_cannot_start_recovery_against_a_database_in_use_and_the_lease_releases_on_disposal"
+  ],
+  "OPS-EXT-10": [
+    "Demo_has_consistent_private_documents_tasks_for_all_roles_and_no_duplicates_on_restart",
+    "Existing_data_catalogs_and_credentials_are_preserved_while_missing_demo_users_are_created"
+  ],
+  "E2E-EXT-01": [
+    "Complete_opening_renewal_and_role_workflow",
+    "Historical_closure_pdf_stays_identical_after_laboratory_changes"
+  ],
+  "E2E-EXT-03": [
+    "Complete_opening_renewal_and_role_workflow",
+    "Historical_closure_pdf_stays_identical_after_laboratory_changes"
+  ],
+  "E2E-EXT-02": [
+    "Complete_opening_renewal_and_role_workflow",
+    "Document_return_reuses_individual_correction_notes_without_requiring_them_twice",
+    "Legal_observation_cannot_skip_review_and_does_not_repeat_field_visit_unnecessarily"
+  ]
+}

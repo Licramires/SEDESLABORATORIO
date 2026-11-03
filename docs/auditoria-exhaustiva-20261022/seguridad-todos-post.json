@@ -1,0 +1,1910 @@
+[
+  {
+    "Role": "propietario",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/Catalogo",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/Catalogo",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/Catalogo",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/Catalogo",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/Catalogo",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/Catalogo",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/Catalogo",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/Catalogo",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/Catalogo",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/Catalogo",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Administracion/Catalogo",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/Catalogo",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/Catalogo",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/Usuario",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/Usuario",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/Usuario",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/Usuario",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/Usuario",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/Usuario",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/Usuario",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/Usuario",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/Usuario",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/Usuario",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Administracion/Usuario",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/Usuario",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/Usuario",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/EditarPermisos",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/EditarPermisos",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/EditarPermisos",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/EditarPermisos",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/EditarPermisos",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/EditarPermisos",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/EditarPermisos",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/EditarPermisos",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/EditarPermisos",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/EditarPermisos",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Administracion/EditarPermisos",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/EditarPermisos",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/EditarPermisos",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/Permiso",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/Permiso",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/Permiso",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/Permiso",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/Permiso",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/Permiso",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/Permiso",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/Permiso",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/Permiso",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/Permiso",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Administracion/Permiso",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/Permiso",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/Permiso",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/Requisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/Requisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/Requisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/Requisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/Requisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/Requisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/Requisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/Requisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/Requisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/Requisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Administracion/Requisito",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/Requisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/Requisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/EstadoRequisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/EstadoRequisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/EstadoRequisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/EstadoRequisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/EstadoRequisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/EstadoRequisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/EstadoRequisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/EstadoRequisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/EstadoRequisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/EstadoRequisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Administracion/EstadoRequisito",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/EstadoRequisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/EstadoRequisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/EliminarRequisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/EliminarRequisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/EliminarRequisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/EliminarRequisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/EliminarRequisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/EliminarRequisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/EliminarRequisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/EliminarRequisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/EliminarRequisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/EliminarRequisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Administracion/EliminarRequisito",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/EliminarRequisito",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/EliminarRequisito",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/Seccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/Seccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/Seccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/Seccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/Seccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/Seccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/Seccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/Seccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/Seccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/Seccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Administracion/Seccion",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/Seccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/Seccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/EstadoSeccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/EstadoSeccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/EstadoSeccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/EstadoSeccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/EstadoSeccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/EstadoSeccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/EstadoSeccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/EstadoSeccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/EstadoSeccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/EstadoSeccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Administracion/EstadoSeccion",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/EstadoSeccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/EstadoSeccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/EliminarSeccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Administracion/EliminarSeccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/EliminarSeccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Administracion/EliminarSeccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/EliminarSeccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Administracion/EliminarSeccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/EliminarSeccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Administracion/EliminarSeccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/EliminarSeccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Administracion/EliminarSeccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Administracion/EliminarSeccion",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/EliminarSeccion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Administracion/EliminarSeccion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/Documento",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/Documento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/Documento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/Documento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/Documento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/Documento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/Documento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/Documento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/Documento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/Documento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/Documento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/Documento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/Documento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/Decidir",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/Decidir",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/Decidir",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/Decidir",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/Decidir",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/Decidir",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/Decidir",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/Decidir",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/Decidir",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/Decidir",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/Servicios",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/Servicios",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/Servicios",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/Servicios",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/Servicios",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/Servicios",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/Servicios",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/Servicios",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/Servicios",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/Servicios",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/Servicios",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/Servicios",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/Servicios",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/Renovar",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/Renovar",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/Renovar",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/Renovar",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/Renovar",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/Renovar",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/Renovar",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/Renovar",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/Renovar",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/Renovar",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/Renovar",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/Renovar",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/Renovar",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/EditarDatos",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/EditarDatos",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/EditarDatos",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/EditarDatos",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/EditarDatos",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/EditarDatos",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/EditarDatos",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/EditarDatos",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/EditarDatos",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/EditarDatos",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/EditarDatos",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/EditarDatos",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/EditarDatos",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/PrepararActa",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/PrepararActa",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/PrepararActa",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/PrepararActa",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/PrepararActa",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/PrepararActa",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/PrepararActa",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/PrepararActa",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/PrepararActa",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/PrepararActa",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/PrepararActa",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/PrepararActa",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/PrepararActa",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/RevisarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/RevisarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/RevisarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/RevisarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/RevisarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/RevisarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/RevisarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/RevisarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/RevisarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/RevisarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/RevisarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/RevisarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/RevisarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/AsociarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/AsociarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/AsociarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/AsociarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/AsociarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/AsociarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/AsociarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/AsociarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/AsociarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/AsociarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/AsociarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/AsociarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/AsociarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/Citacion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/Citacion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/Citacion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/Citacion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/Citacion",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/Citacion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/Citacion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/Citacion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/Citacion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/Citacion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/Citacion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/Citacion",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/Citacion",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/RetirarComplementario",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/RetirarComplementario",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/RetirarComplementario",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/RetirarComplementario",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/RetirarComplementario",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/RetirarComplementario",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/RetirarComplementario",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/RetirarComplementario",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/RetirarComplementario",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/RetirarComplementario",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/RetirarComplementario",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/RetirarComplementario",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/RetirarComplementario",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Gestion/RetirarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/RetirarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Gestion/RetirarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/RetirarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Gestion/RetirarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/RetirarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Gestion/RetirarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/RetirarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Gestion/RetirarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/RetirarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Gestion/RetirarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/RetirarDocumento",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Gestion/RetirarDocumento",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/Notificaciones/Leer",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/Notificaciones/Leer",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/Notificaciones/Leer",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "abogado",
+    "Url": "/Notificaciones/Leer",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "gerente",
+    "Url": "/Notificaciones/Leer",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "administrador",
+    "Url": "/Notificaciones/Leer",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Notificaciones/Leer",
+    "Test": "Sin CSRF",
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/Notificaciones/Leer",
+    "Test": "Otro rol",
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Url": "/auth/Auth/Login",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/auth/Auth/Login",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/auth/Auth/Login",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "abogado",
+    "Url": "/auth/Auth/Login",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "gerente",
+    "Url": "/auth/Auth/Login",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "administrador",
+    "Url": "/auth/Auth/Login",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/auth/Auth/Login",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "propietario",
+    "Url": "/auth/Auth/Logout",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "coordinador",
+    "Url": "/auth/Auth/Logout",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "supervisor",
+    "Url": "/auth/Auth/Logout",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "abogado",
+    "Url": "/auth/Auth/Logout",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "gerente",
+    "Url": "/auth/Auth/Logout",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "administrador",
+    "Url": "/auth/Auth/Logout",
+    "Test": "Sin CSRF",
+    "Status": 400
+  },
+  {
+    "Role": "anonimo",
+    "Url": "/auth/Auth/Logout",
+    "Test": "Sin CSRF",
+    "Status": 400
+  }
+]

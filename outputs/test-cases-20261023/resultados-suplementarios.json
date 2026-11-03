@@ -1,0 +1,914 @@
+[
+  {
+    "id": "AUTH-EXT-02",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Alta de fixture usuario campana-1@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Login inválido no redirige al panel",
+        "passed": true
+      },
+      {
+        "assertion": "La identidad no se autentica",
+        "passed": true
+      },
+      {
+        "assertion": "Login inválido no redirige al panel",
+        "passed": true
+      },
+      {
+        "assertion": "La identidad no se autentica",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "AUTH-EXT-04",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Redirección únicamente local: /auth/Auth/Dashboard",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "ADM-EXT-01",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Alta de fixture usuario campana-2@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Acceso de cuenta nueva Propietario",
+        "passed": true
+      },
+      {
+        "assertion": "Identidad nueva correcta Propietario",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña cifrada mediante hash Propietario",
+        "passed": true
+      },
+      {
+        "assertion": "Alta de fixture usuario campana-3@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Acceso de cuenta nueva Coordinador",
+        "passed": true
+      },
+      {
+        "assertion": "Identidad nueva correcta Coordinador",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña cifrada mediante hash Coordinador",
+        "passed": true
+      },
+      {
+        "assertion": "Alta de fixture usuario campana-4@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Acceso de cuenta nueva Supervisor",
+        "passed": true
+      },
+      {
+        "assertion": "Identidad nueva correcta Supervisor",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña cifrada mediante hash Supervisor",
+        "passed": true
+      },
+      {
+        "assertion": "Alta de fixture usuario campana-5@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Acceso de cuenta nueva Abogado",
+        "passed": true
+      },
+      {
+        "assertion": "Identidad nueva correcta Abogado",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña cifrada mediante hash Abogado",
+        "passed": true
+      },
+      {
+        "assertion": "Alta de fixture usuario campana-6@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Acceso de cuenta nueva Gerente",
+        "passed": true
+      },
+      {
+        "assertion": "Identidad nueva correcta Gerente",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña cifrada mediante hash Gerente",
+        "passed": true
+      },
+      {
+        "assertion": "Alta de fixture usuario campana-7@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Acceso de cuenta nueva Administrador",
+        "passed": true
+      },
+      {
+        "assertion": "Identidad nueva correcta Administrador",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña cifrada mediante hash Administrador",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "ADM-EXT-04",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Alta de fixture usuario campana-8@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Edición sin contraseña guardada",
+        "passed": true
+      },
+      {
+        "assertion": "Sesión revocada",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña anterior se conserva",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "ADM-EXT-05",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Alta de fixture usuario campana-9@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Sesión previa de la cuenta",
+        "passed": true
+      },
+      {
+        "assertion": "Cambio de credencial guardado",
+        "passed": true
+      },
+      {
+        "assertion": "Sesión anterior revocada",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña anterior rechazada",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña nueva aceptada",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "ADM-EXT-06",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Alta de fixture usuario campana-10@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Suspensión guardada",
+        "passed": true
+      },
+      {
+        "assertion": "Sesión suspendida revocada",
+        "passed": true
+      },
+      {
+        "assertion": "Suspendido no inicia sesión",
+        "passed": true
+      },
+      {
+        "assertion": "Reactivación guardada",
+        "passed": true
+      },
+      {
+        "assertion": "Reactivado inicia sesión",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "ADM-EXT-07",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Autobloqueo rechazado",
+        "passed": true
+      },
+      {
+        "assertion": "El administrador conserva su acceso",
+        "passed": true
+      },
+      {
+        "assertion": "Autobloqueo rechazado",
+        "passed": true
+      },
+      {
+        "assertion": "El administrador conserva su acceso",
+        "passed": true
+      },
+      {
+        "assertion": "Alta de fixture usuario campana-11@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Cambio de rol guardado",
+        "passed": true
+      },
+      {
+        "assertion": "Cookie anterior revocada",
+        "passed": true
+      },
+      {
+        "assertion": "Nueva sesión de gerente autorizada",
+        "passed": true
+      },
+      {
+        "assertion": "Nuevo rol sin atribuciones anteriores",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "ADM-EXT-08",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Alta de fixture usuario campana-12@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Se bloquea dejar una visita pendiente sin supervisor",
+        "passed": true
+      },
+      {
+        "assertion": "Se bloquea dejar una visita pendiente sin supervisor",
+        "passed": true
+      },
+      {
+        "assertion": "Reasignación legítima de la visita",
+        "passed": true
+      },
+      {
+        "assertion": "Sin visita pendiente se permite suspender",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "REG-EXT-01",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Límite inclusivo aceptado Latitud=-90",
+        "passed": true
+      },
+      {
+        "assertion": "Límite inclusivo aceptado Latitud=90",
+        "passed": true
+      },
+      {
+        "assertion": "Límite inclusivo aceptado Longitud=-180",
+        "passed": true
+      },
+      {
+        "assertion": "Límite inclusivo aceptado Longitud=180",
+        "passed": true
+      },
+      {
+        "assertion": "Valor de coordenada inválido rechazado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin persistencia de coordenada inválida",
+        "passed": true
+      },
+      {
+        "assertion": "Valor de coordenada inválido rechazado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin persistencia de coordenada inválida",
+        "passed": true
+      },
+      {
+        "assertion": "Valor de coordenada inválido rechazado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin persistencia de coordenada inválida",
+        "passed": true
+      },
+      {
+        "assertion": "Valor de coordenada inválido rechazado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin persistencia de coordenada inválida",
+        "passed": true
+      },
+      {
+        "assertion": "Valor de coordenada inválido rechazado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin persistencia de coordenada inválida",
+        "passed": true
+      },
+      {
+        "assertion": "Valor de coordenada inválido rechazado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin persistencia de coordenada inválida",
+        "passed": true
+      },
+      {
+        "assertion": "Valor de coordenada inválido rechazado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin persistencia de coordenada inválida",
+        "passed": true
+      },
+      {
+        "assertion": "Valor de coordenada inválido rechazado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin persistencia de coordenada inválida",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "REG-EXT-03",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Máximo textual válido NombreLaboratorio",
+        "passed": true
+      },
+      {
+        "assertion": "Exceso de longitud rechazado NombreLaboratorio",
+        "passed": true
+      },
+      {
+        "assertion": "Sin registro parcial NombreLaboratorio",
+        "passed": true
+      },
+      {
+        "assertion": "Máximo textual válido Direccion",
+        "passed": true
+      },
+      {
+        "assertion": "Exceso de longitud rechazado Direccion",
+        "passed": true
+      },
+      {
+        "assertion": "Sin registro parcial Direccion",
+        "passed": true
+      },
+      {
+        "assertion": "Máximo textual válido Codigo",
+        "passed": true
+      },
+      {
+        "assertion": "Exceso de longitud rechazado Codigo",
+        "passed": true
+      },
+      {
+        "assertion": "Sin registro parcial Codigo",
+        "passed": true
+      },
+      {
+        "assertion": "Máximo textual válido Telefono",
+        "passed": true
+      },
+      {
+        "assertion": "Exceso de longitud rechazado Telefono",
+        "passed": true
+      },
+      {
+        "assertion": "Sin registro parcial Telefono",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "REG-EXT-07",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "PDF de tamaño exacto 10 MB",
+        "passed": true
+      },
+      {
+        "assertion": "PDF válido de 10 MB aceptado",
+        "passed": true
+      },
+      {
+        "assertion": "PDF de 10 MB + 1 byte rechazado",
+        "passed": true
+      },
+      {
+        "assertion": "Exceso individual sin persistencia parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Carga inicial de 50 MB aceptada",
+        "passed": true
+      },
+      {
+        "assertion": "Total superior a 50 MB rechazado",
+        "passed": true
+      },
+      {
+        "assertion": "Exceso total sin persistencia parcial",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "SEG-EXT-14",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Límite de servicios 0",
+        "passed": true
+      },
+      {
+        "assertion": "Contenido de servicios conservado",
+        "passed": true
+      },
+      {
+        "assertion": "Límite de servicios 2000",
+        "passed": true
+      },
+      {
+        "assertion": "Contenido de servicios conservado",
+        "passed": true
+      },
+      {
+        "assertion": "Límite de servicios 2001",
+        "passed": true
+      },
+      {
+        "assertion": "Contenido de servicios conservado",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "MET-EXT-01",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "total: 6 = 6",
+        "passed": true
+      },
+      {
+        "assertion": "habilitadas: 2 = 2",
+        "passed": true
+      },
+      {
+        "assertion": "rechazadas: 1 = 1",
+        "passed": true
+      },
+      {
+        "assertion": "pendientes: 3 = 3",
+        "passed": true
+      },
+      {
+        "assertion": "borradores: 2 = 2",
+        "passed": true
+      },
+      {
+        "assertion": "Tasa 2/3 sin contar rechazo de campo como definitivo",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "MET-EXT-03",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Promedio de cierres válidos 2 y 4 = 3 días",
+        "passed": true
+      },
+      {
+        "assertion": "Se excluyen cierre ausente y negativo",
+        "passed": true
+      },
+      {
+        "assertion": "Sin denominador se informa ausencia, no cero",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "MET-EXT-06",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "CSV descargado",
+        "passed": true
+      },
+      {
+        "assertion": "CSV conserva/neutraliza '=1+1'",
+        "passed": true
+      },
+      {
+        "assertion": "CSV conserva/neutraliza '+cmd'",
+        "passed": true
+      },
+      {
+        "assertion": "CSV conserva/neutraliza '-formula'",
+        "passed": true
+      },
+      {
+        "assertion": "CSV conserva/neutraliza '@suma'",
+        "passed": true
+      },
+      {
+        "assertion": "CSV conserva/neutraliza '  =oculto'",
+        "passed": true
+      },
+      {
+        "assertion": "CSV conserva/neutraliza 'Municipio, con coma'",
+        "passed": true
+      },
+      {
+        "assertion": "CSV conserva/neutraliza 'Texto \"entrecomillado\"'",
+        "passed": true
+      },
+      {
+        "assertion": "CSV conserva/neutraliza 'Texto\\ncon salto'",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "MET-EXT-10",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Rango de 3660 días",
+        "passed": true
+      },
+      {
+        "assertion": "Rango de 3661 días",
+        "passed": true
+      },
+      {
+        "assertion": "Fecha final no extensible rechazada sin 500",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "ADM-EXT-20",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Pantalla de validación disponible",
+        "passed": true
+      },
+      {
+        "assertion": "Consulta sin reparar ni inventar datos",
+        "passed": true
+      },
+      {
+        "assertion": "Registro incompleto señalado: Laboratorio Central SEDES",
+        "passed": true
+      },
+      {
+        "assertion": "Registro incompleto señalado: Laboratorio Nova",
+        "passed": true
+      },
+      {
+        "assertion": "Registro incompleto señalado: Laboratorio Clínica Azul",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "SEC-EXT-07",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Texto sintético guardado para comprobar escape",
+        "passed": true
+      },
+      {
+        "assertion": "Texto escapado, sin script ejecutable",
+        "passed": true
+      },
+      {
+        "assertion": "Archivo válido con nombre externo normalizado",
+        "passed": true
+      },
+      {
+        "assertion": "Nombre visible sin rutas",
+        "passed": true
+      },
+      {
+        "assertion": "Clave privada aleatoria independiente del nombre",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "SEG-EXT-13",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Respuesta controlada de renovación días 31",
+        "passed": true
+      },
+      {
+        "assertion": "Renovación solo en ventana permitida para 31 días",
+        "passed": true
+      },
+      {
+        "assertion": "Mensaje explica la ventana configurada",
+        "passed": true
+      },
+      {
+        "assertion": "Respuesta controlada de renovación días 30",
+        "passed": true
+      },
+      {
+        "assertion": "Renovación solo en ventana permitida para 30 días",
+        "passed": true
+      },
+      {
+        "assertion": "Respuesta controlada de renovación días 0",
+        "passed": true
+      },
+      {
+        "assertion": "Renovación solo en ventana permitida para 0 días",
+        "passed": true
+      },
+      {
+        "assertion": "Respuesta controlada de renovación días -1",
+        "passed": true
+      },
+      {
+        "assertion": "Renovación solo en ventana permitida para -1 días",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "PUB-EXT-03",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Catálogo sin publicados no inventa lista",
+        "passed": true
+      },
+      {
+        "assertion": "Informa que no hay catálogo configurado/publicado",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "PUB-EXT-02",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Sección creada",
+        "passed": true
+      },
+      {
+        "assertion": "Alta requisito con plantilla true",
+        "passed": true
+      },
+      {
+        "assertion": "Alta requisito con plantilla false",
+        "passed": true
+      },
+      {
+        "assertion": "Agrupación y descripción públicas",
+        "passed": true
+      },
+      {
+        "assertion": "Orden de requisitos respetado",
+        "passed": true
+      },
+      {
+        "assertion": "Obligatoriedad pública explícita",
+        "passed": true
+      },
+      {
+        "assertion": "Plantilla pública PDF correcta",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "PUB-EXT-09",
+    "status": "Revisar",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Ficha inexistente no sustituye otro laboratorio",
+        "passed": true
+      },
+      {
+        "assertion": "No generar ruta a coordenadas 999,999",
+        "passed": false
+      }
+    ],
+    "error": "No generar ruta a coordenadas 999,999"
+  },
+  {
+    "id": "PUB-EXT-10",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Directorio excluye vigencia vencida",
+        "passed": true
+      },
+      {
+        "assertion": "Ficha vencida se presenta cerrada",
+        "passed": true
+      },
+      {
+        "assertion": "Datos incompletos no se inventan al consultar",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "MET-EXT-09",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Pantalla conserva últimos movimientos",
+        "passed": true
+      },
+      {
+        "assertion": "CSV contiene los 50 movimientos más recientes",
+        "passed": true
+      },
+      {
+        "assertion": "Orden reciente por fecha/ID",
+        "passed": true
+      },
+      {
+        "assertion": "El estado es actual para la cohorte histórica seleccionada",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "LEG-EXT-08",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Aprobación legal de renovación 15",
+        "passed": true
+      },
+      {
+        "assertion": "Año desde vigencia activa o desde aprobación al estar vencida",
+        "passed": true
+      },
+      {
+        "assertion": "Mismo laboratorio y cierre independiente",
+        "passed": true
+      },
+      {
+        "assertion": "Aprobación legal de renovación -15",
+        "passed": true
+      },
+      {
+        "assertion": "Año desde vigencia activa o desde aprobación al estar vencida",
+        "passed": true
+      },
+      {
+        "assertion": "Mismo laboratorio y cierre independiente",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "SUP-EXT-19",
+    "status": "Exitoso",
+    "method": "HTTP contra proceso local real y fixtures SQLite sintéticos",
+    "checks": [
+      {
+        "assertion": "Citación con JPEG válido",
+        "passed": true
+      },
+      {
+        "assertion": "JPEG privado se descarga con tipo correcto",
+        "passed": true
+      },
+      {
+        "assertion": "Segunda citación pendiente bloqueada",
+        "passed": true
+      },
+      {
+        "assertion": "Nueva visita por observación de campo",
+        "passed": true
+      },
+      {
+        "assertion": "Acta nueva conforme registrada",
+        "passed": true
+      },
+      {
+        "assertion": "Coordinador valida acta conforme",
+        "passed": true
+      },
+      {
+        "assertion": "Citación anterior queda atendida",
+        "passed": true
+      }
+    ],
+    "error": null
+  }
+]

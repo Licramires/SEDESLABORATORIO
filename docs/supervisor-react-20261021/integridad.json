@@ -1,0 +1,23 @@
+{
+  "integridad": "ok",
+  "referencias_rotas": 0,
+  "tablas_identicas_al_respaldo": {
+    "__EFMigrationsHistory": 8,
+    "HistorialTramites": 51,
+    "Inspecciones": 7,
+    "Notificaciones": 11,
+    "Usuarios": 6,
+    "Laboratorios": 5,
+    "Solicitudes": 15,
+    "PermisosRol": 0,
+    "Catalogos": 5,
+    "Citaciones": 1,
+    "Documentos": 39,
+    "CambiosPermisos": 0,
+    "SeccionesRequisitos": 0,
+    "Requisitos": 3
+  },
+  "archivos_privados_conservados": 47,
+  "design_sin_cambios": true,
+  "hashes_respaldo_verificados": true
+}

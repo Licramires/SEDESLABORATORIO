@@ -1,0 +1,5 @@
+@model List<SEDESLABORATORIO.Data.Entities.Notificacion>
+@{ ViewData["Title"] = "Notificaciones"; }
+<div class="container silab-page"><h1>Notificaciones</h1><p>Últimos 200 avisos. Fechas en UTC.</p>
+@foreach(var n in Model) { <article class="silab-panel p-4 mb-3"><strong>@(n.Leida ? "Leída" : "Nueva") · @n.Fecha.ToString("dd/MM/yyyy HH:mm")</strong><p>@n.Mensaje</p>@if(!n.Leida) { <form asp-action="Leer" method="post"><input type="hidden" name="id" value="@n.Id" /><button class="btn silab-btn-outline">Marcar como leída</button></form> }</article> }
+@if(Model.Count == 0) { <p>No tiene notificaciones.</p> }</div>

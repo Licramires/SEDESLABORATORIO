@@ -1,0 +1,114 @@
+Browser tab: 5, Title: "Inspección · solicitud #7 - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Detalle/7".
+1 AXWebArea Inspección · solicitud #7 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/7
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Detalle/7#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Mi agenda, Value: localhost:5281/Gestion/Agenda
+			7 link Description: Actas emitidas, Value: localhost:5281/Gestion/Actas
+			8 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+			11 button (collapsed) Consultas y recorridos, Secondary Actions: Expand
+				12 text Consultas y recorridos
+		13 text SEDES Cochabamba
+		14 text Servicio Departamental de Salud Portal de trámites y requisitos
+	15 container
+		16 text Panel del supervisor  Inspección · solicitud #7
+		17 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		18 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	19 container main-content
+		20 text Contenido del acta preparado para descargar, firmar y adjuntar.
+		21 link Description: Volver a mi agenda, Value: localhost:5281/Gestion/Agenda
+		22 container
+			23 heading Laboratorio Horizonte, Value: 1
+				24 text Laboratorio Horizonte
+			25 text Solicitud #7 · Apertura · Inspección técnica
+			26 link Description: Mis actas emitidas, Value: localhost:5281/Gestion/Actas
+			27 definition list
+				28 container Municipio
+					29 text Municipio
+				30 text Cochabamba
+				31 container Dirección
+					32 text Dirección
+				33 text DEMO: Av. de pruebas 123
+				34 container Solicitante
+					35 text Solicitante
+				36 text Propietario Demo
+				37 container Contacto
+					38 text Contacto
+				39 text 00000000
+			40 text La visita ya puede registrarse. Complete el acta y envíe el PDF firmado al coordinador.
+		41 container Pasos de la inspección
+			42 content list
+				43 link Description: 1. Programar visita, Value: localhost:5281/Gestion/Detalle/7#programacion
+				44 link Description: 2. Preparar y enviar acta, Value: localhost:5281/Gestion/Detalle/7#acta
+				45 link Description: 3. Seguimiento y citaciones, Value: localhost:5281/Gestion/Detalle/7#seguimiento
+				46 link Description: Consultar documentos, Value: localhost:5281/Gestion/Detalle/7#documentos
+		47 container programacion
+			48 heading Programación de la visita, Value: 2
+				49 text Programación de la visita
+			50 container
+				51 text 20/10/2026 10:00 a 20/10/2026 11:00  · Bolivia
+			52 button (collapsed) Cambiar fecha u horario de la visita, Secondary Actions: Expand
+				53 text Cambiar fecha u horario de la visita
+		54 container acta
+			55 heading Preparar y enviar el acta, Value: 2
+				56 text Preparar y enviar el acta
+			57 link Description: Descargar formulario PDF, Value: localhost:5281/Gestion/FormularioActa/7
+			58 text  · 
+			59 link Description: Descargar resumen completado, Value: localhost:5281/Gestion/FormularioActa/7?resumen=true
+			60 content list
+				61 container
+					62 AXListMarker 1. 
+					63 text Complete las verificaciones y guarde el contenido para firma.
+				64 container
+					65 AXListMarker 2. 
+					66 text Descargue el formulario y el resumen guardado para firmarlos.
+				67 container
+					68 AXListMarker 3. 
+					69 text Adjunte el PDF firmado y envíelo al coordinador.
+			70 container
+				71 text Marque cada punto. Los incumplimientos y sus correcciones forman el resumen del acta; no necesita escribirlos otra vez.
+				72 container DEMO: condiciones de limpieza del área de trabajo
+					73 text DEMO: condiciones de limpieza del área de trabajo
+					74 container
+						75 text Punto ficticio; sin artículo normativo  · v 1
+					76 container
+						77 text ¿Cumple este punto?
+						78 pop up button (collapsed, settable) ¿Cumple este punto?, Value: No cumple, Secondary Actions: Expand
+							79 menu
+								80 Seleccione
+								81 Cumple
+								82 (selected) No cumple
+								83 No aplica
+					84 container
+						85 text Qué debe corregirse
+						86 text entry area (settable) Qué debe corregirse, Value: Corregir la limpieza del área de trabajo antes de la nueva visita.
+				87 text Notas adicionales  (opcional)
+				88 text entry area (settable) Notas adicionales (opcional)
+				89 text Dictamen de los incumplimientos
+				90 pop up button (collapsed, settable) Dictamen de los incumplimientos, Value: Con observaciones: admite subsanación, Secondary Actions: Expand
+					91 menu
+						92 (selected) Con observaciones: admite subsanación
+						93 Rechazado por incumplimiento de campo
+				94 text Plazo para subsanar (días hábiles)
+				95 stepper (settable, integer) Plazo para subsanar (días hábiles), Value: 15
+				96 text PDF del acta firmada (necesario al enviar)
+				97 button PDF del acta firmada (necesario al enviar)
+				98 button Guardar contenido para firma
+				99 button Enviar acta firmada al coordinador
+		100 container seguimiento
+			101 heading Seguimiento y citaciones, Value: 2
+				102 text Seguimiento y citaciones
+			103 text Las citaciones corresponden a inspecciones con observaciones o incumplimientos. Adjunte la evidencia firmada; no sustituyen la validación del coordinador.
+			104 text No tiene citaciones emitidas en este expediente.
+		105 button (collapsed) Documentos del expediente (3 actuales), Secondary Actions: Expand
+			106 text Documentos del expediente (3 actuales)
+		107 button (collapsed) Historial y visitas anteriores, Secondary Actions: Expand
+			108 text Historial y visitas anteriores
+	109 container
+		110 text © 2026 SI_Lab · SEDES Cochabamba
+		111 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Inspección · solicitud #7 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/7

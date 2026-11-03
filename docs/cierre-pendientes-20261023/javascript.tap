@@ -1,0 +1,182 @@
+
+> test
+> node --test test/*.test.mjs
+
+TAP version 13
+# Subtest: Cancelar una confirmación impide enviar el formulario de retirada
+ok 1 - Cancelar una confirmación impide enviar el formulario de retirada
+  ---
+  duration_ms: 1.7668
+  type: 'test'
+  ...
+# Subtest: El botón de rechazo muestra su confirmación y respetar aceptar permite el envío
+ok 2 - El botón de rechazo muestra su confirmación y respetar aceptar permite el envío
+  ---
+  duration_ms: 1.5288
+  type: 'test'
+  ...
+# Subtest: Las acciones sin advertencia no abren una confirmación artificial
+ok 3 - Las acciones sin advertencia no abren una confirmación artificial
+  ---
+  duration_ms: 0.8561
+  type: 'test'
+  ...
+# Subtest: Los extremos del calendario no crean años de cinco cifras ni días repetidos
+ok 4 - Los extremos del calendario no crean años de cinco cifras ni días repetidos
+  ---
+  duration_ms: 3.5503
+  type: 'test'
+  ...
+# Subtest: La fecha elegida debe ser civil, completa y existente
+ok 5 - La fecha elegida debe ser civil, completa y existente
+  ---
+  duration_ms: 0.2746
+  type: 'test'
+  ...
+# Subtest: La semana incluye domingo y cruces de año sin depender de la zona local
+ok 6 - La semana incluye domingo y cruces de año sin depender de la zona local
+  ---
+  duration_ms: 0.9169
+  type: 'test'
+  ...
+# Subtest: Una visita nocturna aparece en ambos días, sin duplicarse al terminar a medianoche
+ok 7 - Una visita nocturna aparece en ambos días, sin duplicarse al terminar a medianoche
+  ---
+  duration_ms: 0.1368
+  type: 'test'
+  ...
+# Subtest: La ruta excluye ubicaciones desconocidas, inválidas y visitas sin fecha
+ok 8 - La ruta excluye ubicaciones desconocidas, inválidas y visitas sin fecha
+  ---
+  duration_ms: 0.3251
+  type: 'test'
+  ...
+# Subtest: Una ruta larga conserva orden y todas las paradas con el límite móvil de Maps
+ok 9 - Una ruta larga conserva orden y todas las paradas con el límite móvil de Maps
+  ---
+  duration_ms: 8.6004
+  type: 'test'
+  ...
+# Subtest: Sin laboratorios abiertos no se solicita acceso GPS
+ok 10 - Sin laboratorios abiertos no se solicita acceso GPS
+  ---
+  duration_ms: 2.2658
+  type: 'test'
+  ...
+# Subtest: GPS no soportado en mapa: mensaje y ausencia de navegación
+ok 11 - GPS no soportado en mapa: mensaje y ausencia de navegación
+  ---
+  duration_ms: 0.6922
+  type: 'test'
+  ...
+# Subtest: GPS mapa: denegado/no disponible/tiempo agotado, código 1
+ok 12 - GPS mapa: denegado/no disponible/tiempo agotado, código 1
+  ---
+  duration_ms: 0.7552
+  type: 'test'
+  ...
+# Subtest: GPS mapa: denegado/no disponible/tiempo agotado, código 2
+ok 13 - GPS mapa: denegado/no disponible/tiempo agotado, código 2
+  ---
+  duration_ms: 0.5762
+  type: 'test'
+  ...
+# Subtest: GPS mapa: denegado/no disponible/tiempo agotado, código 3
+ok 14 - GPS mapa: denegado/no disponible/tiempo agotado, código 3
+  ---
+  duration_ms: 0.5707
+  type: 'test'
+  ...
+# Subtest: GPS no soportado en ruta: mensaje y ausencia de navegación
+ok 15 - GPS no soportado en ruta: mensaje y ausencia de navegación
+  ---
+  duration_ms: 0.794
+  type: 'test'
+  ...
+# Subtest: GPS ruta: denegado/no disponible/tiempo agotado, código 1
+ok 16 - GPS ruta: denegado/no disponible/tiempo agotado, código 1
+  ---
+  duration_ms: 0.7105
+  type: 'test'
+  ...
+# Subtest: GPS ruta: denegado/no disponible/tiempo agotado, código 2
+ok 17 - GPS ruta: denegado/no disponible/tiempo agotado, código 2
+  ---
+  duration_ms: 0.7266
+  type: 'test'
+  ...
+# Subtest: GPS ruta: denegado/no disponible/tiempo agotado, código 3
+ok 18 - GPS ruta: denegado/no disponible/tiempo agotado, código 3
+  ---
+  duration_ms: 1.6
+  type: 'test'
+  ...
+# Subtest: La ruta calculada usa el abierto más cercano y conserva las coordenadas sintéticas
+ok 19 - La ruta calculada usa el abierto más cercano y conserva las coordenadas sintéticas
+  ---
+  duration_ms: 1.1246
+  type: 'test'
+  ...
+# Subtest: El botón de detalle genera la ruta al destino, con espera limitada del GPS
+ok 20 - El botón de detalle genera la ruta al destino, con espera limitada del GPS
+  ---
+  duration_ms: 0.766
+  type: 'test'
+  ...
+# Subtest: La consulta usa la sesión actual y no devuelve datos hasta recibir JSON completo
+ok 21 - La consulta usa la sesión actual y no devuelve datos hasta recibir JSON completo
+  ---
+  duration_ms: 22.1158
+  type: 'test'
+  ...
+# Subtest: Una respuesta 401 no reemplaza los datos por una respuesta de error
+ok 22 - Una respuesta 401 no reemplaza los datos por una respuesta de error
+  ---
+  duration_ms: 0.4003
+  type: 'test'
+  ...
+# Subtest: Una respuesta 403 no reemplaza los datos por una respuesta de error
+ok 23 - Una respuesta 403 no reemplaza los datos por una respuesta de error
+  ---
+  duration_ms: 0.2816
+  type: 'test'
+  ...
+# Subtest: Una respuesta 409 no reemplaza los datos por una respuesta de error
+ok 24 - Una respuesta 409 no reemplaza los datos por una respuesta de error
+  ---
+  duration_ms: 0.168
+  type: 'test'
+  ...
+# Subtest: Una respuesta 500 no reemplaza los datos por una respuesta de error
+ok 25 - Una respuesta 500 no reemplaza los datos por una respuesta de error
+  ---
+  duration_ms: 0.2394
+  type: 'test'
+  ...
+# Subtest: Una respuesta 503 no reemplaza los datos por una respuesta de error
+ok 26 - Una respuesta 503 no reemplaza los datos por una respuesta de error
+  ---
+  duration_ms: 0.1586
+  type: 'test'
+  ...
+# Subtest: Una red caída y una sesión redirigida a HTML se rechazan de forma recuperable
+ok 27 - Una red caída y una sesión redirigida a HTML se rechazan de forma recuperable
+  ---
+  duration_ms: 0.7575
+  type: 'test'
+  ...
+# Subtest: Una red sin respuesta se cancela y libera la actualización para poder reintentar
+ok 28 - Una red sin respuesta se cancela y libera la actualización para poder reintentar
+  ---
+  duration_ms: 11.2362
+  type: 'test'
+  ...
+1..28
+# tests 28
+# suites 0
+# pass 28
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 144.957

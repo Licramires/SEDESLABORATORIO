@@ -1,0 +1,20 @@
+@model List<SEDESLABORATORIO.Data.Entities.Solicitud>
+@using SEDESLABORATORIO.Data
+@using SEDESLABORATORIO.Data.Entities
+@{ ViewData["Title"] = User.IsInRole("supervisor") ? "Expedientes asignados" : "Trámites"; }
+<div class="container silab-page">
+    <div class="silab-page-heading"><div><h1>@ViewData["Title"]</h1><p>@Model.Count solicitudes disponibles para tu rol.</p></div>
+    @if (User.IsInRole("propietario")) { <a class="btn silab-btn-primary" asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva"><partial name="_Icon" model='"plus"' />Nueva solicitud</a> }</div>
+    @if (User.IsInRole("coordinador")) { <nav class="workflow-actions mb-3" aria-label="Bandejas de trabajo"><a asp-action="Index" asp-route-estado="EnRevision" class="btn silab-btn-outline">Revisar documentos</a><a asp-action="Index" asp-route-estado="Aprobado" class="btn silab-btn-outline">Asignar inspección</a><a asp-action="Index" asp-route-estado="RevisionActa" class="btn silab-btn-outline">Validar actas</a></nav><p>Abra un expediente para realizar el siguiente paso. Los filtros permiten consultar también las inspecciones y el seguimiento.</p> }
+    else if(User.IsInRole("abogado")) { <p>Resuelva los expedientes en revisión legal. Los habilitados quedan disponibles para consulta.</p> }
+    else if(User.IsInRole("supervisor")) { <p>Consulte los expedientes en los que participó. Para organizar visitas y registrar actas, entre en <a asp-action="Agenda">Mi agenda</a>.</p> }
+    else { <p>Abra su trámite para completar documentos, enviarlo o consultar qué debe corregirse.</p> }
+    <form method="get" class="silab-panel p-3 mb-3 d-flex flex-wrap gap-3">
+        <label>Estado <select name="estado" class="form-select"><option value="">Todos</option>@foreach(var e in Enum.GetValues<EstadoSolicitud>()) { <option value="@e" selected="@(ViewBag.Estado == e)">@ApplicationDbContext.EstadoEtiqueta(e)</option> }</select></label>
+        <label>Municipio <input name="municipio" value="@ViewBag.Municipio" class="form-control" /></label><button class="btn silab-btn-primary" type="submit">Filtrar</button>
+    </form>
+    <div class="silab-panel table-responsive"><table class="table silab-table"><thead><tr><th>Solicitud</th><th>Establecimiento</th><th>Municipio</th><th>Estado</th><th>Fecha (UTC)</th><th>Siguiente paso</th></tr></thead><tbody>
+    @foreach (var s in Model) { <tr><td>#@s.Id @(s.EsRenovacion ? "Renovación" : "Apertura")</td><td>@TramiteDetalleModel.DatosDe(s).NombreLaboratorio<br /><small>@s.Propietario.Nombre</small></td><td>@s.Municipio</td><td><span class="silab-status" data-state="@ApplicationDbContext.EstadoTexto(s.Estado)">@ApplicationDbContext.EstadoEtiqueta(s.Estado)</span></td><td>@s.FechaCreacion.ToString("dd/MM/yyyy")</td><td><a asp-action="Detalle" asp-route-id="@s.Id">@(User.IsInRole("coordinador") ? s.Estado switch { EstadoSolicitud.EnRevision => "Revisar documentos", EstadoSolicitud.Aprobado => "Asignar supervisor", EstadoSolicitud.Inspeccion => "Ver asignación", EstadoSolicitud.RevisionActa => "Validar acta", EstadoSolicitud.Observado when s.OrigenObservacion == "campo" => "Reprogramar inspección", EstadoSolicitud.Rechazado when s.MotivoRechazo == "campo" => "Reprogramar inspección", _ => "Ver seguimiento" } : User.IsInRole("abogado") && s.Estado == EstadoSolicitud.RevisionLegal ? "Resolver revisión legal" : "Abrir expediente")</a></td></tr> }
+    @if (Model.Count == 0) { <tr><td colspan="6">No hay trámites con estos filtros.</td></tr> }
+    </tbody></table></div>
+</div>

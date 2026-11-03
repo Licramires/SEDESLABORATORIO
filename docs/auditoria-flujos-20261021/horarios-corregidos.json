@@ -1,0 +1,35 @@
+{
+  "autorizacion": "Usuario autorizó distribuir los horarios inventados el 22/10/2026",
+  "cambios": [
+    {
+      "inspeccion": 4,
+      "solicitud": 8,
+      "anterior": "2026-10-07 10:00:00",
+      "inicio": "2026-10-07 09:00:00",
+      "fin": "2026-10-07 10:00:00"
+    },
+    {
+      "inspeccion": 5,
+      "solicitud": 9,
+      "anterior": "2026-10-07 10:00:00",
+      "inicio": "2026-10-07 11:00:00",
+      "fin": "2026-10-07 12:00:00"
+    },
+    {
+      "inspeccion": 6,
+      "solicitud": 11,
+      "anterior": "2026-10-07 10:00:00",
+      "inicio": "2026-10-07 13:00:00",
+      "fin": "2026-10-07 14:00:00"
+    },
+    {
+      "inspeccion": 7,
+      "solicitud": 13,
+      "anterior": "2026-10-07 10:00:00",
+      "inicio": "2026-10-07 15:00:00",
+      "fin": "2026-10-07 16:00:00"
+    }
+  ],
+  "integridad": "ok",
+  "referenciasRotas": 0
+}

@@ -1,0 +1,69 @@
+Browser tab: 2, Title: "Solicitud #19 - SEDESLABORATORIO", URL: "http://localhost:5287/Gestion/Detalle/19".
+1 AXWebArea Solicitud #19 - SEDESLABORATORIO, URL: localhost:5287/Gestion/Detalle/19
+	2 link Description: Saltar al contenido, Value: localhost:5287/Gestion/Detalle/19#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5287/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5287/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5287/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5287/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5287/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5287/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Solicitud #19
+		15 link Description: Ver notificaciones, Value: localhost:5287/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5287/auth/Auth/Dashboard
+	17 container main-content
+		18 link Description: ← Volver a trámites, Value: localhost:5287/Gestion
+		19 container
+			20 text Solicitud #19 · Apertura
+			21 heading Laboratorio corrección borrador, Value: 1
+				22 text Laboratorio corrección borrador
+			23 text Clínico · Cochabamba · -17.3935, -66.157 Propietario: Propietario Demo DEMO: Av. de pruebas 123 · 00000000 · QA-BUGS-borrador Revisión documental
+			24 heading Documentación, Value: 2
+				25 text Documentación
+			26 text Consulte los documentos actuales y sus versiones anteriores. La revisión de cada PDF es independiente de la decisión sobre el expediente.
+			27 link Description: Consultar requerimientos para registrar un laboratorio, Value: localhost:5287/publico/Publico/Requerimientos
+			28 text 3 PDF en la lista de envío.
+			29 text  Los archivos retirados o reemplazados permanecen en el historial.
+			30 heading Requisitos generales, Value: 3
+				31 text Requisitos generales
+			32 heading Licencia municipal Obligatorio · requisito v1, Value: 3
+				33 text Licencia municipal
+				34 text Obligatorio · requisito v1
+			35 text Versión 1: pendiente
+			36 link Description: Licencia municipal · PDF v1 (actual), Value: localhost:5287/Gestion/Descargar/54
+			37 text Pendiente de revisión
+			38 heading Plano arquitectónico Obligatorio · requisito v1, Value: 3
+				39 text Plano arquitectónico
+				40 text Obligatorio · requisito v1
+			41 text Versión 1: pendiente
+			42 link Description: Plano arquitectónico · PDF v1 (actual), Value: localhost:5287/Gestion/Descargar/55
+			43 text Pendiente de revisión
+			44 heading Certificado sanitario Obligatorio · requisito v1, Value: 3
+				45 text Certificado sanitario
+				46 text Obligatorio · requisito v1
+			47 text Versión 1: pendiente
+			48 link Description: Certificado sanitario · PDF v1 (actual), Value: localhost:5287/Gestion/Descargar/56
+			49 text Pendiente de revisión
+		50 container
+			51 heading Inspecciones e historial de asignaciones, Value: 2
+				52 text Inspecciones e historial de asignaciones
+			53 text No hay inspecciones asignadas.
+		54 heading Citaciones y evidencia, Value: 2
+			55 text Citaciones y evidencia
+		56 container
+			57 heading Historial del trámite, Value: 2
+				58 text Historial del trámite
+			59 text Fechas en UTC.
+			60 content list
+				61 container
+					62 AXListMarker 1. 
+					63 text 26/10/2026 18:53 · Propietario Demo Solicitud enviada para revisión documental.
+	64 container
+		65 text © 2026 SI_Lab · SEDES Cochabamba
+		66 link Description: Privacidad, Value: localhost:5287/Home/Privacy
+
+The focused UI element is 1 AXWebArea Solicitud #19 - SEDESLABORATORIO, URL: localhost:5287/Gestion/Detalle/19

@@ -1,0 +1,157 @@
+Browser tab: 5, Title: "Solicitud #17 - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Detalle/17".
+1 AXWebArea Solicitud #17 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/17
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Detalle/17#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Solicitud #17
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 link Description: ← Volver a trámites, Value: localhost:5281/Gestion
+		19 container
+			20 text Solicitud #17 · Apertura
+			21 heading Laboratorio acumulación UI 183, Value: 1
+				22 text Laboratorio acumulación UI 183
+			23 text Clínico · Cochabamba · -17.3967, -66.1497 Propietario: Propietario Demo Borrador
+			24 link Description: Corregir datos del borrador, Value: localhost:5281/Gestion/EditarDatos/17
+			25 heading Documentación, Value: 2
+				26 text Documentación
+			27 text Agregue PDF uno por uno; cada archivo guardado se incorpora a la documentación de este expediente. Puede continuar después y quitar los pendientes u observados antes de enviar. No hay un límite de cinco archivos; cada PDF admite hasta 10 MB.
+			28 link Description: Consultar requerimientos para registrar un laboratorio, Value: localhost:5281/publico/Publico/Requerimientos
+			29 text 6 PDF en la lista de envío.
+			30 text  Los archivos retirados o reemplazados permanecen en el historial.
+			31 heading Requisitos generales, Value: 3
+				32 text Requisitos generales
+			33 heading Licencia municipal Obligatorio · requisito v1, Value: 3
+				34 text Licencia municipal
+				35 text Obligatorio · requisito v1
+			36 text Versión 1: pendiente
+			37 text archivo-1.pdf
+			38 link Description: Licencia municipal · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/49
+			39 text Pendiente de revisión
+			40 button Quitar PDF de la lista de envío
+			41 container
+				42 text PDF para Licencia municipal
+				43 button PDF para Licencia municipal
+				44 button Guardar nueva versión
+			45 heading Plano arquitectónico Obligatorio · requisito v1, Value: 3
+				46 text Plano arquitectónico
+				47 text Obligatorio · requisito v1
+			48 text Pendiente de carga
+			49 container
+				50 text PDF para Plano arquitectónico
+				51 button PDF para Plano arquitectónico
+				52 button Guardar nueva versión
+			53 heading Certificado sanitario Obligatorio · requisito v1, Value: 3
+				54 text Certificado sanitario
+				55 text Obligatorio · requisito v1
+			56 text Pendiente de carga
+			57 container
+				58 text PDF para Certificado sanitario
+				59 button PDF para Certificado sanitario
+				60 button Guardar nueva versión
+			61 text archivo-1.pdf
+			62 link Description: Documento #43 · PDF v1 (histórico), Value: localhost:5281/Gestion/Descargar/43
+			63 text Pendiente de revisión
+			64 text archivo-2.pdf
+			65 link Description: Documento #44 · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/44
+			66 text Pendiente de revisión
+			67 button Quitar PDF de la lista de envío
+			68 container
+				69 text Asociar sin volver a cargar
+				70 pop up button (collapsed, settable) Asociar sin volver a cargar, Value: Seleccione un requisito, Secondary Actions: Expand
+					71 menu
+						72 (selected) Seleccione un requisito
+						73 Licencia municipal
+						74 Plano arquitectónico
+						75 Certificado sanitario
+				76 button Asociar documento
+			77 text archivo-3.pdf
+			78 link Description: Documento #45 · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/45
+			79 text Pendiente de revisión
+			80 button Quitar PDF de la lista de envío
+			81 container
+				82 text Asociar sin volver a cargar
+				83 pop up button (collapsed, settable) Asociar sin volver a cargar, Value: Seleccione un requisito, Secondary Actions: Expand
+					84 menu
+						85 (selected) Seleccione un requisito
+						86 Licencia municipal
+						87 Plano arquitectónico
+						88 Certificado sanitario
+				89 button Asociar documento
+			90 text archivo-4.pdf
+			91 link Description: Documento #46 · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/46
+			92 text Pendiente de revisión
+			93 button Quitar PDF de la lista de envío
+			94 container
+				95 text Asociar sin volver a cargar
+				96 pop up button (collapsed, settable) Asociar sin volver a cargar, Value: Seleccione un requisito, Secondary Actions: Expand
+					97 menu
+						98 (selected) Seleccione un requisito
+						99 Licencia municipal
+						100 Plano arquitectónico
+						101 Certificado sanitario
+				102 button Asociar documento
+			103 text archivo-5.pdf
+			104 link Description: Documento #47 · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/47
+			105 text Pendiente de revisión
+			106 button Quitar PDF de la lista de envío
+			107 container
+				108 text Asociar sin volver a cargar
+				109 pop up button (collapsed, settable) Asociar sin volver a cargar, Value: Seleccione un requisito, Secondary Actions: Expand
+					110 menu
+						111 (selected) Seleccione un requisito
+						112 Licencia municipal
+						113 Plano arquitectónico
+						114 Certificado sanitario
+				115 button Asociar documento
+			116 text archivo-6.pdf
+			117 link Description: Documento #48 · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/48
+			118 text Pendiente de revisión
+			119 button Quitar PDF de la lista de envío
+			120 container
+				121 text Asociar sin volver a cargar
+				122 pop up button (collapsed, settable) Asociar sin volver a cargar, Value: Seleccione un requisito, Secondary Actions: Expand
+					123 menu
+						124 (selected) Seleccione un requisito
+						125 Licencia municipal
+						126 Plano arquitectónico
+						127 Certificado sanitario
+				128 button Asociar documento
+			129 container
+				130 text Agregar otro PDF complementario
+				131 button Agregar otro PDF complementario
+			132 button Guardar complemento
+		133 container
+			134 heading Enviar a revisión, Value: 2
+				135 text Enviar a revisión
+			136 text Complete los requisitos y reemplace los PDF observados. Los documentos aprobados se conservan.
+			137 button Enviar solicitud
+		138 container
+			139 heading Inspecciones e historial de asignaciones, Value: 2
+				140 text Inspecciones e historial de asignaciones
+			141 text No hay inspecciones asignadas.
+		142 heading Citaciones y evidencia, Value: 2
+			143 text Citaciones y evidencia
+		144 container
+			145 heading Historial del trámite, Value: 2
+				146 text Historial del trámite
+			147 text Fechas en UTC.
+			148 content list
+				149 container
+					150 AXListMarker 1. 
+					151 text 23/10/2026 05:23 · Propietario Demo Documento complementario #43 asociado a Licencia municipal; se conserva el original.
+	152 container
+		153 text © 2026 SI_Lab · SEDES Cochabamba
+		154 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Solicitud #17 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/17

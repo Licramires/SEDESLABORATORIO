@@ -1,0 +1,314 @@
+[
+  {
+    "ids": [
+      "PUB-LL-01"
+    ],
+    "status": "Exitoso",
+    "actual": "Portal sin sesión con 5 resultados, filtros, mapa y Requerimientos.",
+    "evidence": "PUB-LL-01.txt"
+  },
+  {
+    "ids": [
+      "PUB-LL-02"
+    ],
+    "status": "Exitoso",
+    "actual": "Buscar Nova devuelve solo Laboratorio Nova; el mapa se reajusta al resultado.",
+    "evidence": "PUB-LL-02.txt"
+  },
+  {
+    "ids": [
+      "PUB-EXT-07"
+    ],
+    "status": "Exitoso",
+    "actual": "El botón informa que no hay abiertos y permanece en la página.",
+    "evidence": "PUB-EXT-07.txt"
+  },
+  {
+    "ids": [
+      "PUB-LL-03"
+    ],
+    "status": "Exitoso",
+    "actual": "Especializado muestra Clínica Azul y Bacteriológico muestra Nova.",
+    "evidence": "PUB-LL-03.txt"
+  },
+  {
+    "ids": [
+      "PUB-LL-04"
+    ],
+    "status": "Exitoso",
+    "actual": "Abiertos devuelve cuatro, Cerrados devuelve Nova y cualquier estado devuelve cinco.",
+    "evidence": "PUB-LL-04.txt"
+  },
+  {
+    "ids": [
+      "PUB-LL-05"
+    ],
+    "status": "Exitoso",
+    "actual": "Intersección Nova/Bacteriológico/Cerrados: 1; texto inexistente: vacío; limpiar: 5.",
+    "evidence": "PUB-LL-05.txt"
+  },
+  {
+    "ids": [
+      "PUB-LL-06"
+    ],
+    "status": "Exitoso",
+    "actual": "Ficha de Central muestra servicios, dirección, teléfono, código, coordenadas y mapa, sin archivos privados.",
+    "evidence": "PUB-LL-06.txt"
+  },
+  {
+    "ids": [
+      "PUB-LL-08"
+    ],
+    "status": "Exitoso",
+    "actual": "Cómo llegar conserva destino -17.3935,-66.157 correspondiente a Central.",
+    "evidence": "PUB-LL-08.txt"
+  },
+  {
+    "ids": [
+      "PUB-HL-01"
+    ],
+    "status": "Exitoso",
+    "actual": "Recorrido de búsqueda, detalle Central, destino de ruta y regreso completado sin sesión.",
+    "evidence": "PUB-HL-01.txt"
+  },
+  {
+    "ids": [
+      "PUB-EXT-01"
+    ],
+    "status": "Exitoso",
+    "actual": "Especializado y Genética encuentran Clínica Azul por tipo y servicio.",
+    "evidence": "PUB-EXT-01.txt"
+  },
+  {
+    "ids": [
+      "AUTH-EXT-01"
+    ],
+    "status": "Exitoso",
+    "actual": "Vacíos: errores de ambos campos; correo inválido: error de formato sin sesión.",
+    "evidence": "AUTH-EXT-01.txt"
+  },
+  {
+    "ids": [
+      "AUTH-LL-02"
+    ],
+    "status": "Exitoso",
+    "actual": "Mensaje genérico de credenciales inválidas; la vista protegida redirige al login sin sesión.",
+    "evidence": "AUTH-LL-02.txt"
+  },
+  {
+    "ids": [
+      "SEG-LL-01"
+    ],
+    "status": "Exitoso",
+    "actual": "Listado propio de 15 trámites con apertura, renovación y estados diferenciados.",
+    "evidence": "SEG-LL-01.txt"
+  },
+  {
+    "ids": [
+      "AUTH-LL-01",
+      "AUTH-HL-02"
+    ],
+    "status": "Exitoso",
+    "actual": "Mi cuenta identifica Propietario Demo; recarga y navegación conservan su sesión y menú propio.",
+    "evidence": "AUTH-LL-01-HL-02.txt"
+  },
+  {
+    "ids": [
+      "SEG-LL-02"
+    ],
+    "status": "Exitoso",
+    "actual": "Expediente propio #13 muestra datos, tres versiones actuales, acta e historial por actor/fecha, sin decisiones ajenas.",
+    "evidence": "SEG-LL-02.txt"
+  },
+  {
+    "ids": [
+      "REG-LL-01",
+      "AUTH-LL-03",
+      "SEG-HL-03"
+    ],
+    "status": "Exitoso",
+    "actual": "Se recorrieron Mi cuenta, Trámites, Mis establecimientos, ficha y Nueva solicitud. Formulario permite borrador sin adjuntos y muestra requisitos y mapa.",
+    "evidence": "REG-LL-01.txt"
+  },
+  {
+    "ids": [
+      "REG-LL-07",
+      "REG-HL-02"
+    ],
+    "status": "Exitoso",
+    "actual": "Tras validación del formulario vacío se corrigieron datos y se creó solo el borrador #16 sin archivos, con coordenadas -17.39,-66.16 y tres obligatorios pendientes.",
+    "evidence": "REG-LL-07.txt"
+  },
+  {
+    "ids": [
+      "SEG-EXT-01"
+    ],
+    "status": "Exitoso",
+    "actual": "Se guardaron Licencia y Plano en cargas individuales separadas, conservando el primer archivo y sin enviar la solicitud.",
+    "evidence": "SEG-EXT-01.txt"
+  },
+  {
+    "ids": [
+      "SEG-LL-03"
+    ],
+    "status": "Exitoso",
+    "actual": "Con los tres PDF actuales el borrador #16 pasa a revisión documental y desaparecen los formularios de edición.",
+    "evidence": "SEG-LL-03.txt"
+  },
+  {
+    "ids": [
+      "SEG-LL-04"
+    ],
+    "status": "Exitoso",
+    "actual": "La pestaña antigua devuelve conflicto y no repite el envío. Observación UX BUG-01: la respuesta aislada pide recargar el POST y carece de enlace para recuperar el expediente.",
+    "evidence": "SEG-LL-04.txt"
+  },
+  {
+    "ids": [
+      "SEG-HL-01"
+    ],
+    "status": "Exitoso",
+    "actual": "Ambas pestañas actualizadas muestran #16 en revisión documental, con el mismo identificador.",
+    "evidence": "SEG-HL-01.txt"
+  },
+  {
+    "ids": [
+      "REG-EXT-04",
+      "REG-LL-05",
+      "REG-LL-04"
+    ],
+    "status": "Exitoso",
+    "actual": "Borrador #17 conserva seis PDF seleccionados uno por uno y la ubicación -17.396675,-66.149706 obtenida arrastrando el marcador.",
+    "evidence": "REG-EXT-04.txt"
+  },
+  {
+    "ids": [
+      "SEG-EXT-02"
+    ],
+    "status": "Exitoso",
+    "actual": "archivo-1.pdf se asocia a Licencia municipal sin reabrir el selector. Se conserva el registro original y la historia de asociación.",
+    "evidence": "SEG-EXT-02.txt"
+  },
+  {
+    "ids": [
+      "AUTH-LL-05",
+      "AUTH-HL-01"
+    ],
+    "status": "Exitoso",
+    "actual": "Cerrar sesión devuelve al login y pedir Dashboard vuelve a exigir autenticación; antes se verificó retorno a /Gestion/Index tras login.",
+    "evidence": "AUTH-LL-05.txt"
+  },
+  {
+    "ids": [
+      "SEG-HL-02"
+    ],
+    "status": "Exitoso",
+    "actual": "Nueva sesión verificada: #16 sigue en revisión documental, con los tres PDF y su historial.",
+    "evidence": "SEG-HL-02.txt"
+  },
+  {
+    "ids": [
+      "COO-EXT-11"
+    ],
+    "status": "Exitoso",
+    "actual": "Acta conforme de #8 aceptada: inspección validada y trámite en revisión legal, sin habilitación anticipada.",
+    "evidence": "COO-EXT-11.txt"
+  },
+  {
+    "ids": [
+      "COO-EXT-01"
+    ],
+    "status": "Exitoso",
+    "actual": "Se recorrieron Revisar documentos, Asignar inspección y Validar actas; filtro Cochabamba y regreso al listado funcionan.",
+    "evidence": "COO-EXT-01.txt"
+  },
+  {
+    "ids": [
+      "E2E-EXT-04"
+    ],
+    "status": "Fallido",
+    "actual": "BUG-01: conflicto aislado sin regreso. BUG-02: aprobar nuevamente #40 crea otra decisión idéntica en historial; se incumple la ausencia de decisiones redundantes. Otros controles siguen en revisión.",
+    "evidence": "BUG-02-aprobacion-repetida.txt"
+  },
+  {
+    "ids": [
+      "COO-EXT-02"
+    ],
+    "status": "Exitoso",
+    "actual": "Aprobación sin motivo de corrección asigna revisor y fecha a Licencia municipal. Se registró por separado BUG-02 al repetir la aprobación.",
+    "evidence": "COO-EXT-02.txt"
+  },
+  {
+    "ids": [
+      "COO-EXT-03"
+    ],
+    "status": "Exitoso",
+    "actual": "Vacío se rechaza sin observar; con motivo se observa solo Plano. BUG-01 documenta que el mensaje de validación no ofrece regreso al formulario.",
+    "evidence": "COO-EXT-03.txt"
+  },
+  {
+    "ids": [
+      "PUB-EXT-09"
+    ],
+    "status": "Fallido",
+    "actual": "BUG-03: con el registro de prueba Lat=999/Lng=999 la ficha crea marcador y la ruta publica destino Google Maps 999,999 en vez de bloquear una ubicación inválida. ID inexistente sí devuelve 404.",
+    "evidence": "PUB-EXT-09.txt"
+  },
+  {
+    "ids": [
+      "SUP-EXT-01"
+    ],
+    "status": "Exitoso",
+    "actual": "Semana siguiente cruza a noviembre. Buscar Horizonte reduce a una visita; Actualizar conserva fecha 06/11/2026 y q=Horizonte. El aislamiento se verificó también por integración.",
+    "evidence": "SUP-EXT-01.txt"
+  },
+  {
+    "ids": [
+      "SUP-EXT-09",
+      "SUP-EXT-10"
+    ],
+    "status": "Exitoso",
+    "actual": "Hallazgo vacío impide guardar; al completarlo se conserva en inspección pendiente con resultado observado y notas vacías. Verificación adicional de persistencia: ui-db-evidence.json.",
+    "evidence": "SUP-EXT-09-10.txt"
+  },
+  {
+    "ids": [
+      "SUP-EXT-13"
+    ],
+    "status": "Exitoso",
+    "actual": "Acta #3 de solicitud #7 registrada como observada con PDF; queda en revisión del coordinador, sin permitir editar la programación.",
+    "evidence": "SUP-EXT-13.txt"
+  },
+  {
+    "ids": [
+      "MET-EXT-07"
+    ],
+    "status": "Exitoso",
+    "actual": "Servidor detenido: aviso, datos conservados y botón reutilizable. Tras reiniciar, el reintento recupera los gráficos. Los códigos de error, HTML/JSON inválido y timeout de 15 s se ejecutaron además en pruebas JS.",
+    "evidence": "MET-EXT-07-recuperado.txt"
+  },
+  {
+    "ids": [
+      "PUB-LL-07"
+    ],
+    "status": "Exitoso",
+    "actual": "Nova cerrado tiene marcador rojo; Clínica Azul abierta tiene marcador verde. Ambos abren ventanas con el nombre y vínculo de detalle correctos.",
+    "evidence": "PUB-LL-07-abierto.txt"
+  },
+  {
+    "ids": [
+      "REG-LL-03"
+    ],
+    "status": "Exitoso",
+    "actual": "Cambiar coordenadas manuales actualiza mosaicos del mapa y conserva valores. También se verificó arrastre inverso REG-LL-04.",
+    "evidence": "REG-LL-03.json"
+  },
+  {
+    "ids": [
+      "REG-EXT-05"
+    ],
+    "status": "Bloqueado",
+    "actual": "Quitar archivo 2, agregar archivo 4 y guardar conserva exactamente PDF 1,3,4 sin duplicados. Falta cancelar el diálogo nativo: la API ofrece selección pero no cierre equivalente verificable.",
+    "evidence": "REG-EXT-05.txt"
+  }
+]

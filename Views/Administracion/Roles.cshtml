@@ -1,0 +1,26 @@
+@model RolesAdminModel
+@using SEDESLABORATORIO.Infrastructure
+@using SEDESLABORATORIO.Data.Entities
+@{ ViewData["Title"] = "Roles y permisos"; var roles = Enum.GetValues<RolUsuario>(); }
+<div class="container silab-page">
+@Html.AntiForgeryToken()
+<div class="silab-page-heading"><div><h1>Roles y permisos</h1><p>Configure las funciones disponibles para cada perfil del proceso.</p></div><a asp-action="Usuarios" class="btn silab-btn-outline">Gestionar usuarios</a></div>
+<div class="admin-role-list">
+@foreach(var rol in roles) {
+ var asignados = Permisos.Catalogo.Where(p => p.Rol == rol).ToList();
+ var habilitados = asignados.Count(p => Model.Permisos.SingleOrDefault(a => a.Rol == rol && a.Clave == p.Clave)?.Habilitado ?? true);
+ <section class="silab-panel p-4"><h2>@rol</h2><p>@Model.Usuarios.GetValueOrDefault(rol) @(Model.Usuarios.GetValueOrDefault(rol) == 1 ? "usuario" : "usuarios") · Funciones habilitadas: @habilitados/@asignados.Count</p><a asp-action="EditarPermisos" asp-route-rol="@rol" class="btn silab-btn-outline">Editar permisos de @rol</a></section>
+}
+</div>
+<section class="silab-panel p-4 mt-4"><h2>Matriz de permisos</h2><p>Habilitado permite realizar la función dentro del alcance del perfil: trámites propios, asignados o de revisión. «No corresponde» indica una atribución de otro perfil.</p>
+<div class="table-responsive" tabindex="0" role="region" aria-label="Matriz de permisos por rol"><table class="table silab-table"><thead><tr><th scope="col">Función</th>@foreach(var rol in roles) { <th scope="col">@rol</th> }</tr></thead><tbody>
+@foreach(var p in Permisos.Catalogo) {
+ <tr><th scope="row">@p.Descripcion</th>@foreach(var rol in roles) { <td>@if(rol == p.Rol) { <span class="silab-status">@((Model.Permisos.SingleOrDefault(a => a.Rol == rol && a.Clave == p.Clave)?.Habilitado ?? true) ? "Habilitado" : "Deshabilitado")</span> } else { <span class="text-muted">No corresponde</span> }</td> }</tr>
+}
+</tbody></table></div></section>
+<section class="silab-panel p-4 mt-4"><h2>Cambios recientes en permisos</h2><p>Últimos 30 cambios. Fechas en Bolivia.</p>
+@if(Model.Cambios.Count == 0) { <p class="text-muted">Todavía no se registraron cambios desde que se habilitó este historial.</p> } else {
+<div class="table-responsive"><table class="table silab-table"><thead><tr><th>Fecha</th><th>Rol y función</th><th>Cambio</th><th>Realizado por</th></tr></thead><tbody>
+@foreach(var c in Model.Cambios) { <tr><td>@c.Fecha.AddHours(-4).ToString("dd/MM/yyyy HH:mm")</td><td>@c.Rol · @(Permisos.Catalogo.FirstOrDefault(p => p.Rol == c.Rol && p.Clave == c.Clave)?.Descripcion ?? c.Clave)</td><td>@(c.Habilitado ? "Habilitado" : "Deshabilitado")</td><td>@c.Actor</td></tr> }
+</tbody></table></div> }
+</section></div>

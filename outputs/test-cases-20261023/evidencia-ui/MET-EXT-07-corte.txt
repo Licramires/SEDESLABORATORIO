@@ -1,0 +1,135 @@
+Browser tab: 5, Title: "Métricas e indicadores - SEDESLABORATORIO", URL: "http://localhost:5281/Metricas".
+1 AXWebArea Métricas e indicadores - SEDESLABORATORIO, URL: localhost:5281/Metricas
+	2 link Description: Saltar al contenido, Value: localhost:5281/Metricas#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Métricas e informes, Value: localhost:5281/Metricas
+			7 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			8 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		9 text SEDES Cochabamba
+		10 text Servicio Departamental de Salud Portal de trámites y requisitos
+	11 container
+		12 text Panel de gerencia  Métricas e indicadores
+		13 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		14 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	15 container main-content
+		16 heading Métricas e indicadores, Value: 1
+			17 text Métricas e indicadores
+		18 text Trámites recibidos por primera vez en el período (UTC). Los estados y resultados son actuales. Los borradores se muestran por separado y no cuentan como trámites recibidos.
+		19 container
+			20 text Desde
+			21 date field (settable) Desde, Value: 2026-09-23
+				22 container
+					23 stepper
+					24 stepper
+					25 stepper
+				26 pop up button Mostrar el selector de fechas Mostrar el selector de fechas
+			27 text Hasta
+			28 date field (settable) Hasta, Value: 2026-10-23
+				29 container
+					30 stepper
+					31 stepper
+					32 stepper
+				33 pop up button Mostrar el selector de fechas Mostrar el selector de fechas
+			34 text Municipio
+			35 pop up button (collapsed, settable) Municipio, Value: Todos, Secondary Actions: Expand
+				36 menu
+					37 (selected) Todos
+					38 Cochabamba
+			39 button Consultar período
+			40 link Description: Limpiar filtros, Value: localhost:5281/Metricas
+			41 button Descargar informe CSV
+		42 container
+			43 text Gráficos calculados con los registros guardados · Actualización:  23/10/26, 1:47 a. m.  (Bolivia)
+			44 button Actualizar gráficos
+			132 text No se pudieron actualizar los gráficos. Se mantienen los últimos datos mostrados; compruebe su sesión y vuelva a consultar.
+			45 definition list
+				46 container Trámites recibidos
+					47 text Trámites recibidos
+				48 text 13
+				49 container
+					50 text 4  borradores por separado
+				51 container Tasa de aprobación
+					52 text Tasa de aprobación
+				53 text 50%
+				54 text Sobre habilitados y rechazos definitivos
+				55 container Tiempo promedio de cierre
+					56 text Tiempo promedio de cierre
+				57 text 14 días
+				58 container
+					59 text 2  cierres con fechas válidas
+			60 container
+				61 heading Trámites recibidos por mes, Value: 2
+					62 text Trámites recibidos por mes
+				63 text Aperturas y renovaciones por fecha de primer envío. Series
+				64 pop up button (collapsed, settable) Series, Value: Aperturas y renovaciones, Secondary Actions: Expand
+					65 menu
+						66 (selected) Aperturas y renovaciones
+						67 Solo aperturas
+						68 Solo renovaciones
+				69 text Consultar mes
+				70 pop up button (collapsed, settable) Consultar mes, Value: oct 2026, Secondary Actions: Expand
+					71 menu
+						72 sept 2026
+						73 (selected) oct 2026
+				74 container Description: Evolución mensual de trámites recibidos, Help: Los valores completos están disponibles al seleccionar un mes y en las tablas de datos.
+				75 text Aperturas Renovaciones (línea discontinua) octubre de 2026 : 
+				76 container
+					77 text 1  aperturas ·  0  renovaciones
+			78 container
+				79 heading Estado actual de los trámites, Value: 2
+					80 text Estado actual de los trámites
+				81 text Resultados actuales de los trámites recibidos en el período.
+				82 container Estado actual: 1 habilitados, 11 pendientes y 1 rechazos definitivos
+				83 content list
+					84 container
+						85 text Habilitados 1 ( 7,7 %)
+					86 container
+						87 text Pendientes 11 ( 84,6 %)
+					88 container
+						89 text Rechazos definitivos 1 ( 7,7 %)
+			90 container
+				91 heading Trámites por municipio, Value: 2
+					92 text Trámites por municipio
+				93 content list
+					94 container
+						95 text Cochabamba 13  ·  100 %
+			96 container
+				97 heading Tipo de laboratorio solicitado, Value: 2
+					98 text Tipo de laboratorio solicitado
+				99 content list
+					100 container
+						101 text Clínico 13  ·  100 %
+			102 container
+				103 heading Actas registradas por supervisor, Value: 2
+					104 text Actas registradas por supervisor
+				105 text Visitas de los trámites del filtro; no incluye reservas sustituidas. No mide la calidad de las inspecciones.
+				106 content list
+					107 container
+						108 text Supervisor Demo 5
+				109 button (collapsed) Ver asignadas y pendientes, Secondary Actions: Expand
+					110 text Ver asignadas y pendientes
+			111 container
+				112 heading Puntos que requieren atención, Value: 2
+					113 text Puntos que requieren atención
+				114 text Situación actual dentro de los trámites del filtro.
+				115 content list
+					116 container
+						117 text 0 Trámites con más de 30 días abiertos Desde su primer envío; se excluyen cierres y rechazos definitivos.
+					118 container
+						119 text 11 Documentos pendientes de revisión por más de 5 días PDF actuales con fecha de carga registrada; se excluyen fechas desconocidas.
+					120 container
+						121 text 1 Visitas iniciadas sin acta enviada Inspecciones pendientes cuya hora de inicio ya pasó (Bolivia).
+					122 container
+						123 text 1 Visitas por programar Inspecciones asignadas que todavía no tienen horario.
+			124 text Para actualizar también las tablas y el informe CSV, pulse «Consultar período». El informe y los gráficos usan los mismos filtros y registros guardados.
+		125 button (collapsed) Datos por municipio y rendimiento de supervisores, Secondary Actions: Expand
+			126 text Datos por municipio y rendimiento de supervisores
+		127 button (collapsed) Trazabilidad reciente (50 movimientos), Secondary Actions: Expand
+			128 text Trazabilidad reciente (50 movimientos)
+	129 container
+		130 text © 2026 SI_Lab · SEDES Cochabamba
+		131 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Métricas e indicadores - SEDESLABORATORIO, URL: localhost:5281/Metricas

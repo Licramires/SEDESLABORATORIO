@@ -1,0 +1,23 @@
+{
+  "origin": "http://localhost:5287",
+  "requests": {
+    "en_revision": {
+      "id": 18,
+      "documentos": [
+        51,
+        52,
+        53
+      ]
+    },
+    "borrador": {
+      "id": 19,
+      "documentos": [
+        54,
+        55,
+        56
+      ]
+    }
+  },
+  "invalidLab": 6,
+  "purpose": "Fixtures sintéticos solo en copia local"
+}

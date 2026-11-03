@@ -1,0 +1,63 @@
+@model TramiteDetalleModel
+@using SEDESLABORATORIO.Data.Entities
+@using SEDESLABORATORIO.Infrastructure
+@{
+ var s = Model.Solicitud; ViewData["Title"] = $"Inspección · solicitud #{s.Id}";
+ var supervisor = true;
+ var actor = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+ var pendiente = s.Inspecciones.SingleOrDefault(i => i.Estado == "pendiente" && i.SupervisorId.ToString() == actor);
+ var ultima = s.Inspecciones.OrderByDescending(i => i.Id).FirstOrDefault();
+ var propia = s.Inspecciones.Where(i => i.SupervisorId.ToString() == actor).OrderByDescending(i => i.Id).FirstOrDefault();
+ var tarea = pendiente is not null && s.Estado == EstadoSolicitud.Inspeccion
+     ? !pendiente.Programada ? "Programe la visita para continuar." : pendiente.Fecha > TramiteService.HoraBolivia ? "Visita programada. El registro del acta se habilita al inicio de la visita." : "La visita ya puede registrarse. Complete el acta y envíe el PDF firmado al coordinador."
+     : s.Estado == EstadoSolicitud.RevisionActa ? "El coordinador está revisando el acta enviada. Puede consultar el PDF y el seguimiento."
+     : propia?.Estado == "rechazada" ? "El coordinador devolvió el acta. Revise el historial; la nueva asignación corresponde al coordinador."
+     : "Su intervención está en seguimiento. Consulte el resultado del acta y el historial del expediente.";
+}
+<div class="container silab-page"><a asp-action="Agenda">Volver a mi agenda</a>
+@Html.AntiForgeryToken()
+<section class="silab-panel p-4 mt-3"><div class="silab-page-heading"><div><h1>@Model.Datos.NombreLaboratorio</h1><p>Solicitud #@s.Id · @(s.EsRenovacion ? "Renovación" : "Apertura") · Inspección técnica</p></div><a asp-action="Actas" class="btn silab-btn-outline">Mis actas emitidas</a></div>
+<dl class="inspection-facts"><div><dt>Municipio</dt><dd>@s.Municipio</dd></div><div><dt>Dirección</dt><dd>@(s.Direccion == "" ? "Sin dirección registrada" : s.Direccion)</dd></div><div><dt>Solicitante</dt><dd>@s.Propietario.Nombre</dd></div><div><dt>Contacto</dt><dd>@(s.Telefono == "" ? "Sin teléfono registrado" : s.Telefono)</dd></div></dl>
+<p class="alert alert-info mb-0">@tarea</p></section>
+<nav aria-label="Pasos de la inspección"><ol class="inspection-steps"><li><a href="#programacion">1. Programar visita</a></li><li><a href="#acta">2. Preparar y enviar acta</a></li><li><a href="#seguimiento">3. Seguimiento y citaciones</a></li><li><a href="#documentos">Consultar documentos</a></li></ol></nav>
+@if(supervisor && s.Estado == EstadoSolicitud.Inspeccion && pendiente is not null) {
+ <section id="programacion" class="silab-panel p-4 mt-3"><h2>Programación de la visita</h2>
+ @if(pendiente.Programada) { <p><strong>@pendiente.Fecha.ToString("dd/MM/yyyy HH:mm") a @ExpedienteService.Fin(pendiente).ToString("dd/MM/yyyy HH:mm")</strong> · Bolivia</p> }
+ <details open="@(!pendiente.Programada)"><summary>@(pendiente.Programada ? "Cambiar fecha u horario de la visita" : "Elegir fecha y horario")</summary>
+ <p>Indique un horario futuro y el motivo. Se comprobará que no coincida con otra visita asignada a usted.</p>
+ <form asp-action="Decidir" method="post" class="workflow-form mt-3"><input type="hidden" name="Id" value="@s.Id" /><input type="hidden" name="Version" value="@s.Version" /><input type="hidden" name="Accion" value="programar" />
+ <label>Inicio (Bolivia)<input type="datetime-local" name="Fecha" required class="form-control" /></label><label>Fin (Bolivia)<input type="datetime-local" name="FechaFin" required class="form-control" /></label><label>Motivo de la programación<textarea name="Motivo" maxlength="4000" required class="form-control"></textarea></label><button class="btn silab-btn-primary">Guardar horario y notificar</button></form></details></section>
+ if (pendiente.Programada && pendiente.Fecha <= TramiteService.HoraBolivia) {
+ var checks = ExpedienteService.LeerVerificaciones(pendiente);
+ var intento = ViewBag.ActaIntento as DecisionModel;
+ if(intento is not null) { checks = checks.Select(c => { var v = intento.Verificaciones.FirstOrDefault(v => v.Id == c.Id); return v is null ? c : c with { Resultado = v.Resultado, Observacion = v.Observacion ?? "" }; }).ToList(); }
+ <section id="acta" class="silab-panel p-4 mt-3"><h2>Preparar y enviar el acta</h2><a asp-action="FormularioActa" asp-route-id="@s.Id">Descargar formulario PDF</a> · <a asp-action="FormularioActa" asp-route-id="@s.Id" asp-route-resumen="true">Descargar resumen completado</a><ol><li>Complete las verificaciones y guarde el contenido para firma.</li><li>Descargue el formulario y el resumen guardado para firmarlos.</li><li>Adjunte el PDF firmado y envíelo al coordinador.</li></ol>
+ @if(checks.Count == 0) { <p>La lista institucional de verificaciones está pendiente de configuración. Solo se permiten pruebas de desarrollo hasta configurarla.</p> }
+ <form asp-action="Decidir" method="post" enctype="multipart/form-data" class="workflow-form mt-3"><input type="hidden" name="Id" value="@s.Id" /><input type="hidden" name="Version" value="@s.Version" /><input type="hidden" name="Accion" value="acta" />
+ <script type="application/json" id="acta-data">@Html.Raw(System.Text.Json.JsonSerializer.Serialize(new { checks = checks.Select(c => new { id = c.Id, nombre = c.Nombre, referencia = c.Referencia, version = c.Version, resultado = c.Resultado, observacion = c.Observacion }), notas = intento?.Motivo ?? pendiente.NotasAdicionales, resultado = intento?.Resultado ?? pendiente.Resultado, dias = intento?.DiasSubsanacion ?? pendiente.DiasSubsanacion }))</script>
+ <div data-operations="acta" data-source="acta-data">
+ @for(var n = 0; n < checks.Count; n++) { var c = checks[n]; <fieldset class="inspection-check"><legend>@c.Nombre</legend><p>@c.Referencia</p><input type="hidden" name="Verificaciones[@n].Id" value="@c.Id" /><label>¿Cumple este punto?<select name="Verificaciones[@n].Resultado" required class="form-select"><option value="">Seleccione</option><option value="cumple" selected="@(c.Resultado == "cumple")">Cumple</option><option value="observado" selected="@(c.Resultado == "observado")">No cumple</option><option value="no_aplica" selected="@(c.Resultado == "no_aplica")">No aplica</option></select></label><label>Qué debe corregirse (solo si no cumple)<textarea name="Verificaciones[@n].Observacion" maxlength="2000" class="form-control">@c.Observacion</textarea></label></fieldset> }
+ <label>Notas adicionales (opcional)<textarea name="Motivo" maxlength="4000" class="form-control">@pendiente.NotasAdicionales</textarea></label><label>Dictamen<select name="Resultado" class="form-select"><option value="aprobado">Aprobado</option><option value="observado">Con observaciones</option><option value="rechazado">Rechazado por incumplimiento de campo</option></select></label><label>Subsanación si hay observaciones (días hábiles)<input type="number" name="DiasSubsanacion" value="@pendiente.DiasSubsanacion" min="1" max="90" class="form-control" /></label><label>PDF del acta firmada<input type="file" name="Pdf" accept=".pdf" class="form-control" /></label><button type="submit" formaction="@Url.Action("PrepararActa")" class="btn silab-btn-outline">Guardar contenido para firma</button><button class="btn silab-btn-primary">Enviar acta firmada al coordinador</button>
+ </div></form></section>
+ } else { <section id="acta" class="silab-panel p-4 mt-3"><h2>Acta de inspección</h2><p>@(pendiente.Programada ? "El acta se habilitará al inicio de la visita programada. Mientras tanto puede revisar los documentos del expediente." : "Primero programe la visita. El acta se habilitará cuando llegue su hora de inicio.")</p></section> }
+}
+@if(pendiente is null || s.Estado != EstadoSolicitud.Inspeccion) {
+<section id="programacion" class="silab-panel p-4 mt-3"><h2>Visita realizada o en seguimiento</h2><p>Esta asignación ya no admite cambios de programación. Consulte su agenda para las visitas pendientes.</p></section>
+<section id="acta" class="silab-panel p-4 mt-3"><h2>Estado de mi acta</h2><p>@(propia?.Estado == "registrada" ? "Enviada al coordinador; pendiente de revisión." : propia?.Estado == "validada" ? "Acta validada por el coordinador." : propia?.Estado == "rechazada" ? "Acta devuelta por el coordinador." : "Consulte las visitas anteriores de este expediente.")</p>
+@if(propia is not null && !string.IsNullOrWhiteSpace(propia.ActaPdf)) { <a asp-action="Descargar" asp-route-id="@propia.Id" asp-route-tipo="acta" class="btn silab-btn-outline">Descargar mi acta firmada</a> }</section>
+}
+<section id="seguimiento" class="silab-panel p-4 mt-3"><h2>Seguimiento y citaciones</h2><p>Las citaciones corresponden a inspecciones con observaciones o incumplimientos. Adjunte la evidencia firmada; no sustituyen la validación del coordinador.</p>
+@if(!s.Citaciones.Any(c => c.SupervisorId.ToString() == actor)) { <p class="text-muted">No tiene citaciones emitidas en este expediente.</p> }
+@foreach(var c in s.Citaciones.Where(c => c.SupervisorId.ToString() == actor).OrderByDescending(c => c.Id)) { <article class="workflow-requirement"><h3>Citación #@c.Id</h3><p>@c.FechaEmision.ToString("dd/MM/yyyy") · Vence @c.Vencimiento.ToString("dd/MM/yyyy") · @(c.FechaAtencion.HasValue ? "Atendida" : c.Vencimiento.Date < TramiteService.HoraBolivia.Date ? "Vencida" : "Pendiente")</p><p>@c.Motivo</p><a asp-action="Descargar" asp-route-id="@c.Id" asp-route-tipo="citacion">Descargar evidencia firmada</a></article> }
+@if(supervisor && s.FechaCierre is null && ultima is not null && ultima.SupervisorId.ToString() == actor && (ultima.Estado is "registrada" or "validada") && (ultima.Resultado is "observado" or "rechazado") && !s.Citaciones.Any(c => c.InspeccionId == ultima.Id && c.FechaAtencion == null) && s.Estado is not (EstadoSolicitud.Habilitado or EstadoSolicitud.RevisionLegal)) {
+ <h3>Registrar citación por incumplimientos</h3><form asp-action="Citacion" method="post" enctype="multipart/form-data" class="workflow-form"><input type="hidden" name="Id" value="@s.Id" /><input type="hidden" name="InspeccionId" value="@ultima.Id" /><input type="hidden" name="Version" value="@s.Version" /><label>Fecha de emisión (Bolivia)<input type="date" name="FechaEmision" value="@TramiteService.HoraBolivia.ToString("yyyy-MM-dd")" required class="form-control" /></label><label>Vencimiento (Bolivia)<input type="date" name="Vencimiento" required class="form-control" /></label><label>Motivo<textarea name="Motivo" maxlength="2000" required class="form-control"></textarea></label><label>Avisar días antes<input type="number" name="AnticipacionDias" min="0" max="30" value="5" class="form-control" /></label><label>Citación firmada en PDF, JPG o PNG (hasta 10 MB)<input type="file" name="Evidencia" required accept=".pdf,.jpg,.jpeg,.png" class="form-control" /></label><button class="btn silab-btn-primary">Registrar citación y notificar</button></form>
+}
+</section>
+<details id="documentos" class="silab-panel p-4 supervisor-context"><summary>Documentos del expediente (@s.Documentos.Count(d => d.Actual) actuales)</summary><p>Consulta de los archivos presentados por el propietario. La revisión documental corresponde al coordinador.</p>
+@foreach(var d in s.Documentos.OrderByDescending(d => d.Actual).ThenBy(d => d.RequisitoId).ThenByDescending(d => d.VersionArchivo)) { <partial name="_Documento" model="new DocumentoPantalla { Documento = d, Solicitud = s, Revisable = false }" /> }
+</details>
+<details class="silab-panel p-4 supervisor-context"><summary>Historial y visitas anteriores</summary><h2>Mis inspecciones</h2>
+@foreach(var i in s.Inspecciones.Where(i => i.SupervisorId.ToString() == actor).OrderByDescending(i => i.Id)) { <article class="workflow-requirement"><h3>Inspección #@i.Id · @(i.Programada ? i.Fecha.ToString("dd/MM/yyyy HH:mm") : "Por programar")</h3><p>@i.Estado · @i.Resultado</p><p>@i.Acta</p>@if(i.PlazoSubsanacion.HasValue) { <p>Subsanación hasta @i.PlazoSubsanacion.Value.ToString("dd/MM/yyyy")</p> }@if(!string.IsNullOrWhiteSpace(i.ActaPdf)) { <a asp-action="Descargar" asp-route-id="@i.Id" asp-route-tipo="acta">Descargar acta firmada</a> }</article> }
+<h2>Movimientos del expediente (UTC)</h2><ol>@foreach(var h in s.Historial.OrderByDescending(h => h.Fecha).ThenByDescending(h => h.Id)) { <li class="mb-3"><strong>@h.Fecha.ToString("dd/MM/yyyy HH:mm") · @h.Actor.Nombre</strong><p class="text-break">@h.Detalle</p></li> }</ol></details></div>
+
+@section Scripts { <script src="~/js/operations.js" asp-append-version="true" defer></script> }

@@ -1,0 +1,99 @@
+Browser tab: 5, Title: "Solicitud #7 - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Detalle/7".
+1 AXWebArea Solicitud #7 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/7
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Detalle/7#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			8 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			9 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		10 text SEDES Cochabamba
+		11 text Servicio Departamental de Salud Portal de trámites y requisitos
+	12 container
+		13 text Consola del coordinador  Solicitud #7
+		14 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		15 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	16 container main-content
+		17 link Description: ← Volver a trámites, Value: localhost:5281/Gestion
+		18 container
+			19 text Solicitud #7 · Apertura
+			20 heading Laboratorio Horizonte, Value: 1
+				21 text Laboratorio Horizonte
+			22 text Clínico · Cochabamba · -17.3935, -66.157 Propietario: Propietario Demo DEMO: Av. de pruebas 123 · 00000000 · DEMO-AGENDA Revisión de acta
+			23 heading Documentación, Value: 2
+				24 text Documentación
+			25 text Consulte los documentos actuales y sus versiones anteriores. La revisión de cada PDF es independiente de la decisión sobre el expediente.
+			26 link Description: Consultar requerimientos para registrar un laboratorio, Value: localhost:5281/publico/Publico/Requerimientos
+			27 text 3 PDF en la lista de envío.
+			28 text  Los archivos retirados o reemplazados permanecen en el historial.
+			29 heading Requisitos generales, Value: 3
+				30 text Requisitos generales
+			31 heading Licencia municipal Obligatorio · requisito v1, Value: 3
+				32 text Licencia municipal
+				33 text Obligatorio · requisito v1
+			34 text Versión 1: aprobado
+			35 link Description: Licencia municipal · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/16
+			36 text Aprobado · 01/10/2026 23:17 UTC · revisor #2
+			37 heading Plano arquitectónico Obligatorio · requisito v1, Value: 3
+				38 text Plano arquitectónico
+				39 text Obligatorio · requisito v1
+			40 text Versión 1: aprobado
+			41 link Description: Plano arquitectónico · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/17
+			42 text Aprobado · 01/10/2026 23:17 UTC · revisor #2
+			43 heading Certificado sanitario Obligatorio · requisito v1, Value: 3
+				44 text Certificado sanitario
+				45 text Obligatorio · requisito v1
+			46 text Versión 1: aprobado
+			47 link Description: Certificado sanitario · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/18
+			48 text Aprobado · 01/10/2026 23:17 UTC · revisor #2
+		49 container
+			50 heading Validar acta, Value: 2
+				51 text Validar acta
+			52 container
+				53 text Fundamento
+				54 text entry area (settable) Fundamento
+			55 container
+				56 button Aceptar resultado del acta
+				57 button Rechazar acta y reprogramar
+		58 container
+			59 heading Inspecciones e historial de asignaciones, Value: 2
+				60 text Inspecciones e historial de asignaciones
+			61 heading 20/10/2026 10:00 a 11:00 (Bolivia) · Supervisor Demo, Value: 3
+				62 text 20/10/2026 10:00 a 11:00 (Bolivia) · Supervisor Demo
+			63 text Estado: registrada · Resultado: observado
+			64 text DEMO: condiciones de limpieza del área de trabajo: Corregir la limpieza del área de trabajo antes de la nueva visita.
+			65 container
+				66 text DEMO: condiciones de limpieza del área de trabajo  (Punto ficticio; sin artículo normativo, v1): observado · Corregir la limpieza del área de trabajo antes de la nueva visita.
+			67 text Subsanación hasta 13/11/2026 (Bolivia)
+			68 link Description: Descargar acta firmada, Value: localhost:5281/Gestion/Descargar/3?tipo=acta
+		69 heading Citaciones y evidencia, Value: 2
+			70 text Citaciones y evidencia
+		71 container
+			72 heading Historial del trámite, Value: 2
+				73 text Historial del trámite
+			74 text Fechas en UTC.
+			75 content list
+				76 container
+					77 AXListMarker 1. 
+					78 text 23/10/2026 05:42 · Supervisor Demo Acta registrada: observado.
+				79 container
+					80 AXListMarker 2. 
+					81 text 23/10/2026 05:40 · Supervisor Demo Contenido del acta preparado para descargar, firmar y adjuntar.
+				82 container
+					83 AXListMarker 3. 
+					84 text 02/10/2026 23:17 · Coordinador Demo DEMO: Inspección asignada al Supervisor Demo.
+				85 container
+					86 AXListMarker 4. 
+					87 text 01/10/2026 23:17 · Coordinador Demo DEMO: Documentos revisados y aprobados individualmente.
+				88 container
+					89 AXListMarker 5. 
+					90 text 30/09/2026 23:17 · Propietario Demo DEMO: Solicitud enviada para revisión documental.
+				91 container
+					92 AXListMarker 6. 
+					93 text 28/09/2026 23:17 · Propietario Demo DEMO: Borrador creado con datos ficticios.
+	94 container
+		95 text © 2026 SI_Lab · SEDES Cochabamba
+		96 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Solicitud #7 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/7

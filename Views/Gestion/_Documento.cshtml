@@ -1,0 +1,14 @@
+@model DocumentoPantalla
+@{ var d = Model.Documento; var s = Model.Solicitud;
+   var review = d.EstadoRevision switch { "pendiente" => "Pendiente de revisión", "aprobado" => "Aprobado", "observado" => "Observado", "aprobacion_global_heredada" => "Aprobación global heredada", _ => d.EstadoRevision };
+}
+@if (!string.IsNullOrEmpty(d.NombreArchivo)) { <p class="text-break"><strong>@d.NombreArchivo</strong></p> }
+<div class="mb-3"><a asp-action="Descargar" asp-route-id="@d.Id">@(d.NombreRequisito == "" ? $"Documento #{d.Id}" : d.NombreRequisito) · PDF v@(d.VersionArchivo) @(d.Actual ? "(actual)" : "(histórico)")</a><p class="document-review"><span class="silab-status" data-state="@d.EstadoRevision">@review</span> @d.Observacion @if(d.FechaRevision.HasValue) { <span class="text-muted">· @d.FechaRevision.Value.ToString("dd/MM/yyyy HH:mm") UTC · revisor #@d.RevisorId</span> }</p>
+@if(Model.Revisable) { <form asp-action="RevisarDocumento" method="post" class="workflow-form"><input type="hidden" name="Id" value="@s.Id" /><input type="hidden" name="DocumentoId" value="@d.Id" /><input type="hidden" name="Version" value="@s.Version" /><label>Qué debe corregirse (obligatorio al observar)<textarea name="Motivo" maxlength="2000" class="form-control"></textarea></label><div class="d-flex flex-wrap gap-2">@if(d.EstadoRevision != "aprobado") { <button name="Resultado" value="aprobado" class="btn silab-btn-primary">Aprobar este documento</button> }<button name="Resultado" value="observado" class="btn silab-btn-outline">Observar este documento</button></div></form> }
+</div>
+@if (User.IsInRole("propietario") && SEDESLABORATORIO.Infrastructure.ExpedienteService.Editable(s) && d.Actual && d.EstadoRevision is "pendiente" or "observado") {
+    <form asp-action="RetirarDocumento" method="post" class="mb-3" data-confirm="¿Quitar este PDF de la lista de envío? Podrá agregar otro después.">
+        <input type="hidden" name="id" value="@s.Id" /><input type="hidden" name="documentoId" value="@d.Id" /><input type="hidden" name="version" value="@s.Version" />
+        <button class="btn btn-outline-danger btn-sm">Quitar PDF de la lista de envío</button>
+    </form>
+}

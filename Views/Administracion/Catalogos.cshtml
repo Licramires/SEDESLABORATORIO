@@ -1,0 +1,5 @@
+@model List<SEDESLABORATORIO.Data.Entities.CatalogoItem>
+@{ ViewData["Title"] = "Catálogos institucionales"; }
+<div class="container silab-page"><div class="silab-page-heading"><h1>Catálogos institucionales</h1><a asp-action="Catalogo" class="btn silab-btn-primary">Crear elemento</a></div><p>Configure tipos, municipios, puntos de inspección, feriados y plantillas a partir de fuentes oficiales. Los puntos de inspección se copian al asignar una nueva visita.</p>
+@foreach(var grupo in Model.GroupBy(c => c.Clase)) { <section class="silab-panel p-4 mb-3"><h2>@grupo.Key.Replace("_", " ")</h2><ul class="list-group">@foreach(var c in grupo) { <li class="list-group-item"><strong>@c.Nombre</strong> · v@(c.Version) · @(c.Activo ? "Activo" : "Inactivo")<p>@c.Referencia</p><a asp-action="Catalogo" asp-route-id="@c.Id">Editar</a></li> }</ul></section> }
+@if(Model.Count == 0) { <p>La institución todavía no ha configurado los catálogos. No se han creado tipos ni artículos por suposición.</p> }</div>

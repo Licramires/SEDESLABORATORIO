@@ -1,0 +1,53 @@
+Browser tab: 5, Title: "Corregir datos del borrador - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/EditarDatos/18".
+1 AXWebArea Corregir datos del borrador - SEDESLABORATORIO, URL: localhost:5281/Gestion/EditarDatos/18
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/EditarDatos/18#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Corregir datos del borrador
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 link Description: Volver al borrador, Value: localhost:5281/Gestion/Detalle/18
+		19 container
+			20 heading Corregir datos del borrador, Value: 1
+				21 text Corregir datos del borrador
+			22 text Revise la información antes del primer envío. Los PDF cargados se conservan.
+			23 container
+				24 text Nombre del laboratorio
+				25 text field (settable) Nombre del laboratorio, Value: Laboratorio quitar archivos UI183, ID: NombreLaboratorio
+			26 container
+				27 text Tipo de laboratorio
+				28 combo box (settable) Tipo de laboratorio, Value: Clínico, ID: TipoLaboratorio
+			29 container
+				30 text Municipio
+				31 combo box (settable) Municipio, Value: Cochabamba
+			32 container
+				33 text Latitud
+				34 stepper (settable, float) Latitud, Value: -18.200000762939453, Details: -18.2
+			35 container
+				36 text Longitud
+				37 stepper (settable, float) Longitud, Value: -67.0999984741211, Details: -67.1
+			38 container
+				39 text Dirección
+				40 text field (settable) Dirección, ID: Direccion
+			41 container
+				42 text Teléfono
+				43 text field (settable) Teléfono
+			44 container
+				45 text Código de referencia
+				46 text field (settable) Código de referencia, ID: Codigo
+			47 button Guardar datos del borrador
+	48 container
+		49 text © 2026 SI_Lab · SEDES Cochabamba
+		50 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Corregir datos del borrador - SEDESLABORATORIO, URL: localhost:5281/Gestion/EditarDatos/18

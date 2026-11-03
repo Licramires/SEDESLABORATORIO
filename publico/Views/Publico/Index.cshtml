@@ -3,16 +3,16 @@
 
 @{
     ViewData["Title"] = "Laboratorios habilitados";
-    var mapData = JsonSerializer.Serialize(Model.Laboratorios);
+    var mapData = JsonSerializer.Serialize(Model.Laboratorios.Where(l => l.UbicacionValida));
 }
 
 <div class="public-page">
     <section class="public-hero">
         <div class="container public-hero-content">
-            <span class="public-eyebrow">SEDES · PORTAL CIUDADANO</span>
+
             <h1>Encuentra un laboratorio<br /><span>cerca de ti</span></h1>
             <p>Consulta laboratorios habilitados, sus servicios y el estado de atención.</p>
-            <a href="#laboratorios" class="btn public-btn-light">Explorar laboratorios</a>
+            <div class="public-hero-actions"><a href="#laboratorios" class="btn public-btn-light"><partial name="_Icon" model='"search"' />Explorar laboratorios</a><a asp-action="Requerimientos" class="btn public-btn-light"><partial name="_Icon" model='"file"' />Requisitos de laboratorios</a></div>
         </div>
         <div class="public-hero-orb"></div>
     </section>
@@ -20,31 +20,33 @@
     <section id="laboratorios" class="container public-content">
         <div class="public-section-heading">
             <div>
-                <span class="public-eyebrow public-eyebrow-dark">DIRECTORIO PÚBLICO</span>
-                <h2>Laboratorios registrados</h2>
+
+                <h2>Mapa de laboratorios</h2><p class="text-muted mt-2">Consulte su ubicación, servicios y estado de atención.</p>
             </div>
             <span class="public-count">@Model.Laboratorios.Count resultados</span>
         </div>
 
         <form method="get" asp-area="publico" asp-controller="Publico" asp-action="Index" class="public-filters">
             <div class="public-search">
-                <span aria-hidden="true">⌕</span>
+                <partial name="_Icon" model='"search"' />
                 <input type="search" name="search" value="@Model.Search" placeholder="Buscar por nombre, tipo o servicio..." aria-label="Buscar laboratorio" />
             </div>
-            <select name="tipo" class="form-select">
+            <select name="tipo" class="form-select" aria-label="Tipo de laboratorio">
                 <option value="">Todos los tipos</option>
                 @foreach (var tipo in Model.TiposDisponibles)
                 {
                     <option value="@tipo" selected="@(Model.Tipo == tipo)">@tipo</option>
                 }
             </select>
-            <select name="estado" class="form-select">
+            <select name="estado" class="form-select" aria-label="Estado del laboratorio">
                 <option value="">Cualquier estado</option>
                 <option value="Abierto" selected="@(Model.Estado == SEDESLABORATORIO.Data.Entities.EstadoLaboratorio.Abierto)">Abiertos</option>
                 <option value="Cerrado" selected="@(Model.Estado == SEDESLABORATORIO.Data.Entities.EstadoLaboratorio.Cerrado)">Cerrados</option>
             </select>
             <button type="submit" class="btn public-btn-primary">Buscar</button>
         </form>
+        <button id="nearest-lab" type="button" class="btn public-btn-outline mb-3">Cómo llegar al abierto más cercano</button>
+        <p id="nearest-message" role="status"></p>
 
         <div class="public-layout">
             <div class="public-results">
@@ -66,10 +68,12 @@
                                     </span>
                                 </div>
                                 <h3>@laboratorio.Nombre</h3>
+                                @if (!laboratorio.DatosVerificados) { <p class="text-muted">Datos pendientes de validación institucional.</p> }
                                 <p>@laboratorio.Servicios</p>
                                 <div class="public-lab-actions">
                                     <a asp-action="Detalle" asp-route-id="@laboratorio.Id">Ver detalle</a>
-                                    <a asp-action="Ruta" asp-route-laboratorioId="@laboratorio.Id">Cómo llegar</a>
+                                    @if (laboratorio.UbicacionValida) { <a asp-action="Ruta" asp-route-laboratorioId="@laboratorio.Id">Cómo llegar</a> }
+                                    else { <span>Ubicación pendiente de corrección.</span> }
                                 </div>
                             </div>
                         </article>
@@ -79,6 +83,11 @@
             <div id="public-map" class="public-map" data-laboratories="@mapData" aria-label="Mapa de laboratorios"></div>
         </div>
     </section>
+    <section class="container py-4" id="requisitos"><h2>Requisitos para solicitar la habilitación</h2>
+        @if (Model.Requisitos.Count == 0) { <p>El catálogo de requisitos está pendiente de publicación por el SEDES.</p> }
+        <ul class="list-group">@foreach (var r in Model.Requisitos) { <li class="list-group-item d-flex flex-wrap justify-content-between gap-2"><span>@r.Nombre</span>@if (!string.IsNullOrEmpty(r.PlantillaPdf)) { <a asp-action="Plantilla" asp-route-id="@r.Id">Descargar formulario PDF</a> }</li> }</ul>
+        <p class="text-muted mt-3">La obligatoriedad y los documentos pendientes se indican dentro de cada trámite.</p>
+    </section>
 </div>
 
 @section Scripts {
@@ -87,8 +96,26 @@
     <script>
         (() => {
             const mapElement = document.getElementById("public-map");
-            if (!mapElement || typeof L === "undefined") return;
+            if (!mapElement) return;
             const laboratories = JSON.parse(mapElement.dataset.laboratories || "[]");
+            document.getElementById("nearest-lab").addEventListener("click", () => {
+                const message = document.getElementById("nearest-message");
+                const open = laboratories.filter(l => l.EstaAbierto);
+                if (!open.length) { message.textContent = "No hay laboratorios abiertos con estos filtros."; return; }
+                if (!navigator.geolocation) { message.textContent = "Tu navegador no permite obtener tu ubicación."; return; }
+                message.textContent = "Obteniendo tu ubicación...";
+                navigator.geolocation.getCurrentPosition(p => {
+                    const rad = x => x * Math.PI / 180;
+                    const distance = l => {
+                        const a = Math.sin(rad(l.Lat - p.coords.latitude) / 2) ** 2 + Math.cos(rad(p.coords.latitude)) * Math.cos(rad(l.Lat)) * Math.sin(rad(l.Lng - p.coords.longitude) / 2) ** 2;
+                        return 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                    };
+                    open.sort((a, b) => distance(a) - distance(b));
+                    const nearest = open[0];
+                    window.location.assign(`https://www.google.com/maps/dir/?api=1&origin=${p.coords.latitude},${p.coords.longitude}&destination=${nearest.Lat},${nearest.Lng}`);
+                }, () => { message.textContent = "No pudimos obtener tu ubicación. Puedes usar Cómo llegar en la ficha del laboratorio."; }, { timeout: 10000 });
+            });
+            if (typeof L === "undefined") { mapElement.textContent = "Mapa no disponible. Consulta las fichas y sus coordenadas."; return; }
             const map = L.map(mapElement).setView([-17.3935, -66.1570], 13);
             L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
                 attribution: "&copy; OpenStreetMap contributors"
@@ -102,7 +129,11 @@
                     fillOpacity: .9,
                     weight: 3
                 }).addTo(map);
-                marker.bindPopup(`<strong>${lab.Nombre}</strong><br>${lab.Tipo}<br><a href="/publico/Publico/Detalle/${lab.Id}">Ver detalle</a>`);
+                const popup = document.createElement("div");
+                const title = document.createElement("strong"); title.textContent = lab.Nombre;
+                const type = document.createElement("p"); type.textContent = lab.Tipo;
+                const detail = document.createElement("a"); detail.textContent = "Ver detalle"; detail.href = `/publico/Publico/Detalle/${lab.Id}`;
+                popup.append(title, type, detail); marker.bindPopup(popup);
                 bounds.push([lab.Lat, lab.Lng]);
             });
             if (bounds.length) map.fitBounds(bounds, { padding: [25, 25] });

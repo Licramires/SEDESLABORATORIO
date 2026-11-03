@@ -1,0 +1,26 @@
+{
+  "metricasEscritorio": {
+    "document": 1265,
+    "viewport": 1280
+  },
+  "contrasteMetricas": [],
+  "metricasMovil": {
+    "document": 375,
+    "viewport": 390
+  },
+  "contrasteMetricasMovil": [],
+  "agendaMovil": {
+    "document": 375,
+    "viewport": 390
+  },
+  "contrasteAgenda": [],
+  "rutasMovil": {
+    "document": 375,
+    "viewport": 390
+  },
+  "agendaEscritorio": {
+    "document": 1425,
+    "viewport": 1440
+  },
+  "consola": []
+}

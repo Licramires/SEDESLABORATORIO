@@ -3,27 +3,34 @@ using Microsoft.AspNetCore.Mvc;
 using SEDESLABORATORIO.Data;
 using SEDESLABORATORIO.Data.Entities;
 using SEDESLABORATORIO.Publico.Models;
+using SEDESLABORATORIO.Infrastructure;
 
 namespace SEDESLABORATORIO.Publico.Controllers;
 
 [Area("publico")]
 public class PublicoController : Controller
 {
-    private readonly ApplicationDbContext _context;
+    private readonly IPublicoDatos _context;
+    private readonly ILectorArchivos _storage;
+    private readonly IWebHostEnvironment _environment;
 
-    public PublicoController(ApplicationDbContext context)
+    public PublicoController(IPublicoDatos context, ILectorArchivos storage, IWebHostEnvironment environment)
     {
         _context = context;
+        _storage = storage;
+        _environment = environment;
     }
 
     [HttpGet]
     public async Task<IActionResult> Index(
-        string? search,
-        string? tipo,
+        [System.ComponentModel.DataAnnotations.StringLength(200), TextoSeguro] string? search,
+        [System.ComponentModel.DataAnnotations.StringLength(100), TextoSeguro] string? tipo,
         EstadoLaboratorio? estado,
         CancellationToken cancellationToken)
     {
-        var query = _context.Laboratorios.AsNoTracking();
+        var now = DateTime.UtcNow;
+        var query = Publicables().Where(l => l.VigenciaHasta == null || l.VigenciaHasta > now);
+        if (!ModelState.IsValid) { Response.StatusCode = 400; TempData["Error"] = "Revise los filtros: búsqueda de hasta 200 caracteres y un tipo y estado válidos."; query = query.Where(l => false); }
 
         if (!string.IsNullOrWhiteSpace(search))
         {
@@ -54,12 +61,14 @@ public class PublicoController : Controller
                 Lat = laboratorio.Lat,
                 Lng = laboratorio.Lng,
                 Estado = laboratorio.Estado.ToString().ToLowerInvariant(),
-                Servicios = laboratorio.Servicios
+                Servicios = laboratorio.Servicios,
+                DatosVerificados = laboratorio.DatosVerificados
             })
             .ToListAsync(cancellationToken);
 
-        var tipos = await _context.Laboratorios
+        var tipos = await Publicables()
             .AsNoTracking()
+            .Where(l => l.VigenciaHasta == null || l.VigenciaHasta > now)
             .Select(laboratorio => laboratorio.Tipo)
             .Distinct()
             .OrderBy(tipoDisponible => tipoDisponible)
@@ -72,13 +81,19 @@ public class PublicoController : Controller
             Estado = estado,
             TiposDisponibles = tipos,
             Laboratorios = laboratorios
+            ,Requisitos = await _context.Publicados().ToListAsync(cancellationToken)
         });
     }
 
     [HttpGet]
+    public async Task<IActionResult> Requerimientos(CancellationToken cancellationToken)
+        => View(await _context.Publicados().ToListAsync(cancellationToken));
+
+    [HttpGet]
     public async Task<IActionResult> Detalle(int id, CancellationToken cancellationToken)
     {
-        var laboratorio = await _context.Laboratorios
+        var now = DateTime.UtcNow;
+        var laboratorio = await Publicables()
             .AsNoTracking()
             .Where(item => item.Id == id)
             .Select(item => new LaboratorioDetalleViewModel
@@ -88,8 +103,10 @@ public class PublicoController : Controller
                 Tipo = item.Tipo,
                 Lat = item.Lat,
                 Lng = item.Lng,
-                Estado = item.Estado.ToString().ToLowerInvariant(),
-                Servicios = item.Servicios
+                Estado = item.VigenciaHasta != null && item.VigenciaHasta <= now ? "cerrado" : item.Estado.ToString().ToLowerInvariant(),
+                Servicios = item.Servicios,
+                Municipio = item.Municipio, Direccion = item.Direccion, Telefono = item.Telefono, Codigo = item.Codigo,
+                DatosVerificados = item.DatosVerificados
             })
             .SingleOrDefaultAsync(cancellationToken);
 
@@ -99,7 +116,7 @@ public class PublicoController : Controller
     [HttpGet]
     public async Task<IActionResult> Ruta(int laboratorioId, CancellationToken cancellationToken)
     {
-        var laboratorio = await _context.Laboratorios
+        var laboratorio = await Publicables()
             .AsNoTracking()
             .Where(item => item.Id == laboratorioId)
             .Select(item => new { item.Lat, item.Lng })
@@ -110,7 +127,18 @@ public class PublicoController : Controller
             return NotFound();
         }
 
-        ViewData["Destination"] = $"{laboratorio.Lat.ToString(System.Globalization.CultureInfo.InvariantCulture)},{laboratorio.Lng.ToString(System.Globalization.CultureInfo.InvariantCulture)}";
+        if (Coordenadas.Validar(laboratorio.Lat, laboratorio.Lng))
+            ViewData["Destination"] = $"{laboratorio.Lat.ToString(System.Globalization.CultureInfo.InvariantCulture)},{laboratorio.Lng.ToString(System.Globalization.CultureInfo.InvariantCulture)}";
         return View();
+    }
+
+    private IQueryable<Laboratorio> Publicables() => _context.Laboratorios.AsNoTracking().Where(l => _environment.IsDevelopment() || l.DatosVerificados && l.PropietarioId != null && l.VigenciaHasta != null);
+
+    [HttpGet]
+    public async Task<IActionResult> Plantilla(int id)
+    {
+        var requisito = await _context.Publicados().SingleOrDefaultAsync(r => r.Id == id);
+        var path = requisito is null ? null : _storage.Resolve(requisito.PlantillaPdf);
+        return path is null ? NotFound() : PhysicalFile(path, "application/pdf", $"requisito-{id}.pdf");
     }
 }

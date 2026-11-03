@@ -1,0 +1,11 @@
+@model RequisitoForm
+@{ ViewData["Title"] = Model.Id == 0 ? "Añadir requisito" : "Editar requisito"; }
+<div class="container silab-page"><a asp-action="Requisitos">Volver a requisitos</a><section class="silab-panel p-4 mt-3"><h1>@ViewData["Title"]</h1><p>Los expedientes enviados conservan su referencia anterior. La plantilla se publica para descarga.</p>
+<form method="post" enctype="multipart/form-data" class="workflow-form"><div asp-validation-summary="All" class="text-danger"></div><input asp-for="Id" type="hidden" /><input asp-for="Version" type="hidden" />
+<label asp-for="Nombre">Nombre del requisito<input asp-for="Nombre" class="form-control" required maxlength="200" /></label>
+<label asp-for="SeccionId">Sección<select asp-for="SeccionId" asp-items="ViewBag.Secciones" class="form-select"><option value="">Requisitos generales (sin sección)</option></select></label>
+<label asp-for="Orden">Orden dentro de la sección<input asp-for="Orden" class="form-control" min="0" max="9999" /></label>
+<label><input asp-for="Obligatorio" /> Obligatorio para enviar la solicitud</label><label><input asp-for="Activo" /> Activo</label>
+<p class="text-muted">Solo se publican los requisitos activos de secciones activas. El orden menor aparece primero.</p>
+<label>Plantilla institucional PDF (opcional, hasta 10 MB)<input asp-for="Plantilla" type="file" accept=".pdf" class="form-control" /></label><p class="text-muted">Deje el archivo vacío para conservar la plantilla actual.</p>
+<div class="d-flex flex-wrap gap-2"><button class="btn silab-btn-primary">Guardar requisito</button><a asp-action="Requisitos" class="btn silab-btn-outline">Cancelar</a></div></form></section></div>

@@ -1,0 +1,19 @@
+@model DatosBorradorForm
+@{ ViewData["Title"] = "Corregir datos del borrador"; }
+<div class="container silab-page"><a asp-action="Detalle" asp-route-id="@Model.Id">Volver al borrador</a>
+<section class="silab-panel p-4 mt-3"><h1>Corregir datos del borrador</h1><p>Revise la información antes del primer envío. Los PDF cargados se conservan.</p>
+<form asp-action="EditarDatos" method="post" class="workflow-form">
+<div asp-validation-summary="All" class="text-danger" role="alert"></div>
+<input asp-for="Id" type="hidden" /><input asp-for="Version" type="hidden" />
+<label>Nombre del laboratorio<input asp-for="NombreLaboratorio" required maxlength="200" class="form-control" /></label>
+<label>Tipo de laboratorio<input asp-for="TipoLaboratorio" list="tipos-datos" required maxlength="100" class="form-control" /></label>
+<datalist id="tipos-datos">@foreach(string tipo in ViewBag.Tipos) { <option value="@tipo"></option> }</datalist>
+<label>Municipio<input asp-for="Municipio" list="municipios-datos" required maxlength="100" class="form-control" /></label>
+<datalist id="municipios-datos">@foreach(string municipio in ViewBag.Municipios) { <option value="@municipio"></option> }</datalist>
+<label>Latitud<input asp-for="Latitud" type="number" step="any" min="-90" max="90" required class="form-control" /></label>
+<label>Longitud<input asp-for="Longitud" type="number" step="any" min="-180" max="180" required class="form-control" /></label>
+<label>Dirección<input asp-for="Direccion" maxlength="500" class="form-control" /></label>
+<label>Teléfono<input asp-for="Telefono" maxlength="50" class="form-control" /></label>
+<label>Código de referencia<input asp-for="Codigo" maxlength="100" class="form-control" /></label>
+<button class="btn silab-btn-primary">Guardar datos del borrador</button>
+</form></section></div>

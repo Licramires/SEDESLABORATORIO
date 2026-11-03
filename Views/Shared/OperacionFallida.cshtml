@@ -1,0 +1,13 @@
+@model SEDESLABORATORIO.Models.OperacionFallidaModel
+@{ ViewData["Title"] = Model.Conflicto ? "Hay cambios recientes" : "Revisa los datos"; }
+<div class="container silab-page">
+    <section class="silab-panel p-4" aria-labelledby="operation-error-title">
+        <div class="silab-page-heading"><h1 id="operation-error-title">@ViewData["Title"]</h1></div>
+        <p role="alert">@Model.Mensaje</p>
+        <p>@(Model.Conflicto ? "Abre la versión actual y comprueba los cambios antes de continuar." : "Vuelve al formulario, corrige los datos indicados y envíalo de nuevo.")</p>
+        <div class="workflow-actions">
+            <a href="@Model.RutaRetorno" class="btn silab-btn-primary">@Model.AccionRetorno</a>
+            <a asp-area="auth" asp-controller="Auth" asp-action="Dashboard" class="btn silab-btn-outline">Ir a mi cuenta</a>
+        </div>
+    </section>
+</div>

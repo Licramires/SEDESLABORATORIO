@@ -1,0 +1,93 @@
+Browser tab: 5, Title: "Inspección · solicitud #7 - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Detalle/7".
+1 AXWebArea Inspección · solicitud #7 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/7
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Detalle/7#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Mi agenda, Value: localhost:5281/Gestion/Agenda
+			7 link Description: Actas emitidas, Value: localhost:5281/Gestion/Actas
+			8 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+			11 button (collapsed) Consultas y recorridos, Secondary Actions: Expand
+				12 text Consultas y recorridos
+		13 text SEDES Cochabamba
+		14 text Servicio Departamental de Salud Portal de trámites y requisitos
+	15 container
+		16 text Panel del supervisor  Inspección · solicitud #7
+		17 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		18 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	19 container main-content
+		20 link Description: Volver a mi agenda, Value: localhost:5281/Gestion/Agenda
+		21 container
+			22 heading Laboratorio Horizonte, Value: 1
+				23 text Laboratorio Horizonte
+			24 text Solicitud #7 · Apertura · Inspección técnica
+			25 link Description: Mis actas emitidas, Value: localhost:5281/Gestion/Actas
+			26 definition list
+				27 container Municipio
+					28 text Municipio
+				29 text Cochabamba
+				30 container Dirección
+					31 text Dirección
+				32 text DEMO: Av. de pruebas 123
+				33 container Solicitante
+					34 text Solicitante
+				35 text Propietario Demo
+				36 container Contacto
+					37 text Contacto
+				38 text 00000000
+			39 text El coordinador está revisando el acta enviada. Puede consultar el PDF y el seguimiento.
+		40 container Pasos de la inspección
+			41 content list
+				42 link Description: 1. Programar visita, Value: localhost:5281/Gestion/Detalle/7#programacion
+				43 link Description: 2. Preparar y enviar acta, Value: localhost:5281/Gestion/Detalle/7#acta
+				44 link Description: 3. Seguimiento y citaciones, Value: localhost:5281/Gestion/Detalle/7#seguimiento
+				45 link Description: Consultar documentos, Value: localhost:5281/Gestion/Detalle/7#documentos
+		46 container programacion
+			47 heading Visita realizada o en seguimiento, Value: 2
+				48 text Visita realizada o en seguimiento
+			49 text Esta asignación ya no admite cambios de programación. Consulte su agenda para las visitas pendientes.
+		50 container acta
+			51 heading Estado de mi acta, Value: 2
+				52 text Estado de mi acta
+			53 text Enviada al coordinador; pendiente de revisión.
+			54 link Description: Descargar mi acta firmada, Value: localhost:5281/Gestion/Descargar/3?tipo=acta
+		55 container seguimiento
+			56 heading Seguimiento y citaciones, Value: 2
+				57 text Seguimiento y citaciones
+			58 text Las citaciones corresponden a inspecciones con observaciones o incumplimientos. Adjunte la evidencia firmada; no sustituyen la validación del coordinador.
+			59 text No tiene citaciones emitidas en este expediente.
+			60 heading Registrar citación por incumplimientos, Value: 3
+				61 text Registrar citación por incumplimientos
+			62 container
+				63 text Fecha de emisión (Bolivia)
+				64 date field (settable) Fecha de emisión (Bolivia), Value: 2026-10-23
+					65 container
+						66 stepper
+						67 stepper
+						68 stepper
+					69 pop up button Mostrar el selector de fechas Mostrar el selector de fechas
+				70 text Vencimiento (Bolivia)
+				71 date field (settable) Vencimiento (Bolivia)
+					72 container
+						73 stepper
+						74 stepper
+						75 stepper
+					76 pop up button Mostrar el selector de fechas Mostrar el selector de fechas
+				77 text Motivo
+				78 text entry area (settable) Motivo
+				79 text Avisar días antes
+				80 stepper (settable, integer) Avisar días antes, Value: 5
+				81 text Citación firmada en PDF, JPG o PNG (hasta 10 MB)
+				82 button Citación firmada en PDF, JPG o PNG (hasta 10 MB)
+				83 button Registrar citación y notificar
+		84 button (collapsed) Documentos del expediente (3 actuales), Secondary Actions: Expand
+			85 text Documentos del expediente (3 actuales)
+		86 button (collapsed) Historial y visitas anteriores, Secondary Actions: Expand
+			87 text Historial y visitas anteriores
+	88 container
+		89 text © 2026 SI_Lab · SEDES Cochabamba
+		90 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Inspección · solicitud #7 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/7

@@ -1,0 +1,15 @@
+@model PermisosForm
+@using SEDESLABORATORIO.Infrastructure
+@{ ViewData["Title"] = $"Permisos de {Model.Rol}"; }
+<div class="container silab-page"><a asp-action="Roles">Volver a roles y permisos</a>
+<section class="silab-panel p-4 mt-3"><h1>Permisos de @Model.Rol</h1><p>Marque las funciones que podrá usar este perfil. Los cambios se aplican a todos sus usuarios, incluso si tienen una sesión abierta.</p>
+<form method="post" class="workflow-form"><input asp-for="Rol" type="hidden" /><div asp-validation-summary="All" class="text-danger"></div>
+<fieldset class="admin-permissions"><legend class="h2">Funciones del perfil</legend>
+@for(var i = 0; i < Model.Permisos.Count; i++) {
+ var descripcion = Permisos.Catalogo.Single(p => p.Rol == Model.Rol && p.Clave == Model.Permisos[i].Clave).Descripcion;
+ <input asp-for="Permisos[i].Clave" type="hidden" /><input asp-for="Permisos[i].Version" type="hidden" />
+ <label class="admin-permission-option"><input asp-for="Permisos[i].Habilitado" /> <span>@descripcion</span></label>
+}
+</fieldset><p class="text-muted">El alcance de cada función conserva las responsabilidades de este perfil. La administración de roles siempre está disponible para recuperar permisos.</p>
+<div class="d-flex flex-wrap gap-2"><button class="btn silab-btn-primary">Guardar permisos</button><a asp-action="Roles" class="btn silab-btn-outline">Cancelar</a></div>
+</form></section></div>

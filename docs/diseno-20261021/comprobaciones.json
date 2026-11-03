@@ -1,0 +1,47 @@
+{
+  "desktop": {
+    "contraste": [],
+    "layout": {
+      "contenido": 1265,
+      "viewport": 1280
+    }
+  },
+  "tablet": {
+    "contraste": [],
+    "layout": {
+      "contenido": 1009,
+      "viewport": 1024
+    }
+  },
+  "mobile": {
+    "contraste": [],
+    "layout": {
+      "botones": [
+        {
+          "alto": 44,
+          "texto": ""
+        },
+        {
+          "alto": 44,
+          "texto": "Cancelar"
+        },
+        {
+          "alto": 44,
+          "texto": "Guardar y completar requisitos"
+        }
+      ],
+      "contenido": 375,
+      "viewport": 390
+    }
+  },
+  "admin": {
+    "contraste": []
+  },
+  "adminFinal": {
+    "contraste": []
+  },
+  "formFinal": {
+    "contraste": [],
+    "consola": []
+  }
+}

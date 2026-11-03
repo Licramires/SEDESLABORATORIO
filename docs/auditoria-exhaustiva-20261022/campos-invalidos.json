@@ -1,0 +1,914 @@
+[
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Rol\", value: \"999\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"seccion\", field: \"Nombre\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"Obligatorio\", value: \"no-es-bool\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Codigo\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Latitud\", value: \"9999999999999999999999999999999999999999999\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"AnticipacionDias\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Id\", value: \"no-numérico\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Id\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"Activo\", value: \"no-es-bool\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"Motivo\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \"x@-example.test\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Longitud\", value: \"9999999999999999999999999999999999999999999\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Telefono\", value: \"abcdef\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Motivo\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Id\", value: \"2147483648\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"SeccionId\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"DocumentoId\", value: \"999999\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Resultado\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"SeccionId\", value: \"999999\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"TipoLaboratorio\", value: \"   \")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Id\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"Orden\", value: \"2147483648\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"catalogo\", field: \"Nombre\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"Resultado\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"AnticipacionDias\", value: \"31\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"DiasSubsanacion\", value: \"2147483648\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"Nombre\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"seccion\", field: \"Descripcion\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"servicios\", field: \"servicios\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Longitud\", value: \"1,234.56\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"Nombre\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"FechaEmision\", value: \"2026-10-22T09:00\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"DiasSubsanacion\", value: \"0\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"Resultado\", value: \"inventado\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"seccion\", field: \"Descripcion\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Telefono\", value: \"hola@correo\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"seccion\", field: \"Nombre\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Municipio\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Municipio\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"InspeccionId\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Nombre\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Password\", value: \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"catalogo\", field: \"Activo\", value: \"no-es-bool\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"AnticipacionDias\", value: \"no-numérico\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"DiasSubsanacion\", value: \"91\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Municipio\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Longitud\", value: \"Infinity\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"Version\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Rol\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"TipoLaboratorio\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"TipoLaboratorio\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Municipio\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"DiasSubsanacion\", value: \"no-numérico\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Vencimiento\", value: \"2026-10-22T00:00Z\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"TipoLaboratorio\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"Motivo\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \"x@@y.test\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"InspeccionId\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Version\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"TipoLaboratorio\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Resultado\", value: \"inventado\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Telefono\", value: \"11111111111111111111111111111111111111111111111111\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Municipio\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Longitud\", value: \"-180.000001\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Municipio\", value: \"   \")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"seccion\", field: \"Activa\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"seccion\", field: \"Activa\", value: \"no-es-bool\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Password\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Motivo\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"catalogo\", field: \"Clase\", value: \"inventado\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Longitud\", value: \"1e2\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Telefono\", value: \"11111111111111111111111111111111111111111111111111\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Telefono\", value: \"hola@correo\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"seccion\", field: \"Orden\", value: \"2147483648\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"seccion\", field: \"Orden\", value: \"10000\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"NombreLaboratorio\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"servicios\", field: \"servicios\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"NombreLaboratorio\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Latitud\", value: \"abc\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Longitud\", value: \"1,234.56\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"seccion\", field: \"Nombre\", value: \"   \")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Version\", value: \"2147483648\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Longitud\", value: \"abc\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Municipio\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Latitud\", value: \"Infinity\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Id\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Latitud\", value: \"1,234.56\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"catalogo\", field: \"Nombre\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"Id\", value: \"2147483648\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"NombreLaboratorio\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Latitud\", value: \"Infinity\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Codigo\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"FechaEmision\", value: \"no-fecha\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Version\", value: \"no-numérico\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"InspeccionId\", value: \"no-numérico\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"Obligatorio\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Longitud\", value: \"180.000001\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \"   \")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"catalogo\", field: \"Clase\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"TipoLaboratorio\", value: \"   \")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"NombreLaboratorio\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Direccion\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Version\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Version\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Latitud\", value: \"NaN\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Version\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"Version\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Latitud\", value: \"-90.000001\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Longitud\", value: \"NaN\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Latitud\", value: \"NaN\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Motivo\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Version\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Longitud\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"Nombre\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Longitud\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Rol\", value: \"administrador-inventado\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"Id\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"TipoLaboratorio\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Longitud\", value: \"abc\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \"x@example..test\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"FechaEmision\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"DocumentoId\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Version\", value: \"2147483648\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"Version\", value: \"no-numérico\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Longitud\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Resultado\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"NombreLaboratorio\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Longitud\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Id\", value: \"no-numérico\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Id\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"Nombre\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"NombreLaboratorio\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Version\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Latitud\", value: \"-90.000001\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Latitud\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"Orden\", value: \"10000\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"NombreLaboratorio\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Latitud\", value: \"1e2\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"Orden\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Longitud\", value: \"180.000001\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"DocumentoId\", value: \"no-numérico\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \"x@\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"TipoLaboratorio\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Id\", value: \"2147483648\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Latitud\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"FechaEmision\", value: \"2026-02-30\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Longitud\", value: \"NaN\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Vencimiento\", value: \"no-fecha\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Motivo\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"TipoLaboratorio\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"seccion\", field: \"Orden\", value: \"número\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Longitud\", value: \"1e2\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Latitud\", value: \"9999999999999999999999999999999999999999999\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"TipoLaboratorio\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Nombre\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Longitud\", value: \"-180.000001\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Telefono\", value: \"555\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Motivo\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"catalogo\", field: \"Referencia\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"catalogo\", field: \"Nombre\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Vencimiento\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"seccion\", field: \"Orden\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"Orden\", value: \"número\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Rol\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Id\", value: \"2147483648\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"Activo\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Version\", value: \"no-numérico\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Latitud\", value: \"abc\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \"@y.test\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Telefono\", value: \"555\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Municipio\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"DocumentoId\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"FechaEmision\", value: \"2026-10-22T00:00Z\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"FechaEmision\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"catalogo\", field: \"Nombre\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Longitud\", value: \"Infinity\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Latitud\", value: \"1,234.56\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \".x@example.test\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Longitud\", value: \"9999999999999999999999999999999999999999999\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"seccion\", field: \"Nombre\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Latitud\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Latitud\", value: \"1e2\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"SeccionId\", value: \"texto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Nombre\", value: \"   \")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Vencimiento\", value: \"2026-10-22T09:00\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"NombreLaboratorio\", value: \"   \")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Version\", value: \"2147483648\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"requisito\", field: \"Nombre\", value: \"   \")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"NombreLaboratorio\", value: \"   \")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Motivo\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Id\", value: \"-1\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"catalogo\", field: \"Clase\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Id\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \"x..y@example.test\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Latitud\", value: \"90.000001\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \"a b@example.test\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Motivo\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"catalogo\", field: \"Referencia\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Activo\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Nombre\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Password\", value: \"123456789\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Password\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Telefono\", value: \"abcdef\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"seccion\", field: \"Nombre\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"revision\", field: \"Id\", value: \"no-numérico\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"Version\", value: \"2147483648\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Version\", value: \"no-numérico\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"NombreLaboratorio\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Vencimiento\", value: \"\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Motivo\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Direccion\", value: \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"···)",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"InspeccionId\", value: \"999999\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"catalogo\", field: \"Activo\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Municipio\", value: \"   \")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Activo\", value: \"no-es-bool\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"Id\", value: \"<omitir>\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Email\", value: \"sin-arroba\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"acta\", field: \"Id\", value: \"no-numérico\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Latitud\", value: \"90.000001\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"citacion\", field: \"Vencimiento\", value: \"2026-02-30\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"usuario\", field: \"Nombre\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"nueva\", field: \"Municipio\", value: \"Texto\\0oculto\")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"catalogo\", field: \"Nombre\", value: \"   \")",
+    "resultado": "Passed"
+  },
+  {
+    "nombre": "SiLab.Tests.ComprehensiveAuditTests.Every_form_field_rejects_invalid_values_without_changing_any_table(form: \"edicion\", field: \"Latitud\", value: \"\")",
+    "resultado": "Passed"
+  }
+]

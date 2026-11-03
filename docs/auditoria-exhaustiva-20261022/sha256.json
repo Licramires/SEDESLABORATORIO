@@ -1,0 +1,22 @@
+{
+  "agenda-movil.png": "03d7a72cfa4b22f496079ba1436da3317221f5c6a46f7991ce6d8412e660b891",
+  "botones-por-rol-y-estado.json": "5b132869dfbe612f872b5590fb533fa6a42a493d0d0de81b1f929bacd44072d9",
+  "campos-invalidos.json": "aad27a99f2b6f79d713db43572f8d4cad19e987d0bf45c68d3c711af0e3c79c5",
+  "controles-navegador.json": "deffff47e7ed02a07328ad56e58893c8b1dfe4ac9d8da94ff5ae7b337b6074e9",
+  "datos-originales.json": "5f0257afa8a8ab0a08f115df5dd8904b5d3e277ba28469353e586a8a891c46bd",
+  "devolucion-sin-observaciones-duplicadas.png": "5690406e70c5b9ca859644a806166cd6d3ba5a884fec2e1bf5b0a7b15c25f238",
+  "enlaces-verificados.json": "27ba482ebf3d719a41206b66e13a497a6df0fcc9b555fb4f7f62fc2475082c7e",
+  "formularios-botones-renderizados.json": "c1a6be542009abeb5110228b742e3f20742998c61f75c920cbc5c9a085fe4bb5",
+  "impeccable.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+  "inventario-endpoints.json": "cda88e0543561234d33020a7699549c9554aa94bff39630eb46b43a63a13bda5",
+  "paginas-descargas-por-rol.json": "fc9e3a49673c59acb3a0c812e3d1af024a1a17985b1aac9dd3532f2a35a71f0b",
+  "permisos-configurables.json": "d70c071ada492f7eddf2798ae5fa8d30abf3f262e0e58ef529a99ce7440ed902",
+  "pruebas-ejecutadas.json": "bda40168a2186f95d830127c908cb3eceae10ae80346ab18b9e2baf9a414f80f",
+  "requerimientos-movil.png": "c8a2c52b6974bfa1dc9720bf886b2e829b59d2d5d68032d7d665a1836dc5b200",
+  "resultado-final.trx": "246b2b6121e18db4f38baa64680395bcac6909625afd6f155af9e56b9280c0d5",
+  "resumen.json": "f608f12ed24f1329f6b7efd892186f3371a6d5ec395bee974fd8c7a2b9af5856",
+  "revision-legal-habilitada.png": "50438f3ae0d42610162771311cef3423ace78f4156626f51f8481f4131569710",
+  "seguridad-todos-post.json": "2798c4bb2e6c39d50119603fed55598ccd8fb70bf06a4f4332469664d42b0a93",
+  "transiciones-prohibidas.json": "5aa17d44e29a90ced8ef20f4103a70511deeeea164c242122faa155bdd6ecdd4",
+  "transiciones-validas.json": "1f768909f0c198f3e9d3d1bbd4a34a9084d739796fa1451f35db1a2f6f9ac5f8"
+}

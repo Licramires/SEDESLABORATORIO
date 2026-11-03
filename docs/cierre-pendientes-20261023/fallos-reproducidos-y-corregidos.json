@@ -1,0 +1,122 @@
+[
+  {
+    "test": "arranque",
+    "pid": 32140,
+    "healthy": true,
+    "environment": "Development"
+  },
+  {
+    "test": "almacenamiento_no_disponible",
+    "status": 500,
+    "databaseUnchanged": true,
+    "filesUnchanged": true
+  },
+  {
+    "test": "fallo",
+    "operation": "storage",
+    "type": "AssertionError",
+    "message": ""
+  },
+  {
+    "test": "detención_del_proceso_hijo",
+    "pid": 32140,
+    "stopped": true
+  },
+  {
+    "test": "arranque",
+    "pid": 31984,
+    "healthy": true,
+    "environment": "Development"
+  },
+  {
+    "test": "caida_entre_archivo_y_commit",
+    "orphanedBeforeRestart": 1,
+    "unreferencedAfterRestart": 1,
+    "recoverableAfterRestart": 0,
+    "committedTablesPreserved": true,
+    "registeredFilesPreserved": true
+  },
+  {
+    "test": "fallo",
+    "operation": "crashcommit",
+    "type": "AssertionError",
+    "message": ""
+  },
+  {
+    "test": "detención_del_proceso_hijo",
+    "pid": 31984,
+    "stopped": true
+  },
+  {
+    "test": "arranque",
+    "pid": 18252,
+    "healthy": true,
+    "environment": "Development"
+  },
+  {
+    "test": "almacenamiento_no_disponible",
+    "status": 503,
+    "databaseUnchanged": true,
+    "filesUnchanged": true
+  },
+  {
+    "test": "detención_del_proceso_hijo",
+    "pid": 18252,
+    "stopped": true
+  },
+  {
+    "test": "arranque",
+    "pid": 24800,
+    "healthy": true,
+    "environment": "Development"
+  },
+  {
+    "test": "caida_entre_archivo_y_commit",
+    "orphanedBeforeRestart": 1,
+    "unreferencedAfterRestart": 0,
+    "recoverableAfterRestart": 1,
+    "committedTablesPreserved": true,
+    "registeredFilesPreserved": true
+  },
+  {
+    "test": "detención_del_proceso_hijo",
+    "pid": 24800,
+    "stopped": true
+  },
+  {
+    "test": "arranque",
+    "pid": 19640,
+    "healthy": true,
+    "environment": "Development"
+  },
+  {
+    "test": "almacenamiento_no_disponible",
+    "status": 503,
+    "databaseUnchanged": true,
+    "filesUnchanged": true
+  },
+  {
+    "test": "detención_del_proceso_hijo",
+    "pid": 19640,
+    "stopped": true
+  },
+  {
+    "test": "arranque",
+    "pid": 12192,
+    "healthy": true,
+    "environment": "Development"
+  },
+  {
+    "test": "caida_entre_archivo_y_commit",
+    "orphanedBeforeRestart": 1,
+    "unreferencedAfterRestart": 0,
+    "recoverableAfterRestart": 1,
+    "committedTablesPreserved": true,
+    "registeredFilesPreserved": true
+  },
+  {
+    "test": "detención_del_proceso_hijo",
+    "pid": 12192,
+    "stopped": true
+  }
+]

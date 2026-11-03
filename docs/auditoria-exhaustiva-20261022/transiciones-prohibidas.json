@@ -1,0 +1,4797 @@
+[
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "EnRevision",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Action": "enviar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Action": "aprobar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Action": "observar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Action": "rechazar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "EnRevision",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Action": "asignar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "EnRevision",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Action": "programar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "EnRevision",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Action": "preparar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "EnRevision",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Action": "acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "EnRevision",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Action": "aprobar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "EnRevision",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Action": "rechazar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "EnRevision",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Action": "aprobar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "EnRevision",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Action": "observar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "EnRevision",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Action": "rechazar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Aprobado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Action": "enviar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Aprobado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Action": "aprobar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Aprobado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Action": "observar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Aprobado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Action": "rechazar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Action": "asignar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Aprobado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Action": "programar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Aprobado",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Action": "preparar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Aprobado",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Action": "acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Aprobado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Action": "aprobar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Aprobado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Action": "rechazar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Aprobado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Action": "aprobar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Aprobado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Action": "observar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Aprobado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Action": "rechazar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Rechazado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Action": "enviar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Rechazado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Action": "aprobar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Rechazado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Action": "observar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Rechazado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Action": "rechazar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Action": "asignar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Rechazado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Action": "programar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Rechazado",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Action": "preparar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Rechazado",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Action": "acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Rechazado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Action": "aprobar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Rechazado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Action": "rechazar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Rechazado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Action": "aprobar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Rechazado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Action": "observar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Rechazado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Action": "rechazar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Action": "enviar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Action": "enviar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Borrador",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Action": "aprobar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Action": "aprobar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Borrador",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Action": "observar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Action": "observar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Borrador",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Action": "rechazar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Action": "rechazar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Borrador",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Action": "asignar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Action": "asignar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Borrador",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Action": "programar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Action": "programar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Borrador",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Action": "preparar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Action": "preparar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Borrador",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Action": "acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Action": "acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Borrador",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Action": "aprobar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Action": "aprobar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Borrador",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Action": "rechazar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Action": "rechazar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Borrador",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Action": "aprobar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Action": "aprobar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Borrador",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Action": "observar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Action": "observar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Borrador",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Action": "rechazar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Action": "rechazar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Inspeccion",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Inspeccion",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Action": "enviar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Inspeccion",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Inspeccion",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Action": "aprobar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Inspeccion",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Inspeccion",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Action": "observar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Inspeccion",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Inspeccion",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Action": "rechazar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Inspeccion",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Action": "asignar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Inspeccion",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Action": "programar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Inspeccion",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Action": "preparar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Inspeccion",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Action": "acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Inspeccion",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Inspeccion",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Action": "aprobar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Inspeccion",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Inspeccion",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Action": "rechazar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Inspeccion",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Inspeccion",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Action": "aprobar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Inspeccion",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Inspeccion",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Action": "observar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Inspeccion",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Inspeccion",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Action": "rechazar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Observado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Action": "enviar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Observado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Observado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Action": "aprobar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Observado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Observado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Action": "observar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Observado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Observado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Action": "rechazar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Observado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Action": "asignar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Observado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Observado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Action": "programar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Observado",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Observado",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Action": "preparar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Observado",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Observado",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Action": "acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Observado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Observado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Action": "aprobar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Observado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Observado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Action": "rechazar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Observado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Observado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Action": "aprobar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Observado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Observado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Action": "observar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Observado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Observado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Action": "rechazar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionActa",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Action": "enviar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionActa",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Action": "aprobar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionActa",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Action": "observar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionActa",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Action": "rechazar_documentos",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionActa",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Action": "asignar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionActa",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Action": "programar",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionActa",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Action": "preparar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionActa",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Action": "acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Action": "aprobar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Action": "rechazar_acta",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionActa",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Action": "aprobar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionActa",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Action": "observar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionActa",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Action": "rechazar_legal",
+    "Status": 404,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionLegal",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionLegal",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionLegal",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionLegal",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionLegal",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionLegal",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionLegal",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionLegal",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionLegal",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionLegal",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Action": "enviar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Action": "aprobar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Action": "observar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Action": "rechazar_documentos",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Action": "asignar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Action": "programar",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Action": "preparar_acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Action": "preparar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Action": "acta",
+    "Status": 400,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Action": "acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Action": "aprobar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Action": "rechazar_acta",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Action": "aprobar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Action": "observar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Action": "rechazar_legal",
+    "Status": 302,
+    "Preserved": true
+  }
+]

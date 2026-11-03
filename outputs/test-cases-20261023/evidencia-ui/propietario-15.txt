@@ -1,0 +1,80 @@
+Browser tab: 5, Title: "Solicitud #15 - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Detalle/15".
+1 AXWebArea Solicitud #15 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/15
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Detalle/15#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Solicitud #15
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 link Description: ← Volver a trámites, Value: localhost:5281/Gestion
+		19 container
+			20 text Solicitud #15 · Renovación
+			21 heading Laboratorio Central, Value: 1
+				22 text Laboratorio Central
+			23 text Clínico · Cochabamba · -17.3935, -66.157 Propietario: Propietario Demo DEMO: Av. de pruebas 123 · 00000000 · DEMO-LAB-HABILITADO Borrador
+			24 heading Documentación, Value: 2
+				25 text Documentación
+			26 text Agregue PDF uno por uno; cada archivo guardado se incorpora a la documentación de este expediente. Puede continuar después y quitar los pendientes u observados antes de enviar. No hay un límite de cinco archivos; cada PDF admite hasta 10 MB.
+			27 link Description: Consultar requerimientos para registrar un laboratorio, Value: localhost:5281/publico/Publico/Requerimientos
+			28 text 0 PDF en la lista de envío.
+			29 text  Los archivos retirados o reemplazados permanecen en el historial.
+			30 heading Requisitos generales, Value: 3
+				31 text Requisitos generales
+			32 heading Licencia municipal Obligatorio · requisito v1, Value: 3
+				33 text Licencia municipal
+				34 text Obligatorio · requisito v1
+			35 text Pendiente de carga
+			36 container
+				37 text PDF para Licencia municipal
+				38 button PDF para Licencia municipal
+				39 button Guardar nueva versión
+			40 heading Plano arquitectónico Obligatorio · requisito v1, Value: 3
+				41 text Plano arquitectónico
+				42 text Obligatorio · requisito v1
+			43 text Pendiente de carga
+			44 container
+				45 text PDF para Plano arquitectónico
+				46 button PDF para Plano arquitectónico
+				47 button Guardar nueva versión
+			48 heading Certificado sanitario Obligatorio · requisito v1, Value: 3
+				49 text Certificado sanitario
+				50 text Obligatorio · requisito v1
+			51 text Pendiente de carga
+			52 container
+				53 text PDF para Certificado sanitario
+				54 button PDF para Certificado sanitario
+				55 button Guardar nueva versión
+			56 container
+				57 text Agregar otro PDF complementario
+				58 button Agregar otro PDF complementario
+			59 button Guardar complemento
+		60 container
+			61 heading Enviar a revisión, Value: 2
+				62 text Enviar a revisión
+			63 text Complete los requisitos y reemplace los PDF observados. Los documentos aprobados se conservan.
+			64 button Enviar solicitud
+		65 container
+			66 heading Inspecciones e historial de asignaciones, Value: 2
+				67 text Inspecciones e historial de asignaciones
+			68 text No hay inspecciones asignadas.
+		69 heading Citaciones y evidencia, Value: 2
+			70 text Citaciones y evidencia
+		71 container
+			72 heading Historial del trámite, Value: 2
+				73 text Historial del trámite
+			74 text Fechas en UTC.
+	75 container
+		76 text © 2026 SI_Lab · SEDES Cochabamba
+		77 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Solicitud #15 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/15

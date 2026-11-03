@@ -1,0 +1,77 @@
+Browser tab: 7, Title: "Laboratorios habilitados - SEDESLABORATORIO", URL: "http://localhost:5281/publico/Publico?search=Nova&tipo=&estado=".
+1 AXWebArea Laboratorios habilitados - SEDESLABORATORIO, URL: localhost:5281/publico/Publico?search=Nova&tipo=&estado=
+	2 link Description: Saltar al contenido, Value: localhost:5281/publico/Publico?search=Nova&tipo=&estado=#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Métricas e informes, Value: localhost:5281/Metricas
+			7 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			8 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		9 text SEDES Cochabamba
+		10 text Servicio Departamental de Salud Portal de trámites y requisitos
+	11 container
+		12 text Panel de gerencia  Laboratorios habilitados
+		13 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		14 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	15 container main-content
+		16 container
+			17 heading Encuentra un laboratorio cerca de ti, Value: 1
+				18 text Encuentra un laboratorio
+				19 text cerca de ti
+			20 text Consulta laboratorios habilitados, sus servicios y el estado de atención.
+			21 link Description: Explorar laboratorios, Value: localhost:5281/publico/Publico?search=Nova&tipo=&estado=#laboratorios
+			22 link Description: Requisitos de laboratorios, Value: localhost:5281/publico/Publico/Requerimientos
+		23 container laboratorios
+			24 heading Mapa de laboratorios, Value: 2
+				25 text Mapa de laboratorios
+			26 text Consulte su ubicación, servicios y estado de atención.
+			27 text 1 resultados
+			28 container
+				29 search text field (settable) Description: Buscar laboratorio, Value: Nova
+				30 pop up button (collapsed, settable) Description: Tipo de laboratorio, Value: Todos los tipos, Secondary Actions: Expand
+					31 menu
+						32 (selected) Todos los tipos
+						33 Bacteriológico
+						34 Clínico
+						35 Especializado
+				36 pop up button (collapsed, settable) Description: Estado del laboratorio, Value: Cualquier estado, Secondary Actions: Expand
+					37 menu
+						38 (selected) Cualquier estado
+						39 Abiertos
+						40 Cerrados
+				41 button Buscar
+			42 button Cómo llegar al abierto más cercano, ID: nearest-lab
+			43 container
+				44 text Bacteriológico Cerrado
+				45 heading Laboratorio Nova, Value: 3
+					46 text Laboratorio Nova
+				47 text Datos pendientes de validación institucional. Cultivos, Análisis bacteriológico
+				48 link Description: Ver detalle, Value: localhost:5281/publico/Publico/Detalle/2
+				49 link Description: Cómo llegar, Value: localhost:5281/publico/Publico/Ruta?laboratorioId=2
+			50 container Description: Mapa de laboratorios, ID: public-map
+				69 container
+					70 image
+					71 container
+						72 text Laboratorio Nova Bacteriológico
+						73 link Description: Ver detalle, Value: localhost:5281/publico/Publico/Detalle/2
+						74 button Close popup
+				51 container
+					52 container
+						53 button (disabled) Zoom in
+						54 button Zoom out
+					55 container
+						56 link Description:  Leaflet, Help: A JavaScript library for interactive maps, Value: leafletjs.com/
+						57 text  © OpenStreetMap contributors
+		58 container requisitos
+			59 heading Requisitos para solicitar la habilitación, Value: 2
+				60 text Requisitos para solicitar la habilitación
+			61 content list
+				62 text Licencia municipal
+				63 text Plano arquitectónico
+				64 text Certificado sanitario
+			65 text La obligatoriedad y los documentos pendientes se indican dentro de cada trámite.
+	66 container
+		67 text © 2026 SI_Lab · SEDES Cochabamba
+		68 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 50 container Description: Mapa de laboratorios, ID: public-map

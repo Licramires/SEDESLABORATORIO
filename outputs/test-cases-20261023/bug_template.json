@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Bugs_Reporting",
+    "file": "xl/worksheets/sheet1.xml",
+    "cells": {
+      "B2": "REPORTE DE BUGS",
+      "A4": "QE",
+      "B4": "Bug 01",
+      "C5": "TITULO",
+      "D5": "Buscador google: No funciona y no muestra resultados",
+      "C6": "Prioridad (Alta, Media, baja)",
+      "D6": "ALTA",
+      "C7": "SEVERIDAD",
+      "D7": "ALTA",
+      "C8": "Descripcion:",
+      "D8": "Se ingreso a la aplicacion google y se intento buscar \"Univalle cochabamba\" se hizo click con el teclado y no realizo la busqueda",
+      "C9": "Precondicion:",
+      "D9": "Navegador chrome\n\"Pestania normal\"\n\"Univalle Cochabamba\"\nEntorno: Preproduction - Stagging",
+      "C10": "Pasos:",
+      "D10": "1. Stagging: Ingresar a www.google.com, en el navegador chrome\n2.Ubicar el buscador e ingresar\n3. \"Univalle Cbba\"\n4.Presionar la tecla enter",
+      "C11": "Resultado actual:",
+      "D11": "ERROR 404 - CONTACTAR A SU ADMINISTRADOR\n\n\n\n\n\n\n\n\n",
+      "C12": "Resultado esperado:",
+      "D12": "Al presionar la tecla Enter deberia mostrar los resultados de la busqueda.....",
+      "A14": "QE",
+      "B14": "Bug 02",
+      "C15": "TITULO",
+      "C16": "Prioridad (Alta, Media, baja)",
+      "C17": "SEVERIDAD",
+      "C18": "Descripcion:",
+      "C19": "Precondicion:",
+      "C20": "Pasos:",
+      "D20": "1.\n2.\n3.\n4.",
+      "C21": "Resultado actual:",
+      "C22": "Resultado esperado:",
+      "A24": "QE",
+      "B24": "Bug 03",
+      "C25": "TITULO",
+      "C26": "Prioridad (Alta, Media, baja)",
+      "C27": "SEVERIDAD",
+      "C28": "Descripcion:",
+      "C29": "Precondicion:",
+      "C30": "Pasos:",
+      "D30": "1.\n2.\n3.\n4.",
+      "C31": "Resultado actual:",
+      "C32": "Resultado esperado:"
+    },
+    "merges": [
+      {
+        "ref": "B2:M2"
+      },
+      {
+        "ref": "B15:B22"
+      },
+      {
+        "ref": "B5:B12"
+      },
+      {
+        "ref": "B25:B32"
+      },
+      {
+        "ref": "A5:A12"
+      },
+      {
+        "ref": "A13:C13"
+      },
+      {
+        "ref": "A15:A22"
+      },
+      {
+        "ref": "A23:D23"
+      },
+      {
+        "ref": "A25:A32"
+      }
+    ],
+    "dimension": {
+      "ref": "A2:M32"
+    },
+    "features": [
+      "dimension",
+      "sheetViews",
+      "sheetFormatPr",
+      "cols",
+      "sheetData",
+      "mergeCells",
+      "phoneticPr",
+      "pageMargins",
+      "pageSetup",
+      "drawing"
+    ]
+  },
+  {
+    "name": "Sheet1",
+    "file": "xl/worksheets/sheet2.xml",
+    "cells": {},
+    "merges": [],
+    "dimension": {
+      "ref": "A1"
+    },
+    "features": [
+      "dimension",
+      "sheetViews",
+      "sheetFormatPr",
+      "sheetData",
+      "pageMargins"
+    ]
+  }
+]

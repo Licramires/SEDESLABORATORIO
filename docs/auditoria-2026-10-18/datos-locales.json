@@ -1,0 +1,131 @@
+{
+  "integridad": [
+    [
+      "ok"
+    ]
+  ],
+  "referencias_rotas": [],
+  "registros": {
+    "__EFMigrationsHistory": 4,
+    "sqlite_sequence": 4,
+    "Documentos": 0,
+    "HistorialTramites": 0,
+    "Inspecciones": 0,
+    "Notificaciones": 0,
+    "Requisitos": 3,
+    "Usuarios": 6,
+    "Laboratorios": 3,
+    "Solicitudes": 1,
+    "PermisosRol": 0
+  },
+  "migraciones": [
+    "20260922225808_InitialCreate",
+    "20260923042352_AddUniqueEmail",
+    "20261012173331_OperationalWorkflow",
+    "20261012174533_RolePermissions"
+  ],
+  "columnas": {
+    "Solicitudes": [
+      "Id",
+      "DatosLaboratorioPropuesto",
+      "EsRenovacion",
+      "Estado",
+      "FechaCreacion",
+      "FechaEnvio",
+      "FirmaLegalPdf",
+      "LaboratorioId",
+      "Municipio",
+      "PropietarioId",
+      "Version"
+    ],
+    "Laboratorios": [
+      "Id",
+      "Estado",
+      "Lat",
+      "Lng",
+      "Municipio",
+      "Nombre",
+      "PropietarioId",
+      "Servicios",
+      "Tipo",
+      "VigenciaHasta"
+    ],
+    "Usuarios": [
+      "Id",
+      "Activo",
+      "Email",
+      "Nombre",
+      "Password",
+      "Rol",
+      "SelloSeguridad"
+    ]
+  },
+  "usuarios_por_rol": [
+    {
+      "Rol": "abogado",
+      "total": 1
+    },
+    {
+      "Rol": "administrador",
+      "total": 1
+    },
+    {
+      "Rol": "coordinador",
+      "total": 1
+    },
+    {
+      "Rol": "gerente",
+      "total": 1
+    },
+    {
+      "Rol": "propietario",
+      "total": 1
+    },
+    {
+      "Rol": "supervisor",
+      "total": 1
+    }
+  ],
+  "estados_solicitudes": [
+    {
+      "Estado": "borrador",
+      "total": 1
+    }
+  ],
+  "estados_laboratorios": [
+    {
+      "Estado": "abierto",
+      "total": 2
+    },
+    {
+      "Estado": "cerrado",
+      "total": 1
+    }
+  ],
+  "emails_duplicados": 0,
+  "json_invalido": [],
+  "municipios_vacios": {
+    "Solicitudes": 0,
+    "Laboratorios": 0
+  },
+  "laboratorios_sin_trazabilidad": [
+    {
+      "Id": 1,
+      "PropietarioId": null,
+      "VigenciaHasta": null
+    },
+    {
+      "Id": 2,
+      "PropietarioId": null,
+      "VigenciaHasta": null
+    },
+    {
+      "Id": 3,
+      "PropietarioId": null,
+      "VigenciaHasta": null
+    }
+  ],
+  "pdf": [],
+  "renovaciones_activas_duplicadas": [],
+  "inspecciones_pendientes_duplicadas": []
+}
