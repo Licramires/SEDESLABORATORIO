@@ -95,7 +95,6 @@ h('Punto de restauración y cambios de esta revisión')
 p('El 18 de noviembre se creó App_Data/checkpoints/20261118-antes-correccion-casos. El paquete incluye un ZIP del código de trabajo, una base SQLite, documentos privados, hashes e instrucciones. Durante el diagnóstico se hicieron cambios temporales en la configuración de registro de las pruebas y se revirtieron; no quedó una modificación funcional del sitio derivada de esos intentos.')
 h('Qué se puede concluir')
 p('Los bugs BUG-01, BUG-02 y BUG-03 continúan cerrados según la evidencia del 26 de octubre. La causa conocida de la tabla vacía del gerente es el rango de fechas predeterminado. La aplicación inicia en el entorno local observado. La causa de los HTTP 500 de TestServer y la actualización automática de datos al trasladar una base existente siguen sin resolverse.')
-
 page('1 Resumen del proyecto')
 h('Propósito y alcance funcional')
 p('El proyecto organiza expedientes de laboratorios, controla la documentación exigida, programa inspecciones, registra actas y citaciones y permite resolver la habilitación con intervención legal. El portal público facilita consultar establecimientos, servicios, requisitos y ubicación. La gerencia dispone de métricas calculadas sobre los registros guardados.')
