@@ -1,0 +1,449 @@
+{
+  "integridad": "ok",
+  "referenciasRotas": 0,
+  "migraciones": 9,
+  "conteos": {
+    "HistorialTramites": {
+      "antes": 51,
+      "despues": 55
+    },
+    "Inspecciones": {
+      "antes": 7,
+      "despues": 7
+    },
+    "Notificaciones": {
+      "antes": 11,
+      "despues": 11
+    },
+    "Usuarios": {
+      "antes": 6,
+      "despues": 6
+    },
+    "Laboratorios": {
+      "antes": 5,
+      "despues": 5
+    },
+    "Solicitudes": {
+      "antes": 15,
+      "despues": 15
+    },
+    "PermisosRol": {
+      "antes": 0,
+      "despues": 0
+    },
+    "Catalogos": {
+      "antes": 5,
+      "despues": 5
+    },
+    "Citaciones": {
+      "antes": 1,
+      "despues": 1
+    },
+    "Documentos": {
+      "antes": 39,
+      "despues": 39
+    },
+    "CambiosPermisos": {
+      "antes": 0,
+      "despues": 0
+    },
+    "SeccionesRequisitos": {
+      "antes": 0,
+      "despues": 0
+    },
+    "Requisitos": {
+      "antes": 3,
+      "despues": 3
+    }
+  },
+  "columnasModificadas": {
+    "Inspecciones": [
+      {
+        "id": [
+          4
+        ],
+        "campo": "Fecha"
+      },
+      {
+        "id": [
+          4
+        ],
+        "campo": "FechaFin"
+      },
+      {
+        "id": [
+          5
+        ],
+        "campo": "Fecha"
+      },
+      {
+        "id": [
+          5
+        ],
+        "campo": "FechaFin"
+      },
+      {
+        "id": [
+          6
+        ],
+        "campo": "Fecha"
+      },
+      {
+        "id": [
+          6
+        ],
+        "campo": "FechaFin"
+      },
+      {
+        "id": [
+          7
+        ],
+        "campo": "Fecha"
+      },
+      {
+        "id": [
+          7
+        ],
+        "campo": "FechaFin"
+      }
+    ],
+    "Laboratorios": [
+      {
+        "id": [
+          4
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          4
+        ],
+        "campo": "Nombre"
+      },
+      {
+        "id": [
+          4
+        ],
+        "campo": "Servicios"
+      },
+      {
+        "id": [
+          4
+        ],
+        "campo": "Tipo"
+      },
+      {
+        "id": [
+          5
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          5
+        ],
+        "campo": "Nombre"
+      },
+      {
+        "id": [
+          5
+        ],
+        "campo": "Servicios"
+      },
+      {
+        "id": [
+          5
+        ],
+        "campo": "Tipo"
+      }
+    ],
+    "Solicitudes": [
+      {
+        "id": [
+          2
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          2
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          2
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          3
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          3
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          3
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          4
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          4
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          4
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          5
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          5
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          5
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          6
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          6
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          6
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          7
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          7
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          7
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          8
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          8
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          8
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          9
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          9
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          9
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          10
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          10
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          10
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          11
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          11
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          11
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          12
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          12
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          12
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          13
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          13
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          13
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          14
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          14
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          14
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          15
+        ],
+        "campo": "DatosLaboratorioPropuesto"
+      },
+      {
+        "id": [
+          15
+        ],
+        "campo": "Municipio"
+      },
+      {
+        "id": [
+          15
+        ],
+        "campo": "Version"
+      }
+    ],
+    "Catalogos": [
+      {
+        "id": [
+          1
+        ],
+        "campo": "Nombre"
+      },
+      {
+        "id": [
+          1
+        ],
+        "campo": "Version"
+      },
+      {
+        "id": [
+          2
+        ],
+        "campo": "Nombre"
+      },
+      {
+        "id": [
+          2
+        ],
+        "campo": "Version"
+      }
+    ]
+  },
+  "archivosPrivadosSHA256Conservados": 47,
+  "crucesAgenda": [],
+  "registrosPreviosConservados": true,
+  "informesCierrePreviosConservados": true,
+  "DESIGNConservado": true,
+  "renovacionesConNombreActualizado": [
+    15
+  ]
+}

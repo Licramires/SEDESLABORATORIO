@@ -1,0 +1,29 @@
+{
+  "servidor": {
+    "total": 360,
+    "correctas": 360,
+    "fallidas": 0
+  },
+  "javascript": {
+    "total": 6,
+    "correctas": 6
+  },
+  "endpoints": 69,
+  "get": 43,
+  "post": 26,
+  "getPorRolMasAnonimo": 301,
+  "enlaces": 603,
+  "formulariosRenderizados": 48,
+  "botonesEnEsosFormularios": 50,
+  "combinacionesDetalleRolEstado": 54,
+  "permisosConfigurables": 11,
+  "casosSeguridadPOST": 318,
+  "transicionesProhibidas": 685,
+  "transicionesPermitidas": 17,
+  "reenviosTransicionesPermitidas": 17,
+  "camposInvalidos": 228,
+  "registrosNavegador": 28,
+  "baseOriginalSinCambios": true,
+  "sinNuevaMigracion": true,
+  "publicacionLocalSinDespliegue": true
+}

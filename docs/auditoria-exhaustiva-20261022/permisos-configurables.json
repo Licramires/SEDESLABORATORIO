@@ -1,0 +1,68 @@
+[
+  {
+    "Role": "propietario",
+    "Capability": "solicitudes",
+    "Route": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Denied": true
+  },
+  {
+    "Role": "propietario",
+    "Capability": "establecimientos",
+    "Route": "/Gestion/Establecimientos",
+    "Denied": true
+  },
+  {
+    "Role": "coordinador",
+    "Capability": "documentos",
+    "Route": "/Gestion/Decidir",
+    "Denied": true
+  },
+  {
+    "Role": "coordinador",
+    "Capability": "asignaciones",
+    "Route": "/Gestion/Decidir",
+    "Denied": true
+  },
+  {
+    "Role": "coordinador",
+    "Capability": "actas",
+    "Route": "/Gestion/Decidir",
+    "Denied": true
+  },
+  {
+    "Role": "coordinador",
+    "Capability": "informes",
+    "Route": "/Gestion/Informe/142",
+    "Denied": true
+  },
+  {
+    "Role": "supervisor",
+    "Capability": "inspecciones",
+    "Route": "/Gestion/Agenda",
+    "Denied": true
+  },
+  {
+    "Role": "abogado",
+    "Capability": "legal",
+    "Route": "/Gestion/Decidir",
+    "Denied": true
+  },
+  {
+    "Role": "gerente",
+    "Capability": "metricas",
+    "Route": "/Metricas",
+    "Denied": true
+  },
+  {
+    "Role": "administrador",
+    "Capability": "usuarios",
+    "Route": "/Administracion/Usuarios",
+    "Denied": true
+  },
+  {
+    "Role": "administrador",
+    "Capability": "requisitos",
+    "Route": "/Administracion/Requisitos",
+    "Denied": true
+  }
+]

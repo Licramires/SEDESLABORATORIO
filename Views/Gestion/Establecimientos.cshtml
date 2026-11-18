@@ -1,0 +1,13 @@
+@model List<SEDESLABORATORIO.Data.Entities.Laboratorio>
+@{ ViewData["Title"] = "Mis establecimientos"; }
+<div class="container silab-page"><h1>Mis establecimientos</h1><p>Puede editar sus servicios públicos. Los datos oficiales se actualizan mediante el trámite de habilitación.</p>
+@foreach(var l in Model)
+{
+    <section class="silab-panel p-4 mb-3"><h2>@l.Nombre</h2><p>@l.Tipo · @l.Municipio · @l.Estado</p><p>Vigencia hasta: @l.VigenciaHasta?.ToString("dd/MM/yyyy")</p>
+    <p><a asp-action="Establecimiento" asp-route-id="@l.Id">Ver ficha y documentos de mis trámites</a></p>
+    @if(!l.DatosVerificados) { <p>Pendiente de validación institucional antes de renovar.</p> }
+    <form asp-action="Servicios" method="post" class="mb-3"><input type="hidden" name="id" value="@l.Id" /><input type="hidden" name="version" value="@SEDESLABORATORIO.Infrastructure.RevisionServicios.De(l.Servicios)" /><label class="d-block">Servicios disponibles<textarea name="servicios" maxlength="2000" class="form-control mb-3">@l.Servicios</textarea></label><button class="btn silab-btn-outline">Guardar servicios</button></form>
+    <form asp-action="Renovar" method="post"><input type="hidden" name="id" value="@l.Id" /><button class="btn silab-btn-primary">Solicitar renovación</button></form></section>
+}
+@if(Model.Count == 0) { <p>No tiene establecimientos habilitados.</p> }
+</div>

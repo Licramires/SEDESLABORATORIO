@@ -1,0 +1,220 @@
+{
+  "fecha": "2026-10-18",
+  "total": 42,
+  "ejecutadas": 42,
+  "aprobadas": 42,
+  "fallidas": 0,
+  "compilacion": "Release, 0 errores, 0 advertencias",
+  "casos": [
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Wrong_roles_are_denied(role: \"gerente\", path: \"/Gestion\")",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0575581"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Legal_approval_rejects_damaged_official_data_without_side_effects(json: \"{\\\"nombre\\\":\\\"Incompleto\\\",\\\"tipo\\\":\\\"Clínico\\\"}\")",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0789699"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Oversize_content_length_is_rejected_before_binding(path: \"/solicitud-registro/SolicitudRegistro/Nueva\", megabytes: 56)",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0011498"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Migration_preserves_october_documents_and_explains_reconstructed_history",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0724521"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Citation_images_reject_invalid_contents(nombre: \"incompleto.jpg\")",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0011331"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Observed_complement_can_be_retired_without_deleting_history_or_mandatory_documents",
+      "resultado": "Passed",
+      "duracion": "00:00:00.2588234"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Wrong_roles_are_denied(role: \"supervisor\", path: \"/Metricas\")",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0566971"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Admin_users_requirements_metrics_and_logout",
+      "resultado": "Passed",
+      "duracion": "00:00:00.3319404"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Document_versions_preserve_original_and_requirement_snapshot",
+      "resultado": "Passed",
+      "duracion": "00:00:00.5758645"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Business_calendar_uses_only_configured_holidays",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0139656"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Citations_require_evidence_and_notify_both_roles_once_per_phase(imagen: False)",
+      "resultado": "Passed",
+      "duracion": "00:00:00.4687218"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Wrong_roles_are_denied(role: \"abogado\", path: \"/Administracion/Requisitos\")",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0561100"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Supervisor_can_program_intervals_without_colliding_with_own_reservation",
+      "resultado": "Passed",
+      "duracion": "00:00:00.4877739"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Optional_catalogue_can_finish_document_review_without_pdf",
+      "resultado": "Passed",
+      "duracion": "00:00:00.1512993"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Citation_images_reject_invalid_contents(nombre: \"falso.png\")",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0001297"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Login_rate_limit_still_blocks_repeated_attempts_from_same_client",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0479310"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Citations_require_evidence_and_notify_both_roles_once_per_phase(imagen: True)",
+      "resultado": "Passed",
+      "duracion": "00:00:00.4431124"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Business_days_and_malformed_json_are_safe",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0025525"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Concurrent_decisions_apply_once_and_conflicting_assignments_do_not_overlap",
+      "resultado": "Passed",
+      "duracion": "00:00:00.6468585"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Wrong_roles_are_denied(role: \"propietario\", path: \"/Administracion/Usuarios\")",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0569308"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Wrong_roles_are_denied(role: \"coordinador\", path: \"/Gestion/Establecimientos\")",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0565120"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Initial_upload_can_be_associated_without_reuploading",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0985238"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Expiry_alerts_are_idempotent_and_close_laboratory",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0542970"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Changed_role_invalidates_cookie_and_missing_fields_do_not_crash",
+      "resultado": "Passed",
+      "duracion": "00:00:00.1791809"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Browser_can_submit_empty_optional_contact_fields",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0639171"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Rejections_reassignments_and_agenda_conflicts_preserve_workflow",
+      "resultado": "Passed",
+      "duracion": "00:00:00.7603871"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Legal_approval_rejects_damaged_official_data_without_side_effects(json: \"not-json\")",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0697097"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Public_pages_login_errors_and_csrf",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0969943"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Legal_approval_rejects_damaged_official_data_without_side_effects(json: \"{\\\"nombre\\\":\\\"Fuera de rango\\\",\\\"tipo\\\":\\\"Clínico\\\"···)",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0699727"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.New_document_and_inspection_actions_respect_suspended_permissions",
+      "resultado": "Passed",
+      "duracion": "00:00:00.2251270"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Inspection_checklist_and_template_are_frozen_and_can_be_prepared_before_signing",
+      "resultado": "Passed",
+      "duracion": "00:00:00.3807002"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Oversize_content_length_is_rejected_before_binding(path: \"/Gestion/Documento\", megabytes: 12)",
+      "resultado": "Passed",
+      "duracion": "00:00:00.0018890"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Owner_isolation_and_protected_downloads",
+      "resultado": "Passed",
+      "duracion": "00:00:00.2835173"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Legal_observation_cannot_skip_review_and_does_not_repeat_field_visit_unnecessarily",
+      "resultado": "Passed",
+      "duracion": "00:00:00.5622920"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Production_hides_unverified_laboratories_and_does_not_seed_unofficial_requirements",
+      "resultado": "Passed",
+      "duracion": "00:00:00.2168898"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Manager_excludes_drafts_and_export_uses_same_scope",
+      "resultado": "Passed",
+      "duracion": "00:00:00.3040772"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Administrator_permissions_are_enforced_on_existing_sessions",
+      "resultado": "Passed",
+      "duracion": "00:00:00.1643480"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Complete_opening_renewal_and_role_workflow",
+      "resultado": "Passed",
+      "duracion": "00:00:01.0005114"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Historical_closure_pdf_stays_identical_after_laboratory_changes",
+      "resultado": "Passed",
+      "duracion": "00:00:00.4370319"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Migration_preserves_existing_users_and_submitted_requests",
+      "resultado": "Passed",
+      "duracion": "00:00:00.1929488"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Public_templates_are_separate_from_private_documents_and_catalogues_validate_values",
+      "resultado": "Passed",
+      "duracion": "00:00:02.0998435"
+    },
+    {
+      "nombre": "SiLab.Tests.WorkflowTests.Validation_upload_limits_and_stale_changes",
+      "resultado": "Passed",
+      "duracion": "00:00:00.2001284"
+    }
+  ]
+}

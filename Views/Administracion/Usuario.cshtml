@@ -1,0 +1,5 @@
+@model UsuarioForm
+@using SEDESLABORATORIO.Data.Entities
+@{ ViewData["Title"] = Model.Id == 0 ? "Crear usuario" : "Editar usuario"; }
+<div class="container silab-page"><section class="silab-panel p-4"><h1>@ViewData["Title"]</h1><form method="post" class="workflow-form"><div asp-validation-summary="All" class="text-danger" role="alert"></div><input asp-for="Id" type="hidden" /><input asp-for="Version" type="hidden" />
+<label asp-for="Nombre">Nombre<input asp-for="Nombre" class="form-control" /></label><label asp-for="Email">Correo<input asp-for="Email" type="email" class="form-control" /></label><label asp-for="Password">Contraseña (10–128 caracteres; vacía conserva la actual)<input asp-for="Password" type="password" autocomplete="new-password" class="form-control" /></label><label asp-for="Rol">Rol<select asp-for="Rol" asp-items="Html.GetEnumSelectList<RolUsuario>()" class="form-select"></select></label><label><input asp-for="Activo" /> Cuenta activa</label><button class="btn silab-btn-primary">Guardar usuario</button><a asp-action="Usuarios">Cancelar</a></form></section></div>

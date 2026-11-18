@@ -9,6 +9,7 @@ public class PublicoViewModel
     public EstadoLaboratorio? Estado { get; set; }
     public IReadOnlyList<string> TiposDisponibles { get; set; } = [];
     public IReadOnlyList<LaboratorioPublicoViewModel> Laboratorios { get; set; } = [];
+    public IReadOnlyList<Requisito> Requisitos { get; set; } = [];
 }
 
 public class LaboratorioPublicoViewModel
@@ -21,4 +22,10 @@ public class LaboratorioPublicoViewModel
     public string Estado { get; set; } = string.Empty;
     public string Servicios { get; set; } = string.Empty;
     public bool EstaAbierto => Estado == "abierto";
+    public bool UbicacionValida => SEDESLABORATORIO.Infrastructure.Coordenadas.Validar(Lat, Lng);
+    public bool DatosVerificados { get; set; }
+    public string Municipio { get; set; } = "";
+    public string Direccion { get; set; } = "";
+    public string Telefono { get; set; } = "";
+    public string Codigo { get; set; } = "";
 }

@@ -1,0 +1,97 @@
+Browser tab: 5, Title: "Inspección · solicitud #5 - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Detalle/5".
+1 AXWebArea Inspección · solicitud #5 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/5
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Detalle/5#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Mi agenda, Value: localhost:5281/Gestion/Agenda
+			7 link Description: Actas emitidas, Value: localhost:5281/Gestion/Actas
+			8 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+			11 button (collapsed) Consultas y recorridos, Secondary Actions: Expand
+				12 text Consultas y recorridos
+		13 text SEDES Cochabamba
+		14 text Servicio Departamental de Salud Portal de trámites y requisitos
+	15 container
+		16 text Panel del supervisor  Inspección · solicitud #5
+		17 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		18 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	19 container main-content
+		20 link Description: Volver a mi agenda, Value: localhost:5281/Gestion/Agenda
+		21 container
+			22 heading Laboratorio Los Andes, Value: 1
+				23 text Laboratorio Los Andes
+			24 text Solicitud #5 · Apertura · Inspección técnica
+			25 link Description: Mis actas emitidas, Value: localhost:5281/Gestion/Actas
+			26 definition list
+				27 container Municipio
+					28 text Municipio
+				29 text Cochabamba
+				30 container Dirección
+					31 text Dirección
+				32 text DEMO: Av. de pruebas 123
+				33 container Solicitante
+					34 text Solicitante
+				35 text Propietario Demo
+				36 container Contacto
+					37 text Contacto
+				38 text 00000000
+			39 text Programe la visita para continuar.
+		40 container Pasos de la inspección
+			41 content list
+				42 link Description: 1. Programar visita, Value: localhost:5281/Gestion/Detalle/5#programacion
+				43 link Description: 2. Preparar y enviar acta, Value: localhost:5281/Gestion/Detalle/5#acta
+				44 link Description: 3. Seguimiento y citaciones, Value: localhost:5281/Gestion/Detalle/5#seguimiento
+				45 link Description: Consultar documentos, Value: localhost:5281/Gestion/Detalle/5#documentos
+		46 container programacion
+			47 heading Programación de la visita, Value: 2
+				48 text Programación de la visita
+			49 container
+				50 button (expanded) Elegir fecha y horario, Secondary Actions: Collapse
+					51 text Elegir fecha y horario
+				52 text Indique un horario futuro y el motivo. Se comprobará que no coincida con otra visita asignada a usted.
+				53 container
+					54 text Inicio (Bolivia)
+					55 date field (settable) Inicio (Bolivia)
+						56 container
+							57 stepper
+							58 stepper
+							59 stepper
+							60 stepper
+							61 stepper
+							62 stepper
+						63 pop up button Mostrar el selector de fecha y hora locales Mostrar el selector de fecha y hora locales
+				64 container
+					65 text Fin (Bolivia)
+					66 date field (settable) Fin (Bolivia)
+						67 container
+							68 stepper
+							69 stepper
+							70 stepper
+							71 stepper
+							72 stepper
+							73 stepper
+						74 pop up button Mostrar el selector de fecha y hora locales Mostrar el selector de fecha y hora locales
+				75 container
+					76 text Motivo de la programación
+					77 text entry area (settable) Motivo de la programación
+				78 button Guardar horario y notificar
+		79 container acta
+			80 heading Acta de inspección, Value: 2
+				81 text Acta de inspección
+			82 text Primero programe la visita. El acta se habilitará cuando llegue su hora de inicio.
+		83 container seguimiento
+			84 heading Seguimiento y citaciones, Value: 2
+				85 text Seguimiento y citaciones
+			86 text Las citaciones corresponden a inspecciones con observaciones o incumplimientos. Adjunte la evidencia firmada; no sustituyen la validación del coordinador.
+			87 text No tiene citaciones emitidas en este expediente.
+		88 button (collapsed) Documentos del expediente (3 actuales), Secondary Actions: Expand
+			89 text Documentos del expediente (3 actuales)
+		90 button (collapsed) Historial y visitas anteriores, Secondary Actions: Expand
+			91 text Historial y visitas anteriores
+	92 container
+		93 text © 2026 SI_Lab · SEDES Cochabamba
+		94 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Inspección · solicitud #5 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/5

@@ -1,0 +1,24 @@
+{
+  "laboratoriosSinPropietarioOVigencia": 3,
+  "documentosSinArchivo": 0,
+  "coordenadasFueraDeRango": 0,
+  "renovacionesSinVinculo": 0,
+  "expedientesConPropietarioInconsistente": 0,
+  "inspeccionesPendientesDuplicadas": 0,
+  "notaCoordenadas": "Decimales SQLite contrastados con Decimal.",
+  "crucesAgenda": [],
+  "integridad": "ok",
+  "referenciasRotas": 0,
+  "tablasOriginalesIdenticasAlPunto": true,
+  "sha256PuntoVerificado": true,
+  "archivosPrivadosConservados": 47,
+  "contenidoArchivosIdentico": true,
+  "conteos": {
+    "Usuarios": 6,
+    "Solicitudes": 15,
+    "Documentos": 39,
+    "Inspecciones": 7,
+    "Laboratorios": 5,
+    "__EFMigrationsHistory": 9
+  }
+}

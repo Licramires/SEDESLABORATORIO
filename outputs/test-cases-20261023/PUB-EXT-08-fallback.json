@@ -1,0 +1,17 @@
+{
+  "method": "Código JavaScript publicado ejecutado en VM sin proveedor Leaflet; no bloqueo de CDN desde navegador",
+  "checks": [
+    {
+      "page": "directorio",
+      "script": "Index.cshtml",
+      "passed": true,
+      "message": "Mapa no disponible. Consulta las fichas y sus coordenadas."
+    },
+    {
+      "page": "ficha",
+      "script": "Detalle.cshtml",
+      "passed": true,
+      "message": "Mapa no disponible. Consulta la dirección y las coordenadas."
+    }
+  ]
+}

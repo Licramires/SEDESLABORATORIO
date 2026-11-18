@@ -1,0 +1,102 @@
+[
+  {
+    "test": "arranque",
+    "pid": 20784,
+    "healthy": true,
+    "environment": "Development"
+  },
+  {
+    "test": "restauracion_accesos",
+    "roles": [
+      "propietario",
+      "coordinador",
+      "supervisor",
+      "abogado",
+      "gerente",
+      "administrador"
+    ],
+    "passed": true
+  },
+  {
+    "test": "restauracion_descarga_privada",
+    "pdf": true,
+    "unauthorizedDenied": true
+  },
+  {
+    "test": "lectura_concurrente",
+    "requests": 60,
+    "concurrency": 12,
+    "statuses": {
+      "200": 60
+    },
+    "medianSeconds": 0.016,
+    "p95Seconds": 0.094,
+    "maxSeconds": 0.125
+  },
+  {
+    "test": "escritura_concurrente",
+    "requests": 16,
+    "concurrency": 8,
+    "saved": 1,
+    "staleRejected": 15
+  },
+  {
+    "test": "corte_cliente_durante_carga",
+    "databaseUnchanged": true,
+    "filesUnchanged": true
+  },
+  {
+    "test": "detención_del_proceso_hijo",
+    "pid": 20784,
+    "stopped": true
+  },
+  {
+    "test": "arranque",
+    "pid": 17972,
+    "healthy": true,
+    "environment": "Development"
+  },
+  {
+    "test": "reinicio_inesperado_durante_carga",
+    "databaseUnchanged": true,
+    "filesUnchanged": true,
+    "sessionRecovered": true,
+    "integrity": "ok"
+  },
+  {
+    "test": "almacenamiento_no_disponible",
+    "status": 503,
+    "databaseUnchanged": true,
+    "filesUnchanged": true
+  },
+  {
+    "test": "detención_del_proceso_hijo",
+    "pid": 17972,
+    "stopped": true
+  },
+  {
+    "test": "arranque",
+    "pid": 28292,
+    "healthy": true,
+    "environment": "Development"
+  },
+  {
+    "test": "caida_entre_archivo_y_commit",
+    "orphanedBeforeRestart": 1,
+    "unreferencedAfterRestart": 0,
+    "recoverableAfterRestart": 1,
+    "committedTablesPreserved": true,
+    "registeredFilesPreserved": true
+  },
+  {
+    "test": "base_ocupada_durante_guardado",
+    "status": 409,
+    "databaseUnchanged": true,
+    "filesUnchanged": true
+  },
+  {
+    "test": "detención_del_proceso_hijo",
+    "pid": 28292,
+    "stopped": true
+  }
+]

@@ -6,7 +6,7 @@
 
 <div class="auth-page">
     <section class="auth-showcase">
-        <div class="auth-showcase-brand"><span class="silab-brand-mark">SL</span> SI_Lab</div>
+        <div class="auth-showcase-brand"><span class="brand-symbol"><partial name="_Icon" model='"lab"' /></span> SI_Lab</div>
         <div class="auth-showcase-copy">
             <span class="auth-showcase-eyebrow">GOBIERNO AUTÓNOMO DEPARTAMENTAL</span>
             <h1>Portal Único de<br />Trámites y Requisitos</h1>
@@ -51,6 +51,7 @@
 
             <button type="submit" class="btn auth-submit w-100">Ingresar</button>
         </form>
+        <a asp-area="publico" asp-controller="Publico" asp-action="Index" class="auth-return">Volver al portal de laboratorios</a>
     </div>
 </div>
 

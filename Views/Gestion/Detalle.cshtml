@@ -1,0 +1,73 @@
+@model TramiteDetalleModel
+@using SEDESLABORATORIO.Data
+@using SEDESLABORATORIO.Data.Entities
+@using SEDESLABORATORIO.Infrastructure
+@{
+ var s = Model.Solicitud; ViewData["Title"] = $"Solicitud #{s.Id}";
+ var propietario = User.IsInRole("propietario"); var coordinador = User.IsInRole("coordinador");
+ var editable = propietario && ExpedienteService.Editable(s);
+ var ultima = s.Inspecciones.OrderByDescending(i => i.Id).FirstOrDefault();
+}
+<div class="container silab-page"><a asp-action="Index">← Volver a trámites</a>
+<section class="silab-panel p-4 mt-3"><div class="silab-page-heading"><div><p>Solicitud #@s.Id · @(s.EsRenovacion ? "Renovación" : "Apertura")</p><h1>@Model.Datos.NombreLaboratorio</h1><p>@Model.Datos.TipoLaboratorio · @s.Municipio · @Model.Datos.Coordenadas</p><p>Propietario: @s.Propietario.Nombre</p><p>@string.Join(" · ", new[] { s.Direccion, s.Telefono, s.Codigo }.Where(value => !string.IsNullOrWhiteSpace(value)))</p></div><span class="silab-status" data-state="@ApplicationDbContext.EstadoTexto(s.Estado)">@ApplicationDbContext.EstadoEtiqueta(s.Estado)</span></div>
+@if(s.VigenciaOtorgadaHasta.HasValue) { <p>Vigencia otorgada en este trámite: @s.VigenciaOtorgadaHasta.Value.ToString("dd/MM/yyyy")</p> }
+@if(s.OrigenObservacion != "") { <p><strong>Observación:</strong> @s.OrigenObservacion. Consulte el historial y los documentos señalados.</p> }
+@if(s.RequisitosReconstruidos) { <p class="text-muted">Expediente heredado: la referencia de requisitos se reconstruyó con el catálogo disponible al actualizar; no acredita el catálogo histórico original.</p> }
+@if(propietario && s.Estado == EstadoSolicitud.Borrador && s.PrimerEnvio is null && !s.EsRenovacion && s.LaboratorioId is null) { <p><a asp-action="EditarDatos" asp-route-id="@s.Id" class="btn silab-btn-outline">Corregir datos del borrador</a></p> }
+<h2>Documentación</h2>@if(editable) { <p>Agregue PDF uno por uno; cada archivo guardado se incorpora a la documentación de este expediente. Puede continuar después y quitar los pendientes u observados antes de enviar. No hay un límite de cinco archivos; cada PDF admite hasta 10 MB.</p> } else { <p>Consulte los documentos actuales y sus versiones anteriores. La revisión de cada PDF es independiente de la decisión sobre el expediente.</p> }
+<p><a asp-area="publico" asp-controller="Publico" asp-action="Requerimientos">Consultar requerimientos para registrar un laboratorio</a></p>
+<p><strong>@s.Documentos.Count(d => d.Actual) PDF en la lista de envío.</strong> Los archivos retirados o reemplazados permanecen en el historial.</p>
+@foreach(var grupo in Model.Requisitos.GroupBy(r => new { r.SeccionId, r.SeccionNombre, r.SeccionDescripcion })) {
+ <h3 class="mt-4">@(string.IsNullOrWhiteSpace(grupo.Key.SeccionNombre) ? "Requisitos generales" : grupo.Key.SeccionNombre)</h3>
+ @if(!string.IsNullOrWhiteSpace(grupo.Key.SeccionDescripcion)) { <p>@grupo.Key.SeccionDescripcion</p> }
+@foreach(var r in grupo) {
+ var docs = s.Documentos.Where(d => d.RequisitoId == r.Id).OrderByDescending(d => d.VersionArchivo).ToList(); var actual = docs.FirstOrDefault(d => d.Actual);
+ <article class="workflow-requirement"><h3>@r.Nombre <small>@(r.Obligatorio ? "Obligatorio" : "Opcional") · requisito v@(r.Version)</small></h3><p>@(actual is null ? "Pendiente de carga" : $"Versión {actual.VersionArchivo}: {actual.EstadoRevision}")</p>
+ @foreach(var d in docs) { <partial name="_Documento" model="new DocumentoPantalla { Documento = d, Solicitud = s, Revisable = coordinador && s.Estado == EstadoSolicitud.EnRevision && d.Actual }" /> }
+ @if(editable && actual?.EstadoRevision != "aprobado") { <form asp-action="Documento" method="post" enctype="multipart/form-data" class="workflow-form"><input type="hidden" name="id" value="@s.Id" /><input type="hidden" name="version" value="@s.Version" /><input type="hidden" name="requisitoId" value="@r.Id" /><label>PDF para @r.Nombre<input type="file" name="pdf" accept=".pdf" required class="form-control" /></label><button class="btn silab-btn-outline">Guardar nueva versión</button></form> }
+ </article>
+}
+}
+@foreach(var d in s.Documentos.Where(d => !Model.Requisitos.Any(r => r.Id == d.RequisitoId))) {
+ <article class="workflow-requirement"><partial name="_Documento" model="new DocumentoPantalla { Documento = d, Solicitud = s, Revisable = coordinador && s.Estado == EstadoSolicitud.EnRevision && d.Actual }" />
+ @if(editable && d.RequisitoId == 0 && d.Actual && d.EstadoRevision != "aprobado") { <form asp-action="AsociarDocumento" method="post" class="workflow-form"><input type="hidden" name="id" value="@s.Id" /><input type="hidden" name="version" value="@s.Version" /><input type="hidden" name="documentoId" value="@d.Id" /><label>Asociar sin volver a cargar<select name="requisitoId" required class="form-select"><option value="">Seleccione un requisito</option>@foreach(var r in Model.Requisitos) { <option value="@r.Id">@r.Nombre</option> }</select></label><button class="btn silab-btn-outline">Asociar documento</button></form> }
+ </article>
+}
+@if(editable) { <form asp-action="Documento" method="post" enctype="multipart/form-data" class="workflow-form workflow-requirement"><input type="hidden" name="id" value="@s.Id" /><input type="hidden" name="version" value="@s.Version" /><input type="hidden" name="requisitoId" value="0" /><label>Agregar otro PDF complementario<input type="file" name="pdf" accept=".pdf" required class="form-control" /></label><button class="btn silab-btn-outline">Guardar complemento</button></form> }
+@if(!string.IsNullOrEmpty(s.FirmaLegalPdf)) { <a asp-action="Descargar" asp-route-id="@s.Id" asp-route-tipo="legal">Aprobación legal firmada</a> }
+</section>
+@if(editable) { <section class="silab-panel p-4 mt-3"><h2>Enviar a revisión</h2><p>Complete los requisitos y reemplace los PDF observados. Los documentos aprobados se conservan.</p><form asp-action="Decidir" method="post"><input type="hidden" name="Id" value="@s.Id" /><input type="hidden" name="Version" value="@s.Version" /><button name="Accion" value="enviar" class="btn silab-btn-primary">Enviar solicitud</button></form></section> }
+@if(coordinador && s.Estado == EstadoSolicitud.EnRevision) {
+ var actuales = s.Documentos.Where(d => d.Actual).ToList();
+ var faltantes = Model.Requisitos.Count(r => r.Obligatorio && !actuales.Any(d => d.RequisitoId == r.Id));
+ var pendientes = actuales.Count(d => d.EstadoRevision is not ("aprobado" or "aprobacion_global_heredada"));
+ <section class="silab-panel p-4 mt-3"><h2>Finalizar revisión documental</h2><p>@faltantes requisitos obligatorios sin PDF · @pendientes PDF sin conformidad.</p>
+ <form asp-action="Decidir" method="post"><input type="hidden" name="Id" value="@s.Id" /><input type="hidden" name="Version" value="@s.Version" /><button name="Accion" value="aprobar_documentos" disabled="@(faltantes > 0 || pendientes > 0)" class="btn silab-btn-primary">Documentación conforme: continuar</button></form>
+ <details class="mt-3"><summary>Devolver para corrección o rechazar</summary><p>Para devolver, observe primero los documentos que deben corregirse.</p><form asp-action="Decidir" method="post" class="workflow-form"><input type="hidden" name="Id" value="@s.Id" /><input type="hidden" name="Version" value="@s.Version" /><label>Motivo adicional (opcional al devolver; obligatorio para rechazo)<textarea name="Motivo" maxlength="4000" class="form-control"></textarea></label><div class="workflow-actions"><button name="Accion" value="observar_documentos" class="btn silab-btn-outline">Devolver para subsanar</button><button name="Accion" value="rechazar_documentos" class="btn silab-btn-outline" data-confirm="¿Rechazar definitivamente? El propietario deberá iniciar otro trámite.">Rechazo definitivo</button></div></form></details></section>
+}
+@if(coordinador && (s.Estado is EstadoSolicitud.Aprobado or EstadoSolicitud.Inspeccion || s.Estado == EstadoSolicitud.Observado && s.OrigenObservacion == "campo" || s.Estado == EstadoSolicitud.Rechazado && s.MotivoRechazo == "campo")) {
+ <section class="silab-panel p-4 mt-3"><h2>Asignar o reprogramar inspección</h2><p>Asigne al supervisor; puede dejar el horario para que lo organice en su agenda.</p><form asp-action="Decidir" method="post" class="workflow-form"><input type="hidden" name="Id" value="@s.Id" /><input type="hidden" name="Version" value="@s.Version" /><input type="hidden" name="Accion" value="asignar" /><label>Supervisor<select name="SupervisorId" required class="form-select"><option value="">Seleccione</option>@foreach(var u in Model.Supervisores) { <option value="@u.Id">@u.Nombre</option> }</select></label><label>Inicio opcional (Bolivia)<input type="datetime-local" name="Fecha" class="form-control" /></label><label>Fin opcional (Bolivia)<input type="datetime-local" name="FechaFin" class="form-control" /></label><label>Motivo<textarea name="Motivo" maxlength="4000" required class="form-control"></textarea></label><button class="btn silab-btn-primary">Guardar asignación</button></form></section>
+}
+@if(coordinador && s.Estado == EstadoSolicitud.RevisionActa) {
+ <section class="silab-panel p-4 mt-3"><h2>Validar acta</h2><form asp-action="Decidir" method="post" class="workflow-form"><input type="hidden" name="Id" value="@s.Id" /><input type="hidden" name="Version" value="@s.Version" /><label>Fundamento<textarea name="Motivo" maxlength="4000" required class="form-control"></textarea></label><div><button name="Accion" value="aprobar_acta" class="btn silab-btn-primary">Aceptar resultado del acta</button> <button name="Accion" value="rechazar_acta" class="btn silab-btn-outline">Rechazar acta y reprogramar</button></div></form></section>
+}
+@if(User.IsInRole("abogado") && s.Estado == EstadoSolicitud.RevisionLegal) {
+ <section class="silab-panel p-4 mt-3"><h2>Resolver revisión legal</h2><p>Revise licencia, plano y acta validada. La aprobación firmada otorga un año de vigencia.</p>
+ <form asp-action="Decidir" method="post" enctype="multipart/form-data" class="workflow-form"><input type="hidden" name="Id" value="@s.Id" /><input type="hidden" name="Version" value="@s.Version" /><input type="hidden" name="Accion" value="aprobar_legal" /><label>Dictamen de aprobación<textarea name="Motivo" maxlength="4000" required class="form-control"></textarea></label><label>Aprobación legal firmada en PDF<input type="file" name="Pdf" accept=".pdf" required class="form-control" /></label><button class="btn silab-btn-primary">Aprobar y habilitar</button></form>
+ <details class="mt-3"><summary>Devolver con observaciones o rechazar</summary><form asp-action="Decidir" method="post" class="workflow-form"><input type="hidden" name="Id" value="@s.Id" /><input type="hidden" name="Version" value="@s.Version" /><fieldset class="legal-document-selection"><legend>Documentos que requieren corrección (al devolver)</legend>@foreach(var doc in s.Documentos.Where(d => d.Actual)) { <label class="workflow-check-option"><input type="checkbox" name="DocumentosObservados" value="@doc.Id" /> @(doc.NombreRequisito == "" ? $"Documento #{doc.Id}" : doc.NombreRequisito) · versión @doc.VersionArchivo</label> }</fieldset><label>Fundamento y correcciones requeridas<textarea name="Motivo" maxlength="4000" required class="form-control"></textarea></label><label class="workflow-check-option"><input type="checkbox" name="RequiereNuevaInspeccion" value="true" /> Al devolver para subsanar, repetir también la inspección de campo</label><p>Sin esta opción, la subsanación legal conserva la inspección aprobada. El rechazo es definitivo y requiere otro trámite.</p><div class="workflow-actions"><button name="Accion" value="observar_legal" class="btn silab-btn-outline">Devolver con observaciones</button><button name="Accion" value="rechazar_legal" class="btn silab-btn-outline" data-confirm="¿Registrar un rechazo legal definitivo?">Rechazo legal definitivo</button></div></form></details></section>
+}
+@if(coordinador && s.Estado == EstadoSolicitud.Habilitado) { <p class="mt-3"><a asp-action="Informe" asp-route-id="@s.Id" class="btn silab-btn-primary">Descargar informe de este cierre</a></p> }
+<section class="silab-panel p-4 mt-3"><h2>Inspecciones e historial de asignaciones</h2>
+@if(!s.Inspecciones.Any()) { <p>No hay inspecciones asignadas.</p> }
+@foreach(var i in s.Inspecciones.OrderByDescending(i => i.Id)) {
+ <article class="workflow-requirement"><h3>@(i.Programada ? $"{i.Fecha:dd/MM/yyyy HH:mm} a {ExpedienteService.Fin(i):HH:mm} (Bolivia)" : "Pendiente de programación") · @i.Supervisor.Nombre</h3><p>Estado: @i.Estado · Resultado: @i.Resultado</p><p class="text-break">@i.Acta</p>
+ @foreach(var v in ExpedienteService.LeerVerificaciones(i)) { <p><strong>@v.Nombre</strong> (@v.Referencia, v@(v.Version)): @v.Resultado · @v.Observacion</p> }
+ @if(i.PlazoSubsanacion.HasValue) { <p>Subsanación hasta @i.PlazoSubsanacion.Value.ToString("dd/MM/yyyy") (Bolivia)</p> }
+ @if(!string.IsNullOrEmpty(i.Citacion)) { <p>Nota de citación heredada: @i.Citacion</p> }
+ @if(!string.IsNullOrEmpty(i.ActaPdf)) { <a asp-action="Descargar" asp-route-id="@i.Id" asp-route-tipo="acta">Descargar acta firmada</a> }</article>
+}
+</section>
+<section class="silab-panel p-4 mt-3"><h2>Citaciones y evidencia</h2>
+@foreach(var c in s.Citaciones.OrderByDescending(c => c.Id)) { <article class="workflow-requirement"><h3>Citación #@c.Id</h3><p>@c.FechaEmision.ToString("dd/MM/yyyy") · Vence @c.Vencimiento.ToString("dd/MM/yyyy") · @(c.FechaAtencion.HasValue ? "Atendida" : c.Vencimiento.Date < TramiteService.HoraBolivia.Date ? "Vencida" : "Pendiente")</p><p>@c.Motivo</p><a asp-action="Descargar" asp-route-id="@c.Id" asp-route-tipo="citacion">Descargar evidencia firmada</a></article> }
+
+</section><section class="silab-panel p-4 mt-3"><h2>Historial del trámite</h2><p>Fechas en UTC.</p><ol>@foreach(var h in s.Historial.OrderByDescending(h => h.Fecha).ThenByDescending(h => h.Id)) { <li class="mb-3"><strong>@h.Fecha.ToString("dd/MM/yyyy HH:mm") · @h.Actor.Nombre</strong><p class="text-break">@h.Detalle</p></li> }</ol></section></div>

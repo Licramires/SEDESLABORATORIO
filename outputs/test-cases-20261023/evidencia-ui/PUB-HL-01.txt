@@ -1,0 +1,3 @@
+Browser tab: 5, Title: "Laboratorios habilitados - SEDESLABORATORIO", URL: "http://localhost:5281/publico/Publico".
+There has been no change in the accessibility tree.
+The focused UI element is 1 AXWebArea Laboratorios habilitados - SEDESLABORATORIO, URL: localhost:5281/publico/Publico

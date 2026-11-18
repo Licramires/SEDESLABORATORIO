@@ -1,0 +1,114 @@
+Browser tab: 5, Title: "Actas emitidas - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Actas".
+1 AXWebArea Actas emitidas - SEDESLABORATORIO, URL: localhost:5281/Gestion/Actas
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Actas#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Mi agenda, Value: localhost:5281/Gestion/Agenda
+			7 link Description: Actas emitidas, Value: localhost:5281/Gestion/Actas
+			8 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+			11 button (collapsed) Consultas y recorridos, Secondary Actions: Expand
+				12 text Consultas y recorridos
+		13 text SEDES Cochabamba
+		14 text Servicio Departamental de Salud Portal de trámites y requisitos
+	15 container
+		16 text Panel del supervisor  Actas emitidas
+		17 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		18 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	19 container main-content
+		20 heading Mis actas emitidas, Value: 1
+			21 text Mis actas emitidas
+		22 text Actas enviadas por usted y resultado de su revisión por el coordinador.
+		23 link Description: Ir a mi agenda, Value: localhost:5281/Gestion/Agenda
+		24 text Para preparar un acta nueva, abra una visita desde su agenda. Los borradores todavía no enviados se encuentran dentro de esa visita.
+		25 table
+			26 row
+				27 cell
+					28 text Acta / trámite
+				29 cell
+					30 text Laboratorio
+				31 cell
+					32 text Visita (Bolivia)
+				33 cell
+					34 text Dictamen de campo
+				35 cell
+					36 text Revisión del coordinador
+				37 cell
+					38 text Acciones
+			39 row
+				40 cell
+					41 text Acta #3 · solicitud #7
+				42 cell
+					43 text Laboratorio Horizonte
+				44 cell
+					45 text 20/10/2026 10:00
+				46 cell
+					47 text Con observaciones
+				48 cell
+					49 text Pendiente de revisión
+				50 cell
+					51 link Description: Acta firmada PDF, Value: localhost:5281/Gestion/Descargar/3?tipo=acta
+					52 link Description: Ver seguimiento, Value: localhost:5281/Gestion/Detalle/7#seguimiento
+			53 row
+				54 cell
+					55 text Acta #7 · solicitud #13
+				56 cell
+					57 text Laboratorio Central
+				58 cell
+					59 text 07/10/2026 15:00
+				60 cell
+					61 text Conforme
+				62 cell
+					63 text Acta validada
+				64 cell
+					65 link Description: Acta firmada PDF, Value: localhost:5281/Gestion/Descargar/7?tipo=acta
+					66 link Description: Ver seguimiento, Value: localhost:5281/Gestion/Detalle/13#seguimiento
+			67 row
+				68 cell
+					69 text Acta #6 · solicitud #11
+				70 cell
+					71 text Laboratorio El Prado
+				72 cell
+					73 text 07/10/2026 13:00
+				74 cell
+					75 text Con observaciones
+				76 cell
+					77 text Acta validada
+				78 cell
+					79 link Description: Acta firmada PDF, Value: localhost:5281/Gestion/Descargar/6?tipo=acta
+					80 link Description: Ver seguimiento, Value: localhost:5281/Gestion/Detalle/11#seguimiento
+			81 row
+				82 cell
+					83 text Acta #5 · solicitud #9
+				84 cell
+					85 text Laboratorio Alameda
+				86 cell
+					87 text 07/10/2026 11:00
+				88 cell
+					89 text Conforme
+				90 cell
+					91 text Acta validada
+				92 cell
+					93 link Description: Acta firmada PDF, Value: localhost:5281/Gestion/Descargar/5?tipo=acta
+					94 link Description: Ver seguimiento, Value: localhost:5281/Gestion/Detalle/9#seguimiento
+			95 row
+				96 cell
+					97 text Acta #4 · solicitud #8
+				98 cell
+					99 text Laboratorio San Gabriel
+				100 cell
+					101 text 07/10/2026 09:00
+				102 cell
+					103 text Conforme
+				104 cell
+					105 text Acta validada
+				106 cell
+					107 link Description: Acta firmada PDF, Value: localhost:5281/Gestion/Descargar/4?tipo=acta
+					108 link Description: Ver seguimiento, Value: localhost:5281/Gestion/Detalle/8#seguimiento
+	109 container
+		110 text © 2026 SI_Lab · SEDES Cochabamba
+		111 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Actas emitidas - SEDESLABORATORIO, URL: localhost:5281/Gestion/Actas

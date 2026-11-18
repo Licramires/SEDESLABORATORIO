@@ -1,0 +1,89 @@
+Browser tab: 1, Title: "Solicitud #18 - SEDESLABORATORIO", URL: "http://localhost:5287/Gestion/Detalle/18".
+1 AXWebArea Solicitud #18 - SEDESLABORATORIO, URL: localhost:5287/Gestion/Detalle/18
+	2 link Description: Saltar al contenido, Value: localhost:5287/Gestion/Detalle/18#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5287/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5287/Gestion
+			7 link Description: Citaciones, Value: localhost:5287/Gestion/Citaciones
+			8 link Description: Requerimientos, Value: localhost:5287/publico/Publico/Requerimientos
+			9 link Description: Laboratorios públicos, Value: localhost:5287/publico/Publico
+		10 text SEDES Cochabamba
+		11 text Servicio Departamental de Salud Portal de trámites y requisitos
+	12 container
+		13 text Consola del coordinador  Solicitud #18
+		14 link Description: Ver notificaciones, Value: localhost:5287/Notificaciones
+		15 link Description: Ir a mi cuenta, Value: localhost:5287/auth/Auth/Dashboard
+	16 container main-content
+		17 link Description: ← Volver a trámites, Value: localhost:5287/Gestion
+		18 container
+			19 text Solicitud #18 · Apertura
+			20 heading Laboratorio corrección en_revision, Value: 1
+				21 text Laboratorio corrección en_revision
+			22 text Clínico · Cochabamba · -17.3935, -66.157 Propietario: Propietario Demo DEMO: Av. de pruebas 123 · 00000000 · QA-BUGS-en_revision Revisión documental
+			23 heading Documentación, Value: 2
+				24 text Documentación
+			25 text Consulte los documentos actuales y sus versiones anteriores. La revisión de cada PDF es independiente de la decisión sobre el expediente.
+			26 link Description: Consultar requerimientos para registrar un laboratorio, Value: localhost:5287/publico/Publico/Requerimientos
+			27 text 3 PDF en la lista de envío.
+			28 text  Los archivos retirados o reemplazados permanecen en el historial.
+			29 heading Requisitos generales, Value: 3
+				30 text Requisitos generales
+			31 heading Licencia municipal Obligatorio · requisito v1, Value: 3
+				32 text Licencia municipal
+				33 text Obligatorio · requisito v1
+			34 text Versión 1: aprobado
+			35 link Description: Licencia municipal · PDF v1 (actual), Value: localhost:5287/Gestion/Descargar/51
+			36 text Aprobado Documento revisado y conforme. · 26/10/2026 18:52 UTC · revisor #2
+			37 container
+				38 text Qué debe corregirse (obligatorio al observar)
+				39 text entry area (settable) Qué debe corregirse (obligatorio al observar)
+				40 button Observar este documento
+			41 heading Plano arquitectónico Obligatorio · requisito v1, Value: 3
+				42 text Plano arquitectónico
+				43 text Obligatorio · requisito v1
+			44 text Versión 1: pendiente
+			45 link Description: Plano arquitectónico · PDF v1 (actual), Value: localhost:5287/Gestion/Descargar/52
+			46 text Pendiente de revisión
+			47 container
+				48 text Qué debe corregirse (obligatorio al observar)
+				49 text entry area (settable) Qué debe corregirse (obligatorio al observar)
+				50 button Aprobar este documento
+				51 button Observar este documento
+			52 heading Certificado sanitario Obligatorio · requisito v1, Value: 3
+				53 text Certificado sanitario
+				54 text Obligatorio · requisito v1
+			55 text Versión 1: pendiente
+			56 link Description: Certificado sanitario · PDF v1 (actual), Value: localhost:5287/Gestion/Descargar/53
+			57 text Pendiente de revisión
+			58 container
+				59 text Qué debe corregirse (obligatorio al observar)
+				60 text entry area (settable) Qué debe corregirse (obligatorio al observar)
+				61 button Aprobar este documento
+				62 button Observar este documento
+		63 container
+			64 heading Finalizar revisión documental, Value: 2
+				65 text Finalizar revisión documental
+			66 text 0 requisitos obligatorios sin PDF · 2 PDF sin conformidad.
+			67 button (disabled) Documentación conforme: continuar
+			68 button (collapsed) Devolver para corrección o rechazar, Secondary Actions: Expand
+				69 text Devolver para corrección o rechazar
+		70 container
+			71 heading Inspecciones e historial de asignaciones, Value: 2
+				72 text Inspecciones e historial de asignaciones
+			73 text No hay inspecciones asignadas.
+		74 heading Citaciones y evidencia, Value: 2
+			75 text Citaciones y evidencia
+		76 container
+			77 heading Historial del trámite, Value: 2
+				78 text Historial del trámite
+			79 text Fechas en UTC.
+			80 content list
+				81 container
+					82 AXListMarker 1. 
+					83 text 26/10/2026 18:52 · Coordinador Demo Documento #51 (Licencia municipal, versión 1): aprobado. Documento revisado y conforme.
+	84 container
+		85 text © 2026 SI_Lab · SEDES Cochabamba
+		86 link Description: Privacidad, Value: localhost:5287/Home/Privacy
+
+The focused UI element is 1 AXWebArea Solicitud #18 - SEDESLABORATORIO, URL: localhost:5287/Gestion/Detalle/18

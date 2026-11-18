@@ -1,0 +1,3 @@
+Browser tab: 5, Title: "Cómo llegar - SEDESLABORATORIO", URL: "http://localhost:5281/publico/Publico/Ruta?laboratorioId=4".
+There has been no change in the accessibility tree.
+The focused UI element is 1 AXWebArea Cómo llegar - SEDESLABORATORIO, URL: localhost:5281/publico/Publico/Ruta?laboratorioId=4

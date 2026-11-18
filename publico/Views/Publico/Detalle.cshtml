@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = Model.Nombre;
+    var coordenadas = System.Text.Json.JsonSerializer.Serialize(new[] { Model.Lat, Model.Lng });
 }
 
 <div class="container public-detail-page">
@@ -12,6 +13,7 @@
             <div>
                 <span class="public-lab-type">@Model.Tipo</span>
                 <h1>@Model.Nombre</h1>
+                @if (!Model.DatosVerificados) { <p>Datos pendientes de validación institucional.</p> }
                 <span class="public-state @(Model.EstaAbierto ? "public-state-open" : "public-state-closed")"><i></i>@(Model.EstaAbierto ? "Actualmente abierto" : "Actualmente cerrado")</span>
             </div>
         </div>
@@ -27,9 +29,24 @@
             </section>
             <section>
                 <h2>Ubicación</h2>
-                <p class="text-muted">Coordenadas: @Model.Lat.ToString("0.####"), @Model.Lng.ToString("0.####")</p>
-                <a asp-action="Ruta" asp-route-laboratorioId="@Model.Id" class="btn public-btn-primary">Cómo llegar</a>
+                <p>@Model.Municipio · @Model.Direccion</p>
+                @if (!string.IsNullOrWhiteSpace(Model.Codigo)) { <p>Código: @Model.Codigo</p> }
+                @if (!string.IsNullOrWhiteSpace(Model.Telefono)) { <p>Teléfono: @Model.Telefono</p> }
+                @if (Model.UbicacionValida) {
+                    <p class="text-muted">Coordenadas: @Model.Lat.ToString("0.####"), @Model.Lng.ToString("0.####")</p>
+                    <a asp-action="Ruta" asp-route-laboratorioId="@Model.Id" class="btn public-btn-primary">Cómo llegar</a>
+                } else { <p role="status">La ubicación está pendiente de corrección. Consulta la dirección de referencia del establecimiento.</p> }
             </section>
         </div>
+        @if (Model.UbicacionValida) { <div id="detail-map" class="public-map mt-3" data-coordinates="@coordenadas" aria-label="Ubicación del establecimiento"></div> }
     </div>
 </div>
+@section Scripts {
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        (() => { const el = document.getElementById('detail-map'); if (!el) return; if (typeof L === 'undefined') { el.textContent = 'Mapa no disponible. Consulta la dirección y las coordenadas.'; return; }
+        const coords = JSON.parse(el.dataset.coordinates); const map = L.map(el).setView(coords, 16);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution:'© OpenStreetMap contributors'}).addTo(map); L.marker(coords).addTo(map); })();
+    </script>
+}

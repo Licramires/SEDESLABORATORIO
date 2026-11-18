@@ -1,0 +1,637 @@
+[
+  {
+    "Role": "propietario",
+    "State": "EnRevision",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "coordinador",
+    "State": "EnRevision",
+    "Status": 200,
+    "Actions": [
+      "aprobar_documentos",
+      "observar_documentos",
+      "rechazar_documentos"
+    ],
+    "Buttons": [
+      "",
+      "Aprobar este documento",
+      "Observar este documento",
+      "Aprobar este documento",
+      "Observar este documento",
+      "Aprobar este documento",
+      "Observar este documento",
+      "Documentaci\u00F3n conforme: continuar",
+      "Devolver para subsanar",
+      "Rechazo definitivo"
+    ],
+    "Fields": [
+      "Id",
+      "DocumentoId",
+      "Version",
+      "Motivo"
+    ]
+  },
+  {
+    "Role": "supervisor",
+    "State": "EnRevision",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "abogado",
+    "State": "EnRevision",
+    "Status": 404,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "gerente",
+    "State": "EnRevision",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "administrador",
+    "State": "EnRevision",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "propietario",
+    "State": "Aprobado",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "coordinador",
+    "State": "Aprobado",
+    "Status": 200,
+    "Actions": [
+      "asignar"
+    ],
+    "Buttons": [
+      "",
+      "Guardar asignaci\u00F3n"
+    ],
+    "Fields": [
+      "Id",
+      "Version",
+      "Accion",
+      "SupervisorId",
+      "Fecha",
+      "FechaFin",
+      "Motivo"
+    ]
+  },
+  {
+    "Role": "supervisor",
+    "State": "Aprobado",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "abogado",
+    "State": "Aprobado",
+    "Status": 404,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "gerente",
+    "State": "Aprobado",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "administrador",
+    "State": "Aprobado",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "propietario",
+    "State": "Rechazado",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "coordinador",
+    "State": "Rechazado",
+    "Status": 200,
+    "Actions": [
+      "asignar"
+    ],
+    "Buttons": [
+      "",
+      "Guardar asignaci\u00F3n"
+    ],
+    "Fields": [
+      "Id",
+      "Version",
+      "Accion",
+      "SupervisorId",
+      "Fecha",
+      "FechaFin",
+      "Motivo"
+    ]
+  },
+  {
+    "Role": "supervisor",
+    "State": "Rechazado",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      "",
+      "Registrar citaci\u00F3n y notificar"
+    ],
+    "Fields": [
+      "Id",
+      "InspeccionId",
+      "Version",
+      "FechaEmision",
+      "Vencimiento",
+      "Motivo",
+      "AnticipacionDias",
+      "Evidencia"
+    ]
+  },
+  {
+    "Role": "abogado",
+    "State": "Rechazado",
+    "Status": 404,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "gerente",
+    "State": "Rechazado",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "administrador",
+    "State": "Rechazado",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "propietario",
+    "State": "Borrador",
+    "Status": 200,
+    "Actions": [
+      "enviar"
+    ],
+    "Buttons": [
+      "",
+      "Guardar complemento",
+      "Enviar solicitud"
+    ],
+    "Fields": [
+      "id",
+      "version",
+      "requisitoId",
+      "pdf",
+      "Id",
+      "Version"
+    ]
+  },
+  {
+    "Role": "coordinador",
+    "State": "Borrador",
+    "Status": 404,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "supervisor",
+    "State": "Borrador",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "abogado",
+    "State": "Borrador",
+    "Status": 404,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "gerente",
+    "State": "Borrador",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "administrador",
+    "State": "Borrador",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "propietario",
+    "State": "Inspeccion",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "coordinador",
+    "State": "Inspeccion",
+    "Status": 200,
+    "Actions": [
+      "asignar"
+    ],
+    "Buttons": [
+      "",
+      "Guardar asignaci\u00F3n"
+    ],
+    "Fields": [
+      "Id",
+      "Version",
+      "Accion",
+      "SupervisorId",
+      "Fecha",
+      "FechaFin",
+      "Motivo"
+    ]
+  },
+  {
+    "Role": "supervisor",
+    "State": "Inspeccion",
+    "Status": 200,
+    "Actions": [
+      "programar",
+      "acta"
+    ],
+    "Buttons": [
+      "",
+      "Guardar horario y notificar",
+      "Guardar contenido para firma",
+      "Enviar acta firmada al coordinador"
+    ],
+    "Fields": [
+      "Id",
+      "Version",
+      "Accion",
+      "Fecha",
+      "FechaFin",
+      "Motivo",
+      "Verificaciones[0].Id",
+      "Verificaciones[0].Resultado",
+      "Verificaciones[0].Observacion",
+      "Resultado",
+      "DiasSubsanacion",
+      "Pdf"
+    ]
+  },
+  {
+    "Role": "abogado",
+    "State": "Inspeccion",
+    "Status": 404,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "gerente",
+    "State": "Inspeccion",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "administrador",
+    "State": "Inspeccion",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "propietario",
+    "State": "Observado",
+    "Status": 200,
+    "Actions": [
+      "enviar"
+    ],
+    "Buttons": [
+      "",
+      "Guardar complemento",
+      "Enviar solicitud"
+    ],
+    "Fields": [
+      "id",
+      "version",
+      "requisitoId",
+      "pdf",
+      "Id",
+      "Version"
+    ]
+  },
+  {
+    "Role": "coordinador",
+    "State": "Observado",
+    "Status": 200,
+    "Actions": [
+      "asignar"
+    ],
+    "Buttons": [
+      "",
+      "Guardar asignaci\u00F3n"
+    ],
+    "Fields": [
+      "Id",
+      "Version",
+      "Accion",
+      "SupervisorId",
+      "Fecha",
+      "FechaFin",
+      "Motivo"
+    ]
+  },
+  {
+    "Role": "supervisor",
+    "State": "Observado",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      "",
+      "Registrar citaci\u00F3n y notificar"
+    ],
+    "Fields": [
+      "Id",
+      "InspeccionId",
+      "Version",
+      "FechaEmision",
+      "Vencimiento",
+      "Motivo",
+      "AnticipacionDias",
+      "Evidencia"
+    ]
+  },
+  {
+    "Role": "abogado",
+    "State": "Observado",
+    "Status": 404,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "gerente",
+    "State": "Observado",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "administrador",
+    "State": "Observado",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionActa",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionActa",
+    "Status": 200,
+    "Actions": [
+      "aprobar_acta",
+      "rechazar_acta"
+    ],
+    "Buttons": [
+      "",
+      "Aceptar resultado del acta",
+      "Rechazar acta y reprogramar"
+    ],
+    "Fields": [
+      "Id",
+      "Version",
+      "Motivo"
+    ]
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionActa",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionActa",
+    "Status": 404,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionActa",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionActa",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "propietario",
+    "State": "RevisionLegal",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "coordinador",
+    "State": "RevisionLegal",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "supervisor",
+    "State": "RevisionLegal",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "abogado",
+    "State": "RevisionLegal",
+    "Status": 200,
+    "Actions": [
+      "aprobar_legal",
+      "observar_legal",
+      "rechazar_legal"
+    ],
+    "Buttons": [
+      "",
+      "Aprobar y habilitar",
+      "Devolver con observaciones",
+      "Rechazo legal definitivo"
+    ],
+    "Fields": [
+      "Id",
+      "Version",
+      "Accion",
+      "Motivo",
+      "Pdf",
+      "DocumentosObservados",
+      "RequiereNuevaInspeccion"
+    ]
+  },
+  {
+    "Role": "gerente",
+    "State": "RevisionLegal",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "administrador",
+    "State": "RevisionLegal",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "propietario",
+    "State": "Habilitado",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "coordinador",
+    "State": "Habilitado",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "supervisor",
+    "State": "Habilitado",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "abogado",
+    "State": "Habilitado",
+    "Status": 200,
+    "Actions": [],
+    "Buttons": [
+      ""
+    ],
+    "Fields": []
+  },
+  {
+    "Role": "gerente",
+    "State": "Habilitado",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  },
+  {
+    "Role": "administrador",
+    "State": "Habilitado",
+    "Status": 302,
+    "Actions": [],
+    "Buttons": [],
+    "Fields": []
+  }
+]

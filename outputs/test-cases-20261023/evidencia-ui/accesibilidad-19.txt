@@ -1,0 +1,110 @@
+Browser tab: 5, Title: "Solicitud #4 - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Detalle/4".
+1 AXWebArea Solicitud #4 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/4
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Detalle/4#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			8 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			9 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		10 text SEDES Cochabamba
+		11 text Servicio Departamental de Salud Portal de trámites y requisitos
+	12 container
+		13 text Consola del coordinador  Solicitud #4
+		14 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		15 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	16 container main-content
+		17 link Description: ← Volver a trámites, Value: localhost:5281/Gestion
+		18 container
+			19 text Solicitud #4 · Apertura
+			20 heading Laboratorio Amanecer, Value: 1
+				21 text Laboratorio Amanecer
+			22 text Clínico · Cochabamba · -17.3935, -66.157 Propietario: Propietario Demo DEMO: Av. de pruebas 123 · 00000000 · DEMO-ASIGNAR Por asignar inspección
+			23 heading Documentación, Value: 2
+				24 text Documentación
+			25 text Consulte los documentos actuales y sus versiones anteriores. La revisión de cada PDF es independiente de la decisión sobre el expediente.
+			26 link Description: Consultar requerimientos para registrar un laboratorio, Value: localhost:5281/publico/Publico/Requerimientos
+			27 text 3 PDF en la lista de envío.
+			28 text  Los archivos retirados o reemplazados permanecen en el historial.
+			29 heading Requisitos generales, Value: 3
+				30 text Requisitos generales
+			31 heading Licencia municipal Obligatorio · requisito v1, Value: 3
+				32 text Licencia municipal
+				33 text Obligatorio · requisito v1
+			34 text Versión 1: aprobado
+			35 link Description: Licencia municipal · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/7
+			36 text Aprobado · 01/10/2026 23:17 UTC · revisor #2
+			37 heading Plano arquitectónico Obligatorio · requisito v1, Value: 3
+				38 text Plano arquitectónico
+				39 text Obligatorio · requisito v1
+			40 text Versión 1: aprobado
+			41 link Description: Plano arquitectónico · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/8
+			42 text Aprobado · 01/10/2026 23:17 UTC · revisor #2
+			43 heading Certificado sanitario Obligatorio · requisito v1, Value: 3
+				44 text Certificado sanitario
+				45 text Obligatorio · requisito v1
+			46 text Versión 1: aprobado
+			47 link Description: Certificado sanitario · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/9
+			48 text Aprobado · 01/10/2026 23:17 UTC · revisor #2
+		49 container
+			50 heading Asignar o reprogramar inspección, Value: 2
+				51 text Asignar o reprogramar inspección
+			52 text Asigne al supervisor; puede dejar el horario para que lo organice en su agenda.
+			53 container
+				54 text Supervisor
+				55 pop up button (collapsed, settable) Supervisor, Value: Seleccione, Secondary Actions: Expand
+					56 menu
+						57 (selected) Seleccione
+						58 Supervisor Demo
+			59 container
+				60 text Inicio opcional (Bolivia)
+				61 date field (settable) Inicio opcional (Bolivia)
+					62 container
+						63 stepper
+						64 stepper
+						65 stepper
+						66 stepper
+						67 stepper
+						68 stepper
+					69 pop up button Mostrar el selector de fecha y hora locales Mostrar el selector de fecha y hora locales
+			70 container
+				71 text Fin opcional (Bolivia)
+				72 date field (settable) Fin opcional (Bolivia)
+					73 container
+						74 stepper
+						75 stepper
+						76 stepper
+						77 stepper
+						78 stepper
+						79 stepper
+					80 pop up button Mostrar el selector de fecha y hora locales Mostrar el selector de fecha y hora locales
+			81 container
+				82 text Motivo
+				83 text entry area (settable) Motivo
+			84 button Guardar asignación
+		85 container
+			86 heading Inspecciones e historial de asignaciones, Value: 2
+				87 text Inspecciones e historial de asignaciones
+			88 text No hay inspecciones asignadas.
+		89 heading Citaciones y evidencia, Value: 2
+			90 text Citaciones y evidencia
+		91 container
+			92 heading Historial del trámite, Value: 2
+				93 text Historial del trámite
+			94 text Fechas en UTC.
+			95 content list
+				96 container
+					97 AXListMarker 1. 
+					98 text 01/10/2026 23:17 · Coordinador Demo DEMO: Documentos revisados y aprobados individualmente.
+				99 container
+					100 AXListMarker 2. 
+					101 text 30/09/2026 23:17 · Propietario Demo DEMO: Solicitud enviada para revisión documental.
+				102 container
+					103 AXListMarker 3. 
+					104 text 28/09/2026 23:17 · Propietario Demo DEMO: Borrador creado con datos ficticios.
+	105 container
+		106 text © 2026 SI_Lab · SEDES Cochabamba
+		107 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Solicitud #4 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/4

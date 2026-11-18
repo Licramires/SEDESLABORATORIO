@@ -1,0 +1,926 @@
+[
+  {
+    "id": "SUP-EXT-22",
+    "status": "Exitoso",
+    "method": "HTTP real en copia local; preparación sintética de casos límite",
+    "checks": [
+      {
+        "assertion": "Citación con JPEG válido",
+        "passed": true
+      },
+      {
+        "assertion": "JPEG privado se descarga con tipo correcto",
+        "passed": true
+      },
+      {
+        "assertion": "Segunda citación pendiente bloqueada",
+        "passed": true
+      },
+      {
+        "assertion": "Nueva visita por observación de campo",
+        "passed": true
+      },
+      {
+        "assertion": "Acta nueva conforme registrada",
+        "passed": true
+      },
+      {
+        "assertion": "Coordinador valida acta conforme",
+        "passed": true
+      },
+      {
+        "assertion": "Citación anterior queda atendida",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "REG-EXT-02",
+    "status": "Exitoso",
+    "method": "HTTP real en copia local; preparación sintética de casos límite",
+    "checks": [
+      {
+        "assertion": "Valor inactivo bloqueado TipoLaboratorio",
+        "passed": true
+      },
+      {
+        "assertion": "Sin solicitud parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Catálogo activo de 100 caracteres aceptado TipoLaboratorio",
+        "passed": true
+      },
+      {
+        "assertion": "Catálogo de 101 caracteres bloqueado TipoLaboratorio",
+        "passed": true
+      },
+      {
+        "assertion": "Sin persistir exceso",
+        "passed": true
+      },
+      {
+        "assertion": "Valor inactivo bloqueado Municipio",
+        "passed": true
+      },
+      {
+        "assertion": "Sin solicitud parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Catálogo activo de 100 caracteres aceptado Municipio",
+        "passed": true
+      },
+      {
+        "assertion": "Catálogo de 101 caracteres bloqueado Municipio",
+        "passed": true
+      },
+      {
+        "assertion": "Sin persistir exceso",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "SEG-EXT-09",
+    "status": "Exitoso",
+    "method": "HTTP real en copia local; preparación sintética de casos límite",
+    "checks": [
+      {
+        "assertion": "Ficha propia accesible",
+        "passed": true
+      },
+      {
+        "assertion": "Apertura y renovación vinculadas al mismo laboratorio",
+        "passed": true
+      },
+      {
+        "assertion": "Vínculo de expediente 13",
+        "passed": true
+      },
+      {
+        "assertion": "Expediente propio accesible",
+        "passed": true
+      },
+      {
+        "assertion": "PDF privado propio descargable 34",
+        "passed": true
+      },
+      {
+        "assertion": "PDF privado propio descargable 35",
+        "passed": true
+      },
+      {
+        "assertion": "PDF privado propio descargable 36",
+        "passed": true
+      },
+      {
+        "assertion": "Vínculo de expediente 15",
+        "passed": true
+      },
+      {
+        "assertion": "Expediente propio accesible",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "ADM-EXT-01",
+    "status": "Exitoso",
+    "method": "HTTP real en copia local; preparación sintética de casos límite",
+    "checks": [
+      {
+        "assertion": "Alta de fixture usuario campana-6cc47d09c5a54d9ea8c1715bfed54fc8@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Acceso de cuenta nueva Propietario",
+        "passed": true
+      },
+      {
+        "assertion": "Identidad nueva correcta Propietario",
+        "passed": true
+      },
+      {
+        "assertion": "Rol guardado y acceso principal correcto Propietario",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña cifrada mediante hash Propietario",
+        "passed": true
+      },
+      {
+        "assertion": "Alta de fixture usuario campana-dcec4da7d2ff4a58adad86d45e423e44@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Acceso de cuenta nueva Coordinador",
+        "passed": true
+      },
+      {
+        "assertion": "Identidad nueva correcta Coordinador",
+        "passed": true
+      },
+      {
+        "assertion": "Rol guardado y acceso principal correcto Coordinador",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña cifrada mediante hash Coordinador",
+        "passed": true
+      },
+      {
+        "assertion": "Alta de fixture usuario campana-87c34088eb364973b3b650042a6d9af5@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Acceso de cuenta nueva Supervisor",
+        "passed": true
+      },
+      {
+        "assertion": "Identidad nueva correcta Supervisor",
+        "passed": true
+      },
+      {
+        "assertion": "Rol guardado y acceso principal correcto Supervisor",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña cifrada mediante hash Supervisor",
+        "passed": true
+      },
+      {
+        "assertion": "Alta de fixture usuario campana-3f9ba29a2c1c452a80aa1a4be0b44ff4@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Acceso de cuenta nueva Abogado",
+        "passed": true
+      },
+      {
+        "assertion": "Identidad nueva correcta Abogado",
+        "passed": true
+      },
+      {
+        "assertion": "Rol guardado y acceso principal correcto Abogado",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña cifrada mediante hash Abogado",
+        "passed": true
+      },
+      {
+        "assertion": "Alta de fixture usuario campana-45bb8c5b3e0c486dadb4379010efa2ce@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Acceso de cuenta nueva Gerente",
+        "passed": true
+      },
+      {
+        "assertion": "Identidad nueva correcta Gerente",
+        "passed": true
+      },
+      {
+        "assertion": "Rol guardado y acceso principal correcto Gerente",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña cifrada mediante hash Gerente",
+        "passed": true
+      },
+      {
+        "assertion": "Alta de fixture usuario campana-dcd03e7eaa8a4646be92bf0a80b202a8@example.test",
+        "passed": true
+      },
+      {
+        "assertion": "Acceso de cuenta nueva Administrador",
+        "passed": true
+      },
+      {
+        "assertion": "Identidad nueva correcta Administrador",
+        "passed": true
+      },
+      {
+        "assertion": "Rol guardado y acceso principal correcto Administrador",
+        "passed": true
+      },
+      {
+        "assertion": "Contraseña cifrada mediante hash Administrador",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "LEG-EXT-05",
+    "status": "Exitoso",
+    "method": "HTTP real en copia local; preparación sintética de casos límite",
+    "checks": [
+      {
+        "assertion": "Selección legal inválida devuelve al detalle: [] motivo=Corregir",
+        "passed": true
+      },
+      {
+        "assertion": "Sin cambios de tabla por selección legal inválida",
+        "passed": true
+      },
+      {
+        "assertion": "Mensaje de corrección visible",
+        "passed": true
+      },
+      {
+        "assertion": "Selección legal inválida devuelve al detalle: [129, 129] motivo=Corregir",
+        "passed": true
+      },
+      {
+        "assertion": "Sin cambios de tabla por selección legal inválida",
+        "passed": true
+      },
+      {
+        "assertion": "Mensaje de corrección visible",
+        "passed": true
+      },
+      {
+        "assertion": "Selección legal inválida devuelve al detalle: [132] motivo=Corregir",
+        "passed": true
+      },
+      {
+        "assertion": "Sin cambios de tabla por selección legal inválida",
+        "passed": true
+      },
+      {
+        "assertion": "Mensaje de corrección visible",
+        "passed": true
+      },
+      {
+        "assertion": "Selección legal inválida devuelve al detalle: [1] motivo=Corregir",
+        "passed": true
+      },
+      {
+        "assertion": "Sin cambios de tabla por selección legal inválida",
+        "passed": true
+      },
+      {
+        "assertion": "Mensaje de corrección visible",
+        "passed": true
+      },
+      {
+        "assertion": "Selección legal inválida devuelve al detalle: [129] motivo=",
+        "passed": true
+      },
+      {
+        "assertion": "Sin cambios de tabla por selección legal inválida",
+        "passed": true
+      },
+      {
+        "assertion": "Mensaje de corrección visible",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "ADM-EXT-18",
+    "status": "Exitoso",
+    "method": "HTTP real en copia local; preparación sintética de casos límite",
+    "checks": [
+      {
+        "assertion": "Alta catálogo tipo",
+        "passed": true
+      },
+      {
+        "assertion": "Duplicado de catálogo bloqueado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin duplicación",
+        "passed": true
+      },
+      {
+        "assertion": "Edición y desactivación tipo",
+        "passed": true
+      },
+      {
+        "assertion": "Edición persistida",
+        "passed": true
+      },
+      {
+        "assertion": "Edición obsoleta bloqueada",
+        "passed": true
+      },
+      {
+        "assertion": "No sobreescribe catálogo vigente",
+        "passed": true
+      },
+      {
+        "assertion": "Clase existente inmutable",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados tipo",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados tipo",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Alta catálogo municipio",
+        "passed": true
+      },
+      {
+        "assertion": "Duplicado de catálogo bloqueado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin duplicación",
+        "passed": true
+      },
+      {
+        "assertion": "Edición y desactivación municipio",
+        "passed": true
+      },
+      {
+        "assertion": "Edición persistida",
+        "passed": true
+      },
+      {
+        "assertion": "Edición obsoleta bloqueada",
+        "passed": true
+      },
+      {
+        "assertion": "No sobreescribe catálogo vigente",
+        "passed": true
+      },
+      {
+        "assertion": "Clase existente inmutable",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados municipio",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados municipio",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Alta catálogo inspeccion",
+        "passed": true
+      },
+      {
+        "assertion": "Duplicado de catálogo bloqueado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin duplicación",
+        "passed": true
+      },
+      {
+        "assertion": "Edición y desactivación inspeccion",
+        "passed": true
+      },
+      {
+        "assertion": "Edición persistida",
+        "passed": true
+      },
+      {
+        "assertion": "Edición obsoleta bloqueada",
+        "passed": true
+      },
+      {
+        "assertion": "No sobreescribe catálogo vigente",
+        "passed": true
+      },
+      {
+        "assertion": "Clase existente inmutable",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados inspeccion",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados inspeccion",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Alta catálogo feriado",
+        "passed": true
+      },
+      {
+        "assertion": "Duplicado de catálogo bloqueado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin duplicación",
+        "passed": true
+      },
+      {
+        "assertion": "Edición y desactivación feriado",
+        "passed": true
+      },
+      {
+        "assertion": "Edición persistida",
+        "passed": true
+      },
+      {
+        "assertion": "Edición obsoleta bloqueada",
+        "passed": true
+      },
+      {
+        "assertion": "No sobreescribe catálogo vigente",
+        "passed": true
+      },
+      {
+        "assertion": "Clase existente inmutable",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados feriado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados feriado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Feriado inválido rechazado 2040-02-30",
+        "passed": true
+      },
+      {
+        "assertion": "Sin feriado inválido",
+        "passed": true
+      },
+      {
+        "assertion": "Feriado inválido rechazado 03/02/2040",
+        "passed": true
+      },
+      {
+        "assertion": "Sin feriado inválido",
+        "passed": true
+      },
+      {
+        "assertion": "Feriado inválido rechazado 2040-02-03T09:00",
+        "passed": true
+      },
+      {
+        "assertion": "Sin feriado inválido",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "ADM-EXT-19",
+    "status": "Exitoso",
+    "method": "HTTP real en copia local; preparación sintética de casos límite",
+    "checks": [
+      {
+        "assertion": "Plantilla activa formulario_acta",
+        "passed": true
+      },
+      {
+        "assertion": "Segunda plantilla activa bloqueada",
+        "passed": true
+      },
+      {
+        "assertion": "Sin segunda plantilla ni registro parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Solo una activa por clase",
+        "passed": true
+      },
+      {
+        "assertion": "Contenido de la plantilla guardada exacto",
+        "passed": true
+      },
+      {
+        "assertion": "Plantilla activa formulario_citacion",
+        "passed": true
+      },
+      {
+        "assertion": "Segunda plantilla activa bloqueada",
+        "passed": true
+      },
+      {
+        "assertion": "Sin segunda plantilla ni registro parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Solo una activa por clase",
+        "passed": true
+      },
+      {
+        "assertion": "Contenido de la plantilla guardada exacto",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "SUP-EXT-17",
+    "status": "Exitoso",
+    "method": "HTTP real en copia local; preparación sintética de casos límite",
+    "checks": [
+      {
+        "assertion": "Plazo inclusivo aceptado 1",
+        "passed": true
+      },
+      {
+        "assertion": "Plazo válido persistido",
+        "passed": true
+      },
+      {
+        "assertion": "Plazo inclusivo aceptado 90",
+        "passed": true
+      },
+      {
+        "assertion": "Plazo válido persistido",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "SEG-LL-05",
+    "status": "Exitoso",
+    "method": "HTTP real en copia local; preparación sintética de casos límite",
+    "checks": [
+      {
+        "assertion": "Detalle del estado borrador accesible por su rol",
+        "passed": true
+      },
+      {
+        "assertion": "Etiqueta textual de estado borrador",
+        "passed": true
+      },
+      {
+        "assertion": "Detalle del estado en_revision accesible por su rol",
+        "passed": true
+      },
+      {
+        "assertion": "Etiqueta textual de estado en_revision",
+        "passed": true
+      },
+      {
+        "assertion": "Detalle del estado aprobado accesible por su rol",
+        "passed": true
+      },
+      {
+        "assertion": "Etiqueta textual de estado aprobado",
+        "passed": true
+      },
+      {
+        "assertion": "Detalle del estado inspeccion accesible por su rol",
+        "passed": true
+      },
+      {
+        "assertion": "Etiqueta textual de estado inspeccion",
+        "passed": true
+      },
+      {
+        "assertion": "Detalle del estado revision_acta accesible por su rol",
+        "passed": true
+      },
+      {
+        "assertion": "Etiqueta textual de estado revision_acta",
+        "passed": true
+      },
+      {
+        "assertion": "Detalle del estado observado accesible por su rol",
+        "passed": true
+      },
+      {
+        "assertion": "Etiqueta textual de estado observado",
+        "passed": true
+      },
+      {
+        "assertion": "Detalle del estado rechazado accesible por su rol",
+        "passed": true
+      },
+      {
+        "assertion": "Etiqueta textual de estado rechazado",
+        "passed": true
+      },
+      {
+        "assertion": "Detalle del estado revision_legal accesible por su rol",
+        "passed": true
+      },
+      {
+        "assertion": "Etiqueta textual de estado revision_legal",
+        "passed": true
+      },
+      {
+        "assertion": "Detalle del estado habilitado accesible por su rol",
+        "passed": true
+      },
+      {
+        "assertion": "Etiqueta textual de estado habilitado",
+        "passed": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "ADM-EXT-21",
+    "status": "Exitoso",
+    "method": "HTTP real en copia local; preparación sintética de casos límite",
+    "checks": [
+      {
+        "assertion": "Alta catálogo tipo",
+        "passed": true
+      },
+      {
+        "assertion": "Duplicado de catálogo bloqueado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin duplicación",
+        "passed": true
+      },
+      {
+        "assertion": "Edición y desactivación tipo",
+        "passed": true
+      },
+      {
+        "assertion": "Edición persistida",
+        "passed": true
+      },
+      {
+        "assertion": "Edición obsoleta bloqueada",
+        "passed": true
+      },
+      {
+        "assertion": "No sobreescribe catálogo vigente",
+        "passed": true
+      },
+      {
+        "assertion": "Clase existente inmutable",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados tipo",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados tipo",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Alta catálogo municipio",
+        "passed": true
+      },
+      {
+        "assertion": "Duplicado de catálogo bloqueado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin duplicación",
+        "passed": true
+      },
+      {
+        "assertion": "Edición y desactivación municipio",
+        "passed": true
+      },
+      {
+        "assertion": "Edición persistida",
+        "passed": true
+      },
+      {
+        "assertion": "Edición obsoleta bloqueada",
+        "passed": true
+      },
+      {
+        "assertion": "No sobreescribe catálogo vigente",
+        "passed": true
+      },
+      {
+        "assertion": "Clase existente inmutable",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados municipio",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados municipio",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Alta catálogo inspeccion",
+        "passed": true
+      },
+      {
+        "assertion": "Duplicado de catálogo bloqueado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin duplicación",
+        "passed": true
+      },
+      {
+        "assertion": "Edición y desactivación inspeccion",
+        "passed": true
+      },
+      {
+        "assertion": "Edición persistida",
+        "passed": true
+      },
+      {
+        "assertion": "Edición obsoleta bloqueada",
+        "passed": true
+      },
+      {
+        "assertion": "No sobreescribe catálogo vigente",
+        "passed": true
+      },
+      {
+        "assertion": "Clase existente inmutable",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados inspeccion",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados inspeccion",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Alta catálogo feriado",
+        "passed": true
+      },
+      {
+        "assertion": "Duplicado de catálogo bloqueado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin duplicación",
+        "passed": true
+      },
+      {
+        "assertion": "Edición y desactivación feriado",
+        "passed": true
+      },
+      {
+        "assertion": "Edición persistida",
+        "passed": true
+      },
+      {
+        "assertion": "Edición obsoleta bloqueada",
+        "passed": true
+      },
+      {
+        "assertion": "No sobreescribe catálogo vigente",
+        "passed": true
+      },
+      {
+        "assertion": "Clase existente inmutable",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados feriado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Límites de catálogo rechazados feriado",
+        "passed": true
+      },
+      {
+        "assertion": "Sin efecto parcial",
+        "passed": true
+      },
+      {
+        "assertion": "Feriado inválido rechazado 2040-02-30",
+        "passed": true
+      },
+      {
+        "assertion": "Sin feriado inválido",
+        "passed": true
+      },
+      {
+        "assertion": "Feriado inválido rechazado 03/02/2040",
+        "passed": true
+      },
+      {
+        "assertion": "Sin feriado inválido",
+        "passed": true
+      },
+      {
+        "assertion": "Feriado inválido rechazado 2040-02-03T09:00",
+        "passed": true
+      },
+      {
+        "assertion": "Sin feriado inválido",
+        "passed": true
+      }
+    ],
+    "error": null
+  }
+]

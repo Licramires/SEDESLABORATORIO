@@ -1,0 +1,114 @@
+[
+  {
+    "control": "lun 19",
+    "result": "seleccionado"
+  },
+  {
+    "control": "mar 20",
+    "result": "seleccionado"
+  },
+  {
+    "control": "mié 21",
+    "result": "seleccionado"
+  },
+  {
+    "control": "jue 22",
+    "result": "seleccionado"
+  },
+  {
+    "control": "vie 23",
+    "result": "seleccionado"
+  },
+  {
+    "control": "sáb 24",
+    "result": "seleccionado"
+  },
+  {
+    "control": "dom 25",
+    "result": "seleccionado"
+  },
+  {
+    "control": "Actualizar agenda",
+    "result": "fecha y búsqueda conservadas"
+  },
+  {
+    "control": "Acta: no aplica, incumplimiento, dictamen y borrador",
+    "result": "validación condicional y guardado"
+  },
+  {
+    "control": "Aceptar resultado del acta observado",
+    "result": "devuelto a subsanación con plazo"
+  },
+  {
+    "control": "Guardar asignación sin horario",
+    "result": "nueva visita por programar conservando acta e historial"
+  },
+  {
+    "control": "Lista PDF acumulativa",
+    "result": "1 + 7, quitar, reañadir, evitar duplicado y guardar ocho"
+  },
+  {
+    "control": "Enviar y asociar documentos",
+    "result": "bloquea requisitos faltantes; asocia tres PDF existentes y envía"
+  },
+  {
+    "control": "Guardar servicios y solicitar renovación",
+    "result": "servicios persistidos y renovación duplicada bloqueada"
+  },
+  {
+    "control": "Series aperturas",
+    "result": "1 líneas"
+  },
+  {
+    "control": "Series renovaciones",
+    "result": "1 líneas"
+  },
+  {
+    "control": "Series ambas",
+    "result": "2 líneas"
+  },
+  {
+    "control": "Mes 2026-09",
+    "result": "septiembre de 2026: 11 aperturas · 1 renovaciones"
+  },
+  {
+    "control": "Mes 2026-10",
+    "result": "octubre de 2026: 1 aperturas · 0 renovaciones"
+  },
+  {
+    "control": "Período inválido y corregido",
+    "result": "formulario de recuperación y consulta válida"
+  },
+  {
+    "control": "Sección y requisito con plantilla",
+    "result": "creados; requisito desactivado y activado; publicado con descarga"
+  },
+  {
+    "control": "Catálogos: seis clases y fecha inexistente",
+    "result": "opciones disponibles y rechazo de 30 de febrero"
+  },
+  {
+    "control": "Dictamen legal",
+    "result": "rechaza observación sin documento; habilita con fundamento y PDF"
+  },
+  {
+    "control": "Mapa y búsqueda pública",
+    "result": "zoom y búsqueda por servicio, tipo y estado"
+  },
+  {
+    "control": "Menú y requerimientos en móvil",
+    "result": "menú desplegado y listado sin desbordamiento"
+  },
+  {
+    "control": "Revisión documental y devolución",
+    "result": "aprueba sin frase repetida; observa plano; devuelve reutilizando su corrección"
+  },
+  {
+    "control": "Calendario máximo y menú privado móvil",
+    "result": "9999 sin desbordamiento; siguiente desactivado; regreso a hoy; menú abre y cierra"
+  },
+  {
+    "control": "Marcar notificación",
+    "result": "cambia a leída y retira el botón correspondiente"
+  }
+]

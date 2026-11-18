@@ -1,0 +1,218 @@
+[
+  {
+    "page": 1,
+    "characters": 1333,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  1 ",
+      "Informe integral del proyecto SI Lab  ",
+      "Funcionalidad aseguramiento de calidad y arquitectura de software  "
+    ]
+  },
+  {
+    "page": 2,
+    "characters": 1778,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  2 ",
+      "1 Resumen del proyecto ",
+      "Propósito y alcance funcional "
+    ]
+  },
+  {
+    "page": 3,
+    "characters": 1942,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  3 ",
+      "2 Tecnología y arquitectura general ",
+      "Elemento Uso comprobado "
+    ]
+  },
+  {
+    "page": 4,
+    "characters": 2150,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  4 ",
+      "3 Flujo de trabajo y estados ",
+      "Etapa Actor y condición de avance "
+    ]
+  },
+  {
+    "page": 5,
+    "characters": 2293,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  5 ",
+      "4 Datos documentos y trazabilidad ",
+      "Información Control de integridad y conservación "
+    ]
+  },
+  {
+    "page": 6,
+    "characters": 1916,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  6 ",
+      "5 Seguridad y validaciones ",
+      "Área Validaciones implementadas y efecto esperado "
+    ]
+  },
+  {
+    "page": 7,
+    "characters": 1783,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  7 ",
+      "6 Casos de uso 1 a 4 ",
+      "CU01 Consultar inicio y requisitos "
+    ]
+  },
+  {
+    "page": 8,
+    "characters": 1804,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  8 ",
+      "7 Casos de uso 5 a 8 ",
+      "CU05 Iniciar sesión por rol "
+    ]
+  },
+  {
+    "page": 9,
+    "characters": 1737,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  9 ",
+      "8 Casos de uso 9 a 12 ",
+      "CU09 Consultar estado e historial propio "
+    ]
+  },
+  {
+    "page": 10,
+    "characters": 1928,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  10 ",
+      "9 Casos de uso 13 a 16 ",
+      "CU13 Programar la agenda "
+    ]
+  },
+  {
+    "page": 11,
+    "characters": 1767,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  11 ",
+      "10 Casos de uso 17 a 20 ",
+      "CU17 Determinar resultado de inspección "
+    ]
+  },
+  {
+    "page": 12,
+    "characters": 1832,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  12 ",
+      "11 Casos de uso 21 a 24 ",
+      "CU21 Recibir y consultar notificaciones "
+    ]
+  },
+  {
+    "page": 13,
+    "characters": 1842,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  13 ",
+      "12 Casos de uso 25 a 28 ",
+      "CU25 Consultar métricas de gestión "
+    ]
+  },
+  {
+    "page": 14,
+    "characters": 1800,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  14 ",
+      "13 Casos de uso 29 a 32 ",
+      "CU29 Consultar informe histórico de cierre "
+    ]
+  },
+  {
+    "page": 15,
+    "characters": 1813,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  15 ",
+      "14 Casos de uso 33 a 36 ",
+      "CU P1 Consultar antecedentes legales "
+    ]
+  },
+  {
+    "page": 16,
+    "characters": 2126,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  16 ",
+      "15 Estrategia de aseguramiento de calidad ",
+      "SQA significa aseguramiento de calidad del software. En SI_Lab combina revisión de requisitos y flujos, "
+    ]
+  },
+  {
+    "page": 17,
+    "characters": 2071,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  17 ",
+      "16 Resultados de pruebas y cobertura ",
+      "Conjunto y fecha Resultado Interpretación "
+    ]
+  },
+  {
+    "page": 18,
+    "characters": 2240,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  18 ",
+      "17 Bugs corregidos y evidencia ",
+      "BUG 01 Recuperación de formularios fallidos "
+    ]
+  },
+  {
+    "page": 19,
+    "characters": 2050,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  19 ",
+      "18 Operación respaldo y restauración ",
+      "Ensayo local del 23 de octubre Resultado observado "
+    ]
+  },
+  {
+    "page": 20,
+    "characters": 2061,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  20 ",
+      "19 SOLID en la aplicación ",
+      "SOLID reúne cinco principios para reducir el acoplamiento y delimitar responsabilidades. Su aplicación se "
+    ]
+  },
+  {
+    "page": 21,
+    "characters": 2222,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  21 ",
+      "20 Sustitución interfaces y dependencias ",
+      "L Sustitución de Liskov "
+    ]
+  },
+  {
+    "page": 22,
+    "characters": 2299,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  22 ",
+      "21 Patrones de diseño utilizados ",
+      "Patrón o enfoque Implementación y utilidad "
+    ]
+  },
+  {
+    "page": 23,
+    "characters": 2019,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  23 ",
+      "22 Pendientes para aceptación completa ",
+      "Caso pendiente Comprobación necesaria "
+    ]
+  },
+  {
+    "page": 24,
+    "characters": 2201,
+    "first_lines": [
+      "SI Lab  |  26 de octubre de 2026  |  24 ",
+      "23 Fuentes y trazabilidad documental ",
+      "Las referencias identifican documentos y evidencias del repositorio SI_Lab. Las rutas se expresan desde la "
+    ]
+  }
+]

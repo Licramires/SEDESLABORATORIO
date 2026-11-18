@@ -53,9 +53,9 @@ public class SolicitudSeguimientoItemViewModel
 				Longitud = longitud.GetDecimal();
 			}
 		}
-		catch (JsonException)
+		catch (Exception ex) when (ex is JsonException or InvalidOperationException or FormatException)
 		{
-			NombreLaboratorio = DatosLaboratorioPropuesto;
+			NombreLaboratorio = "Datos del laboratorio no disponibles";
 		}
 	}
 }

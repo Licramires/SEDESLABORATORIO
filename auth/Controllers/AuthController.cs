@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SEDESLABORATORIO.Auth.Models;
 using SEDESLABORATORIO.Auth.Services;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace SEDESLABORATORIO.Auth.Controllers;
 
@@ -40,6 +41,7 @@ public class AuthController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
+    [EnableRateLimiting("login")]
     public async Task<IActionResult> Login(
         LoginViewModel model,
         string? returnUrl = null,
@@ -69,6 +71,7 @@ public class AuthController : Controller
             new(ClaimTypes.Name, result.User.Nombre),
             new(ClaimTypes.Email, result.User.Email),
             new(ClaimTypes.Role, result.User.Rol.ToString().ToLowerInvariant())
+            ,new("security_stamp", result.User.SelloSeguridad)
         };
 
         var identity = new ClaimsIdentity(claims, AuthenticationScheme);

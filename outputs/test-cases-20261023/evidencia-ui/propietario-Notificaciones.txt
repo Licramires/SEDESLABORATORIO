@@ -1,0 +1,74 @@
+Browser tab: 5, Title: "Notificaciones - SEDESLABORATORIO", URL: "http://localhost:5281/Notificaciones".
+1 AXWebArea Notificaciones - SEDESLABORATORIO, URL: localhost:5281/Notificaciones
+	2 link Description: Saltar al contenido, Value: localhost:5281/Notificaciones#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Notificaciones
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 heading Notificaciones, Value: 1
+			19 text Notificaciones
+		20 text Últimos 200 avisos. Fechas en UTC.
+		21 container
+			22 text Nueva · 23/10/2026 05:42 Solicitud #7: Acta registrada: observado.
+			23 button Marcar como leída
+		24 container
+			25 text Nueva · 23/10/2026 05:40 Solicitud #7: Contenido del acta preparado para descargar, firmar y adjuntar.
+			26 button Marcar como leída
+		27 container
+			28 text Nueva · 23/10/2026 05:28 Solicitud #16: Revisión documental: observado. Plano arquitectónico: Adjuntar plano con identificación del establecimiento.
+			29 button Marcar como leída
+		30 container
+			31 text Nueva · 23/10/2026 05:27 Solicitud #16: Documento #41 (Plano arquitectónico, versión 1): observado. Adjuntar plano con identificación del establecimiento.
+			32 button Marcar como leída
+		33 container
+			34 text Nueva · 23/10/2026 05:27 Solicitud #16: Documento #40 (Licencia municipal, versión 1): aprobado. Documento revisado y conforme.
+			35 button Marcar como leída
+		36 container
+			37 text Nueva · 23/10/2026 05:26 Solicitud #16: Documento #40 (Licencia municipal, versión 1): aprobado. Documento revisado y conforme.
+			38 button Marcar como leída
+		39 container
+			40 text Nueva · 23/10/2026 05:26 Solicitud #8: Revisión de acta: validada. Acta y lista verificadas durante la campaña local.
+			41 button Marcar como leída
+		42 container
+			43 text Nueva · 23/10/2026 05:23 Solicitud #17: Documento complementario #43 asociado a Licencia municipal; se conserva el original.
+			44 button Marcar como leída
+		45 container
+			46 text Nueva · 23/10/2026 05:21 Solicitud #16: Solicitud enviada para revisión documental.
+			47 button Marcar como leída
+		48 container
+			49 text Nueva · 23/10/2026 05:20 Solicitud #16: Documento Certificado sanitario, versión 1, cargado para revisión.
+			50 button Marcar como leída
+		51 container
+			52 text Nueva · 23/10/2026 05:20 Solicitud #16: Documento Plano arquitectónico, versión 1, cargado para revisión.
+			53 button Marcar como leída
+		54 container
+			55 text Nueva · 23/10/2026 05:20 Solicitud #16: Documento Licencia municipal, versión 1, cargado para revisión.
+			56 button Marcar como leída
+		57 container
+			58 text Nueva · 21/10/2026 18:27 Plazo de subsanación de solicitud #11: vence el 25/10/2026 (Bolivia). Revise el expediente y las acciones pendientes.
+			59 button Marcar como leída
+		60 container
+			61 text Nueva · 21/10/2026 18:27 Citación #1 de solicitud #11: vence el 25/10/2026 (Bolivia). Revise el expediente y las acciones pendientes.
+			62 button Marcar como leída
+		63 container
+			64 text Nueva · 18/10/2026 23:17 La habilitación de DEMO - Revisar renovación vence el 02/11/2026. Puede solicitar su renovación.
+			65 button Marcar como leída
+		66 container
+			67 text Nueva · 18/10/2026 23:17 DEMO: Pruebe el borrador, la subsanación, el seguimiento, sus laboratorios y la renovación.
+			68 button Marcar como leída
+	69 container
+		70 text © 2026 SI_Lab · SEDES Cochabamba
+		71 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Notificaciones - SEDESLABORATORIO, URL: localhost:5281/Notificaciones

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="788b8c5e-7c84-457c-af59-06d5efe28144" name="Usuario@DESKTOP-PCMT13N 2026-10-23 01:33:29" runUser="DESKTOP-PCMT13N\Usuario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-23T01:33:29.4587556-04:00" queuing="2026-10-23T01:33:29.4587561-04:00" start="2026-10-23T01:33:28.8940357-04:00" finish="2026-10-23T01:33:29.4631570-04:00" />
+  <TestSettings name="default" id="9af03dc7-b077-4bc9-a114-d2bbe0fab21a">
+    <Deployment runDeploymentRoot="Usuario_DESKTOP-PCMT13N_2026-10-23_01_33_29" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="aa2cda4d-2be0-4406-9f3f-d4d631440339" testId="99ca5e24-56a5-b055-02ae-c6d6bbbe4646" testName="SiLab.Tests.OperationalRecoveryTests.Another_process_cannot_start_recovery_against_a_database_in_use_and_the_lease_releases_on_disposal" computerName="DESKTOP-PCMT13N" duration="00:00:00.0099355" startTime="2026-10-23T01:33:29.3810327-04:00" endTime="2026-10-23T01:33:29.3810513-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aa2cda4d-2be0-4406-9f3f-d4d631440339" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="SiLab.Tests.OperationalRecoveryTests.Another_process_cannot_start_recovery_against_a_database_in_use_and_the_lease_releases_on_disposal" storage="c:\users\usuario\onedrive\desktop\sedeslaboratorio\tests\silab.tests\bin\release\net8.0\silab.tests.dll" id="99ca5e24-56a5-b055-02ae-c6d6bbbe4646">
+      <Execution id="aa2cda4d-2be0-4406-9f3f-d4d631440339" />
+      <TestMethod codeBase="C:\Users\Usuario\OneDrive\Desktop\SEDESLABORATORIO\tests\SiLab.Tests\bin\Release\net8.0\SiLab.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SiLab.Tests.OperationalRecoveryTests" name="Another_process_cannot_start_recovery_against_a_database_in_use_and_the_lease_releases_on_disposal" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="99ca5e24-56a5-b055-02ae-c6d6bbbe4646" executionId="aa2cda4d-2be0-4406-9f3f-d4d631440339" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados sin formato de lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.28)&#xD;
+[xUnit.net 00:00:00.06]   Discovering: SiLab.Tests&#xD;
+[xUnit.net 00:00:00.12]   Discovered:  SiLab.Tests&#xD;
+[xUnit.net 00:00:00.12]   Starting:    SiLab.Tests&#xD;
+[xUnit.net 00:00:00.16]   Finished:    SiLab.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

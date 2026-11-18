@@ -1,0 +1,489 @@
+[
+  {
+    "name": "Casos de prueba",
+    "rows": [
+      {
+        "I1": "Sprint 1 – SI_Lab | 36 casos planificados"
+      },
+      {
+        "A2": "QE",
+        "B2": "Nombre Identificador",
+        "C2": "Titulo",
+        "D2": "Descripcion",
+        "E2": "Pasos",
+        "F2": "Resultados Esperados",
+        "G2": "Estado",
+        "H2": "Modulo",
+        "I2": "Herramienta de Gestion de TC"
+      },
+      {
+        "A3": "SQA-01",
+        "B3": "AUTH-LL-01",
+        "C3": "Login con credenciales válidas",
+        "D3": "Verificar que un usuario registrado pueda iniciar sesión con correo y contraseña correctos.",
+        "E3": "1. Abrir /auth/Auth/Login.\n2. Introducir correo demo válido.\n3. Introducir contraseña válida.\n4. Seleccionar Ingresar.",
+        "F3": "Se crea la sesión y el usuario es redirigido al dashboard sin mensajes de error.",
+        "G3": "No ejecutado",
+        "H3": "auth/",
+        "I3": "QASE"
+      },
+      {
+        "A4": "SQA-01",
+        "B4": "AUTH-LL-02",
+        "C4": "Login con contraseña inválida",
+        "D4": "Verificar el rechazo de credenciales incorrectas.",
+        "E4": "1. Abrir login.\n2. Introducir correo válido.\n3. Introducir contraseña incorrecta.\n4. Enviar formulario.",
+        "F4": "Se muestra un mensaje de error y no se crea una sesión autenticada.",
+        "G4": "No ejecutado",
+        "H4": "auth/",
+        "I4": "QASE"
+      },
+      {
+        "A5": "SQA-01",
+        "B5": "AUTH-LL-03",
+        "C5": "Acceso de propietario por rol",
+        "D5": "Verificar que el rol propietario reciba sus permisos correspondientes.",
+        "E5": "1. Iniciar sesión como propietario.\n2. Abrir Mi cuenta.\n3. Revisar navegación lateral.",
+        "F5": "Se muestran Mi cuenta, Trámites, Mis establecimientos y Nueva solicitud; las rutas permitidas cargan correctamente.",
+        "G5": "No ejecutado",
+        "H5": "auth/",
+        "I5": "QASE"
+      },
+      {
+        "A6": "SQA-01",
+        "B6": "AUTH-LL-04",
+        "C6": "Bloqueo de acceso no autorizado",
+        "D6": "Verificar autorización de rutas protegidas.",
+        "E6": "1. Cerrar sesión.\n2. Intentar abrir una ruta de propietario directamente.",
+        "F6": "El sistema redirige al login o muestra acceso denegado, sin exponer datos protegidos.",
+        "G6": "No ejecutado",
+        "H6": "auth/",
+        "I6": "QASE"
+      },
+      {
+        "A7": "SQA-01",
+        "B7": "AUTH-LL-05",
+        "C7": "Cerrar sesión",
+        "D7": "Verificar la invalidación de la sesión.",
+        "E7": "1. Iniciar sesión.\n2. Ejecutar la acción de logout disponible.\n3. Intentar volver al dashboard.",
+        "F7": "La cookie queda invalidada, se abandona la sesión y el dashboard requiere autenticación.",
+        "G7": "No ejecutado",
+        "H7": "auth/",
+        "I7": "QASE"
+      },
+      {
+        "A8": "SQA-01",
+        "B8": "AUTH-HL-01",
+        "C8": "Flujo completo de autenticación",
+        "D8": "Validar el ciclo login, navegación a cuenta y logout.",
+        "E8": "1. Abrir login.\n2. Autenticarse.\n3. Seleccionar Mi cuenta.\n4. Cerrar sesión.",
+        "F8": "El usuario completa el ciclo sin errores y los enlaces navegan a los destinos correctos.",
+        "G8": "No ejecutado",
+        "H8": "auth/",
+        "I8": "QASE"
+      },
+      {
+        "A9": "SQA-01",
+        "B9": "AUTH-HL-02",
+        "C9": "Persistencia de identidad",
+        "D9": "Verificar que la identidad se mantenga al recargar una vista protegida.",
+        "E9": "1. Iniciar sesión.\n2. Abrir dashboard.\n3. Recargar la página.",
+        "F9": "El usuario y rol continúan visibles mientras la cookie sea válida.",
+        "G9": "No ejecutado",
+        "H9": "auth/",
+        "I9": "QASE"
+      },
+      {
+        "A10": "SQA-01",
+        "B10": "AUTH-HL-03",
+        "C10": "Aislamiento de trámites por usuario",
+        "D10": "Verificar que un propietario no pueda consultar trámites de otro propietario.",
+        "E10": "1. Iniciar sesión con propietario A.\n2. Intentar abrir el detalle de una solicitud de propietario B.",
+        "F10": "El acceso se bloquea o no se muestra el trámite ajeno.",
+        "G10": "No ejecutado",
+        "H10": "auth/",
+        "I10": "QASE"
+      },
+      {
+        "A11": "SQA-02",
+        "B11": "PUB-LL-01",
+        "C11": "Cargar landing pública",
+        "D11": "Verificar la disponibilidad de la página pública sin autenticación.",
+        "E11": "1. Abrir la raíz /.\n2. Esperar la carga inicial.",
+        "F11": "Se muestran la marca SI_Lab, navegación pública, filtros, laboratorios y mapa/directorio.",
+        "G11": "No ejecutado",
+        "H11": "publico/",
+        "I11": "QASE"
+      },
+      {
+        "A12": "SQA-02",
+        "B12": "PUB-LL-02",
+        "C12": "Buscar laboratorio por nombre",
+        "D12": "Verificar la búsqueda textual del directorio.",
+        "E12": "1. Abrir la landing.\n2. Introducir un nombre parcial válido.\n3. Aplicar la búsqueda.",
+        "F12": "Solo se muestran laboratorios cuyo nombre coincide con el texto ingresado.",
+        "G12": "No ejecutado",
+        "H12": "publico/",
+        "I12": "QASE"
+      },
+      {
+        "A13": "SQA-02",
+        "B13": "PUB-LL-03",
+        "C13": "Filtrar por tipo",
+        "D13": "Verificar el filtro por tipo de laboratorio.",
+        "E13": "1. Seleccionar un tipo.\n2. Aplicar filtros.",
+        "F13": "Los resultados corresponden al tipo seleccionado.",
+        "G13": "No ejecutado",
+        "H13": "publico/",
+        "I13": "QASE"
+      },
+      {
+        "A14": "SQA-02",
+        "B14": "PUB-LL-04",
+        "C14": "Filtrar por estado",
+        "D14": "Verificar el filtro abierto/cerrado.",
+        "E14": "1. Seleccionar un estado.\n2. Aplicar filtros.",
+        "F14": "Los resultados muestran únicamente laboratorios con el estado seleccionado.",
+        "G14": "No ejecutado",
+        "H14": "publico/",
+        "I14": "QASE"
+      },
+      {
+        "A15": "SQA-02",
+        "B15": "PUB-LL-05",
+        "C15": "Combinar búsqueda y filtros",
+        "D15": "Verificar el uso conjunto de criterios.",
+        "E15": "1. Ingresar texto.\n2. Seleccionar tipo y estado.\n3. Aplicar filtros.",
+        "F15": "El resultado cumple simultáneamente todos los criterios, o muestra estado vacío si no hay coincidencias.",
+        "G15": "No ejecutado",
+        "H15": "publico/",
+        "I15": "QASE"
+      },
+      {
+        "A16": "SQA-02",
+        "B16": "PUB-LL-06",
+        "C16": "Ver detalle de laboratorio",
+        "D16": "Verificar la información completa de un laboratorio.",
+        "E16": "1. Seleccionar un laboratorio existente.\n2. Abrir Ver detalle.",
+        "F16": "Se muestran nombre, tipo, estado, servicios, coordenadas y acceso a la ruta.",
+        "G16": "No ejecutado",
+        "H16": "publico/",
+        "I16": "QASE"
+      },
+      {
+        "A17": "SQA-02",
+        "B17": "PUB-LL-07",
+        "C17": "Diferenciar marcadores por estado",
+        "D17": "Verificar la representación visual de laboratorios abiertos y cerrados.",
+        "E17": "1. Abrir el mapa.\n2. Comparar un laboratorio abierto y uno cerrado.",
+        "F17": "Los marcadores presentan una diferenciación visual consistente por estado.",
+        "G17": "No ejecutado",
+        "H17": "publico/",
+        "I17": "QASE"
+      },
+      {
+        "A18": "SQA-02",
+        "B18": "PUB-LL-08",
+        "C18": "Abrir vista de ruta",
+        "D18": "Verificar la navegación desde el detalle a la ruta.",
+        "E18": "1. Abrir detalle de un laboratorio.\n2. Seleccionar Cómo llegar.",
+        "F18": "Se abre la vista de ruta con el destino del laboratorio seleccionado.",
+        "G18": "No ejecutado",
+        "H18": "publico/",
+        "I18": "QASE"
+      },
+      {
+        "A19": "SQA-02",
+        "B19": "PUB-HL-01",
+        "C19": "Flujo público completo",
+        "D19": "Validar landing, búsqueda, detalle y ruta en secuencia.",
+        "E19": "1. Abrir landing.\n2. Buscar/filtrar.\n3. Abrir detalle.\n4. Seleccionar Cómo llegar.",
+        "F19": "El flujo público completo funciona sin perder el laboratorio seleccionado.",
+        "G19": "No ejecutado",
+        "H19": "publico/",
+        "I19": "QASE"
+      },
+      {
+        "A20": "SQA-02",
+        "B20": "PUB-HL-02",
+        "C20": "Usar ubicación y gestionar permisos",
+        "D20": "Verificar geolocalización con permiso concedido y denegado.",
+        "E20": "1. Abrir vista de ruta.\n2. Seleccionar Usar mi ubicación.\n3. Repetir denegando el permiso del navegador.",
+        "F20": "Con permiso, se genera la navegación; sin permiso o ante timeout, se muestra un mensaje y la interfaz no queda bloqueada.",
+        "G20": "No ejecutado",
+        "H20": "publico/",
+        "I20": "QASE"
+      },
+      {
+        "A21": "SQA-03",
+        "B21": "REG-LL-01",
+        "C21": "Abrir nueva solicitud",
+        "D21": "Verificar que el propietario pueda abrir el formulario de registro.",
+        "E21": "1. Iniciar sesión como propietario.\n2. Seleccionar Nueva solicitud.",
+        "F21": "Se carga el formulario con campos de laboratorio, coordenadas, documentos y mapa de previsualización.",
+        "G21": "No ejecutado",
+        "H21": "solicitud-registro/",
+        "I21": "QASE"
+      },
+      {
+        "A22": "SQA-03",
+        "B22": "REG-LL-02",
+        "C22": "Validar campos obligatorios",
+        "D22": "Verificar validaciones del formulario incompleto.",
+        "E22": "1. Abrir Nueva solicitud.\n2. Dejar campos obligatorios vacíos.\n3. Enviar.",
+        "F22": "El formulario no se procesa y muestra validaciones claras en los campos requeridos.",
+        "G22": "No ejecutado",
+        "H22": "solicitud-registro/",
+        "I22": "QASE"
+      },
+      {
+        "A23": "SQA-03",
+        "B23": "REG-LL-03",
+        "C23": "Actualizar mapa por coordenadas",
+        "D23": "Verificar que latitud/longitud actualicen el mapa.",
+        "E23": "1. Introducir latitud válida.\n2. Introducir longitud válida.\n3. Esperar actualización.",
+        "F23": "El mapa centra la vista y mueve el marcador a las coordenadas indicadas.",
+        "G23": "No ejecutado",
+        "H23": "solicitud-registro/",
+        "I23": "QASE"
+      },
+      {
+        "A24": "SQA-03",
+        "B24": "REG-LL-04",
+        "C24": "Actualizar coordenadas arrastrando marcador",
+        "D24": "Verificar la edición visual de la ubicación.",
+        "E24": "1. Abrir el mapa.\n2. Arrastrar el marcador.",
+        "F24": "Los campos de latitud y longitud se actualizan con la nueva posición.",
+        "G24": "No ejecutado",
+        "H24": "solicitud-registro/",
+        "I24": "QASE"
+      },
+      {
+        "A25": "SQA-03",
+        "B25": "REG-LL-05",
+        "C25": "Cargar PDF válido",
+        "D25": "Verificar la aceptación de documentos PDF.",
+        "E25": "1. Seleccionar un archivo .pdf válido.\n2. Enviar el formulario con datos válidos.",
+        "F25": "El archivo se procesa y queda asociado a la solicitud creada.",
+        "G25": "No ejecutado",
+        "H25": "solicitud-registro/",
+        "I25": "QASE"
+      },
+      {
+        "A26": "SQA-03",
+        "B26": "REG-LL-06",
+        "C26": "Rechazar archivo no PDF",
+        "D26": "Verificar la validación de extensión de archivo.",
+        "E26": "1. Seleccionar un archivo con extensión distinta de .pdf.\n2. Intentar enviar.",
+        "F26": "Se muestra un error de validación y el archivo no se registra como documento válido.",
+        "G26": "No ejecutado",
+        "H26": "solicitud-registro/",
+        "I26": "QASE"
+      },
+      {
+        "A27": "SQA-03",
+        "B27": "REG-LL-07",
+        "C27": "Crear solicitud con datos válidos",
+        "D27": "Verificar la persistencia de una nueva solicitud.",
+        "E27": "1. Completar nombre, tipo y coordenadas.\n2. Adjuntar PDF válido.\n3. Enviar.",
+        "F27": "La solicitud se crea, queda asociada al propietario y se muestra confirmación.",
+        "G27": "No ejecutado",
+        "H27": "solicitud-registro/",
+        "I27": "QASE"
+      },
+      {
+        "A28": "SQA-03",
+        "B28": "REG-HL-01",
+        "C28": "Registrar solicitud completa",
+        "D28": "Validar el flujo completo de CU06 y CU07.",
+        "E28": "1. Abrir Nueva solicitud.\n2. Completar datos.\n3. Ajustar ubicación en mapa.\n4. Adjuntar documentos.\n5. Enviar.",
+        "F28": "La solicitud y documentos se guardan correctamente y el usuario recibe confirmación.",
+        "G28": "No ejecutado",
+        "H28": "solicitud-registro/",
+        "I28": "QASE"
+      },
+      {
+        "A29": "SQA-03",
+        "B29": "REG-HL-02",
+        "C29": "Corregir formulario después de error",
+        "D29": "Verificar que un intento inválido pueda corregirse sin duplicados.",
+        "E29": "1. Enviar formulario incompleto.\n2. Corregir campos y archivo.\n3. Enviar nuevamente.",
+        "F29": "El segundo envío exitoso crea un solo registro válido y no conserva un registro incompleto.",
+        "G29": "No ejecutado",
+        "H29": "solicitud-registro/",
+        "I29": "QASE"
+      },
+      {
+        "A30": "SQA-03",
+        "B30": "REG-HL-03",
+        "C30": "Usabilidad responsive del formulario",
+        "D30": "Verificar el formulario en escritorio y móvil.",
+        "E30": "1. Abrir el formulario en viewport de escritorio.\n2. Repetir en viewport móvil.\n3. Revisar campos, mapa y botones.",
+        "F30": "Todos los elementos son accesibles, legibles y utilizables en ambos tamaños.",
+        "G30": "No ejecutado",
+        "H30": "solicitud-registro/",
+        "I30": "QASE"
+      },
+      {
+        "A31": "SQA-04",
+        "B31": "SEG-LL-01",
+        "C31": "Listar trámites propios",
+        "D31": "Verificar que el propietario vea sus solicitudes.",
+        "E31": "1. Iniciar sesión como propietario.\n2. Abrir Trámites/Mis establecimientos.",
+        "F31": "Se listan las solicitudes del usuario autenticado con su estado correspondiente.",
+        "G31": "No ejecutado",
+        "H31": "solicitud-seguimiento/",
+        "I31": "QASE"
+      },
+      {
+        "A32": "SQA-04",
+        "B32": "SEG-LL-02",
+        "C32": "Ver detalle de trámite propio",
+        "D32": "Verificar la consulta detallada de una solicitud.",
+        "E32": "1. Abrir el listado.\n2. Seleccionar una solicitud propia.",
+        "F32": "Se muestran datos del laboratorio propuesto, estado, fecha y documentos sin JSON crudo innecesario.",
+        "G32": "No ejecutado",
+        "H32": "solicitud-seguimiento/",
+        "I32": "QASE"
+      },
+      {
+        "A33": "SQA-04",
+        "B33": "SEG-LL-03",
+        "C33": "Enviar solicitud a revisión",
+        "D33": "Verificar el cambio de estado de una solicitud lista para enviar.",
+        "E33": "1. Abrir el detalle de una solicitud no enviada.\n2. Seleccionar Enviar solicitud.",
+        "F33": "La solicitud cambia a estado en_revision y se muestra confirmación.",
+        "G33": "No ejecutado",
+        "H33": "solicitud-seguimiento/",
+        "I33": "QASE"
+      },
+      {
+        "A34": "SQA-04",
+        "B34": "SEG-LL-04",
+        "C34": "Evitar doble envío",
+        "D34": "Verificar el comportamiento de una solicitud ya enviada.",
+        "E34": "1. Abrir una solicitud en_revision.\n2. Intentar enviarla nuevamente.",
+        "F34": "El sistema evita duplicar la acción y conserva el estado correcto.",
+        "G34": "No ejecutado",
+        "H34": "solicitud-seguimiento/",
+        "I34": "QASE"
+      },
+      {
+        "A35": "SQA-04",
+        "B35": "SEG-LL-05",
+        "C35": "Mostrar estados con badges",
+        "D35": "Verificar la presentación de los estados del trámite.",
+        "E35": "1. Abrir el listado y detalles.\n2. Revisar estados disponibles.",
+        "F35": "Cada estado se muestra con texto legible y estilo visual consistente.",
+        "G35": "No ejecutado",
+        "H35": "solicitud-seguimiento/",
+        "I35": "QASE"
+      },
+      {
+        "A36": "SQA-04",
+        "B36": "SEG-HL-01",
+        "C36": "Consultar y enviar trámite",
+        "D36": "Validar el flujo completo de CU08 y CU09.",
+        "E36": "1. Abrir Mis trámites.\n2. Consultar detalle.\n3. Enviar solicitud.\n4. Volver al listado.",
+        "F36": "El estado actualizado se refleja en el listado y el usuario conserva acceso a sus trámites.",
+        "G36": "No ejecutado",
+        "H36": "solicitud-seguimiento/",
+        "I36": "QASE"
+      },
+      {
+        "A37": "SQA-04",
+        "B37": "SEG-HL-02",
+        "C37": "Persistir estado después de recarga",
+        "D37": "Verificar persistencia de estado en SQLite.",
+        "E37": "1. Enviar una solicitud.\n2. Recargar la página.\n3. Cerrar y volver a iniciar sesión.",
+        "F37": "El estado en_revision permanece almacenado y visible después de recargas y nueva sesión.",
+        "G37": "No ejecutado",
+        "H37": "solicitud-seguimiento/",
+        "I37": "QASE"
+      },
+      {
+        "A38": "SQA-04",
+        "B38": "SEG-HL-03",
+        "C38": "Regresión de navegación autenticada",
+        "D38": "Verificar enlaces entre seguimiento, solicitud y cuenta.",
+        "E38": "1. Abrir Seguimiento.\n2. Ir a Nueva solicitud.\n3. Ir a Mi cuenta.\n4. Volver a Trámites.",
+        "F38": "Los enlaces del sidebar y encabezado navegan correctamente sin perder autenticación.",
+        "G38": "No ejecutado",
+        "H38": "solicitud-seguimiento/",
+        "I38": "QASE"
+      }
+    ],
+    "xml": "xl/worksheets/sheet1.xml",
+    "merges": [],
+    "cols": [
+      {
+        "min": "1",
+        "max": "1",
+        "width": "12",
+        "customWidth": "1"
+      },
+      {
+        "min": "2",
+        "max": "2",
+        "width": "18",
+        "bestFit": "1",
+        "customWidth": "1"
+      },
+      {
+        "min": "3",
+        "max": "3",
+        "width": "30",
+        "bestFit": "1",
+        "customWidth": "1"
+      },
+      {
+        "min": "4",
+        "max": "4",
+        "width": "42",
+        "customWidth": "1"
+      },
+      {
+        "min": "5",
+        "max": "5",
+        "width": "48",
+        "customWidth": "1"
+      },
+      {
+        "min": "6",
+        "max": "6",
+        "width": "42",
+        "customWidth": "1"
+      },
+      {
+        "min": "7",
+        "max": "7",
+        "width": "16",
+        "customWidth": "1"
+      },
+      {
+        "min": "8",
+        "max": "8",
+        "width": "25",
+        "customWidth": "1"
+      },
+      {
+        "min": "9",
+        "max": "9",
+        "width": "24",
+        "customWidth": "1"
+      }
+    ],
+    "features": [
+      "dimension",
+      "sheetViews",
+      "sheetFormatPr",
+      "cols",
+      "sheetData",
+      "autoFilter",
+      "conditionalFormatting",
+      "dataValidations",
+      "pageMargins",
+      "pageSetup"
+    ]
+  }
+]

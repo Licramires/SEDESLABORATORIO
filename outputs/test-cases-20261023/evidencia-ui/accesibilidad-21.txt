@@ -1,0 +1,57 @@
+Browser tab: 5, Title: "Citaciones - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Citaciones".
+1 AXWebArea Citaciones - SEDESLABORATORIO, URL: localhost:5281/Gestion/Citaciones
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Citaciones#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			8 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			9 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		10 text SEDES Cochabamba
+		11 text Servicio Departamental de Salud Portal de trámites y requisitos
+	12 container
+		13 text Consola del coordinador  Citaciones
+		14 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		15 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	16 container main-content
+		17 heading Citaciones emitidas, Value: 1
+			18 text Citaciones emitidas
+		19 text Las citaciones se registran desde una inspección con observaciones o incumplimientos.
+		20 text Fechas de Bolivia. La evidencia y el estado se conservan dentro del expediente.
+		21 table
+			22 row
+				23 cell
+					24 text Número
+				25 cell
+					26 text Establecimiento
+				27 cell
+					28 text Emisión
+				29 cell
+					30 text Vencimiento
+				31 cell
+					32 text Estado
+				33 cell
+					34 text Evidencia
+				35 cell
+					36 text Expediente
+			37 row
+				38 cell
+					39 text 1
+				40 cell
+					41 text Laboratorio El Prado
+				42 cell
+					43 text 16/10/2026
+				44 cell
+					45 text 25/10/2026
+				46 cell
+					47 text Pendiente
+				48 cell
+					49 link Description: Ver evidencia, Value: localhost:5281/Gestion/Descargar/1?tipo=citacion
+				50 cell
+					51 link Description: Ver trámite, Value: localhost:5281/Gestion/Detalle/11
+	52 container
+		53 text © 2026 SI_Lab · SEDES Cochabamba
+		54 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Citaciones - SEDESLABORATORIO, URL: localhost:5281/Gestion/Citaciones

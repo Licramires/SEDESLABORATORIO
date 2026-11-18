@@ -1,0 +1,39 @@
+Browser tab: 5, Title: "Laboratorio Central - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Establecimiento/4".
+1 AXWebArea Laboratorio Central - SEDESLABORATORIO, URL: localhost:5281/Gestion/Establecimiento/4
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Establecimiento/4#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Laboratorio Central
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 link Description: Volver a mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+		19 container
+			20 heading Laboratorio Central, Value: 1
+				21 text Laboratorio Central
+			22 text Clínico · Cochabamba · DEMO: Av. de pruebas 123 Código: DEMO-LAB-HABILITADO · Teléfono: 00000000 Vigencia actual: 13/10/2027
+			23 heading Expedientes y documentos, Value: 2
+				24 text Expedientes y documentos
+			25 text Abra cada trámite para consultar sus documentos, versiones y decisiones.
+			26 content list
+				27 container
+					28 AXListMarker • 
+					29 link Description: #15 · Renovación · borrador, Value: localhost:5281/Gestion/Detalle/15
+				30 container
+					31 AXListMarker • 
+					32 link Description: #13 · Apertura · habilitado, Value: localhost:5281/Gestion/Detalle/13
+			33 link Description: Ver ficha pública, Value: localhost:5281/publico/Publico/Detalle/4
+	34 container
+		35 text © 2026 SI_Lab · SEDES Cochabamba
+		36 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Laboratorio Central - SEDESLABORATORIO, URL: localhost:5281/Gestion/Establecimiento/4

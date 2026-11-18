@@ -1,0 +1,47 @@
+[
+  {
+    "id": "H01",
+    "reproduced": true,
+    "detail": "Cat\u00E1logo opcional: se env\u00EDa sin PDF y queda bloqueado al aprobar documentaci\u00F3n."
+  },
+  {
+    "id": "H02",
+    "reproduced": true,
+    "detail": "Observado sin PDF: pasa directamente a inspecci\u00F3n sin reenviar ni revisar documentaci\u00F3n."
+  },
+  {
+    "id": "H03",
+    "reproduced": true,
+    "detail": "La propia inspecci\u00F3n impide guardar la misma reserva o moverla menos de una hora."
+  },
+  {
+    "id": "H04",
+    "reproduced": true,
+    "detail": "Se habilita un laboratorio con nombre de error y coordenadas 0,0 a partir de JSON inv\u00E1lido."
+  },
+  {
+    "id": "H05",
+    "reproduced": false,
+    "detail": "Una coordenada JSON 1e100 lanza OverflowException sin control."
+  },
+  {
+    "id": "H06",
+    "reproduced": true,
+    "detail": "Un expediente enviado muestra el nombre actual del cat\u00E1logo en lugar del nombre al recibirlo."
+  },
+  {
+    "id": "H07",
+    "reproduced": true,
+    "detail": "Un plazo de subsanaci\u00F3n vencido no genera aviso: el proceso solo consulta vigencias de laboratorios."
+  },
+  {
+    "id": "H08",
+    "reproduced": true,
+    "detail": "Se registra acta antes de la hora programada, siempre que sea el mismo d\u00EDa; el contrato actual permite ese d\u00EDa."
+  },
+  {
+    "id": "H09",
+    "reproduced": true,
+    "detail": "El informe de cierre del mismo expediente cambia si cambia la vigencia del laboratorio, sin modificar ese expediente."
+  }
+]

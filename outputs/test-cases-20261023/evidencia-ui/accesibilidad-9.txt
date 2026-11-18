@@ -1,0 +1,44 @@
+Browser tab: 5, Title: "Añadir sección - SEDESLABORATORIO", URL: "http://localhost:5281/Administracion/Seccion".
+1 AXWebArea Añadir sección - SEDESLABORATORIO, URL: localhost:5281/Administracion/Seccion
+	2 link Description: Saltar al contenido, Value: localhost:5281/Administracion/Seccion#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Usuarios, Value: localhost:5281/Administracion/Usuarios
+			7 link Description: Roles y permisos, Value: localhost:5281/Administracion/Roles
+			8 link Description: Requisitos, Value: localhost:5281/Administracion/Requisitos
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+			11 button (collapsed) Configuración avanzada, Secondary Actions: Expand
+				12 text Configuración avanzada
+		13 text SEDES Cochabamba
+		14 text Servicio Departamental de Salud Portal de trámites y requisitos
+	15 container
+		16 text Administración  Añadir sección
+		17 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		18 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	19 container main-content
+		20 link Description: Volver a requisitos, Value: localhost:5281/Administracion/Requisitos
+		21 container
+			22 heading Añadir sección, Value: 1
+				23 text Añadir sección
+			24 text Agrupe los requisitos con un título y una descripción para orientar al propietario.
+			25 container
+				26 text Nombre de la sección
+				27 text field (settable) Nombre de la sección, ID: Nombre
+			28 container
+				29 text Descripción
+				30 text entry area (settable) Descripción, ID: Descripcion
+			31 container
+				32 text Orden de presentación
+				33 stepper (settable, integer) Orden de presentación, Value: 0, ID: Orden
+			34 text El orden menor aparece primero.
+			35 checkbox (settable, integer) Description: Sección activa, Value: 1, ID: Activa
+			36 text Desactivar oculta todos sus requisitos del registro público, sin cambiar su estado individual ni los expedientes enviados.
+			37 button Guardar sección
+			38 link Description: Cancelar, Value: localhost:5281/Administracion/Requisitos
+	39 container
+		40 text © 2026 SI_Lab · SEDES Cochabamba
+		41 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Añadir sección - SEDESLABORATORIO, URL: localhost:5281/Administracion/Seccion

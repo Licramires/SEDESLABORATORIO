@@ -1,0 +1,9 @@
+@model SeccionForm
+@{ ViewData["Title"] = Model.Id == 0 ? "Añadir sección" : "Editar sección"; }
+<div class="container silab-page"><a asp-action="Requisitos">Volver a requisitos</a><section class="silab-panel p-4 mt-3"><h1>@ViewData["Title"]</h1><p>Agrupe los requisitos con un título y una descripción para orientar al propietario.</p>
+<form method="post" class="workflow-form"><div asp-validation-summary="All" class="text-danger"></div><input asp-for="Id" type="hidden" /><input asp-for="Version" type="hidden" />
+<label asp-for="Nombre">Nombre de la sección<input asp-for="Nombre" class="form-control" required maxlength="200" /></label>
+<label asp-for="Descripcion">Descripción<textarea asp-for="Descripcion" class="form-control" maxlength="1000"></textarea></label>
+<label asp-for="Orden">Orden de presentación<input asp-for="Orden" class="form-control" min="0" max="9999" /></label><p class="text-muted">El orden menor aparece primero.</p>
+<label><input asp-for="Activa" /> Sección activa</label><p class="text-muted">Desactivar oculta todos sus requisitos del registro público, sin cambiar su estado individual ni los expedientes enviados.</p>
+<div class="d-flex flex-wrap gap-2"><button class="btn silab-btn-primary">Guardar sección</button><a asp-action="Requisitos" class="btn silab-btn-outline">Cancelar</a></div></form></section></div>

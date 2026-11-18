@@ -1,0 +1,644 @@
+Browser tab: 5, Title: "Nueva solicitud - SEDESLABORATORIO", URL: "http://localhost:5281/solicitud-registro/SolicitudRegistro/Nueva".
+1 AXWebArea Nueva solicitud - SEDESLABORATORIO, URL: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+	2 link Description: Saltar al contenido, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Nueva solicitud
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 heading Nueva solicitud de apertura, Value: 1
+			19 text Nueva solicitud de apertura
+		20 text Complete el formulario y adjunte los documentos requeridos.
+		21 container
+			22 heading Datos del establecimiento, Value: 2
+				23 text Datos del establecimiento
+			24 text Ingrese la información general de su laboratorio. Los campos con * son obligatorios.
+			25 container
+				26 text Municipio  *
+			27 pop up button (collapsed, settable) Municipio *, Value: Cochabamba, ID: Municipio, Secondary Actions: Expand
+				28 menu
+					29 Seleccione un municipio
+					30 (selected) Cochabamba
+			31 container
+				32 text Tipo de laboratorio  *
+			33 pop up button (collapsed, settable) Tipo de laboratorio *, Value: Clínico, ID: TipoLaboratorio, Secondary Actions: Expand
+				34 menu
+					35 Seleccione un tipo
+					36 (selected) Clínico
+			37 container
+				38 text Nombre del laboratorio  *
+			39 text field (settable) Nombre del laboratorio *, Value: Laboratorio acumulación UI 183, ID: NombreLaboratorio
+			40 text Teléfono de contacto
+			41 text field (settable) Teléfono de contacto
+			42 text Dirección de referencia
+			43 text field (settable) Dirección de referencia, ID: Direccion
+			44 text Código institucional (si dispone de uno)
+			45 text field (settable) Código institucional (si dispone de uno), ID: Codigo
+			46 heading Ubicación del establecimiento, Value: 2
+				47 text Ubicación del establecimiento
+			48 text Señale la ubicación para facilitar las inspecciones y la consulta pública.
+			49 container Description: Previsualización de la ubicación del laboratorio, ID: solicitud-map
+				50 container
+					51 button Marker
+				52 container
+					53 container
+						54 button Zoom in
+						55 button Zoom out
+					56 container
+						57 link Description:  Leaflet, Help: A JavaScript library for interactive maps, Value: leafletjs.com/
+						58 text  © OpenStreetMap contributors
+			59 container
+				60 text Latitud  *
+			61 stepper (settable, float) Latitud *, Value: -17.39667510986328, Details: -17.396675, ID: Latitud
+			62 container
+				63 text Longitud  *
+			64 stepper (settable, float) Longitud *, Value: -66.14970397949219, Details: -66.149706, ID: Longitud
+			65 text Escriba las coordenadas o arrastre el marcador para ajustar la ubicación.
+			66 heading Requisitos para habilitación, apertura y funcionamiento, Value: 2
+				67 text Requisitos para habilitación, apertura y funcionamiento
+			68 text Prepare los documentos publicados y complete los obligatorios antes de enviar a revisión.
+			69 container
+				70 heading Requisitos generales, Value: 3
+					71 text Requisitos generales
+				72 content list
+					73 container
+						74 text 1 . Licencia municipal Obligatorio para enviar la solicitud
+					75 container
+						76 text 2 . Plano arquitectónico Obligatorio para enviar la solicitud
+					77 container
+						78 text 3 . Certificado sanitario Obligatorio para enviar la solicitud
+			79 link Description: Ver el apartado de requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			80 heading Documentación legal y administrativa, Value: 3
+				81 text Documentación legal y administrativa
+			82 text Agregue PDF uno por uno o seleccione varios. Cada selección se suma a la lista; puede quitar archivos antes de guardar. Hasta 10 MB por PDF y 50 MB por esta carga. También puede guardar sin archivos y continuar después.
+			83 text Agregar archivos PDF a la lista
+			84 button Agregar archivos PDF a la lista, ID: DocumentosPdf
+			90 container pdf-selection
+				91 text 1 archivo(s) seleccionado(s) · 1,4 KB de 50 MB
+				92 text Los archivos de esta lista se guardan al pulsar «Guardar y completar requisitos».
+				93 content list pdf-selection-list
+					94 container
+						95 text archivo-1.pdf · 1,4 KB
+						96 button Quitar archivo-1.pdf
+			85 link Description: Cancelar, Value: localhost:5281/Gestion
+			86 button Guardar y completar requisitos
+	87 container
+		88 text © 2026 SI_Lab · SEDES Cochabamba
+		89 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 84 button Agregar archivos PDF a la lista, ID: DocumentosPdf
+
+Browser tab: 5, Title: "Nueva solicitud - SEDESLABORATORIO", URL: "http://localhost:5281/solicitud-registro/SolicitudRegistro/Nueva".
+1 AXWebArea Nueva solicitud - SEDESLABORATORIO, URL: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+	2 link Description: Saltar al contenido, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Nueva solicitud
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 heading Nueva solicitud de apertura, Value: 1
+			19 text Nueva solicitud de apertura
+		20 text Complete el formulario y adjunte los documentos requeridos.
+		21 container
+			22 heading Datos del establecimiento, Value: 2
+				23 text Datos del establecimiento
+			24 text Ingrese la información general de su laboratorio. Los campos con * son obligatorios.
+			25 container
+				26 text Municipio  *
+			27 pop up button (collapsed, settable) Municipio *, Value: Cochabamba, ID: Municipio, Secondary Actions: Expand
+				28 menu
+					29 Seleccione un municipio
+					30 (selected) Cochabamba
+			31 container
+				32 text Tipo de laboratorio  *
+			33 pop up button (collapsed, settable) Tipo de laboratorio *, Value: Clínico, ID: TipoLaboratorio, Secondary Actions: Expand
+				34 menu
+					35 Seleccione un tipo
+					36 (selected) Clínico
+			37 container
+				38 text Nombre del laboratorio  *
+			39 text field (settable) Nombre del laboratorio *, Value: Laboratorio acumulación UI 183, ID: NombreLaboratorio
+			40 text Teléfono de contacto
+			41 text field (settable) Teléfono de contacto
+			42 text Dirección de referencia
+			43 text field (settable) Dirección de referencia, ID: Direccion
+			44 text Código institucional (si dispone de uno)
+			45 text field (settable) Código institucional (si dispone de uno), ID: Codigo
+			46 heading Ubicación del establecimiento, Value: 2
+				47 text Ubicación del establecimiento
+			48 text Señale la ubicación para facilitar las inspecciones y la consulta pública.
+			49 container Description: Previsualización de la ubicación del laboratorio, ID: solicitud-map
+				50 container
+					51 button Marker
+				52 container
+					53 container
+						54 button Zoom in
+						55 button Zoom out
+					56 container
+						57 link Description:  Leaflet, Help: A JavaScript library for interactive maps, Value: leafletjs.com/
+						58 text  © OpenStreetMap contributors
+			59 container
+				60 text Latitud  *
+			61 stepper (settable, float) Latitud *, Value: -17.39667510986328, Details: -17.396675, ID: Latitud
+			62 container
+				63 text Longitud  *
+			64 stepper (settable, float) Longitud *, Value: -66.14970397949219, Details: -66.149706, ID: Longitud
+			65 text Escriba las coordenadas o arrastre el marcador para ajustar la ubicación.
+			66 heading Requisitos para habilitación, apertura y funcionamiento, Value: 2
+				67 text Requisitos para habilitación, apertura y funcionamiento
+			68 text Prepare los documentos publicados y complete los obligatorios antes de enviar a revisión.
+			69 container
+				70 heading Requisitos generales, Value: 3
+					71 text Requisitos generales
+				72 content list
+					73 container
+						74 text 1 . Licencia municipal Obligatorio para enviar la solicitud
+					75 container
+						76 text 2 . Plano arquitectónico Obligatorio para enviar la solicitud
+					77 container
+						78 text 3 . Certificado sanitario Obligatorio para enviar la solicitud
+			79 link Description: Ver el apartado de requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			80 heading Documentación legal y administrativa, Value: 3
+				81 text Documentación legal y administrativa
+			82 text Agregue PDF uno por uno o seleccione varios. Cada selección se suma a la lista; puede quitar archivos antes de guardar. Hasta 10 MB por PDF y 50 MB por esta carga. También puede guardar sin archivos y continuar después.
+			83 text Agregar archivos PDF a la lista
+			84 button Agregar archivos PDF a la lista, ID: DocumentosPdf
+			90 container pdf-selection
+				94 text 2 archivo(s) seleccionado(s) · 2,7 KB de 50 MB
+				92 text Los archivos de esta lista se guardan al pulsar «Guardar y completar requisitos».
+				93 content list pdf-selection-list
+					95 container
+						96 text archivo-1.pdf · 1,4 KB
+						97 button Quitar archivo-1.pdf
+					98 container
+						99 text archivo-2.pdf · 1,4 KB
+						100 button Quitar archivo-2.pdf
+			85 link Description: Cancelar, Value: localhost:5281/Gestion
+			86 button Guardar y completar requisitos
+	87 container
+		88 text © 2026 SI_Lab · SEDES Cochabamba
+		89 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 84 button Agregar archivos PDF a la lista, ID: DocumentosPdf
+
+Browser tab: 5, Title: "Nueva solicitud - SEDESLABORATORIO", URL: "http://localhost:5281/solicitud-registro/SolicitudRegistro/Nueva".
+1 AXWebArea Nueva solicitud - SEDESLABORATORIO, URL: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+	2 link Description: Saltar al contenido, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Nueva solicitud
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 heading Nueva solicitud de apertura, Value: 1
+			19 text Nueva solicitud de apertura
+		20 text Complete el formulario y adjunte los documentos requeridos.
+		21 container
+			22 heading Datos del establecimiento, Value: 2
+				23 text Datos del establecimiento
+			24 text Ingrese la información general de su laboratorio. Los campos con * son obligatorios.
+			25 container
+				26 text Municipio  *
+			27 pop up button (collapsed, settable) Municipio *, Value: Cochabamba, ID: Municipio, Secondary Actions: Expand
+				28 menu
+					29 Seleccione un municipio
+					30 (selected) Cochabamba
+			31 container
+				32 text Tipo de laboratorio  *
+			33 pop up button (collapsed, settable) Tipo de laboratorio *, Value: Clínico, ID: TipoLaboratorio, Secondary Actions: Expand
+				34 menu
+					35 Seleccione un tipo
+					36 (selected) Clínico
+			37 container
+				38 text Nombre del laboratorio  *
+			39 text field (settable) Nombre del laboratorio *, Value: Laboratorio acumulación UI 183, ID: NombreLaboratorio
+			40 text Teléfono de contacto
+			41 text field (settable) Teléfono de contacto
+			42 text Dirección de referencia
+			43 text field (settable) Dirección de referencia, ID: Direccion
+			44 text Código institucional (si dispone de uno)
+			45 text field (settable) Código institucional (si dispone de uno), ID: Codigo
+			46 heading Ubicación del establecimiento, Value: 2
+				47 text Ubicación del establecimiento
+			48 text Señale la ubicación para facilitar las inspecciones y la consulta pública.
+			49 container Description: Previsualización de la ubicación del laboratorio, ID: solicitud-map
+				50 container
+					51 button Marker
+				52 container
+					53 container
+						54 button Zoom in
+						55 button Zoom out
+					56 container
+						57 link Description:  Leaflet, Help: A JavaScript library for interactive maps, Value: leafletjs.com/
+						58 text  © OpenStreetMap contributors
+			59 container
+				60 text Latitud  *
+			61 stepper (settable, float) Latitud *, Value: -17.39667510986328, Details: -17.396675, ID: Latitud
+			62 container
+				63 text Longitud  *
+			64 stepper (settable, float) Longitud *, Value: -66.14970397949219, Details: -66.149706, ID: Longitud
+			65 text Escriba las coordenadas o arrastre el marcador para ajustar la ubicación.
+			66 heading Requisitos para habilitación, apertura y funcionamiento, Value: 2
+				67 text Requisitos para habilitación, apertura y funcionamiento
+			68 text Prepare los documentos publicados y complete los obligatorios antes de enviar a revisión.
+			69 container
+				70 heading Requisitos generales, Value: 3
+					71 text Requisitos generales
+				72 content list
+					73 container
+						74 text 1 . Licencia municipal Obligatorio para enviar la solicitud
+					75 container
+						76 text 2 . Plano arquitectónico Obligatorio para enviar la solicitud
+					77 container
+						78 text 3 . Certificado sanitario Obligatorio para enviar la solicitud
+			79 link Description: Ver el apartado de requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			80 heading Documentación legal y administrativa, Value: 3
+				81 text Documentación legal y administrativa
+			82 text Agregue PDF uno por uno o seleccione varios. Cada selección se suma a la lista; puede quitar archivos antes de guardar. Hasta 10 MB por PDF y 50 MB por esta carga. También puede guardar sin archivos y continuar después.
+			83 text Agregar archivos PDF a la lista
+			84 button Agregar archivos PDF a la lista, ID: DocumentosPdf
+			90 container pdf-selection
+				94 text 3 archivo(s) seleccionado(s) · 4,1 KB de 50 MB
+				92 text Los archivos de esta lista se guardan al pulsar «Guardar y completar requisitos».
+				93 content list pdf-selection-list
+					95 container
+						96 text archivo-1.pdf · 1,4 KB
+						97 button Quitar archivo-1.pdf
+					98 container
+						99 text archivo-2.pdf · 1,4 KB
+						100 button Quitar archivo-2.pdf
+					101 container
+						102 text archivo-3.pdf · 1,4 KB
+						103 button Quitar archivo-3.pdf
+			85 link Description: Cancelar, Value: localhost:5281/Gestion
+			86 button Guardar y completar requisitos
+	87 container
+		88 text © 2026 SI_Lab · SEDES Cochabamba
+		89 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 84 button Agregar archivos PDF a la lista, ID: DocumentosPdf
+
+Browser tab: 5, Title: "Nueva solicitud - SEDESLABORATORIO", URL: "http://localhost:5281/solicitud-registro/SolicitudRegistro/Nueva".
+1 AXWebArea Nueva solicitud - SEDESLABORATORIO, URL: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+	2 link Description: Saltar al contenido, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Nueva solicitud
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 heading Nueva solicitud de apertura, Value: 1
+			19 text Nueva solicitud de apertura
+		20 text Complete el formulario y adjunte los documentos requeridos.
+		21 container
+			22 heading Datos del establecimiento, Value: 2
+				23 text Datos del establecimiento
+			24 text Ingrese la información general de su laboratorio. Los campos con * son obligatorios.
+			25 container
+				26 text Municipio  *
+			27 pop up button (collapsed, settable) Municipio *, Value: Cochabamba, ID: Municipio, Secondary Actions: Expand
+				28 menu
+					29 Seleccione un municipio
+					30 (selected) Cochabamba
+			31 container
+				32 text Tipo de laboratorio  *
+			33 pop up button (collapsed, settable) Tipo de laboratorio *, Value: Clínico, ID: TipoLaboratorio, Secondary Actions: Expand
+				34 menu
+					35 Seleccione un tipo
+					36 (selected) Clínico
+			37 container
+				38 text Nombre del laboratorio  *
+			39 text field (settable) Nombre del laboratorio *, Value: Laboratorio acumulación UI 183, ID: NombreLaboratorio
+			40 text Teléfono de contacto
+			41 text field (settable) Teléfono de contacto
+			42 text Dirección de referencia
+			43 text field (settable) Dirección de referencia, ID: Direccion
+			44 text Código institucional (si dispone de uno)
+			45 text field (settable) Código institucional (si dispone de uno), ID: Codigo
+			46 heading Ubicación del establecimiento, Value: 2
+				47 text Ubicación del establecimiento
+			48 text Señale la ubicación para facilitar las inspecciones y la consulta pública.
+			49 container Description: Previsualización de la ubicación del laboratorio, ID: solicitud-map
+				50 container
+					51 button Marker
+				52 container
+					53 container
+						54 button Zoom in
+						55 button Zoom out
+					56 container
+						57 link Description:  Leaflet, Help: A JavaScript library for interactive maps, Value: leafletjs.com/
+						58 text  © OpenStreetMap contributors
+			59 container
+				60 text Latitud  *
+			61 stepper (settable, float) Latitud *, Value: -17.39667510986328, Details: -17.396675, ID: Latitud
+			62 container
+				63 text Longitud  *
+			64 stepper (settable, float) Longitud *, Value: -66.14970397949219, Details: -66.149706, ID: Longitud
+			65 text Escriba las coordenadas o arrastre el marcador para ajustar la ubicación.
+			66 heading Requisitos para habilitación, apertura y funcionamiento, Value: 2
+				67 text Requisitos para habilitación, apertura y funcionamiento
+			68 text Prepare los documentos publicados y complete los obligatorios antes de enviar a revisión.
+			69 container
+				70 heading Requisitos generales, Value: 3
+					71 text Requisitos generales
+				72 content list
+					73 container
+						74 text 1 . Licencia municipal Obligatorio para enviar la solicitud
+					75 container
+						76 text 2 . Plano arquitectónico Obligatorio para enviar la solicitud
+					77 container
+						78 text 3 . Certificado sanitario Obligatorio para enviar la solicitud
+			79 link Description: Ver el apartado de requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			80 heading Documentación legal y administrativa, Value: 3
+				81 text Documentación legal y administrativa
+			82 text Agregue PDF uno por uno o seleccione varios. Cada selección se suma a la lista; puede quitar archivos antes de guardar. Hasta 10 MB por PDF y 50 MB por esta carga. También puede guardar sin archivos y continuar después.
+			83 text Agregar archivos PDF a la lista
+			84 button Agregar archivos PDF a la lista, ID: DocumentosPdf
+			90 container pdf-selection
+				94 text 4 archivo(s) seleccionado(s) · 5,5 KB de 50 MB
+				92 text Los archivos de esta lista se guardan al pulsar «Guardar y completar requisitos».
+				93 content list pdf-selection-list
+					95 container
+						96 text archivo-1.pdf · 1,4 KB
+						97 button Quitar archivo-1.pdf
+					98 container
+						99 text archivo-2.pdf · 1,4 KB
+						100 button Quitar archivo-2.pdf
+					101 container
+						102 text archivo-3.pdf · 1,4 KB
+						103 button Quitar archivo-3.pdf
+					104 container
+						105 text archivo-4.pdf · 1,4 KB
+						106 button Quitar archivo-4.pdf
+			85 link Description: Cancelar, Value: localhost:5281/Gestion
+			86 button Guardar y completar requisitos
+	87 container
+		88 text © 2026 SI_Lab · SEDES Cochabamba
+		89 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 84 button Agregar archivos PDF a la lista, ID: DocumentosPdf
+
+Browser tab: 5, Title: "Nueva solicitud - SEDESLABORATORIO", URL: "http://localhost:5281/solicitud-registro/SolicitudRegistro/Nueva".
+1 AXWebArea Nueva solicitud - SEDESLABORATORIO, URL: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+	2 link Description: Saltar al contenido, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Nueva solicitud
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 heading Nueva solicitud de apertura, Value: 1
+			19 text Nueva solicitud de apertura
+		20 text Complete el formulario y adjunte los documentos requeridos.
+		21 container
+			22 heading Datos del establecimiento, Value: 2
+				23 text Datos del establecimiento
+			24 text Ingrese la información general de su laboratorio. Los campos con * son obligatorios.
+			25 container
+				26 text Municipio  *
+			27 pop up button (collapsed, settable) Municipio *, Value: Cochabamba, ID: Municipio, Secondary Actions: Expand
+				28 menu
+					29 Seleccione un municipio
+					30 (selected) Cochabamba
+			31 container
+				32 text Tipo de laboratorio  *
+			33 pop up button (collapsed, settable) Tipo de laboratorio *, Value: Clínico, ID: TipoLaboratorio, Secondary Actions: Expand
+				34 menu
+					35 Seleccione un tipo
+					36 (selected) Clínico
+			37 container
+				38 text Nombre del laboratorio  *
+			39 text field (settable) Nombre del laboratorio *, Value: Laboratorio acumulación UI 183, ID: NombreLaboratorio
+			40 text Teléfono de contacto
+			41 text field (settable) Teléfono de contacto
+			42 text Dirección de referencia
+			43 text field (settable) Dirección de referencia, ID: Direccion
+			44 text Código institucional (si dispone de uno)
+			45 text field (settable) Código institucional (si dispone de uno), ID: Codigo
+			46 heading Ubicación del establecimiento, Value: 2
+				47 text Ubicación del establecimiento
+			48 text Señale la ubicación para facilitar las inspecciones y la consulta pública.
+			49 container Description: Previsualización de la ubicación del laboratorio, ID: solicitud-map
+				50 container
+					51 button Marker
+				52 container
+					53 container
+						54 button Zoom in
+						55 button Zoom out
+					56 container
+						57 link Description:  Leaflet, Help: A JavaScript library for interactive maps, Value: leafletjs.com/
+						58 text  © OpenStreetMap contributors
+			59 container
+				60 text Latitud  *
+			61 stepper (settable, float) Latitud *, Value: -17.39667510986328, Details: -17.396675, ID: Latitud
+			62 container
+				63 text Longitud  *
+			64 stepper (settable, float) Longitud *, Value: -66.14970397949219, Details: -66.149706, ID: Longitud
+			65 text Escriba las coordenadas o arrastre el marcador para ajustar la ubicación.
+			66 heading Requisitos para habilitación, apertura y funcionamiento, Value: 2
+				67 text Requisitos para habilitación, apertura y funcionamiento
+			68 text Prepare los documentos publicados y complete los obligatorios antes de enviar a revisión.
+			69 container
+				70 heading Requisitos generales, Value: 3
+					71 text Requisitos generales
+				72 content list
+					73 container
+						74 text 1 . Licencia municipal Obligatorio para enviar la solicitud
+					75 container
+						76 text 2 . Plano arquitectónico Obligatorio para enviar la solicitud
+					77 container
+						78 text 3 . Certificado sanitario Obligatorio para enviar la solicitud
+			79 link Description: Ver el apartado de requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			80 heading Documentación legal y administrativa, Value: 3
+				81 text Documentación legal y administrativa
+			82 text Agregue PDF uno por uno o seleccione varios. Cada selección se suma a la lista; puede quitar archivos antes de guardar. Hasta 10 MB por PDF y 50 MB por esta carga. También puede guardar sin archivos y continuar después.
+			83 text Agregar archivos PDF a la lista
+			84 button Agregar archivos PDF a la lista, ID: DocumentosPdf
+			90 container pdf-selection
+				94 text 5 archivo(s) seleccionado(s) · 6,8 KB de 50 MB
+				92 text Los archivos de esta lista se guardan al pulsar «Guardar y completar requisitos».
+				93 content list pdf-selection-list
+					95 container
+						96 text archivo-1.pdf · 1,4 KB
+						97 button Quitar archivo-1.pdf
+					98 container
+						99 text archivo-2.pdf · 1,4 KB
+						100 button Quitar archivo-2.pdf
+					101 container
+						102 text archivo-3.pdf · 1,4 KB
+						103 button Quitar archivo-3.pdf
+					104 container
+						105 text archivo-4.pdf · 1,4 KB
+						106 button Quitar archivo-4.pdf
+					107 container
+						108 text archivo-5.pdf · 1,4 KB
+						109 button Quitar archivo-5.pdf
+			85 link Description: Cancelar, Value: localhost:5281/Gestion
+			86 button Guardar y completar requisitos
+	87 container
+		88 text © 2026 SI_Lab · SEDES Cochabamba
+		89 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 84 button Agregar archivos PDF a la lista, ID: DocumentosPdf
+
+Browser tab: 5, Title: "Nueva solicitud - SEDESLABORATORIO", URL: "http://localhost:5281/solicitud-registro/SolicitudRegistro/Nueva".
+1 AXWebArea Nueva solicitud - SEDESLABORATORIO, URL: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+	2 link Description: Saltar al contenido, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Nueva solicitud
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 heading Nueva solicitud de apertura, Value: 1
+			19 text Nueva solicitud de apertura
+		20 text Complete el formulario y adjunte los documentos requeridos.
+		21 container
+			22 heading Datos del establecimiento, Value: 2
+				23 text Datos del establecimiento
+			24 text Ingrese la información general de su laboratorio. Los campos con * son obligatorios.
+			25 container
+				26 text Municipio  *
+			27 pop up button (collapsed, settable) Municipio *, Value: Cochabamba, ID: Municipio, Secondary Actions: Expand
+				28 menu
+					29 Seleccione un municipio
+					30 (selected) Cochabamba
+			31 container
+				32 text Tipo de laboratorio  *
+			33 pop up button (collapsed, settable) Tipo de laboratorio *, Value: Clínico, ID: TipoLaboratorio, Secondary Actions: Expand
+				34 menu
+					35 Seleccione un tipo
+					36 (selected) Clínico
+			37 container
+				38 text Nombre del laboratorio  *
+			39 text field (settable) Nombre del laboratorio *, Value: Laboratorio acumulación UI 183, ID: NombreLaboratorio
+			40 text Teléfono de contacto
+			41 text field (settable) Teléfono de contacto
+			42 text Dirección de referencia
+			43 text field (settable) Dirección de referencia, ID: Direccion
+			44 text Código institucional (si dispone de uno)
+			45 text field (settable) Código institucional (si dispone de uno), ID: Codigo
+			46 heading Ubicación del establecimiento, Value: 2
+				47 text Ubicación del establecimiento
+			48 text Señale la ubicación para facilitar las inspecciones y la consulta pública.
+			49 container Description: Previsualización de la ubicación del laboratorio, ID: solicitud-map
+				50 container
+					51 button Marker
+				52 container
+					53 container
+						54 button Zoom in
+						55 button Zoom out
+					56 container
+						57 link Description:  Leaflet, Help: A JavaScript library for interactive maps, Value: leafletjs.com/
+						58 text  © OpenStreetMap contributors
+			59 container
+				60 text Latitud  *
+			61 stepper (settable, float) Latitud *, Value: -17.39667510986328, Details: -17.396675, ID: Latitud
+			62 container
+				63 text Longitud  *
+			64 stepper (settable, float) Longitud *, Value: -66.14970397949219, Details: -66.149706, ID: Longitud
+			65 text Escriba las coordenadas o arrastre el marcador para ajustar la ubicación.
+			66 heading Requisitos para habilitación, apertura y funcionamiento, Value: 2
+				67 text Requisitos para habilitación, apertura y funcionamiento
+			68 text Prepare los documentos publicados y complete los obligatorios antes de enviar a revisión.
+			69 container
+				70 heading Requisitos generales, Value: 3
+					71 text Requisitos generales
+				72 content list
+					73 container
+						74 text 1 . Licencia municipal Obligatorio para enviar la solicitud
+					75 container
+						76 text 2 . Plano arquitectónico Obligatorio para enviar la solicitud
+					77 container
+						78 text 3 . Certificado sanitario Obligatorio para enviar la solicitud
+			79 link Description: Ver el apartado de requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			80 heading Documentación legal y administrativa, Value: 3
+				81 text Documentación legal y administrativa
+			82 text Agregue PDF uno por uno o seleccione varios. Cada selección se suma a la lista; puede quitar archivos antes de guardar. Hasta 10 MB por PDF y 50 MB por esta carga. También puede guardar sin archivos y continuar después.
+			83 text Agregar archivos PDF a la lista
+			84 button Agregar archivos PDF a la lista, ID: DocumentosPdf
+			90 container pdf-selection
+				94 text 6 archivo(s) seleccionado(s) · 8,2 KB de 50 MB
+				92 text Los archivos de esta lista se guardan al pulsar «Guardar y completar requisitos».
+				93 content list pdf-selection-list
+					95 container
+						96 text archivo-1.pdf · 1,4 KB
+						97 button Quitar archivo-1.pdf
+					98 container
+						99 text archivo-2.pdf · 1,4 KB
+						100 button Quitar archivo-2.pdf
+					101 container
+						102 text archivo-3.pdf · 1,4 KB
+						103 button Quitar archivo-3.pdf
+					104 container
+						105 text archivo-4.pdf · 1,4 KB
+						106 button Quitar archivo-4.pdf
+					107 container
+						108 text archivo-5.pdf · 1,4 KB
+						109 button Quitar archivo-5.pdf
+					110 container
+						111 text archivo-6.pdf · 1,4 KB
+						112 button Quitar archivo-6.pdf
+			85 link Description: Cancelar, Value: localhost:5281/Gestion
+			86 button Guardar y completar requisitos
+	87 container
+		88 text © 2026 SI_Lab · SEDES Cochabamba
+		89 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 84 button Agregar archivos PDF a la lista, ID: DocumentosPdf

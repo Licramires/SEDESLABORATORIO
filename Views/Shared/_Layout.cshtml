@@ -1,113 +1,83 @@
-﻿<!DOCTYPE html>
+@{
+    var signedIn = User.Identity?.IsAuthenticated == true;
+    var controller = ViewContext.RouteData.Values["controller"]?.ToString() ?? "";
+    var action = ViewContext.RouteData.Values["action"]?.ToString() ?? "";
+    var login = controller == "Auth" && action == "Login" && !signedIn;
+    var role = User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value ?? "";
+    var roleLabel = role switch { "propietario" => "Propietario / Solicitante", "coordinador" => "Coordinador SEDES", "supervisor" => "Supervisor técnico", "abogado" => "Asesoría legal", "gerente" => "Gerencia", "administrador" => "Administrador del sistema", _ => "Mi cuenta" };
+    var group = role switch { "coordinador" => "Consola del coordinador", "supervisor" => "Panel del supervisor", "administrador" => "Administración", "gerente" => "Panel de gerencia", "abogado" => "Consola legal", _ => "Portal de Trámites SEDES" };
+    var links = new List<(string Area, string Controller, string Action, string Title, string Icon, string Actions)>();
+    if (role is "propietario" or "coordinador" or "abogado") links.Add(("", "Gestion", "Index", "Trámites", "building", "Index,Detalle"));
+    if (role == "propietario") {
+        links.Add(("", "Gestion", "Establecimientos", "Mis establecimientos", "building", "Establecimientos,Establecimiento"));
+        links.Add(("solicitud-registro", "SolicitudRegistro", "Nueva", "Nueva solicitud", "plus", "Nueva"));
+    }
+    if (role == "supervisor") {
+        links.Add(("", "Gestion", "Agenda", "Mi agenda", "calendar", "Agenda,Detalle"));
+        links.Add(("", "Gestion", "Rutas", "Rutas de inspección", "building", "Rutas"));
+        links.Add(("", "Gestion", "Actas", "Actas emitidas", "clipboard", "Actas"));
+        links.Add(("", "Gestion", "Index", "Expedientes asignados", "file", "Index"));
+    }
+    if (role is "supervisor" or "coordinador") links.Add(("", "Gestion", "Citaciones", "Citaciones", "mail", "Citaciones"));
+    if (role == "gerente") links.Add(("", "Metricas", "Index", "Métricas e informes", "chart", "Index"));
+    if (role == "administrador") {
+        links.Add(("", "Administracion", "Usuarios", "Usuarios", "users", "Usuarios,Usuario"));
+        links.Add(("", "Administracion", "Roles", "Roles y permisos", "shield", "Roles,EditarPermisos"));
+        links.Add(("", "Administracion", "Requisitos", "Requisitos", "grid", "Requisitos,Requisito,Seccion"));
+        links.Add(("", "Administracion", "Catalogos", "Catálogos y formularios", "clipboard", "Catalogos,Catalogo"));
+        links.Add(("", "Administracion", "CalidadDatos", "Validación de datos", "check", "CalidadDatos"));
+    }
+    var secundarios = links.Where(l => role == "supervisor" && l.Action is "Rutas" or "Index" || role == "administrador" && l.Action is "Catalogos" or "CalidadDatos").ToList();
+    links.RemoveAll(l => secundarios.Contains(l));
+    links.Add(("publico", "Publico", "Requerimientos", "Requerimientos", "file", "Requerimientos"));
+    links.Add(("publico", "Publico", "Index", "Laboratorios públicos", "search", "Index,Detalle,Ruta"));
+}
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SEDESLABORATORIO</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/SEDESLABORATORIO.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/design-theme.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/operations.css" asp-append-version="true" />
 </head>
-<body class="silab-shell @(User.Identity?.IsAuthenticated == true ? "silab-authenticated" : "silab-public")">
-    @if (User.Identity?.IsAuthenticated == true)
-    {
-        <aside class="silab-sidebar">
-            <a class="silab-sidebar-brand" asp-area="publico" asp-controller="Publico" asp-action="Index">
-                <span class="silab-brand-mark">SL</span>
-                <span><strong>SI_Lab</strong><small>SEDES</small></span>
-            </a>
+<body class="silab-shell @(signedIn ? "silab-authenticated" : "silab-public") @(login ? "silab-login" : "")">
+    <a href="#main-content" class="skip-link">Saltar al contenido</a>
+    @if (signedIn) {
+        <aside id="app-sidebar" class="silab-sidebar collapse" aria-label="Menú de la aplicación">
+            <a class="silab-sidebar-brand" asp-area="publico" asp-controller="Publico" asp-action="Index"><span class="brand-symbol"><partial name="_Icon" model='"lab"' /></span><span><strong>SI_Lab</strong><small>SEDES · COCHABAMBA</small></span></a>
             <nav class="silab-sidebar-nav" aria-label="Navegación principal">
-                <a asp-area="solicitud-seguimiento" asp-controller="SolicitudSeguimiento" asp-action="Index" class="silab-sidebar-link">
-                    <span>▣</span> Trámites
-                </a>
-                <a asp-area="auth" asp-controller="Auth" asp-action="Dashboard" class="silab-sidebar-link">
-                    <span>◉</span> Mi cuenta
-                </a>
-                @if (User.IsInRole("propietario"))
-                {
-                    <a asp-area="solicitud-seguimiento" asp-controller="SolicitudSeguimiento" asp-action="Index" class="silab-sidebar-link">
-                        <span>▦</span> Mis establecimientos
-                    </a>
-                    <a asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva" class="silab-sidebar-link">
-                        <span>⊕</span> Nueva solicitud
-                    </a>
+                @foreach (var item in links) {
+                    var current = controller == item.Controller && item.Actions.Split(',').Contains(action)
+                        || item.Controller == "Gestion" && item.Action == "Index" && controller == "SolicitudSeguimiento";
+                    <a asp-area="@item.Area" asp-controller="@item.Controller" asp-action="@item.Action" class="silab-sidebar-link @(current ? "is-active" : "")" aria-current="@(current ? "page" : null)"><partial name="_Icon" model="item.Icon" />@item.Title</a>
                 }
-                <a asp-area="publico" asp-controller="Publico" asp-action="Index" class="silab-sidebar-link">
-                    <span>⌕</span> Laboratorios públicos
-                </a>
+                @if(secundarios.Count > 0) { <details class="sidebar-secondary" open="@(secundarios.Any(i => i.Controller == controller && i.Actions.Split(',').Contains(action)))"><summary>@(role == "administrador" ? "Configuración avanzada" : "Consultas y recorridos")</summary>
+                @foreach(var item in secundarios) { var current = item.Controller == controller && item.Actions.Split(',').Contains(action); <a asp-area="@item.Area" asp-controller="@item.Controller" asp-action="@item.Action" class="silab-sidebar-link @(current ? "is-active" : "")" aria-current="@(current ? "page" : null)"><partial name="_Icon" model="item.Icon" />@item.Title</a> }</details> }
             </nav>
-            <div class="silab-sidebar-footer">
-                <strong>SEDES Cochabamba</strong>
-                <span>Portal de trámites y requisitos</span>
-            </div>
+            <div class="silab-sidebar-footer"><span class="sidebar-seal"><partial name="_Icon" model='"shield"' /></span><strong>SEDES Cochabamba</strong><span>Servicio Departamental de Salud</span><span>Portal de trámites y requisitos</span></div>
         </aside>
-        <header class="silab-auth-header">
-            <div class="container-fluid">
-                <span class="silab-header-crumb">Portal de Trámites SEDES</span>
-                <a class="silab-header-user silab-header-user-link" asp-area="auth" asp-controller="Auth" asp-action="Dashboard" aria-label="Ir a mi cuenta">
-                    <span class="silab-header-bell">♧</span>
-                    <span><strong>@User.Identity?.Name</strong><small>@(User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value ?? "Usuario")</small></span>
-                    <span class="silab-avatar">@(User.Identity?.Name?.FirstOrDefault() ?? 'U')</span>
-                </a>
-            </div>
-        </header>
+        <header class="silab-auth-header"><div class="container-fluid">
+            <button class="sidebar-toggle btn" type="button" data-bs-toggle="collapse" data-bs-target="#app-sidebar" aria-controls="app-sidebar" aria-expanded="false" aria-label="Abrir o cerrar menú"><partial name="_Icon" model='"menu"' /></button>
+            <span class="silab-header-crumb">@group <span aria-hidden="true">/</span> <strong>@ViewData["Title"]</strong></span>
+            <div class="header-actions"><a asp-area="" asp-controller="Notificaciones" asp-action="Index" class="header-notifications" aria-label="Ver notificaciones"><partial name="_Icon" model='"bell"' /></a>
+                <a class="silab-header-user silab-header-user-link" asp-area="auth" asp-controller="Auth" asp-action="Dashboard" aria-label="Ir a mi cuenta"><span><strong>@User.Identity?.Name</strong><small>@roleLabel</small></span><span class="silab-avatar" aria-hidden="true">@(User.Identity?.Name?.FirstOrDefault() ?? 'U')</span></a></div>
+        </div></header>
+    } else if (!login) {
+        <header><nav class="navbar navbar-expand-md navbar-dark silab-navbar"><div class="container">
+            <a class="navbar-brand silab-brand" asp-area="publico" asp-controller="Publico" asp-action="Index"><span class="brand-symbol"><partial name="_Icon" model='"lab"' /></span><span><strong>SI_Lab</strong><small>SEDES · COCHABAMBA</small></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#public-navigation" aria-controls="public-navigation" aria-expanded="false" aria-label="Abrir navegación"><span class="navbar-toggler-icon"></span></button>
+            <div id="public-navigation" class="navbar-collapse collapse"><ul class="navbar-nav silab-nav ms-auto"><li class="nav-item"><a class="nav-link" asp-area="publico" asp-controller="Publico" asp-action="Index">Laboratorios</a></li><li class="nav-item"><a class="nav-link" asp-area="publico" asp-controller="Publico" asp-action="Requerimientos">Requerimientos</a></li></ul><a class="btn silab-nav-login" asp-area="auth" asp-controller="Auth" asp-action="Login">Iniciar sesión</a></div>
+        </div></nav></header>
     }
-    else
-    {
-        <header>
-            <nav class="navbar navbar-expand-lg silab-navbar">
-            <div class="container">
-                <a class="navbar-brand silab-brand" asp-area="publico" asp-controller="Publico" asp-action="Index">
-                    <span class="silab-brand-mark">SL</span>
-                    <span><strong>SI_Lab</strong><small>SEDES · TRÁMITES</small></span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1 silab-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="publico" asp-controller="Publico" asp-action="Index">Laboratorios</a>
-                        </li>
-                        @if (User.Identity?.IsAuthenticated == true && User.IsInRole("propietario"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="solicitud-registro" asp-controller="SolicitudRegistro" asp-action="Nueva">Nueva solicitud</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="solicitud-seguimiento" asp-controller="SolicitudSeguimiento" asp-action="Index">Mis trámites</a>
-                            </li>
-                        }
-                    </ul>
-                    @if (User.Identity?.IsAuthenticated == true)
-                    {
-                        <a class="btn silab-nav-account" asp-area="auth" asp-controller="Auth" asp-action="Dashboard">Mi cuenta</a>
-                    }
-                    else
-                    {
-                        <a class="btn silab-nav-login" asp-area="auth" asp-controller="Auth" asp-action="Login">Ingresar</a>
-                    }
-                </div>
-            </div>
-            </nav>
-        </header>
-    }
-    <div class="silab-main">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="silab-footer">
-        <div class="container">
-            <span>© 2026 SI_Lab · SEDES</span>
-            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <div class="silab-main"><main id="main-content" class="pb-3" tabindex="-1">
+        @if (TempData["Error"] is string error) { <div class="container mt-3"><div class="alert alert-danger" role="alert">@error</div></div> }
+        @if (TempData["Success"] is string success) { <div class="container mt-3"><div class="alert alert-success" role="status">@success</div></div> }
+        @RenderBody()
+    </main></div>
+    @if (!login) { <footer class="silab-footer"><div class="container"><span>© @DateTime.UtcNow.Year SI_Lab · SEDES Cochabamba</span><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a></div></footer> }
+    <script src="~/lib/jquery/dist/jquery.min.js"></script><script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script><script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

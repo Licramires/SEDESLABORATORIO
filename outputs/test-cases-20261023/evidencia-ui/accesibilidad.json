@@ -1,0 +1,4928 @@
+[
+  {
+    "screen": "Login con errores",
+    "dom": {
+      "focused": "Password",
+      "url": "http://localhost:5281/auth/Auth/Login",
+      "visibleControls": [
+        {
+          "label": "Correo electrónico",
+          "name": "Email"
+        },
+        {
+          "label": "Contraseña",
+          "name": "Password"
+        },
+        {
+          "label": "Mantener la sesión iniciada",
+          "name": "RememberMe"
+        },
+        {
+          "label": "Ingresar",
+          "name": "Ingresar"
+        }
+      ]
+    },
+    "errorTargets": [
+      {
+        "field": "Email",
+        "targets": [
+          {
+            "exists": true,
+            "id": "Email-error",
+            "text": "El correo electrónico es obligatorio."
+          }
+        ]
+      },
+      {
+        "field": "Password",
+        "targets": [
+          {
+            "exists": true,
+            "id": "Password-error",
+            "text": "La contraseña es obligatoria."
+          }
+        ]
+      },
+      {
+        "field": "RememberMe",
+        "targets": [
+          {
+            "exists": false,
+            "id": "RememberMe-error"
+          }
+        ]
+      }
+    ],
+    "keyboard": "Tab llevó de Email a Password con outline solid"
+  },
+  {
+    "focused": "desde",
+    "outline": "solid",
+    "screen": "Métricas e indicadores - SEDESLABORATORIO",
+    "unlabelled": []
+  },
+  {
+    "role": "gerente",
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Métricas e informes",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Desde",
+        "name": "desde",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 9,
+        "label": "Hasta",
+        "name": "hasta",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "MunicipioTodos Cochabamba",
+        "name": "municipio",
+        "tag": "SELECT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Consultar período",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Limpiar filtros",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Descargar informe CSV",
+        "name": "descargar",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Actualizar gráficos",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "SeriesAperturas y renovacionesSolo aperturasSolo renovaciones",
+        "name": "",
+        "tag": "SELECT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Consultar messept 2026oct 2026",
+        "name": "",
+        "tag": "SELECT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "solid",
+      "tag": "SELECT"
+    },
+    "title": "Métricas e indicadores - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Metricas",
+    "width": 1280
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Usuarios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Roles y permisos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Requisitos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Catálogos y formularios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Validación de datos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Nombre",
+        "name": "Nombre",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Correo",
+        "name": "Email",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Contraseña (10–128 caracteres; vacía conserva la actual)",
+        "name": "Password",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "RolPropietario\nCoordinador\nSupervisor\nGerente\nAdministrador\nAbogado",
+        "name": "Rol",
+        "tag": "SELECT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Cuenta activa",
+        "name": "Activo",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Guardar usuario",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Cancelar",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Crear usuario - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Administracion/Usuario",
+    "width": 1280,
+    "keyboard": {
+      "outline": "solid",
+      "tag": "INPUT",
+      "text": "Correo"
+    }
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Usuarios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Roles y permisos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Requisitos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Catálogos y formularios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Validación de datos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Nombre",
+        "name": "Nombre",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Correo",
+        "name": "Email",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Contraseña (10–128 caracteres; vacía conserva la actual)",
+        "name": "Password",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "RolPropietario\nCoordinador\nSupervisor\nGerente\nAdministrador\nAbogado",
+        "name": "Rol",
+        "tag": "SELECT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Cuenta activa",
+        "name": "Activo",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Guardar usuario",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Cancelar",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Editar usuario - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Administracion/Usuario/1",
+    "width": 1280,
+    "keyboard": {
+      "outline": "solid",
+      "tag": "INPUT",
+      "text": "Correo"
+    }
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Usuarios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Roles y permisos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Requisitos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Catálogos y formularios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Validación de datos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Volver a roles y permisos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Crear solicitudes, adjuntar documentos y enviarlos",
+        "name": "Permisos[0].Habilitado",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Editar servicios y solicitar renovaciones",
+        "name": "Permisos[1].Habilitado",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Guardar permisos",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Cancelar",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Permisos de Propietario - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Administracion/EditarPermisos?rol=Propietario",
+    "width": 1280,
+    "keyboard": {
+      "outline": "solid",
+      "tag": "INPUT",
+      "text": "Editar servicios y solicitar renovaciones"
+    }
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Usuarios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Roles y permisos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Requisitos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Catálogos y formularios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Validación de datos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Volver a requisitos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Nombre del requisito",
+        "name": "Nombre",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "SecciónRequisitos generales (sin sección)",
+        "name": "SeccionId",
+        "tag": "SELECT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Orden dentro de la sección",
+        "name": "Orden",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Obligatorio para enviar la solicitud",
+        "name": "Obligatorio",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Activo",
+        "name": "Activo",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Plantilla institucional PDF (opcional, hasta 10 MB)",
+        "name": "Plantilla",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Guardar requisito",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 20,
+        "label": "Cancelar",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 21,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Añadir requisito - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Administracion/Requisito",
+    "width": 1280,
+    "keyboard": {
+      "outline": "solid",
+      "tag": "SELECT",
+      "text": "SecciónRequisitos generales (sin sección)"
+    }
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Usuarios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Roles y permisos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Requisitos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Catálogos y formularios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Validación de datos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Volver a requisitos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Nombre del requisito",
+        "name": "Nombre",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "SecciónRequisitos generales (sin sección)",
+        "name": "SeccionId",
+        "tag": "SELECT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Orden dentro de la sección",
+        "name": "Orden",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Obligatorio para enviar la solicitud",
+        "name": "Obligatorio",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Activo",
+        "name": "Activo",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Plantilla institucional PDF (opcional, hasta 10 MB)",
+        "name": "Plantilla",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Guardar requisito",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 20,
+        "label": "Cancelar",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 21,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Editar requisito - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Administracion/Requisito/1",
+    "width": 1280,
+    "keyboard": {
+      "outline": "solid",
+      "tag": "SELECT",
+      "text": "SecciónRequisitos generales (sin sección)"
+    }
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Usuarios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Roles y permisos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Requisitos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Catálogos y formularios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Validación de datos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Volver a requisitos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Nombre de la sección",
+        "name": "Nombre",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Descripción",
+        "name": "Descripcion",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Orden de presentación",
+        "name": "Orden",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Sección activa",
+        "name": "Activa",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Guardar sección",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Cancelar",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Añadir sección - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Administracion/Seccion",
+    "width": 1280,
+    "keyboard": {
+      "outline": "solid",
+      "tag": "TEXTAREA",
+      "text": "Descripción"
+    }
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Usuarios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Roles y permisos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Requisitos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Catálogos y formularios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Validación de datos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "ClaseTipo de laboratorioMunicipioPunto de verificación de inspecciónFeriadoPlantilla de actaPlantilla de citación",
+        "name": "Clase",
+        "tag": "SELECT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Nombre (para feriados: yyyy-MM-dd)",
+        "name": "Nombre",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Referencia institucional o artículo",
+        "name": "Referencia",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Activo",
+        "name": "Activo",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Plantilla PDF (obligatoria para formularios, hasta 10 MB)",
+        "name": "Plantilla",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Guardar",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Volver a catálogos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Configurar catálogo - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Administracion/Catalogo",
+    "width": 1280,
+    "keyboard": {
+      "outline": "solid",
+      "tag": "INPUT",
+      "text": "Nombre (para feriados: yyyy-MM-dd)"
+    }
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Usuarios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Roles y permisos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Requisitos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Catálogos y formularios",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Validación de datos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Configurar catálogos institucionales",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Validación institucional de datos - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Administracion/CalidadDatos",
+    "width": 1280
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Mis establecimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Nueva solicitud",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 9,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Volver al borrador",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Nombre del laboratorio",
+        "name": "NombreLaboratorio",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Tipo de laboratorio",
+        "name": "TipoLaboratorio",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Municipio",
+        "name": "Municipio",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Latitud",
+        "name": "Latitud",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Longitud",
+        "name": "Longitud",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Dirección",
+        "name": "Direccion",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Teléfono",
+        "name": "Telefono",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Código de referencia",
+        "name": "Codigo",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Guardar datos del borrador",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 20,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Corregir datos del borrador - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/EditarDatos/18",
+    "width": 1280
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Mis establecimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Nueva solicitud",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 9,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Volver a mis establecimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "#15 · Renovación · borrador",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "#13 · Apertura · habilitado",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Ver ficha pública",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Laboratorio Central - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Establecimiento/4",
+    "width": 1280
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Mis establecimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Nueva solicitud",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 9,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "← Volver a trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Consultar requerimientos para registrar un laboratorio",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Licencia municipal · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Plano arquitectónico · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Certificado sanitario · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Aprobación legal firmada",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Descargar acta firmada",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Solicitud #13 - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Detalle/13",
+    "width": 1280
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Mis establecimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Nueva solicitud",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 9,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "← Volver a trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Consultar requerimientos para registrar un laboratorio",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "PDF para Licencia municipal",
+        "name": "pdf",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Guardar nueva versión",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "PDF para Plano arquitectónico",
+        "name": "pdf",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Guardar nueva versión",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "PDF para Certificado sanitario",
+        "name": "pdf",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Guardar nueva versión",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Agregar otro PDF complementario",
+        "name": "pdf",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Guardar complemento",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 20,
+        "label": "Enviar solicitud",
+        "name": "Accion",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 21,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Solicitud #15 - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Detalle/15",
+    "width": 1280
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Mis establecimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Nueva solicitud",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 9,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 20,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 21,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 22,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 23,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 24,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 25,
+        "label": "Marcar como leída",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 26,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Notificaciones - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Notificaciones",
+    "width": 1280
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 9,
+        "label": "Revisar documentos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Asignar inspección",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Validar actas",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Estado Todos Revisión documental  Por asignar inspección  Rechazado  Borrador  Inspección  Por subsanar  Revisión de acta  Revisión legal  Habilitado",
+        "name": "estado",
+        "tag": "SELECT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Municipio",
+        "name": "municipio",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Filtrar",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Ver seguimiento",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Revisar documentos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Asignar supervisor",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Ver asignación",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Ver asignación",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 20,
+        "label": "Validar acta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 21,
+        "label": "Ver seguimiento",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 22,
+        "label": "Ver seguimiento",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 23,
+        "label": "Ver seguimiento",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 24,
+        "label": "Reprogramar inspección",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 25,
+        "label": "Ver seguimiento",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 26,
+        "label": "Ver seguimiento",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 27,
+        "label": "Revisar documentos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 28,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Trámites - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion",
+    "width": 1280,
+    "role": "coordinador",
+    "keyboard": {
+      "outline": "solid",
+      "tag": "INPUT"
+    }
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 9,
+        "label": "← Volver a trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Consultar requerimientos para registrar un laboratorio",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Licencia municipal · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Qué debe corregirse (obligatorio al observar)",
+        "name": "Motivo",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Aprobar este documento",
+        "name": "Resultado",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Observar este documento",
+        "name": "Resultado",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Plano arquitectónico · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Qué debe corregirse (obligatorio al observar)",
+        "name": "Motivo",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Aprobar este documento",
+        "name": "Resultado",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Observar este documento",
+        "name": "Resultado",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Certificado sanitario · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 20,
+        "label": "Qué debe corregirse (obligatorio al observar)",
+        "name": "Motivo",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 21,
+        "label": "Aprobar este documento",
+        "name": "Resultado",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 22,
+        "label": "Observar este documento",
+        "name": "Resultado",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": true,
+        "index": 23,
+        "label": "Documentación conforme: continuar",
+        "name": "Accion",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 24,
+        "label": "Motivo adicional (opcional al devolver; obligatorio para rechazo)",
+        "name": "Motivo",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 25,
+        "label": "Devolver para subsanar",
+        "name": "Accion",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 26,
+        "label": "Rechazo definitivo",
+        "name": "Accion",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 27,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Solicitud #3 - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Detalle/3",
+    "width": 1280,
+    "role": "coordinador",
+    "keyboard": {
+      "outline": "solid",
+      "tag": "BUTTON"
+    }
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 9,
+        "label": "← Volver a trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Consultar requerimientos para registrar un laboratorio",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Licencia municipal · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Plano arquitectónico · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Certificado sanitario · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "SupervisorSeleccione Supervisor Demo",
+        "name": "SupervisorId",
+        "tag": "SELECT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Inicio opcional (Bolivia)",
+        "name": "Fecha",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Fin opcional (Bolivia)",
+        "name": "FechaFin",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Motivo",
+        "name": "Motivo",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Guardar asignación",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Solicitud #4 - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Detalle/4",
+    "width": 1280,
+    "role": "coordinador",
+    "keyboard": {
+      "outline": "solid",
+      "tag": "INPUT"
+    }
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 9,
+        "label": "← Volver a trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Consultar requerimientos para registrar un laboratorio",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Licencia municipal · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Plano arquitectónico · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Certificado sanitario · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Fundamento",
+        "name": "Motivo",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Aceptar resultado del acta",
+        "name": "Accion",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Rechazar acta y reprogramar",
+        "name": "Accion",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Descargar acta firmada",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Solicitud #7 - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Detalle/7",
+    "width": 1280,
+    "role": "coordinador",
+    "keyboard": {
+      "outline": "solid",
+      "tag": "BUTTON"
+    }
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 9,
+        "label": "Ver evidencia",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver trámite",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Citaciones - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Citaciones",
+    "width": 1280,
+    "role": "coordinador"
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Mi agenda",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Actas emitidas",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Rutas de inspección",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Expedientes asignados",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Ver mis actas",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Buscar establecimiento o municipio",
+        "name": "",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Fecha de referencia",
+        "name": "",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Ir a hoy",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Actualizar agenda",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Semana anterior",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Semana siguiente",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "lun 19",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 20,
+        "label": "mar 20",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 21,
+        "label": "mié 21",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 22,
+        "label": "jue 22",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 23,
+        "label": "vie 23",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 24,
+        "label": "sáb 24",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 25,
+        "label": "dom 25",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 26,
+        "label": "Programar visita",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 27,
+        "label": "Abrir visita y acta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 28,
+        "label": "Ver ruta del día seleccionado",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 29,
+        "label": "Programar visita",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 30,
+        "label": "Abrir visita",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 31,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Mi agenda - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Agenda",
+    "width": 1280,
+    "role": "supervisor",
+    "keyboard": {
+      "outline": "solid",
+      "tag": "INPUT"
+    }
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Mi agenda",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Actas emitidas",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Rutas de inspección",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Expedientes asignados",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Volver a mi agenda",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Mis actas emitidas",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "1. Programar visita",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "2. Preparar y enviar acta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "3. Seguimiento y citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Consultar documentos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Inicio (Bolivia)",
+        "name": "Fecha",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Fin (Bolivia)",
+        "name": "FechaFin",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 20,
+        "label": "Motivo de la programación",
+        "name": "Motivo",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 21,
+        "label": "Guardar horario y notificar",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 22,
+        "label": "Licencia municipal · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 23,
+        "label": "Plano arquitectónico · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 24,
+        "label": "Certificado sanitario · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 25,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Inspección · solicitud #5 - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Detalle/5",
+    "width": 1280,
+    "role": "supervisor",
+    "keyboard": {
+      "outline": "solid",
+      "tag": "INPUT"
+    }
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Mi agenda",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Actas emitidas",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Rutas de inspección",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Expedientes asignados",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Volver a mi agenda",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Mis actas emitidas",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "1. Programar visita",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "2. Preparar y enviar acta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "3. Seguimiento y citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Consultar documentos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Inicio (Bolivia)",
+        "name": "Fecha",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Fin (Bolivia)",
+        "name": "FechaFin",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 20,
+        "label": "Motivo de la programación",
+        "name": "Motivo",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 21,
+        "label": "Guardar horario y notificar",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 22,
+        "label": "Descargar formulario PDF",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 23,
+        "label": "Descargar resumen completado",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 24,
+        "label": "¿Cumple este punto?SeleccioneCumpleNo cumpleNo aplica",
+        "name": "Verificaciones[0].Resultado",
+        "tag": "SELECT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 25,
+        "label": "Notas adicionales (opcional)",
+        "name": "Motivo",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 26,
+        "label": "PDF del acta firmada (necesario al enviar)",
+        "name": "Pdf",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 27,
+        "label": "Guardar contenido para firma",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": true,
+        "index": 28,
+        "label": "Enviar acta firmada al coordinador",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 29,
+        "label": "Licencia municipal · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 30,
+        "label": "Plano arquitectónico · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 31,
+        "label": "Certificado sanitario · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 32,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Inspección · solicitud #6 - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Detalle/6",
+    "width": 1280
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Mi agenda",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Actas emitidas",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Rutas de inspección",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Expedientes asignados",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Volver a mi agenda",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Mis actas emitidas",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "1. Programar visita",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "2. Preparar y enviar acta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "3. Seguimiento y citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Consultar documentos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Descargar mi acta firmada",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Fecha de emisión (Bolivia)",
+        "name": "FechaEmision",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 20,
+        "label": "Vencimiento (Bolivia)",
+        "name": "Vencimiento",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 21,
+        "label": "Motivo",
+        "name": "Motivo",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 22,
+        "label": "Avisar días antes",
+        "name": "AnticipacionDias",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 23,
+        "label": "Citación firmada en PDF, JPG o PNG (hasta 10 MB)",
+        "name": "Evidencia",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 24,
+        "label": "Registrar citación y notificar",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 25,
+        "label": "Licencia municipal · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 26,
+        "label": "Plano arquitectónico · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 27,
+        "label": "Certificado sanitario · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 28,
+        "label": "Descargar acta firmada",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 29,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Inspección · solicitud #7 - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Detalle/7",
+    "width": 1280
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Mi agenda",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Actas emitidas",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Rutas de inspección",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Expedientes asignados",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Ir a mi agenda",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Acta firmada PDF",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Ver seguimiento",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Acta firmada PDF",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Ver seguimiento",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Acta firmada PDF",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Ver seguimiento",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Acta firmada PDF",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 20,
+        "label": "Ver seguimiento",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 21,
+        "label": "Acta firmada PDF",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 22,
+        "label": "Ver seguimiento",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 23,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Actas emitidas - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Actas",
+    "width": 1280
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Mi agenda",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Actas emitidas",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Citaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 5,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Rutas de inspección",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Expedientes asignados",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Consultar mis actas",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Ver evidencia",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Ver trámite",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Citaciones - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Citaciones",
+    "width": 1280
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "Estado Todos Revisión documental  Por asignar inspección  Rechazado  Borrador  Inspección  Por subsanar  Revisión de acta  Revisión legal  Habilitado",
+        "name": "estado",
+        "tag": "SELECT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 9,
+        "label": "Municipio",
+        "name": "municipio",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Filtrar",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Resolver revisión legal",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Resolver revisión legal",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Abrir expediente",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Trámites - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion",
+    "width": 1280
+  },
+  {
+    "controls": [
+      {
+        "disabled": false,
+        "index": 0,
+        "label": "Saltar al contenido",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 1,
+        "label": "SI_LabSEDES · COCHABAMBA",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 2,
+        "label": "Trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 3,
+        "label": "Requerimientos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 4,
+        "label": "Laboratorios públicos",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 6,
+        "label": "Ver notificaciones",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 7,
+        "label": "Ir a mi cuenta",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 8,
+        "label": "← Volver a trámites",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 9,
+        "label": "Consultar requerimientos para registrar un laboratorio",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 10,
+        "label": "Licencia municipal · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 11,
+        "label": "Plano arquitectónico · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 12,
+        "label": "Certificado sanitario · PDF v1 (actual)",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 13,
+        "label": "Dictamen de aprobación",
+        "name": "Motivo",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 14,
+        "label": "Aprobación legal firmada en PDF",
+        "name": "Pdf",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 15,
+        "label": "Aprobar y habilitar",
+        "name": "",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 16,
+        "label": "Licencia municipal · versión 1",
+        "name": "DocumentosObservados",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 17,
+        "label": "Plano arquitectónico · versión 1",
+        "name": "DocumentosObservados",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 18,
+        "label": "Certificado sanitario · versión 1",
+        "name": "DocumentosObservados",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 19,
+        "label": "Fundamento y correcciones requeridas",
+        "name": "Motivo",
+        "tag": "TEXTAREA",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 20,
+        "label": "Al devolver para subsanar, repetir también la inspección de campo",
+        "name": "RequiereNuevaInspeccion",
+        "tag": "INPUT",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 21,
+        "label": "Devolver con observaciones",
+        "name": "Accion",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 22,
+        "label": "Rechazo legal definitivo",
+        "name": "Accion",
+        "tag": "BUTTON",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 23,
+        "label": "Descargar acta firmada",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "disabled": false,
+        "index": 24,
+        "label": "Privacidad",
+        "name": "",
+        "tag": "A",
+        "visible": true
+      }
+    ],
+    "focus": {
+      "name": "",
+      "outline": "none",
+      "tag": "BODY"
+    },
+    "title": "Solicitud #9 - SEDESLABORATORIO",
+    "url": "http://localhost:5281/Gestion/Detalle/9",
+    "width": 1280
+  }
+]

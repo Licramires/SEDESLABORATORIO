@@ -1,0 +1,28 @@
+Browser tab: 1, Title: "Revisa los datos - SEDESLABORATORIO", URL: "http://localhost:5287/Gestion/RevisarDocumento".
+1 AXWebArea Revisa los datos - SEDESLABORATORIO, URL: localhost:5287/Gestion/RevisarDocumento
+	2 link Description: Saltar al contenido, Value: localhost:5287/Gestion/RevisarDocumento#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5287/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5287/Gestion
+			7 link Description: Citaciones, Value: localhost:5287/Gestion/Citaciones
+			8 link Description: Requerimientos, Value: localhost:5287/publico/Publico/Requerimientos
+			9 link Description: Laboratorios públicos, Value: localhost:5287/publico/Publico
+		10 text SEDES Cochabamba
+		11 text Servicio Departamental de Salud Portal de trámites y requisitos
+	12 container
+		13 text Consola del coordinador  Revisa los datos
+		14 link Description: Ver notificaciones, Value: localhost:5287/Notificaciones
+		15 link Description: Ir a mi cuenta, Value: localhost:5287/auth/Auth/Dashboard
+	16 container Revisa los datos
+		17 heading Revisa los datos, Value: 1, ID: operation-error-title
+			18 text Revisa los datos
+		19 text Indique qué debe corregirse al observar un documento.
+		20 text Vuelve al formulario, corrige los datos indicados y envíalo de nuevo.
+		21 link Description: Ver versión actual del trámite, Value: localhost:5287/Gestion/Detalle/18
+		22 link Description: Ir a mi cuenta, Value: localhost:5287/auth/Auth/Dashboard
+	23 container
+		24 text © 2026 SI_Lab · SEDES Cochabamba
+		25 link Description: Privacidad, Value: localhost:5287/Home/Privacy
+
+The focused UI element is 1 AXWebArea Revisa los datos - SEDESLABORATORIO, URL: localhost:5287/Gestion/RevisarDocumento

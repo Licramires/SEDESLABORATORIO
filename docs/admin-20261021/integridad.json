@@ -1,0 +1,17 @@
+{
+  "integridad": "ok",
+  "referencias_rotas": 0,
+  "filas_originales_conservadas": {
+    "HistorialTramites": 51,
+    "Inspecciones": 7,
+    "Notificaciones": 11,
+    "Requisitos": 3,
+    "Usuarios": 6,
+    "Laboratorios": 5,
+    "Solicitudes": 14,
+    "PermisosRol": 0,
+    "Catalogos": 5,
+    "Citaciones": 1,
+    "Documentos": 39
+  }
+}

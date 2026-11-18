@@ -1,0 +1,82 @@
+Browser tab: 5, Title: "Solicitud #16 - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Detalle/16".
+1 AXWebArea Solicitud #16 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/16
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Detalle/16#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Solicitud #16
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 text Solicitud enviada para revisión documental.
+		19 link Description: ← Volver a trámites, Value: localhost:5281/Gestion
+		20 container
+			21 text Solicitud #16 · Apertura
+			22 heading Laboratorio campaña UI 183, Value: 1
+				23 text Laboratorio campaña UI 183
+			24 text Clínico · Cochabamba · -17.39, -66.16 Propietario: Propietario Demo Revisión documental
+			25 heading Documentación, Value: 2
+				26 text Documentación
+			27 text Consulte los documentos actuales y sus versiones anteriores. La revisión de cada PDF es independiente de la decisión sobre el expediente.
+			28 link Description: Consultar requerimientos para registrar un laboratorio, Value: localhost:5281/publico/Publico/Requerimientos
+			29 text 3 PDF en la lista de envío.
+			30 text  Los archivos retirados o reemplazados permanecen en el historial.
+			31 heading Requisitos generales, Value: 3
+				32 text Requisitos generales
+			33 heading Licencia municipal Obligatorio · requisito v1, Value: 3
+				34 text Licencia municipal
+				35 text Obligatorio · requisito v1
+			36 text Versión 1: pendiente
+			37 text archivo-1.pdf
+			38 link Description: Licencia municipal · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/40
+			39 text Pendiente de revisión
+			40 heading Plano arquitectónico Obligatorio · requisito v1, Value: 3
+				41 text Plano arquitectónico
+				42 text Obligatorio · requisito v1
+			43 text Versión 1: pendiente
+			44 text archivo-2.pdf
+			45 link Description: Plano arquitectónico · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/41
+			46 text Pendiente de revisión
+			47 heading Certificado sanitario Obligatorio · requisito v1, Value: 3
+				48 text Certificado sanitario
+				49 text Obligatorio · requisito v1
+			50 text Versión 1: pendiente
+			51 text archivo-3.pdf
+			52 link Description: Certificado sanitario · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/42
+			53 text Pendiente de revisión
+		54 container
+			55 heading Inspecciones e historial de asignaciones, Value: 2
+				56 text Inspecciones e historial de asignaciones
+			57 text No hay inspecciones asignadas.
+		58 heading Citaciones y evidencia, Value: 2
+			59 text Citaciones y evidencia
+		60 container
+			61 heading Historial del trámite, Value: 2
+				62 text Historial del trámite
+			63 text Fechas en UTC.
+			64 content list
+				65 container
+					66 AXListMarker 1. 
+					67 text 23/10/2026 05:21 · Propietario Demo Solicitud enviada para revisión documental.
+				68 container
+					69 AXListMarker 2. 
+					70 text 23/10/2026 05:20 · Propietario Demo Documento Certificado sanitario, versión 1, cargado para revisión.
+				71 container
+					72 AXListMarker 3. 
+					73 text 23/10/2026 05:20 · Propietario Demo Documento Plano arquitectónico, versión 1, cargado para revisión.
+				74 container
+					75 AXListMarker 4. 
+					76 text 23/10/2026 05:20 · Propietario Demo Documento Licencia municipal, versión 1, cargado para revisión.
+	77 container
+		78 text © 2026 SI_Lab · SEDES Cochabamba
+		79 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Solicitud #16 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/16

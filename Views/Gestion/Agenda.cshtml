@@ -1,0 +1,12 @@
+@model AgendaSupervisorModel
+@using System.Text.Json
+@{ ViewData["Title"] = Model.SoloRutas ? "Rutas de inspección" : "Mi agenda"; }
+<div class="container silab-page"><div class="silab-page-heading"><div><h1>@ViewData["Title"]</h1><p>@(Model.SoloRutas ? "Planifique el recorrido de sus visitas programadas." : "Organice sus asignaciones y continúe cada inspección desde su agenda.")</p></div><a asp-action="Actas" class="btn silab-btn-outline">Ver mis actas</a></div>
+<script id="agenda-data" type="application/json">@Html.Raw(JsonSerializer.Serialize(Model, new JsonSerializerOptions(JsonSerializerDefaults.Web)))</script>
+<div data-operations="agenda" data-source="agenda-data"><p>La agenda interactiva está cargando. También puede abrir la lista de visitas de abajo.</p></div>
+<details class="silab-panel p-4 mt-4 ops-fallback"><summary>Lista completa de inspecciones pendientes y enlaces</summary><p>Disponible también sin JavaScript. Los horarios corresponden a Bolivia.</p>
+<div class="table-responsive"><table class="table silab-table"><thead><tr><th>Laboratorio</th><th>Municipio</th><th>Horario</th><th>Acción</th></tr></thead><tbody>
+@foreach(var v in Model.Visitas) { <tr><td>@v.Nombre</td><td>@v.Municipio</td><td>@(v.Inicio is null ? "Por programar" : v.Inicio.Replace("T", " ") + " a " + v.Fin?.Replace("T", " "))</td><td><a asp-action="Detalle" asp-route-id="@v.SolicitudId">@(v.Inicio is null ? "Programar visita" : "Abrir visita")</a></td></tr> }
+@if(Model.Visitas.Count == 0) { <tr><td colspan="4">No tiene inspecciones pendientes asignadas.</td></tr> }
+</tbody></table></div></details></div>
+@section Scripts { <script src="~/js/operations.js" asp-append-version="true" defer></script> }

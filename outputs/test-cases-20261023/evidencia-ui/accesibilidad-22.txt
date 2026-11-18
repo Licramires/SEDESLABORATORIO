@@ -1,0 +1,108 @@
+Browser tab: 5, Title: "Mi agenda - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Agenda".
+1 AXWebArea Mi agenda - SEDESLABORATORIO, URL: localhost:5281/Gestion/Agenda
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Agenda#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Mi agenda, Value: localhost:5281/Gestion/Agenda
+			7 link Description: Actas emitidas, Value: localhost:5281/Gestion/Actas
+			8 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+			11 button (collapsed) Consultas y recorridos, Secondary Actions: Expand
+				12 text Consultas y recorridos
+		13 text SEDES Cochabamba
+		14 text Servicio Departamental de Salud Portal de trámites y requisitos
+	15 container
+		16 text Panel del supervisor  Mi agenda
+		17 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		18 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	19 container main-content
+		20 heading Mi agenda, Value: 1
+			21 text Mi agenda
+		22 text Organice sus asignaciones y continúe cada inspección desde su agenda.
+		23 link Description: Ver mis actas, Value: localhost:5281/Gestion/Actas
+		24 container
+			25 text Buscar establecimiento o municipio
+			26 search text field (settable) Buscar establecimiento o municipio
+			27 text Fecha de referencia
+			28 date field (settable) Fecha de referencia, Value: 2026-10-23
+				29 container
+					30 stepper
+					31 stepper
+					32 stepper
+				33 pop up button Mostrar el selector de fechas Mostrar el selector de fechas
+			34 button Ir a hoy
+			35 button Actualizar agenda
+			36 text 2  inspecciones pendientes con esta búsqueda ·  1  por programar ·  1  con horario
+			37 button Semana anterior
+			38 heading 19-oct – 25 oct 2026, Value: 2
+				39 text 19-oct  –  25 oct 2026
+			40 button Semana siguiente
+			41 container Seleccionar día
+				42 checkbox lun 19, Value: 0
+				43 checkbox mar 20, Value: 0
+				44 checkbox mié 21, Value: 0
+				45 checkbox jue 22, Value: 0
+				46 checkbox vie 23, Value: 1
+				47 checkbox sáb 24, Value: 0
+				48 checkbox dom 25, Value: 0
+			49 heading Por programar 1, Value: 2
+				50 text Por programar  1
+			51 text Estas asignaciones aún no tienen fecha. Abra una para elegir el horario.
+			52 container
+				53 text # 5  ·  Apertura
+				54 heading Laboratorio Los Andes, Value: 3
+					55 text Laboratorio Los Andes
+				56 text Cochabamba  · DEMO: Av. de pruebas 123
+				57 link Description: Programar visita, Value: localhost:5281/Gestion/Detalle/5#programacion
+			58 heading Visitas anteriores sin acta enviada, Value: 2
+				59 text Visitas anteriores sin acta enviada
+			60 text Estas visitas ya comenzaron y quedan fuera de la semana mostrada.
+			61 container
+				62 text # 6  ·  Apertura
+				63 heading Laboratorio Primavera, Value: 3
+					64 text Laboratorio Primavera
+				65 text Cochabamba  · DEMO: Av. de pruebas 123 18-oct ·  17:17 – 18:17
+				66 link Description: Abrir visita y acta, Value: localhost:5281/Gestion/Detalle/6#acta
+			67 heading Visitas de la semana, Value: 2
+				68 text Visitas de la semana
+			69 text Horarios de Bolivia (UTC−4). En móvil se muestra el día seleccionado.
+			70 link Description: Ver ruta del día seleccionado, Value: localhost:5281/Gestion/Rutas?fecha=2026-10-23
+			71 container Agenda semanal
+				72 container
+					73 heading lun 19, Value: 3
+						74 text lun 19
+					75 text Sin visitas
+				76 container
+					77 heading mar 20, Value: 3
+						78 text mar 20
+					79 text Sin visitas
+				80 container
+					81 heading mié 21, Value: 3
+						82 text mié 21
+					83 text Sin visitas
+				84 container
+					85 heading jue 22, Value: 3
+						86 text jue 22
+					87 text Sin visitas
+				88 container
+					89 heading vie 23 Hoy, Value: 3
+						90 text vie 23 Hoy
+					91 text Sin visitas
+				92 container
+					93 heading sáb 24, Value: 3
+						94 text sáb 24
+					95 text Sin visitas
+				96 container
+					97 heading dom 25, Value: 3
+						98 text dom 25
+					99 text Sin visitas
+			100 text Las nuevas asignaciones y los cambios guardados aparecen al actualizar la agenda. Solo se muestran inspecciones pendientes asignadas a usted.
+		101 button (collapsed) Lista completa de inspecciones pendientes y enlaces, Secondary Actions: Expand
+			102 text Lista completa de inspecciones pendientes y enlaces
+	103 container
+		104 text © 2026 SI_Lab · SEDES Cochabamba
+		105 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Mi agenda - SEDESLABORATORIO, URL: localhost:5281/Gestion/Agenda

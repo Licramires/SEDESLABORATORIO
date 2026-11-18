@@ -1,0 +1,283 @@
+Browser tab: 6, Title: "Trámites - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion".
+1 AXWebArea Trámites - SEDESLABORATORIO, URL: localhost:5281/Gestion
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Trámites
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 heading Trámites, Value: 1
+			19 text Trámites
+		20 text 16 solicitudes disponibles para tu rol.
+		21 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+		22 text Abra su trámite para completar documentos, enviarlo o consultar qué debe corregirse.
+		23 container
+			24 text Estado
+			25 pop up button (collapsed, settable) Estado, Value: Todos, Secondary Actions: Expand
+				26 menu
+					27 (selected) Todos
+					28 Revisión documental
+					29 Por asignar inspección
+					30 Rechazado
+					31 Borrador
+					32 Inspección
+					33 Por subsanar
+					34 Revisión de acta
+					35 Revisión legal
+					36 Habilitado
+			37 text Municipio
+			38 text field (settable) Municipio
+			39 button Filtrar
+		40 table
+			41 row
+				42 cell
+					43 text Solicitud
+				44 cell
+					45 text Establecimiento
+				46 cell
+					47 text Municipio
+				48 cell
+					49 text Estado
+				50 cell
+					51 text Fecha (UTC)
+				52 cell
+					53 text Siguiente paso
+			54 row
+				55 cell
+					56 text #16 Apertura
+				57 cell
+					58 text Laboratorio campaña UI 183
+					59 text Propietario Demo
+				60 cell
+					61 text Cochabamba
+				62 cell
+					63 text Revisión documental
+				64 cell
+					65 text 23/10/2026
+				66 cell
+					67 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/16
+			68 row
+				69 cell
+					70 text #15 Renovación
+				71 cell
+					72 text Laboratorio Central
+					73 text Propietario Demo
+				74 cell
+					75 text Cochabamba
+				76 cell
+					77 text Borrador
+				78 cell
+					79 text 21/10/2026
+				80 cell
+					81 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/15
+			82 row
+				83 cell
+					84 text #1 Apertura
+				85 cell
+					86 text Laboratorio QA visual
+					87 text Propietario Demo
+				88 cell
+					89 text Cochabamba
+				90 cell
+					91 text Borrador
+				92 cell
+					93 text 12/10/2026
+				94 cell
+					95 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/1
+			96 row
+				97 cell
+					98 text #2 Apertura
+				99 cell
+					100 text Laboratorio Los Olivos
+					101 text Propietario Demo
+				102 cell
+					103 text Cochabamba
+				104 cell
+					105 text Borrador
+				106 cell
+					107 text 28/09/2026
+				108 cell
+					109 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/2
+			110 row
+				111 cell
+					112 text #3 Apertura
+				113 cell
+					114 text Laboratorio San Rafael
+					115 text Propietario Demo
+				116 cell
+					117 text Cochabamba
+				118 cell
+					119 text Revisión documental
+				120 cell
+					121 text 28/09/2026
+				122 cell
+					123 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/3
+			124 row
+				125 cell
+					126 text #4 Apertura
+				127 cell
+					128 text Laboratorio Amanecer
+					129 text Propietario Demo
+				130 cell
+					131 text Cochabamba
+				132 cell
+					133 text Por asignar inspección
+				134 cell
+					135 text 28/09/2026
+				136 cell
+					137 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/4
+			138 row
+				139 cell
+					140 text #5 Apertura
+				141 cell
+					142 text Laboratorio Los Andes
+					143 text Propietario Demo
+				144 cell
+					145 text Cochabamba
+				146 cell
+					147 text Inspección
+				148 cell
+					149 text 28/09/2026
+				150 cell
+					151 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/5
+			152 row
+				153 cell
+					154 text #6 Apertura
+				155 cell
+					156 text Laboratorio Primavera
+					157 text Propietario Demo
+				158 cell
+					159 text Cochabamba
+				160 cell
+					161 text Inspección
+				162 cell
+					163 text 28/09/2026
+				164 cell
+					165 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/6
+			166 row
+				167 cell
+					168 text #7 Apertura
+				169 cell
+					170 text Laboratorio Horizonte
+					171 text Propietario Demo
+				172 cell
+					173 text Cochabamba
+				174 cell
+					175 text Inspección
+				176 cell
+					177 text 28/09/2026
+				178 cell
+					179 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/7
+			180 row
+				181 cell
+					182 text #8 Apertura
+				183 cell
+					184 text Laboratorio San Gabriel
+					185 text Propietario Demo
+				186 cell
+					187 text Cochabamba
+				188 cell
+					189 text Revisión de acta
+				190 cell
+					191 text 28/09/2026
+				192 cell
+					193 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/8
+			194 row
+				195 cell
+					196 text #9 Apertura
+				197 cell
+					198 text Laboratorio Alameda
+					199 text Propietario Demo
+				200 cell
+					201 text Cochabamba
+				202 cell
+					203 text Revisión legal
+				204 cell
+					205 text 28/09/2026
+				206 cell
+					207 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/9
+			208 row
+				209 cell
+					210 text #10 Apertura
+				211 cell
+					212 text Laboratorio La Rivera
+					213 text Propietario Demo
+				214 cell
+					215 text Cochabamba
+				216 cell
+					217 text Por subsanar
+				218 cell
+					219 text 28/09/2026
+				220 cell
+					221 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/10
+			222 row
+				223 cell
+					224 text #11 Apertura
+				225 cell
+					226 text Laboratorio El Prado
+					227 text Propietario Demo
+				228 cell
+					229 text Cochabamba
+				230 cell
+					231 text Por subsanar
+				232 cell
+					233 text 28/09/2026
+				234 cell
+					235 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/11
+			236 row
+				237 cell
+					238 text #12 Apertura
+				239 cell
+					240 text Laboratorio Las Flores
+					241 text Propietario Demo
+				242 cell
+					243 text Cochabamba
+				244 cell
+					245 text Rechazado
+				246 cell
+					247 text 28/09/2026
+				248 cell
+					249 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/12
+			250 row
+				251 cell
+					252 text #13 Apertura
+				253 cell
+					254 text Laboratorio Central
+					255 text Propietario Demo
+				256 cell
+					257 text Cochabamba
+				258 cell
+					259 text Habilitado
+				260 cell
+					261 text 28/09/2026
+				262 cell
+					263 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/13
+			264 row
+				265 cell
+					266 text #14 Renovación
+				267 cell
+					268 text Laboratorio del Valle
+					269 text Propietario Demo
+				270 cell
+					271 text Cochabamba
+				272 cell
+					273 text Revisión documental
+				274 cell
+					275 text 28/09/2026
+				276 cell
+					277 link Description: Abrir expediente, Value: localhost:5281/Gestion/Detalle/14
+	278 container
+		279 text © 2026 SI_Lab · SEDES Cochabamba
+		280 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Trámites - SEDESLABORATORIO, URL: localhost:5281/Gestion

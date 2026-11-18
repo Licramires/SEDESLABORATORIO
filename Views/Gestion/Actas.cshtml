@@ -1,0 +1,10 @@
+@model List<SEDESLABORATORIO.Data.Entities.Inspeccion>
+@{ ViewData["Title"] = "Actas emitidas"; }
+<div class="container silab-page"><div class="silab-page-heading"><div><h1>Mis actas emitidas</h1><p>Actas enviadas por usted y resultado de su revisión por el coordinador.</p></div><a asp-action="Agenda" class="btn silab-btn-primary">Ir a mi agenda</a></div>
+<p>Para preparar un acta nueva, abra una visita desde su agenda. Los borradores todavía no enviados se encuentran dentro de esa visita.</p>
+<div class="silab-panel table-responsive"><table class="table silab-table"><thead><tr><th>Acta / trámite</th><th>Laboratorio</th><th>Visita (Bolivia)</th><th>Dictamen de campo</th><th>Revisión del coordinador</th><th>Acciones</th></tr></thead><tbody>
+@foreach(var i in Model) {
+<tr><td>Acta #@i.Id · solicitud #@i.SolicitudId</td><td>@TramiteDetalleModel.DatosDe(i.Solicitud).NombreLaboratorio</td><td>@i.Fecha.ToString("dd/MM/yyyy HH:mm")</td><td>@(i.Resultado == "aprobado" ? "Conforme" : i.Resultado == "observado" ? "Con observaciones" : "Rechazado en campo")</td><td>@(i.Estado == "registrada" ? "Pendiente de revisión" : i.Estado == "validada" ? "Acta validada" : "Devuelta por el coordinador")</td><td><div class="admin-actions">@if(!string.IsNullOrWhiteSpace(i.ActaPdf)) { <a asp-action="Descargar" asp-route-id="@i.Id" asp-route-tipo="acta">Acta firmada PDF</a> }<a asp-action="Detalle" asp-route-id="@i.SolicitudId" asp-fragment="seguimiento">Ver seguimiento</a></div></td></tr>
+}
+@if(Model.Count == 0) { <tr><td colspan="6">Todavía no envió actas. Abra una visita programada desde su agenda para preparar la primera.</td></tr> }
+</tbody></table></div></div>

@@ -8,12 +8,13 @@ namespace SEDESLABORATORIO.Auth.Services;
 
 public sealed class AuthService : IAuthService
 {
-    private readonly ApplicationDbContext _dbContext;
-    private readonly PasswordHasher<Usuario> _passwordHasher = new();
+    private readonly IAutenticacionDatos _dbContext;
+    private readonly IPasswordHasher<Usuario> _passwordHasher;
 
-    public AuthService(ApplicationDbContext dbContext)
+    public AuthService(IAutenticacionDatos dbContext, IPasswordHasher<Usuario> passwordHasher)
     {
         _dbContext = dbContext;
+        _passwordHasher = passwordHasher;
     }
 
     public async Task<AuthResult> ValidateCredentialsAsync(
@@ -25,15 +26,23 @@ public sealed class AuthService : IAuthService
         var user = await _dbContext.Usuarios
             .SingleOrDefaultAsync(usuario => usuario.Email.ToLower() == normalizedEmail, cancellationToken);
 
-        if (user is null)
+        if (user is null || !user.Activo)
         {
             return new AuthResult(false, Error: "El correo o la contraseña no son válidos.");
         }
 
-        var passwordResult = _passwordHasher.VerifyHashedPassword(user, user.Password, password);
+        PasswordVerificationResult passwordResult;
+        try { passwordResult = _passwordHasher.VerifyHashedPassword(user, user.Password, password); }
+        catch (FormatException) { return new AuthResult(false, Error: "El correo o la contraseña no son válidos."); }
         if (passwordResult == PasswordVerificationResult.Failed)
         {
             return new AuthResult(false, Error: "El correo o la contraseña no son válidos.");
+        }
+
+        if (passwordResult == PasswordVerificationResult.SuccessRehashNeeded)
+        {
+            user.Password = _passwordHasher.HashPassword(user, password);
+            await _dbContext.SaveChangesAsync(cancellationToken);
         }
 
         return new AuthResult(true, user);

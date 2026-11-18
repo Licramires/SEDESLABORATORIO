@@ -1,0 +1,5 @@
+Browser tab: 6, Title: "localhost:5281/Gestion/Decidir", URL: "http://localhost:5281/Gestion/Decidir".
+1 AXWebArea localhost:5281/Gestion/Decidir
+	2 text El trámite cambió. Recargue la página antes de continuar.
+
+The focused UI element is 1 AXWebArea localhost:5281/Gestion/Decidir

@@ -1,0 +1,105 @@
+Browser tab: 5, Title: "Solicitud #16 - SEDESLABORATORIO", URL: "http://localhost:5281/Gestion/Detalle/16".
+1 AXWebArea Solicitud #16 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/16
+	2 link Description: Saltar al contenido, Value: localhost:5281/Gestion/Detalle/16#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Citaciones, Value: localhost:5281/Gestion/Citaciones
+			8 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			9 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		10 text SEDES Cochabamba
+		11 text Servicio Departamental de Salud Portal de trámites y requisitos
+	12 container
+		13 text Consola del coordinador  Solicitud #16
+		14 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		15 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	16 container main-content
+		17 link Description: ← Volver a trámites, Value: localhost:5281/Gestion
+		18 container
+			19 text Solicitud #16 · Apertura
+			20 heading Laboratorio campaña UI 183, Value: 1
+				21 text Laboratorio campaña UI 183
+			22 text Clínico · Cochabamba · -17.39, -66.16 Propietario: Propietario Demo Revisión documental
+			23 heading Documentación, Value: 2
+				24 text Documentación
+			25 text Consulte los documentos actuales y sus versiones anteriores. La revisión de cada PDF es independiente de la decisión sobre el expediente.
+			26 link Description: Consultar requerimientos para registrar un laboratorio, Value: localhost:5281/publico/Publico/Requerimientos
+			27 text 3 PDF en la lista de envío.
+			28 text  Los archivos retirados o reemplazados permanecen en el historial.
+			29 heading Requisitos generales, Value: 3
+				30 text Requisitos generales
+			31 heading Licencia municipal Obligatorio · requisito v1, Value: 3
+				32 text Licencia municipal
+				33 text Obligatorio · requisito v1
+			34 text Versión 1: aprobado
+			35 text archivo-1.pdf
+			36 link Description: Licencia municipal · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/40
+			37 text Aprobado Documento revisado y conforme. · 23/10/2026 05:26 UTC · revisor #2
+			38 container
+				39 text Qué debe corregirse (obligatorio al observar)
+				40 text entry area (settable) Qué debe corregirse (obligatorio al observar)
+				41 button Aprobar este documento
+				42 button Observar este documento
+			43 heading Plano arquitectónico Obligatorio · requisito v1, Value: 3
+				44 text Plano arquitectónico
+				45 text Obligatorio · requisito v1
+			46 text Versión 1: pendiente
+			47 text archivo-2.pdf
+			48 link Description: Plano arquitectónico · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/41
+			49 text Pendiente de revisión
+			50 container
+				51 text Qué debe corregirse (obligatorio al observar)
+				52 text entry area (settable) Qué debe corregirse (obligatorio al observar)
+				53 button Aprobar este documento
+				54 button Observar este documento
+			55 heading Certificado sanitario Obligatorio · requisito v1, Value: 3
+				56 text Certificado sanitario
+				57 text Obligatorio · requisito v1
+			58 text Versión 1: pendiente
+			59 text archivo-3.pdf
+			60 link Description: Certificado sanitario · PDF v1 (actual), Value: localhost:5281/Gestion/Descargar/42
+			61 text Pendiente de revisión
+			62 container
+				63 text Qué debe corregirse (obligatorio al observar)
+				64 text entry area (settable) Qué debe corregirse (obligatorio al observar)
+				65 button Aprobar este documento
+				66 button Observar este documento
+		67 container
+			68 heading Finalizar revisión documental, Value: 2
+				69 text Finalizar revisión documental
+			70 text 0 requisitos obligatorios sin PDF · 2 PDF sin conformidad.
+			71 button (disabled) Documentación conforme: continuar
+			72 button (collapsed) Devolver para corrección o rechazar, Secondary Actions: Expand
+				73 text Devolver para corrección o rechazar
+		74 container
+			75 heading Inspecciones e historial de asignaciones, Value: 2
+				76 text Inspecciones e historial de asignaciones
+			77 text No hay inspecciones asignadas.
+		78 heading Citaciones y evidencia, Value: 2
+			79 text Citaciones y evidencia
+		80 container
+			81 heading Historial del trámite, Value: 2
+				82 text Historial del trámite
+			83 text Fechas en UTC.
+			84 content list
+				85 container
+					86 AXListMarker 1. 
+					87 text 23/10/2026 05:26 · Coordinador Demo Documento #40 (Licencia municipal, versión 1): aprobado. Documento revisado y conforme.
+				88 container
+					89 AXListMarker 2. 
+					90 text 23/10/2026 05:21 · Propietario Demo Solicitud enviada para revisión documental.
+				91 container
+					92 AXListMarker 3. 
+					93 text 23/10/2026 05:20 · Propietario Demo Documento Certificado sanitario, versión 1, cargado para revisión.
+				94 container
+					95 AXListMarker 4. 
+					96 text 23/10/2026 05:20 · Propietario Demo Documento Plano arquitectónico, versión 1, cargado para revisión.
+				97 container
+					98 AXListMarker 5. 
+					99 text 23/10/2026 05:20 · Propietario Demo Documento Licencia municipal, versión 1, cargado para revisión.
+	100 container
+		101 text © 2026 SI_Lab · SEDES Cochabamba
+		102 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Solicitud #16 - SEDESLABORATORIO, URL: localhost:5281/Gestion/Detalle/16

@@ -1,0 +1,75 @@
+  SEDESLABORATORIO -> C:\Users\Usuario\OneDrive\Desktop\SEDESLABORATORIO\bin\Release\net8.0\SEDESLABORATORIO.dll
+  SiLab.Tests -> C:\Users\Usuario\OneDrive\Desktop\SEDESLABORATORIO\tests\SiLab.Tests\bin\Release\net8.0\SiLab.Tests.dll
+Serie de pruebas para C:\Users\Usuario\OneDrive\Desktop\SEDESLABORATORIO\tests\SiLab.Tests\bin\Release\net8.0\SiLab.Tests.dll (.NETCoreApp,Version=v8.0)
+Versión 17.14.1 (x64) de VSTest
+
+Iniciando la ejecución de pruebas, espere...
+1 archivos de prueba en total coincidieron con el patrón especificado.
+[xUnit.net 00:00:02.06]     SiLab.Tests.SolidContractsTests.Missing_or_empty_action_is_a_validation_error_not_a_dispatch_failure(includeEmpty: True) [FAIL]
+[xUnit.net 00:00:02.79]     SiLab.Tests.SolidContractsTests.Missing_or_empty_action_is_a_validation_error_not_a_dispatch_failure(includeEmpty: False) [FAIL]
+  Con error SiLab.Tests.SolidContractsTests.Missing_or_empty_action_is_a_validation_error_not_a_dispatch_failure(includeEmpty: True) [1 s]
+  Mensaje de error:
+   System.AggregateException : An error occurred while writing to logger(s). (Cannot open log for source '.NET Runtime'. You may not have write access.)
+---- System.InvalidOperationException : Cannot open log for source '.NET Runtime'. You may not have write access.
+-------- System.ComponentModel.Win32Exception : Acceso denegado.
+  Seguimiento de la pila:
+     at Microsoft.Extensions.Logging.Logger.ThrowLoggingError(List`1 exceptions)
+   at Microsoft.Extensions.Logging.Logger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+   at Microsoft.Extensions.Logging.Logger`1.Microsoft.Extensions.Logging.ILogger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+   at Microsoft.Extensions.Logging.LoggerMessage.<>c__DisplayClass8_0.<Define>g__Log|0(ILogger logger, Exception exception)
+   at Microsoft.AspNetCore.Diagnostics.DiagnosticsTelemetry.ReportUnhandledException(ILogger logger, HttpContext context, Exception ex)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at SiLab.Tests.TestClientAddressFilter.<>c.<<Configure>b__0_1>d.MoveNext() in C:\Users\Usuario\OneDrive\Desktop\SEDESLABORATORIO\tests\SiLab.Tests\WorkflowTests.cs:line 60
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.TestHost.HttpContextBuilder.<>c__DisplayClass23_0.<<SendAsync>g__RunRequestAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Testing.Handlers.CookieContainerHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at SiLab.Tests.SolidContractsTests.Missing_or_empty_action_is_a_validation_error_not_a_dispatch_failure(Boolean includeEmpty) in C:\Users\Usuario\OneDrive\Desktop\SEDESLABORATORIO\tests\SiLab.Tests\SolidContractsTests.cs:line 180
+--- End of stack trace from previous location ---
+----- Inner Stack Trace -----
+   at System.Diagnostics.EventLogInternal.OpenForWrite(String currentMachineName)
+   at System.Diagnostics.EventLogInternal.InternalWriteEvent(UInt32 eventID, UInt16 category, EventLogEntryType type, String[] strings, Byte[] rawData, String currentMachineName)
+   at System.Diagnostics.EventLogInternal.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+   at Microsoft.Extensions.Logging.EventLog.WindowsEventLog.WriteEntry(String message, EventLogEntryType type, Int32 eventID, Int16 category)
+   at Microsoft.Extensions.Logging.EventLog.EventLogLogger.WriteMessage(String message, EventLogEntryType eventLogEntryType, Int32 eventId)
+   at Microsoft.Extensions.Logging.EventLog.EventLogLogger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+   at Microsoft.Extensions.Logging.Logger.<Log>g__LoggerLog|14_0[TState](LogLevel logLevel, EventId eventId, ILogger logger, Exception exception, Func`3 formatter, List`1& exceptions, TState& state)
+----- Inner Stack Trace -----
+
+  Con error SiLab.Tests.SolidContractsTests.Missing_or_empty_action_is_a_validation_error_not_a_dispatch_failure(includeEmpty: False) [735 ms]
+  Mensaje de error:
+   System.AggregateException : An error occurred while writing to logger(s). (Cannot open log for source '.NET Runtime'. You may not have write access.)
+---- System.InvalidOperationException : Cannot open log for source '.NET Runtime'. You may not have write access.
+-------- System.ComponentModel.Win32Exception : Acceso denegado.
+  Seguimiento de la pila:
+     at Microsoft.Extensions.Logging.Logger.ThrowLoggingError(List`1 exceptions)
+   at Microsoft.Extensions.Logging.Logger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+   at Microsoft.Extensions.Logging.Logger`1.Microsoft.Extensions.Logging.ILogger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+   at Microsoft.Extensions.Logging.LoggerMessage.<>c__DisplayClass8_0.<Define>g__Log|0(ILogger logger, Exception exception)
+   at Microsoft.AspNetCore.Diagnostics.DiagnosticsTelemetry.ReportUnhandledException(ILogger logger, HttpContext context, Exception ex)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at SiLab.Tests.TestClientAddressFilter.<>c.<<Configure>b__0_1>d.MoveNext() in C:\Users\Usuario\OneDrive\Desktop\SEDESLABORATORIO\tests\SiLab.Tests\WorkflowTests.cs:line 60
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.TestHost.HttpContextBuilder.<>c__DisplayClass23_0.<<SendAsync>g__RunRequestAsync|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Testing.Handlers.CookieContainerHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at SiLab.Tests.SolidContractsTests.Missing_or_empty_action_is_a_validation_error_not_a_dispatch_failure(Boolean includeEmpty) in C:\Users\Usuario\OneDrive\Desktop\SEDESLABORATORIO\tests\SiLab.Tests\SolidContractsTests.cs:line 180
+--- End of stack trace from previous location ---
+----- Inner Stack Trace -----
+   at System.Diagnostics.EventLogInternal.OpenForWrite(String currentMachineName)
+   at System.Diagnostics.EventLogInternal.InternalWriteEvent(UInt32 eventID, UInt16 category, EventLogEntryType type, String[] strings, Byte[] rawData, String currentMachineName)
+   at System.Diagnostics.EventLogInternal.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+   at Microsoft.Extensions.Logging.EventLog.WindowsEventLog.WriteEntry(String message, EventLogEntryType type, Int32 eventID, Int16 category)
+   at Microsoft.Extensions.Logging.EventLog.EventLogLogger.WriteMessage(String message, EventLogEntryType eventLogEntryType, Int32 eventId)
+   at Microsoft.Extensions.Logging.EventLog.EventLogLogger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+   at Microsoft.Extensions.Logging.Logger.<Log>g__LoggerLog|14_0[TState](LogLevel logLevel, EventId eventId, ILogger logger, Exception exception, Func`3 formatter, List`1& exceptions, TState& state)
+----- Inner Stack Trace -----
+
+
+Con error! - Con error:     2, Superado:     0, Omitido:     0, Total:     2, Duración: 2 s - SiLab.Tests.dll (net8.0)
+
+Hay actualizaciones de carga de trabajo disponibles. Ejecute "dotnet workload list" para obtener más información.

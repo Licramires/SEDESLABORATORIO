@@ -1,0 +1,29 @@
+  SEDESLABORATORIO -> C:\Users\Usuario\OneDrive\Desktop\SEDESLABORATORIO\bin\Release\net8.0\SEDESLABORATORIO.dll
+  SiLab.Tests -> C:\Users\Usuario\OneDrive\Desktop\SEDESLABORATORIO\tests\SiLab.Tests\bin\Release\net8.0\SiLab.Tests.dll
+Serie de pruebas para C:\Users\Usuario\OneDrive\Desktop\SEDESLABORATORIO\tests\SiLab.Tests\bin\Release\net8.0\SiLab.Tests.dll (.NETCoreApp,Version=v8.0)
+Versión 17.14.1 (x64) de VSTest
+
+Iniciando la ejecución de pruebas, espere...
+1 archivos de prueba en total coincidieron con el patrón especificado.
+[xUnit.net 00:00:01.82]     SiLab.Tests.SolidContractsTests.Missing_or_empty_action_is_a_validation_error_not_a_dispatch_failure(includeEmpty: True) [FAIL]
+[xUnit.net 00:00:02.44]     SiLab.Tests.SolidContractsTests.Missing_or_empty_action_is_a_validation_error_not_a_dispatch_failure(includeEmpty: False) [FAIL]
+  Con error SiLab.Tests.SolidContractsTests.Missing_or_empty_action_is_a_validation_error_not_a_dispatch_failure(includeEmpty: True) [1 s]
+  Mensaje de error:
+   System.Net.Http.HttpRequestException : Response status code does not indicate success: 500 (Internal Server Error).
+  Seguimiento de la pila:
+     at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at SiLab.Tests.SolidContractsTests.Missing_or_empty_action_is_a_validation_error_not_a_dispatch_failure(Boolean includeEmpty) in C:\Users\Usuario\OneDrive\Desktop\SEDESLABORATORIO\tests\SiLab.Tests\SolidContractsTests.cs:line 180
+--- End of stack trace from previous location ---
+  Con error SiLab.Tests.SolidContractsTests.Missing_or_empty_action_is_a_validation_error_not_a_dispatch_failure(includeEmpty: False) [624 ms]
+  Mensaje de error:
+   System.Net.Http.HttpRequestException : Response status code does not indicate success: 500 (Internal Server Error).
+  Seguimiento de la pila:
+     at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at SiLab.Tests.SolidContractsTests.Missing_or_empty_action_is_a_validation_error_not_a_dispatch_failure(Boolean includeEmpty) in C:\Users\Usuario\OneDrive\Desktop\SEDESLABORATORIO\tests\SiLab.Tests\SolidContractsTests.cs:line 180
+--- End of stack trace from previous location ---
+
+Con error! - Con error:     2, Superado:     0, Omitido:     0, Total:     2, Duración: 2 s - SiLab.Tests.dll (net8.0)
+
+Hay actualizaciones de carga de trabajo disponibles. Ejecute "dotnet workload list" para obtener más información.

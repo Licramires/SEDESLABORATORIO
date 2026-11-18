@@ -1,0 +1,554 @@
+[
+  {
+    "ControllerName": "SolicitudSeguimiento",
+    "ActionName": "Index",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Index"
+  },
+  {
+    "ControllerName": "SolicitudSeguimiento",
+    "ActionName": "Details",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Details"
+  },
+  {
+    "ControllerName": "SolicitudSeguimiento",
+    "ActionName": "Enviar",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Enviar"
+  },
+  {
+    "ControllerName": "SolicitudRegistro",
+    "ActionName": "Index",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/solicitud-registro/SolicitudRegistro/Index"
+  },
+  {
+    "ControllerName": "SolicitudRegistro",
+    "ActionName": "Nueva",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva"
+  },
+  {
+    "ControllerName": "SolicitudRegistro",
+    "ActionName": "Nueva",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva"
+  },
+  {
+    "ControllerName": "SolicitudRegistro",
+    "ActionName": "Exito",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/solicitud-registro/SolicitudRegistro/Exito"
+  },
+  {
+    "ControllerName": "Publico",
+    "ActionName": "Index",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/publico/Publico/Index"
+  },
+  {
+    "ControllerName": "Publico",
+    "ActionName": "Requerimientos",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/publico/Publico/Requerimientos"
+  },
+  {
+    "ControllerName": "Publico",
+    "ActionName": "Detalle",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/publico/Publico/Detalle"
+  },
+  {
+    "ControllerName": "Publico",
+    "ActionName": "Ruta",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/publico/Publico/Ruta"
+  },
+  {
+    "ControllerName": "Publico",
+    "ActionName": "Plantilla",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/publico/Publico/Plantilla"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "Catalogos",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Administracion/Catalogos"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "Catalogo",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Administracion/Catalogo"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "Catalogo",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Administracion/Catalogo"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "CalidadDatos",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Administracion/CalidadDatos"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "Usuarios",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Administracion/Usuarios"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "Usuario",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Administracion/Usuario"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "Usuario",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Administracion/Usuario"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "Roles",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Administracion/Roles"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "EditarPermisos",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Administracion/EditarPermisos"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "EditarPermisos",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Administracion/EditarPermisos"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "Permiso",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Administracion/Permiso"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "Requisitos",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Administracion/Requisitos"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "Requisito",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Administracion/Requisito"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "Requisito",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Administracion/Requisito"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "EstadoRequisito",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Administracion/EstadoRequisito"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "EliminarRequisito",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Administracion/EliminarRequisito"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "Seccion",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Administracion/Seccion"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "Seccion",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Administracion/Seccion"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "EstadoSeccion",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Administracion/EstadoSeccion"
+  },
+  {
+    "ControllerName": "Administracion",
+    "ActionName": "EliminarSeccion",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Administracion/EliminarSeccion"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Index",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Gestion/Index"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Detalle",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Gestion/Detalle"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Documento",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Gestion/Documento"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Descargar",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Gestion/Descargar"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Decidir",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Gestion/Decidir"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Agenda",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Gestion/Agenda"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "FormularioActa",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Gestion/FormularioActa"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Informe",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Gestion/Informe"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Establecimientos",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Gestion/Establecimientos"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Servicios",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Gestion/Servicios"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Renovar",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Gestion/Renovar"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "EditarDatos",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Gestion/EditarDatos"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "EditarDatos",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Gestion/EditarDatos"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "PrepararActa",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Gestion/PrepararActa"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "RevisarDocumento",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Gestion/RevisarDocumento"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "AsociarDocumento",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Gestion/AsociarDocumento"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Citacion",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Gestion/Citacion"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Citaciones",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Gestion/Citaciones"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "PlantillaCitacion",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Gestion/PlantillaCitacion"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "RetirarComplementario",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Gestion/RetirarComplementario"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "RetirarDocumento",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Gestion/RetirarDocumento"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Establecimiento",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Gestion/Establecimiento"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Rutas",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Gestion/Rutas"
+  },
+  {
+    "ControllerName": "Gestion",
+    "ActionName": "Actas",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Gestion/Actas"
+  },
+  {
+    "ControllerName": "Home",
+    "ActionName": "Index",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Home/Index"
+  },
+  {
+    "ControllerName": "Home",
+    "ActionName": "Privacy",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Home/Privacy"
+  },
+  {
+    "ControllerName": "Home",
+    "ActionName": "Error",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Home/Error"
+  },
+  {
+    "ControllerName": "Metricas",
+    "ActionName": "Index",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Metricas/Index"
+  },
+  {
+    "ControllerName": "Metricas",
+    "ActionName": "Datos",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Metricas/Datos"
+  },
+  {
+    "ControllerName": "Notificaciones",
+    "ActionName": "Index",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/Notificaciones/Index"
+  },
+  {
+    "ControllerName": "Notificaciones",
+    "ActionName": "Leer",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/Notificaciones/Leer"
+  },
+  {
+    "ControllerName": "Auth",
+    "ActionName": "Index",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/auth/Auth/Index"
+  },
+  {
+    "ControllerName": "Auth",
+    "ActionName": "Login",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/auth/Auth/Login"
+  },
+  {
+    "ControllerName": "Auth",
+    "ActionName": "Login",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/auth/Auth/Login"
+  },
+  {
+    "ControllerName": "Auth",
+    "ActionName": "Dashboard",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/auth/Auth/Dashboard"
+  },
+  {
+    "ControllerName": "Auth",
+    "ActionName": "Logout",
+    "Methods": [
+      "POST"
+    ],
+    "Url": "/auth/Auth/Logout"
+  },
+  {
+    "ControllerName": "Auth",
+    "ActionName": "AccessDenied",
+    "Methods": [
+      "GET"
+    ],
+    "Url": "/auth/Auth/AccessDenied"
+  }
+]

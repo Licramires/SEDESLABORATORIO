@@ -1,0 +1,20 @@
+{
+  "permisosEscritorio": {
+    "document": 1265,
+    "viewport": 1280
+  },
+  "contrastePermisos": [],
+  "permisosMovil": {
+    "document": 375,
+    "viewport": 390
+  },
+  "rolesMovil": {
+    "document": 375,
+    "viewport": 390
+  },
+  "requisitosMovil": {
+    "document": 375,
+    "viewport": 390
+  },
+  "contrasteRequisitos": []
+}

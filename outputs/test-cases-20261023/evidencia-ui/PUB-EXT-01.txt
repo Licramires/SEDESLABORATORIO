@@ -1,0 +1,101 @@
+Browser tab: 5, Title: "Laboratorios habilitados - SEDESLABORATORIO", URL: "http://localhost:5281/publico/Publico?search=Especializado&tipo=&estado=".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 45-90
+~1 AXWebArea Laboratorios habilitados - SEDESLABORATORIO, URL: localhost:5281/publico/Publico?search=Especializado&tipo=&estado=
+~	2 link Description: Saltar al contenido, Value: localhost:5281/publico/Publico?search=Especializado&tipo=&estado=#main-content
+~			16 link Description: Explorar laboratorios, Value: localhost:5281/publico/Publico?search=Especializado&tipo=&estado=#laboratorios
+~			22 text 1 resultados
+~				24 search text field (settable) Description: Buscar laboratorio, Value: Especializado
+~				39 text Especializado Abierto
+~				40 heading Laboratorio Clínica Azul, Value: 3
+~					41 text Laboratorio Clínica Azul
+~				42 text Datos pendientes de validación institucional. Genética, Inmunología, Biología molecular
+~				43 link Description: Ver detalle, Value: localhost:5281/publico/Publico/Detalle/3
+~				44 link Description: Cómo llegar, Value: localhost:5281/publico/Publico/Ruta?laboratorioId=3
++			45 container Description: Mapa de laboratorios, ID: public-map
++				46 container
++					47 container
++						48 button (disabled) Zoom in
++						49 button Zoom out
++					50 container
++						51 link Description:  Leaflet, Help: A JavaScript library for interactive maps, Value: leafletjs.com/
++						52 text  © OpenStreetMap contributors
++		53 container requisitos
++			54 heading Requisitos para solicitar la habilitación, Value: 2
++				55 text Requisitos para solicitar la habilitación
++			56 content list
++				57 text Licencia municipal
++				58 text Plano arquitectónico
++				59 text Certificado sanitario
++			60 text La obligatoriedad y los documentos pendientes se indican dentro de cada trámite.
++	61 container
++		62 text © 2026 SI_Lab · SEDES Cochabamba
++		63 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+The focused UI element is 1 AXWebArea Laboratorios habilitados - SEDESLABORATORIO, URL: localhost:5281/publico/Publico?search=Especializado&tipo=&estado=
+
+Browser tab: 5, Title: "Laboratorios habilitados - SEDESLABORATORIO", URL: "http://localhost:5281/publico/Publico?search=Gen%C3%A9tica&tipo=&estado=".
+1 AXWebArea Laboratorios habilitados - SEDESLABORATORIO, URL: localhost:5281/publico/Publico?search=Gen%C3%A9tica&tipo=&estado=
+	2 link Description: Saltar al contenido, Value: localhost:5281/publico/Publico?search=Gen%C3%A9tica&tipo=&estado=#main-content
+	3 container
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container public-navigation
+			6 content list
+				7 link Description: Laboratorios, Value: localhost:5281/publico/Publico
+				8 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			9 link Description: Iniciar sesión, Value: localhost:5281/auth/Auth/Login
+	10 container main-content
+		11 container
+			12 heading Encuentra un laboratorio cerca de ti, Value: 1
+				13 text Encuentra un laboratorio
+				14 text cerca de ti
+			15 text Consulta laboratorios habilitados, sus servicios y el estado de atención.
+			16 link Description: Explorar laboratorios, Value: localhost:5281/publico/Publico?search=Gen%C3%A9tica&tipo=&estado=#laboratorios
+			17 link Description: Requisitos de laboratorios, Value: localhost:5281/publico/Publico/Requerimientos
+		18 container laboratorios
+			19 heading Mapa de laboratorios, Value: 2
+				20 text Mapa de laboratorios
+			21 text Consulte su ubicación, servicios y estado de atención.
+			22 text 1 resultados
+			23 container
+				24 search text field (settable) Description: Buscar laboratorio, Value: Genética
+				25 pop up button (collapsed, settable) Description: Tipo de laboratorio, Value: Todos los tipos, Secondary Actions: Expand
+					26 menu
+						27 (selected) Todos los tipos
+						28 Bacteriológico
+						29 Clínico
+						30 Especializado
+				31 pop up button (collapsed, settable) Description: Estado del laboratorio, Value: Cualquier estado, Secondary Actions: Expand
+					32 menu
+						33 (selected) Cualquier estado
+						34 Abiertos
+						35 Cerrados
+				36 button Buscar
+			37 button Cómo llegar al abierto más cercano, ID: nearest-lab
+			38 container
+				39 text Especializado Abierto
+				40 heading Laboratorio Clínica Azul, Value: 3
+					41 text Laboratorio Clínica Azul
+				42 text Datos pendientes de validación institucional. Genética, Inmunología, Biología molecular
+				43 link Description: Ver detalle, Value: localhost:5281/publico/Publico/Detalle/3
+				44 link Description: Cómo llegar, Value: localhost:5281/publico/Publico/Ruta?laboratorioId=3
+			45 container Description: Mapa de laboratorios, ID: public-map
+				46 container
+					47 container
+						48 button (disabled) Zoom in
+						49 button Zoom out
+					50 container
+						51 link Description:  Leaflet, Help: A JavaScript library for interactive maps, Value: leafletjs.com/
+						52 text  © OpenStreetMap contributors
+		53 container requisitos
+			54 heading Requisitos para solicitar la habilitación, Value: 2
+				55 text Requisitos para solicitar la habilitación
+			56 content list
+				57 text Licencia municipal
+				58 text Plano arquitectónico
+				59 text Certificado sanitario
+			60 text La obligatoriedad y los documentos pendientes se indican dentro de cada trámite.
+	61 container
+		62 text © 2026 SI_Lab · SEDES Cochabamba
+		63 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Laboratorios habilitados - SEDESLABORATORIO, URL: localhost:5281/publico/Publico?search=Gen%C3%A9tica&tipo=&estado=

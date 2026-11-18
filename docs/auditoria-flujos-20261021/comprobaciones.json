@@ -1,0 +1,65 @@
+[
+  {
+    "page": "coordinador-escritorio",
+    "belowThreshold": [],
+    "scroll": 1265,
+    "texts": 104,
+    "width": 1265
+  },
+  {
+    "page": "coordinador-movil",
+    "belowThreshold": [],
+    "scroll": 375,
+    "texts": 99,
+    "width": 375
+  },
+  {
+    "page": "administrador-escritorio",
+    "belowThreshold": [],
+    "scroll": 1280,
+    "texts": 18,
+    "width": 1280
+  },
+  {
+    "page": "administrador-movil",
+    "belowThreshold": [],
+    "scroll": 390,
+    "texts": 9,
+    "width": 390
+  },
+  {
+    "page": "editar-borrador-movil",
+    "belowThreshold": [],
+    "scroll": 375,
+    "texts": 12,
+    "width": 375
+  },
+  {
+    "page": "revision-legal",
+    "belowThreshold": [],
+    "scroll": 1265,
+    "texts": 57,
+    "width": 1265
+  },
+  {
+    "page": "metricas-filtro-invalido",
+    "belowThreshold": [],
+    "scroll": 1265,
+    "texts": 11,
+    "width": 1265
+  },
+  {
+    "page": "metricas-recuperadas",
+    "belowThreshold": [],
+    "scroll": 1265,
+    "texts": 108,
+    "width": 1265
+  },
+  {
+    "page": "revision-legal-final",
+    "belowThreshold": [],
+    "scroll": 1265,
+    "texts": 57,
+    "width": 1265
+  }
+]

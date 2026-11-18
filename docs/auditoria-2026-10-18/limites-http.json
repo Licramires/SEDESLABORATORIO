@@ -1,0 +1,16 @@
+[
+  {
+    "path": "/Gestion/Documento",
+    "bytes": 12583602,
+    "status": 413,
+    "location": null,
+    "body_excerpt": "La carga supera el tamaño permitido para esta operación."
+  },
+  {
+    "path": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "bytes": 58720946,
+    "status": 413,
+    "location": null,
+    "body_excerpt": "La carga supera el tamaño permitido para esta operación."
+  }
+]

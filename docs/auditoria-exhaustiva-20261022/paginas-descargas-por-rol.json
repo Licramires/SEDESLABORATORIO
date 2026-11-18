@@ -1,0 +1,2109 @@
+[
+  {
+    "Role": "propietario",
+    "Action": "SolicitudSeguimiento.Index",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "SolicitudSeguimiento.Index",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "SolicitudSeguimiento.Index",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "SolicitudSeguimiento.Index",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "SolicitudSeguimiento.Index",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "SolicitudSeguimiento.Index",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "SolicitudSeguimiento.Index",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "SolicitudSeguimiento.Details",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Details?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "SolicitudSeguimiento.Details",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Details?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "SolicitudSeguimiento.Details",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Details?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "SolicitudSeguimiento.Details",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Details?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "SolicitudSeguimiento.Details",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Details?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "SolicitudSeguimiento.Details",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Details?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "SolicitudSeguimiento.Details",
+    "Url": "/solicitud-seguimiento/SolicitudSeguimiento/Details?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "SolicitudRegistro.Index",
+    "Url": "/solicitud-registro/SolicitudRegistro/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "SolicitudRegistro.Index",
+    "Url": "/solicitud-registro/SolicitudRegistro/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "SolicitudRegistro.Index",
+    "Url": "/solicitud-registro/SolicitudRegistro/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "SolicitudRegistro.Index",
+    "Url": "/solicitud-registro/SolicitudRegistro/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "SolicitudRegistro.Index",
+    "Url": "/solicitud-registro/SolicitudRegistro/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "SolicitudRegistro.Index",
+    "Url": "/solicitud-registro/SolicitudRegistro/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "SolicitudRegistro.Index",
+    "Url": "/solicitud-registro/SolicitudRegistro/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "SolicitudRegistro.Nueva",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "SolicitudRegistro.Nueva",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "SolicitudRegistro.Nueva",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "SolicitudRegistro.Nueva",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "SolicitudRegistro.Nueva",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "SolicitudRegistro.Nueva",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "SolicitudRegistro.Nueva",
+    "Url": "/solicitud-registro/SolicitudRegistro/Nueva?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "SolicitudRegistro.Exito",
+    "Url": "/solicitud-registro/SolicitudRegistro/Exito?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "SolicitudRegistro.Exito",
+    "Url": "/solicitud-registro/SolicitudRegistro/Exito?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "SolicitudRegistro.Exito",
+    "Url": "/solicitud-registro/SolicitudRegistro/Exito?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "SolicitudRegistro.Exito",
+    "Url": "/solicitud-registro/SolicitudRegistro/Exito?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "SolicitudRegistro.Exito",
+    "Url": "/solicitud-registro/SolicitudRegistro/Exito?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "SolicitudRegistro.Exito",
+    "Url": "/solicitud-registro/SolicitudRegistro/Exito?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "SolicitudRegistro.Exito",
+    "Url": "/solicitud-registro/SolicitudRegistro/Exito?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Publico.Index",
+    "Url": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Publico.Index",
+    "Url": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Publico.Index",
+    "Url": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Publico.Index",
+    "Url": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "gerente",
+    "Action": "Publico.Index",
+    "Url": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "administrador",
+    "Action": "Publico.Index",
+    "Url": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Publico.Index",
+    "Url": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "propietario",
+    "Action": "Publico.Requerimientos",
+    "Url": "/publico/Publico/Requerimientos?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Publico.Requerimientos",
+    "Url": "/publico/Publico/Requerimientos?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Publico.Requerimientos",
+    "Url": "/publico/Publico/Requerimientos?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Publico.Requerimientos",
+    "Url": "/publico/Publico/Requerimientos?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "gerente",
+    "Action": "Publico.Requerimientos",
+    "Url": "/publico/Publico/Requerimientos?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "administrador",
+    "Action": "Publico.Requerimientos",
+    "Url": "/publico/Publico/Requerimientos?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Publico.Requerimientos",
+    "Url": "/publico/Publico/Requerimientos?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "propietario",
+    "Action": "Publico.Detalle",
+    "Url": "/publico/Publico/Detalle?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Publico.Detalle",
+    "Url": "/publico/Publico/Detalle?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Publico.Detalle",
+    "Url": "/publico/Publico/Detalle?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Publico.Detalle",
+    "Url": "/publico/Publico/Detalle?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "gerente",
+    "Action": "Publico.Detalle",
+    "Url": "/publico/Publico/Detalle?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "administrador",
+    "Action": "Publico.Detalle",
+    "Url": "/publico/Publico/Detalle?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Publico.Detalle",
+    "Url": "/publico/Publico/Detalle?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "propietario",
+    "Action": "Publico.Ruta",
+    "Url": "/publico/Publico/Ruta?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Publico.Ruta",
+    "Url": "/publico/Publico/Ruta?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Publico.Ruta",
+    "Url": "/publico/Publico/Ruta?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Publico.Ruta",
+    "Url": "/publico/Publico/Ruta?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "gerente",
+    "Action": "Publico.Ruta",
+    "Url": "/publico/Publico/Ruta?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "administrador",
+    "Action": "Publico.Ruta",
+    "Url": "/publico/Publico/Ruta?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Publico.Ruta",
+    "Url": "/publico/Publico/Ruta?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "propietario",
+    "Action": "Publico.Plantilla",
+    "Url": "/publico/Publico/Plantilla?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Publico.Plantilla",
+    "Url": "/publico/Publico/Plantilla?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Publico.Plantilla",
+    "Url": "/publico/Publico/Plantilla?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Publico.Plantilla",
+    "Url": "/publico/Publico/Plantilla?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "gerente",
+    "Action": "Publico.Plantilla",
+    "Url": "/publico/Publico/Plantilla?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "administrador",
+    "Action": "Publico.Plantilla",
+    "Url": "/publico/Publico/Plantilla?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Publico.Plantilla",
+    "Url": "/publico/Publico/Plantilla?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "propietario",
+    "Action": "Administracion.Catalogos",
+    "Url": "/Administracion/Catalogos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Administracion.Catalogos",
+    "Url": "/Administracion/Catalogos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Administracion.Catalogos",
+    "Url": "/Administracion/Catalogos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Administracion.Catalogos",
+    "Url": "/Administracion/Catalogos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Administracion.Catalogos",
+    "Url": "/Administracion/Catalogos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Administracion.Catalogos",
+    "Url": "/Administracion/Catalogos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Administracion.Catalogos",
+    "Url": "/Administracion/Catalogos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Administracion.Catalogo",
+    "Url": "/Administracion/Catalogo?rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Administracion.Catalogo",
+    "Url": "/Administracion/Catalogo?rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Administracion.Catalogo",
+    "Url": "/Administracion/Catalogo?rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Administracion.Catalogo",
+    "Url": "/Administracion/Catalogo?rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Administracion.Catalogo",
+    "Url": "/Administracion/Catalogo?rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Administracion.Catalogo",
+    "Url": "/Administracion/Catalogo?rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Administracion.Catalogo",
+    "Url": "/Administracion/Catalogo?rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Administracion.CalidadDatos",
+    "Url": "/Administracion/CalidadDatos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Administracion.CalidadDatos",
+    "Url": "/Administracion/CalidadDatos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Administracion.CalidadDatos",
+    "Url": "/Administracion/CalidadDatos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Administracion.CalidadDatos",
+    "Url": "/Administracion/CalidadDatos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Administracion.CalidadDatos",
+    "Url": "/Administracion/CalidadDatos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Administracion.CalidadDatos",
+    "Url": "/Administracion/CalidadDatos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Administracion.CalidadDatos",
+    "Url": "/Administracion/CalidadDatos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Administracion.Usuarios",
+    "Url": "/Administracion/Usuarios?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Administracion.Usuarios",
+    "Url": "/Administracion/Usuarios?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Administracion.Usuarios",
+    "Url": "/Administracion/Usuarios?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Administracion.Usuarios",
+    "Url": "/Administracion/Usuarios?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Administracion.Usuarios",
+    "Url": "/Administracion/Usuarios?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Administracion.Usuarios",
+    "Url": "/Administracion/Usuarios?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Administracion.Usuarios",
+    "Url": "/Administracion/Usuarios?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Administracion.Usuario",
+    "Url": "/Administracion/Usuario?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Administracion.Usuario",
+    "Url": "/Administracion/Usuario?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Administracion.Usuario",
+    "Url": "/Administracion/Usuario?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Administracion.Usuario",
+    "Url": "/Administracion/Usuario?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Administracion.Usuario",
+    "Url": "/Administracion/Usuario?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Administracion.Usuario",
+    "Url": "/Administracion/Usuario?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Administracion.Usuario",
+    "Url": "/Administracion/Usuario?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Administracion.Roles",
+    "Url": "/Administracion/Roles?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Administracion.Roles",
+    "Url": "/Administracion/Roles?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Administracion.Roles",
+    "Url": "/Administracion/Roles?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Administracion.Roles",
+    "Url": "/Administracion/Roles?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Administracion.Roles",
+    "Url": "/Administracion/Roles?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Administracion.Roles",
+    "Url": "/Administracion/Roles?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Administracion.Roles",
+    "Url": "/Administracion/Roles?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Administracion.EditarPermisos",
+    "Url": "/Administracion/EditarPermisos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Administracion.EditarPermisos",
+    "Url": "/Administracion/EditarPermisos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Administracion.EditarPermisos",
+    "Url": "/Administracion/EditarPermisos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Administracion.EditarPermisos",
+    "Url": "/Administracion/EditarPermisos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Administracion.EditarPermisos",
+    "Url": "/Administracion/EditarPermisos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Administracion.EditarPermisos",
+    "Url": "/Administracion/EditarPermisos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Administracion.EditarPermisos",
+    "Url": "/Administracion/EditarPermisos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Administracion.Requisitos",
+    "Url": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Administracion.Requisitos",
+    "Url": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Administracion.Requisitos",
+    "Url": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Administracion.Requisitos",
+    "Url": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Administracion.Requisitos",
+    "Url": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Administracion.Requisitos",
+    "Url": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Administracion.Requisitos",
+    "Url": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Administracion.Requisito",
+    "Url": "/Administracion/Requisito?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Administracion.Requisito",
+    "Url": "/Administracion/Requisito?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Administracion.Requisito",
+    "Url": "/Administracion/Requisito?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Administracion.Requisito",
+    "Url": "/Administracion/Requisito?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Administracion.Requisito",
+    "Url": "/Administracion/Requisito?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Administracion.Requisito",
+    "Url": "/Administracion/Requisito?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Administracion.Requisito",
+    "Url": "/Administracion/Requisito?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Administracion.Seccion",
+    "Url": "/Administracion/Seccion?rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Administracion.Seccion",
+    "Url": "/Administracion/Seccion?rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Administracion.Seccion",
+    "Url": "/Administracion/Seccion?rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Administracion.Seccion",
+    "Url": "/Administracion/Seccion?rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Administracion.Seccion",
+    "Url": "/Administracion/Seccion?rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Administracion.Seccion",
+    "Url": "/Administracion/Seccion?rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Administracion.Seccion",
+    "Url": "/Administracion/Seccion?rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Gestion.Index",
+    "Url": "/Gestion/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Gestion.Index",
+    "Url": "/Gestion/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Gestion.Index",
+    "Url": "/Gestion/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Gestion.Index",
+    "Url": "/Gestion/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "gerente",
+    "Action": "Gestion.Index",
+    "Url": "/Gestion/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Gestion.Index",
+    "Url": "/Gestion/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Gestion.Index",
+    "Url": "/Gestion/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Gestion.Detalle",
+    "Url": "/Gestion/Detalle?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Gestion.Detalle",
+    "Url": "/Gestion/Detalle?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Gestion.Detalle",
+    "Url": "/Gestion/Detalle?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Gestion.Detalle",
+    "Url": "/Gestion/Detalle?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "gerente",
+    "Action": "Gestion.Detalle",
+    "Url": "/Gestion/Detalle?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Gestion.Detalle",
+    "Url": "/Gestion/Detalle?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Gestion.Detalle",
+    "Url": "/Gestion/Detalle?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Gestion.Descargar",
+    "Url": "/Gestion/Descargar?id=400\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Gestion.Descargar",
+    "Url": "/Gestion/Descargar?id=400\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Gestion.Descargar",
+    "Url": "/Gestion/Descargar?id=400\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Gestion.Descargar",
+    "Url": "/Gestion/Descargar?id=400\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "gerente",
+    "Action": "Gestion.Descargar",
+    "Url": "/Gestion/Descargar?id=400\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Gestion.Descargar",
+    "Url": "/Gestion/Descargar?id=400\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Gestion.Descargar",
+    "Url": "/Gestion/Descargar?id=400\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Gestion.Agenda",
+    "Url": "/Gestion/Agenda?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Gestion.Agenda",
+    "Url": "/Gestion/Agenda?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Gestion.Agenda",
+    "Url": "/Gestion/Agenda?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Gestion.Agenda",
+    "Url": "/Gestion/Agenda?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Gestion.Agenda",
+    "Url": "/Gestion/Agenda?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Gestion.Agenda",
+    "Url": "/Gestion/Agenda?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Gestion.Agenda",
+    "Url": "/Gestion/Agenda?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Gestion.FormularioActa",
+    "Url": "/Gestion/FormularioActa?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Gestion.FormularioActa",
+    "Url": "/Gestion/FormularioActa?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Gestion.FormularioActa",
+    "Url": "/Gestion/FormularioActa?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Gestion.FormularioActa",
+    "Url": "/Gestion/FormularioActa?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Gestion.FormularioActa",
+    "Url": "/Gestion/FormularioActa?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Gestion.FormularioActa",
+    "Url": "/Gestion/FormularioActa?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Gestion.FormularioActa",
+    "Url": "/Gestion/FormularioActa?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Gestion.Informe",
+    "Url": "/Gestion/Informe?id=136\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Gestion.Informe",
+    "Url": "/Gestion/Informe?id=136\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Gestion.Informe",
+    "Url": "/Gestion/Informe?id=136\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Gestion.Informe",
+    "Url": "/Gestion/Informe?id=136\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Gestion.Informe",
+    "Url": "/Gestion/Informe?id=136\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Gestion.Informe",
+    "Url": "/Gestion/Informe?id=136\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Gestion.Informe",
+    "Url": "/Gestion/Informe?id=136\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Gestion.Establecimientos",
+    "Url": "/Gestion/Establecimientos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Gestion.Establecimientos",
+    "Url": "/Gestion/Establecimientos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Gestion.Establecimientos",
+    "Url": "/Gestion/Establecimientos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Gestion.Establecimientos",
+    "Url": "/Gestion/Establecimientos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Gestion.Establecimientos",
+    "Url": "/Gestion/Establecimientos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Gestion.Establecimientos",
+    "Url": "/Gestion/Establecimientos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Gestion.Establecimientos",
+    "Url": "/Gestion/Establecimientos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Gestion.EditarDatos",
+    "Url": "/Gestion/EditarDatos?id=135\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Gestion.EditarDatos",
+    "Url": "/Gestion/EditarDatos?id=135\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Gestion.EditarDatos",
+    "Url": "/Gestion/EditarDatos?id=135\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Gestion.EditarDatos",
+    "Url": "/Gestion/EditarDatos?id=135\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Gestion.EditarDatos",
+    "Url": "/Gestion/EditarDatos?id=135\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Gestion.EditarDatos",
+    "Url": "/Gestion/EditarDatos?id=135\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Gestion.EditarDatos",
+    "Url": "/Gestion/EditarDatos?id=135\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Gestion.Citaciones",
+    "Url": "/Gestion/Citaciones?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Gestion.Citaciones",
+    "Url": "/Gestion/Citaciones?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Gestion.Citaciones",
+    "Url": "/Gestion/Citaciones?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Gestion.Citaciones",
+    "Url": "/Gestion/Citaciones?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Gestion.Citaciones",
+    "Url": "/Gestion/Citaciones?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Gestion.Citaciones",
+    "Url": "/Gestion/Citaciones?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Gestion.Citaciones",
+    "Url": "/Gestion/Citaciones?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Gestion.PlantillaCitacion",
+    "Url": "/Gestion/PlantillaCitacion?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Gestion.PlantillaCitacion",
+    "Url": "/Gestion/PlantillaCitacion?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Gestion.PlantillaCitacion",
+    "Url": "/Gestion/PlantillaCitacion?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Gestion.PlantillaCitacion",
+    "Url": "/Gestion/PlantillaCitacion?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Gestion.PlantillaCitacion",
+    "Url": "/Gestion/PlantillaCitacion?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Gestion.PlantillaCitacion",
+    "Url": "/Gestion/PlantillaCitacion?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Gestion.PlantillaCitacion",
+    "Url": "/Gestion/PlantillaCitacion?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Gestion.Establecimiento",
+    "Url": "/Gestion/Establecimiento?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Gestion.Establecimiento",
+    "Url": "/Gestion/Establecimiento?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Gestion.Establecimiento",
+    "Url": "/Gestion/Establecimiento?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Gestion.Establecimiento",
+    "Url": "/Gestion/Establecimiento?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Gestion.Establecimiento",
+    "Url": "/Gestion/Establecimiento?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Gestion.Establecimiento",
+    "Url": "/Gestion/Establecimiento?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Gestion.Establecimiento",
+    "Url": "/Gestion/Establecimiento?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Gestion.Rutas",
+    "Url": "/Gestion/Rutas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Gestion.Rutas",
+    "Url": "/Gestion/Rutas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Gestion.Rutas",
+    "Url": "/Gestion/Rutas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Gestion.Rutas",
+    "Url": "/Gestion/Rutas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Gestion.Rutas",
+    "Url": "/Gestion/Rutas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Gestion.Rutas",
+    "Url": "/Gestion/Rutas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Gestion.Rutas",
+    "Url": "/Gestion/Rutas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Gestion.Actas",
+    "Url": "/Gestion/Actas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Gestion.Actas",
+    "Url": "/Gestion/Actas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Gestion.Actas",
+    "Url": "/Gestion/Actas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Gestion.Actas",
+    "Url": "/Gestion/Actas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Gestion.Actas",
+    "Url": "/Gestion/Actas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Gestion.Actas",
+    "Url": "/Gestion/Actas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Gestion.Actas",
+    "Url": "/Gestion/Actas?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Home.Index",
+    "Url": "/Home/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Home.Index",
+    "Url": "/Home/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Home.Index",
+    "Url": "/Home/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Home.Index",
+    "Url": "/Home/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Home.Index",
+    "Url": "/Home/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Home.Index",
+    "Url": "/Home/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Home.Index",
+    "Url": "/Home/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Home.Privacy",
+    "Url": "/Home/Privacy?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Home.Privacy",
+    "Url": "/Home/Privacy?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Home.Privacy",
+    "Url": "/Home/Privacy?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Home.Privacy",
+    "Url": "/Home/Privacy?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "gerente",
+    "Action": "Home.Privacy",
+    "Url": "/Home/Privacy?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "administrador",
+    "Action": "Home.Privacy",
+    "Url": "/Home/Privacy?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Home.Privacy",
+    "Url": "/Home/Privacy?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "propietario",
+    "Action": "Home.Error",
+    "Url": "/Home/Error?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Home.Error",
+    "Url": "/Home/Error?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Home.Error",
+    "Url": "/Home/Error?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Home.Error",
+    "Url": "/Home/Error?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "gerente",
+    "Action": "Home.Error",
+    "Url": "/Home/Error?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "administrador",
+    "Action": "Home.Error",
+    "Url": "/Home/Error?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Home.Error",
+    "Url": "/Home/Error?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "propietario",
+    "Action": "Metricas.Index",
+    "Url": "/Metricas/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Metricas.Index",
+    "Url": "/Metricas/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Metricas.Index",
+    "Url": "/Metricas/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Metricas.Index",
+    "Url": "/Metricas/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Metricas.Index",
+    "Url": "/Metricas/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "administrador",
+    "Action": "Metricas.Index",
+    "Url": "/Metricas/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Metricas.Index",
+    "Url": "/Metricas/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Metricas.Datos",
+    "Url": "/Metricas/Datos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Metricas.Datos",
+    "Url": "/Metricas/Datos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Metricas.Datos",
+    "Url": "/Metricas/Datos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Metricas.Datos",
+    "Url": "/Metricas/Datos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Metricas.Datos",
+    "Url": "/Metricas/Datos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "administrador",
+    "Action": "Metricas.Datos",
+    "Url": "/Metricas/Datos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Metricas.Datos",
+    "Url": "/Metricas/Datos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Notificaciones.Index",
+    "Url": "/Notificaciones/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Notificaciones.Index",
+    "Url": "/Notificaciones/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Notificaciones.Index",
+    "Url": "/Notificaciones/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Notificaciones.Index",
+    "Url": "/Notificaciones/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "gerente",
+    "Action": "Notificaciones.Index",
+    "Url": "/Notificaciones/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "administrador",
+    "Action": "Notificaciones.Index",
+    "Url": "/Notificaciones/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Notificaciones.Index",
+    "Url": "/Notificaciones/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Auth.Index",
+    "Url": "/auth/Auth/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Auth.Index",
+    "Url": "/auth/Auth/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Auth.Index",
+    "Url": "/auth/Auth/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Auth.Index",
+    "Url": "/auth/Auth/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Auth.Index",
+    "Url": "/auth/Auth/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Auth.Index",
+    "Url": "/auth/Auth/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Auth.Index",
+    "Url": "/auth/Auth/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Auth.Login",
+    "Url": "/auth/Auth/Login?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Auth.Login",
+    "Url": "/auth/Auth/Login?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Auth.Login",
+    "Url": "/auth/Auth/Login?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "abogado",
+    "Action": "Auth.Login",
+    "Url": "/auth/Auth/Login?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "gerente",
+    "Action": "Auth.Login",
+    "Url": "/auth/Auth/Login?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "administrador",
+    "Action": "Auth.Login",
+    "Url": "/auth/Auth/Login?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 302
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Auth.Login",
+    "Url": "/auth/Auth/Login?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "propietario",
+    "Action": "Auth.Dashboard",
+    "Url": "/auth/Auth/Dashboard?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Auth.Dashboard",
+    "Url": "/auth/Auth/Dashboard?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Auth.Dashboard",
+    "Url": "/auth/Auth/Dashboard?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Auth.Dashboard",
+    "Url": "/auth/Auth/Dashboard?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "gerente",
+    "Action": "Auth.Dashboard",
+    "Url": "/auth/Auth/Dashboard?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "administrador",
+    "Action": "Auth.Dashboard",
+    "Url": "/auth/Auth/Dashboard?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Auth.Dashboard",
+    "Url": "/auth/Auth/Dashboard?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": false,
+    "Status": 302
+  },
+  {
+    "Role": "propietario",
+    "Action": "Auth.AccessDenied",
+    "Url": "/auth/Auth/AccessDenied?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "coordinador",
+    "Action": "Auth.AccessDenied",
+    "Url": "/auth/Auth/AccessDenied?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "supervisor",
+    "Action": "Auth.AccessDenied",
+    "Url": "/auth/Auth/AccessDenied?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "abogado",
+    "Action": "Auth.AccessDenied",
+    "Url": "/auth/Auth/AccessDenied?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "gerente",
+    "Action": "Auth.AccessDenied",
+    "Url": "/auth/Auth/AccessDenied?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "administrador",
+    "Action": "Auth.AccessDenied",
+    "Url": "/auth/Auth/AccessDenied?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  },
+  {
+    "Role": "anonimo",
+    "Action": "Auth.AccessDenied",
+    "Url": "/auth/Auth/AccessDenied?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Allowed": true,
+    "Status": 200
+  }
+]

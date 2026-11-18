@@ -1,0 +1,35 @@
+Browser tab: 5, Title: "Mi espacio de trabajo - SEDESLABORATORIO", URL: "http://localhost:5281/auth/Auth/Dashboard".
+1 AXWebArea Mi espacio de trabajo - SEDESLABORATORIO, URL: localhost:5281/auth/Auth/Dashboard
+	2 link Description: Saltar al contenido, Value: localhost:5281/auth/Auth/Dashboard#main-content
+	3 container Description: Menú de la aplicación, ID: app-sidebar
+		4 link Description: SI_Lab SEDES · COCHABAMBA, Value: localhost:5281/publico/Publico
+		5 container Navegación principal
+			6 link Description: Trámites, Value: localhost:5281/Gestion
+			7 link Description: Mis establecimientos, Value: localhost:5281/Gestion/Establecimientos
+			8 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			9 link Description: Requerimientos, Value: localhost:5281/publico/Publico/Requerimientos
+			10 link Description: Laboratorios públicos, Value: localhost:5281/publico/Publico
+		11 text SEDES Cochabamba
+		12 text Servicio Departamental de Salud Portal de trámites y requisitos
+	13 container
+		14 text Portal de Trámites SEDES  Mi espacio de trabajo
+		15 link Description: Ver notificaciones, Value: localhost:5281/Notificaciones
+		16 link Description: Ir a mi cuenta, Value: localhost:5281/auth/Auth/Dashboard
+	17 container main-content
+		18 heading Hola, Propietario Demo, Value: 1
+			19 text Hola, Propietario Demo
+		20 text Complete sus solicitudes y consulte las correcciones pendientes.
+		21 button Cerrar sesión
+		22 container
+			23 heading Trabajo principal, Value: 2
+				24 text Trabajo principal
+			25 link Description: Nueva solicitud, Value: localhost:5281/solicitud-registro/SolicitudRegistro/Nueva
+			26 link Description: Mis trámites, Value: localhost:5281/Gestion
+			27 text Los avisos y las tareas nuevas están en 
+			28 link Description: Notificaciones, Value: localhost:5281/Notificaciones
+			29 text .
+	30 container
+		31 text © 2026 SI_Lab · SEDES Cochabamba
+		32 link Description: Privacidad, Value: localhost:5281/Home/Privacy
+
+The focused UI element is 1 AXWebArea Mi espacio de trabajo - SEDESLABORATORIO, URL: localhost:5281/auth/Auth/Dashboard

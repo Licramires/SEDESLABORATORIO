@@ -1,0 +1,918 @@
+[
+  {
+    "Role": "propietario",
+    "Page": "/solicitud-registro/SolicitudRegistro/Nueva?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/solicitud-registro/SolicitudRegistro/Nueva",
+    "Method": "POST",
+    "Fields": [
+      "Municipio",
+      "TipoLaboratorio",
+      "NombreLaboratorio",
+      "Telefono",
+      "Direccion",
+      "Codigo",
+      "Latitud",
+      "__Invariant",
+      "Longitud",
+      "DocumentosPdf"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "submit",
+        "Text": "Guardar y completar requisitos"
+      }
+    ]
+  },
+  {
+    "Role": "propietario",
+    "Page": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/publico/Publico",
+    "Method": "GET",
+    "Fields": [
+      "search",
+      "tipo",
+      "estado"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "submit",
+        "Text": "Buscar"
+      }
+    ]
+  },
+  {
+    "Role": "coordinador",
+    "Page": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/publico/Publico",
+    "Method": "GET",
+    "Fields": [
+      "search",
+      "tipo",
+      "estado"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "submit",
+        "Text": "Buscar"
+      }
+    ]
+  },
+  {
+    "Role": "supervisor",
+    "Page": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/publico/Publico",
+    "Method": "GET",
+    "Fields": [
+      "search",
+      "tipo",
+      "estado"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "submit",
+        "Text": "Buscar"
+      }
+    ]
+  },
+  {
+    "Role": "abogado",
+    "Page": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/publico/Publico",
+    "Method": "GET",
+    "Fields": [
+      "search",
+      "tipo",
+      "estado"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "submit",
+        "Text": "Buscar"
+      }
+    ]
+  },
+  {
+    "Role": "gerente",
+    "Page": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/publico/Publico",
+    "Method": "GET",
+    "Fields": [
+      "search",
+      "tipo",
+      "estado"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "submit",
+        "Text": "Buscar"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/publico/Publico",
+    "Method": "GET",
+    "Fields": [
+      "search",
+      "tipo",
+      "estado"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "submit",
+        "Text": "Buscar"
+      }
+    ]
+  },
+  {
+    "Role": "anonimo",
+    "Page": "/publico/Publico/Index?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/publico/Publico",
+    "Method": "GET",
+    "Fields": [
+      "search",
+      "tipo",
+      "estado"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "submit",
+        "Text": "Buscar"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Administracion/Catalogo?rol=Propietario",
+    "Action": "/Administracion/Catalogo",
+    "Method": "POST",
+    "Fields": [
+      "Id",
+      "Version",
+      "Clase",
+      "Nombre",
+      "Referencia",
+      "Activo",
+      "Plantilla"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Guardar"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Administracion/Usuario?id=1\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Administracion/Usuario",
+    "Method": "POST",
+    "Fields": [
+      "Id",
+      "Version",
+      "Nombre",
+      "Email",
+      "Password",
+      "Rol",
+      "Activo"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Guardar usuario"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Administracion/EditarPermisos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Administracion/EditarPermisos",
+    "Method": "POST",
+    "Fields": [
+      "Rol",
+      "Permisos[0].Clave",
+      "Permisos[0].Version",
+      "Permisos[0].Habilitado",
+      "Permisos[1].Clave",
+      "Permisos[1].Version",
+      "Permisos[1].Habilitado"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Guardar permisos"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Administracion/EstadoRequisito",
+    "Method": "POST",
+    "Fields": [
+      "id",
+      "version",
+      "activo"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Desactivar"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Administracion/EliminarRequisito",
+    "Method": "POST",
+    "Fields": [
+      "id",
+      "version"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Eliminar"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Administracion/EstadoRequisito",
+    "Method": "POST",
+    "Fields": [
+      "id",
+      "version",
+      "activo"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Desactivar"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Administracion/EliminarRequisito",
+    "Method": "POST",
+    "Fields": [
+      "id",
+      "version"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Eliminar"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Administracion/EstadoRequisito",
+    "Method": "POST",
+    "Fields": [
+      "id",
+      "version",
+      "activo"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Desactivar"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Administracion/EliminarRequisito",
+    "Method": "POST",
+    "Fields": [
+      "id",
+      "version"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Eliminar"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Administracion/EstadoRequisito",
+    "Method": "POST",
+    "Fields": [
+      "id",
+      "version",
+      "activo"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Desactivar"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Administracion/Requisitos?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Administracion/EliminarRequisito",
+    "Method": "POST",
+    "Fields": [
+      "id",
+      "version"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Eliminar"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Administracion/Requisito?id=4\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Administracion/Requisito",
+    "Method": "POST",
+    "Fields": [
+      "Id",
+      "Version",
+      "Nombre",
+      "SeccionId",
+      "Orden",
+      "__Invariant",
+      "Obligatorio",
+      "Activo",
+      "Plantilla"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Guardar requisito"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Administracion/Seccion?rol=Propietario",
+    "Action": "/Administracion/Seccion",
+    "Method": "POST",
+    "Fields": [
+      "Id",
+      "Version",
+      "Nombre",
+      "Descripcion",
+      "Orden",
+      "__Invariant",
+      "Activa"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Guardar secci\u00F3n"
+      }
+    ]
+  },
+  {
+    "Role": "propietario",
+    "Page": "/Gestion/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Gestion/Index",
+    "Method": "GET",
+    "Fields": [
+      "estado",
+      "municipio"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "submit",
+        "Text": "Filtrar"
+      }
+    ]
+  },
+  {
+    "Role": "coordinador",
+    "Page": "/Gestion/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Gestion/Index",
+    "Method": "GET",
+    "Fields": [
+      "estado",
+      "municipio"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "submit",
+        "Text": "Filtrar"
+      }
+    ]
+  },
+  {
+    "Role": "supervisor",
+    "Page": "/Gestion/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Gestion/Index",
+    "Method": "GET",
+    "Fields": [
+      "estado",
+      "municipio"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "submit",
+        "Text": "Filtrar"
+      }
+    ]
+  },
+  {
+    "Role": "abogado",
+    "Page": "/Gestion/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Gestion/Index",
+    "Method": "GET",
+    "Fields": [
+      "estado",
+      "municipio"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "submit",
+        "Text": "Filtrar"
+      }
+    ]
+  },
+  {
+    "Role": "abogado",
+    "Page": "/Gestion/Detalle?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Gestion/Decidir",
+    "Method": "POST",
+    "Fields": [
+      "Id",
+      "Version",
+      "Accion",
+      "Motivo",
+      "Pdf"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Aprobar y habilitar"
+      }
+    ]
+  },
+  {
+    "Role": "abogado",
+    "Page": "/Gestion/Detalle?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Gestion/Decidir",
+    "Method": "POST",
+    "Fields": [
+      "Id",
+      "Version",
+      "DocumentosObservados",
+      "Motivo",
+      "RequiereNuevaInspeccion"
+    ],
+    "Buttons": [
+      {
+        "Name": "Accion",
+        "Value": "observar_legal",
+        "Type": "",
+        "Text": "Devolver con observaciones"
+      },
+      {
+        "Name": "Accion",
+        "Value": "rechazar_legal",
+        "Type": "",
+        "Text": "Rechazo legal definitivo"
+      }
+    ]
+  },
+  {
+    "Role": "propietario",
+    "Page": "/Gestion/Establecimientos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Gestion/Servicios",
+    "Method": "POST",
+    "Fields": [
+      "id",
+      "version",
+      "servicios"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Guardar servicios"
+      }
+    ]
+  },
+  {
+    "Role": "propietario",
+    "Page": "/Gestion/Establecimientos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Gestion/Renovar",
+    "Method": "POST",
+    "Fields": [
+      "id"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Solicitar renovaci\u00F3n"
+      }
+    ]
+  },
+  {
+    "Role": "propietario",
+    "Page": "/Gestion/Establecimientos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Gestion/Servicios",
+    "Method": "POST",
+    "Fields": [
+      "id",
+      "version",
+      "servicios"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Guardar servicios"
+      }
+    ]
+  },
+  {
+    "Role": "propietario",
+    "Page": "/Gestion/Establecimientos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Gestion/Renovar",
+    "Method": "POST",
+    "Fields": [
+      "id"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Solicitar renovaci\u00F3n"
+      }
+    ]
+  },
+  {
+    "Role": "propietario",
+    "Page": "/Gestion/Establecimientos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Gestion/Servicios",
+    "Method": "POST",
+    "Fields": [
+      "id",
+      "version",
+      "servicios"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Guardar servicios"
+      }
+    ]
+  },
+  {
+    "Role": "propietario",
+    "Page": "/Gestion/Establecimientos?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Gestion/Renovar",
+    "Method": "POST",
+    "Fields": [
+      "id"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Solicitar renovaci\u00F3n"
+      }
+    ]
+  },
+  {
+    "Role": "propietario",
+    "Page": "/Gestion/EditarDatos?id=135\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Gestion/EditarDatos",
+    "Method": "POST",
+    "Fields": [
+      "Id",
+      "Version",
+      "NombreLaboratorio",
+      "TipoLaboratorio",
+      "Municipio",
+      "Latitud",
+      "__Invariant",
+      "Longitud",
+      "Direccion",
+      "Telefono",
+      "Codigo"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Guardar datos del borrador"
+      }
+    ]
+  },
+  {
+    "Role": "gerente",
+    "Page": "/Metricas/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Metricas/Index",
+    "Method": "GET",
+    "Fields": [
+      "desde",
+      "hasta",
+      "municipio"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Consultar per\u00EDodo"
+      },
+      {
+        "Name": "descargar",
+        "Value": "true",
+        "Type": "",
+        "Text": "Descargar informe CSV"
+      }
+    ]
+  },
+  {
+    "Role": "propietario",
+    "Page": "/Notificaciones/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Notificaciones/Leer",
+    "Method": "POST",
+    "Fields": [
+      "id"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Marcar como le\u00EDda"
+      }
+    ]
+  },
+  {
+    "Role": "coordinador",
+    "Page": "/Notificaciones/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Notificaciones/Leer",
+    "Method": "POST",
+    "Fields": [
+      "id"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Marcar como le\u00EDda"
+      }
+    ]
+  },
+  {
+    "Role": "supervisor",
+    "Page": "/Notificaciones/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Notificaciones/Leer",
+    "Method": "POST",
+    "Fields": [
+      "id"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Marcar como le\u00EDda"
+      }
+    ]
+  },
+  {
+    "Role": "abogado",
+    "Page": "/Notificaciones/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Notificaciones/Leer",
+    "Method": "POST",
+    "Fields": [
+      "id"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Marcar como le\u00EDda"
+      }
+    ]
+  },
+  {
+    "Role": "gerente",
+    "Page": "/Notificaciones/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Notificaciones/Leer",
+    "Method": "POST",
+    "Fields": [
+      "id"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Marcar como le\u00EDda"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/Notificaciones/Index?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/Notificaciones/Leer",
+    "Method": "POST",
+    "Fields": [
+      "id"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Marcar como le\u00EDda"
+      }
+    ]
+  },
+  {
+    "Role": "anonimo",
+    "Page": "/auth/Auth/Login?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/auth/Auth/Login",
+    "Method": "POST",
+    "Fields": [
+      "returnUrl",
+      "Email",
+      "Password",
+      "RememberMe"
+    ],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "submit",
+        "Text": "Ingresar"
+      }
+    ]
+  },
+  {
+    "Role": "propietario",
+    "Page": "/auth/Auth/Dashboard?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/auth/Auth/Logout",
+    "Method": "POST",
+    "Fields": [],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Cerrar sesi\u00F3n"
+      }
+    ]
+  },
+  {
+    "Role": "coordinador",
+    "Page": "/auth/Auth/Dashboard?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/auth/Auth/Logout",
+    "Method": "POST",
+    "Fields": [],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Cerrar sesi\u00F3n"
+      }
+    ]
+  },
+  {
+    "Role": "supervisor",
+    "Page": "/auth/Auth/Dashboard?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/auth/Auth/Logout",
+    "Method": "POST",
+    "Fields": [],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Cerrar sesi\u00F3n"
+      }
+    ]
+  },
+  {
+    "Role": "abogado",
+    "Page": "/auth/Auth/Dashboard?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/auth/Auth/Logout",
+    "Method": "POST",
+    "Fields": [],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Cerrar sesi\u00F3n"
+      }
+    ]
+  },
+  {
+    "Role": "gerente",
+    "Page": "/auth/Auth/Dashboard?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/auth/Auth/Logout",
+    "Method": "POST",
+    "Fields": [],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Cerrar sesi\u00F3n"
+      }
+    ]
+  },
+  {
+    "Role": "administrador",
+    "Page": "/auth/Auth/Dashboard?id=134\u0026laboratorioId=1\u0026rol=Propietario",
+    "Action": "/auth/Auth/Logout",
+    "Method": "POST",
+    "Fields": [],
+    "Buttons": [
+      {
+        "Name": "",
+        "Value": "",
+        "Type": "",
+        "Text": "Cerrar sesi\u00F3n"
+      }
+    ]
+  }
+]

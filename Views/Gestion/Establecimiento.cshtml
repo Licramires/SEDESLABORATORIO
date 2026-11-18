@@ -1,0 +1,4 @@
+@model List<SEDESLABORATORIO.Data.Entities.Solicitud>
+@using SEDESLABORATORIO.Data
+@{ var l = (SEDESLABORATORIO.Data.Entities.Laboratorio)ViewBag.Laboratorio; ViewData["Title"] = l.Nombre; }
+<div class="container silab-page"><a asp-action="Establecimientos">Volver a mis establecimientos</a><section class="silab-panel p-4 mt-3"><h1>@l.Nombre</h1><p>@l.Tipo · @l.Municipio · @l.Direccion</p><p>Código: @l.Codigo · Teléfono: @l.Telefono</p><p>Vigencia actual: @l.VigenciaHasta?.ToString("dd/MM/yyyy")</p><h2>Expedientes y documentos</h2><p>Abra cada trámite para consultar sus documentos, versiones y decisiones.</p><ul>@foreach(var s in Model) { <li><a asp-action="Detalle" asp-route-id="@s.Id">#@s.Id · @(s.EsRenovacion ? "Renovación" : "Apertura") · @ApplicationDbContext.EstadoTexto(s.Estado)</a></li> }</ul><a asp-area="publico" asp-controller="Publico" asp-action="Detalle" asp-route-id="@l.Id">Ver ficha pública</a></section></div>

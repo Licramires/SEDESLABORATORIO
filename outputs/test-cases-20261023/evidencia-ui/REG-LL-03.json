@@ -1,0 +1,26 @@
+{
+  "before": {
+    "lat": "-17.4",
+    "lng": "-66.2",
+    "tiles": [
+      "https://b.tile.openstreetmap.org/13/2590/4497.png",
+      "https://c.tile.openstreetmap.org/13/2590/4498.png",
+      "https://a.tile.openstreetmap.org/13/2589/4497.png",
+      "https://c.tile.openstreetmap.org/13/2591/4497.png",
+      "https://b.tile.openstreetmap.org/13/2589/4498.png",
+      "https://a.tile.openstreetmap.org/13/2591/4498.png"
+    ]
+  },
+  "after": {
+    "lat": "-18.2",
+    "lng": "-67.1",
+    "tiles": [
+      "https://c.tile.openstreetmap.org/13/2569/4516.png",
+      "https://a.tile.openstreetmap.org/13/2569/4517.png",
+      "https://b.tile.openstreetmap.org/13/2568/4516.png",
+      "https://a.tile.openstreetmap.org/13/2570/4516.png",
+      "https://c.tile.openstreetmap.org/13/2568/4517.png",
+      "https://b.tile.openstreetmap.org/13/2570/4517.png"
+    ]
+  }
+}

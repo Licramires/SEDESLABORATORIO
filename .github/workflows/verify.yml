@@ -1,0 +1,46 @@
+name: Verify SI_Lab
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ClientApp/package-lock.json
+      - run: npm ci
+        working-directory: ClientApp
+      - run: npm test
+        working-directory: ClientApp
+      - run: npm run build
+        working-directory: ClientApp
+      - run: dotnet restore SEDESLABORATORIO.sln
+      - run: dotnet build SEDESLABORATORIO.sln --configuration Release --no-restore --warnaserror
+      - run: dotnet test tests/SiLab.Tests/SiLab.Tests.csproj --configuration Release --no-build --logger "trx;LogFileName=integration.trx" --results-directory TestResults
+      - name: Require executed tests
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+          root = ET.parse('TestResults/integration.trx').getroot()
+          counters = root.find('.//{*}Counters')
+          assert counters is not None and int(counters.attrib['executed']) >= 366
+          assert int(counters.attrib['failed']) == 0
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results
+          path: |
+            TestResults
+            tests/SiLab.Tests/TestResults/exhaustiva

@@ -1,0 +1,5 @@
+Browser tab: 5, Title: "localhost:5281/Gestion/RevisarDocumento", URL: "http://localhost:5281/Gestion/RevisarDocumento".
+1 AXWebArea localhost:5281/Gestion/RevisarDocumento
+	2 text Indique qué debe corregirse al observar un documento.
+
+The focused UI element is 1 AXWebArea localhost:5281/Gestion/RevisarDocumento

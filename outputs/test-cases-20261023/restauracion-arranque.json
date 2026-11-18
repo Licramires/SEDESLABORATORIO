@@ -1,0 +1,71 @@
+[
+  {
+    "test": "arranque",
+    "pid": 26916,
+    "healthy": true,
+    "environment": "Development"
+  },
+  {
+    "test": "restauracion_accesos",
+    "roles": [
+      "propietario",
+      "coordinador",
+      "supervisor",
+      "abogado",
+      "gerente",
+      "administrador"
+    ],
+    "passed": true
+  },
+  {
+    "test": "restauracion_descarga_privada",
+    "pdf": true,
+    "unauthorizedDenied": true
+  },
+  {
+    "test": "lectura_concurrente",
+    "requests": 60,
+    "concurrency": 12,
+    "statuses": {
+      "200": 60
+    },
+    "medianSeconds": 0.016,
+    "p95Seconds": 0.078,
+    "maxSeconds": 0.11
+  },
+  {
+    "test": "escritura_concurrente",
+    "requests": 16,
+    "concurrency": 8,
+    "saved": 1,
+    "staleRejected": 15
+  },
+  {
+    "test": "corte_cliente_durante_carga",
+    "databaseUnchanged": true,
+    "filesUnchanged": true
+  },
+  {
+    "test": "detención_del_proceso_hijo",
+    "pid": 26916,
+    "stopped": true
+  },
+  {
+    "test": "arranque",
+    "pid": 17244,
+    "healthy": true,
+    "environment": "Development"
+  },
+  {
+    "test": "reinicio_inesperado_durante_carga",
+    "databaseUnchanged": true,
+    "filesUnchanged": true,
+    "sessionRecovered": true,
+    "integrity": "ok"
+  },
+  {
+    "test": "detención_del_proceso_hijo",
+    "pid": 17244,
+    "stopped": true
+  }
+]

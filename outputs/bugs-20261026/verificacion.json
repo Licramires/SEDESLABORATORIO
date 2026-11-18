@@ -1,0 +1,82 @@
+{
+  "date": "26/10/2026 (Bolivia)",
+  "checkpoint": "C:\\Users\\Usuario\\OneDrive\\Desktop\\SEDESLABORATORIO\\App_Data\\checkpoints\\20261026-144304-antes-bugs-pendientes",
+  "original_database_preserved": true,
+  "private_files_preserved": 54,
+  "server_tests": {
+    "total": "389",
+    "executed": "389",
+    "passed": "389",
+    "failed": "0",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  },
+  "javascript_tests_passed": 28,
+  "browser": "Navegador integrado; escritorio 1280×720; copia desechable local",
+  "ui_database_checks": {
+    "request18": [
+      "en_revision",
+      2
+    ],
+    "approval51": 1,
+    "request19": [
+      "en_revision",
+      2
+    ],
+    "send19": 1
+  },
+  "bugs": [
+    {
+      "id": "BUG-01",
+      "status": "Corregido y verificado",
+      "evidence": [
+        "BUG-01-validacion.txt",
+        "BUG-01-conflicto.txt",
+        "BUG-01-recuperado.txt",
+        "BUG-01-conflicto.png"
+      ]
+    },
+    {
+      "id": "BUG-02",
+      "status": "Corregido y verificado",
+      "evidence": [
+        "BUG-02-documento-aprobado.txt",
+        "pruebas/bugs-corregidos.trx"
+      ]
+    },
+    {
+      "id": "BUG-03",
+      "status": "Corregido y verificado",
+      "evidence": [
+        "BUG-03-ficha.txt",
+        "BUG-03-ruta.png",
+        "pruebas/limites-mapa.trx"
+      ]
+    }
+  ],
+  "case_retest": {
+    "PUB-EXT-09": "Exitoso en reejecución dirigida; incluye límites válidos e ID inexistente de la regresión existente.",
+    "E2E-EXT-04": "BUG-01 y BUG-02 corregidos. La campaña completa de todos los controles/estados no se certifica con esta reejecución dirigida."
+  },
+  "manual_cases_not_certified": [
+    "PUB-HL-02",
+    "PUB-EXT-04",
+    "REG-HL-03",
+    "E2E-EXT-06",
+    "E2E-EXT-07",
+    "E2E-EXT-05",
+    "PUB-EXT-08",
+    "SUP-EXT-08",
+    "REG-EXT-05"
+  ]
+}
